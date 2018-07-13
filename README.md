@@ -46,6 +46,15 @@ $ npm run build
 $ npm run del
 ```
 
+### 荣誉榜(参与人员)
+昵称  | **QQ号** | 勋章(page) | 备注
+---- |--------- |:------------:| ----
+[小牧COOL][20] | 895355044  | **total:**3 | 小队长
+[小成][21]     | 707996290  | 0            | 
+[wj][22]      | 8*******0  | 3            | 
+[壮实][23]     | 1271314601 | 0            | 
+
+**Tips:**保护隐私，未经对方同意，不公开他人QQ号，如想公开，自己改下
 
 ## 涉及技术
 
@@ -81,3 +90,7 @@ All Rights Reserved · Powered by : **小牧COOL**
 [17]:https://github.com/stylelint/stylelint-config-standard
 [18]:https://github.com/sindresorhus/del
 [19]:http://www.browsersync.cn/
+[20]:https://github.com/XiaoMuCOOL/
+[21]:https://github.com/xiaochenggit/
+[22]:https://github.com/82382780wwj/
+[23]:https://github.com/linyezz/
