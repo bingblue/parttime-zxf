@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* 可以引入其他人 */
 @import 'main_name.css';
+@import 'main_wj.css';
 
 /* 公共CSS */
 .btn {
@@ -29,8 +30,6 @@
 }
 
 .wrap {
-  min-width: 320px;
-  max-width: 640px;
   width: 100%;
   min-height: 100%;
   margin: 0 auto;

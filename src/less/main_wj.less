@@ -1,0 +1,202 @@
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+button {
+  border: none;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.body-login,
+.body-register {
+  .none {
+    display: none;
+  }
+
+  .login-hd {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: rgba(43, 56, 69, 1);
+  }
+
+  .login-body,
+  .register-body {
+    width: 100%;
+    height: 680px;
+    background: linear-gradient(-126.5deg, rgba(118, 221, 254, 1), rgba(2, 120, 205, 1));
+  }
+
+  .login-ct,
+  .register-ct {
+    width: 1200px;
+    height: 680px;
+    background: url('../../img/login_bg.png') no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .form-wp {
+    width: 420px;
+    background: #fff;
+    padding: 54px 0;
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -200px;
+  }
+
+  .login-form {
+    width: 338px;
+    margin: 0 auto;
+  }
+
+  .form-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 26px;
+  }
+
+  .login-ipt {
+    width: 338px;
+    height: 46px;
+    border-radius: 23px;
+    border: 1px solid #d7d7d7;
+    text-indent: 20px;
+
+    &:nth-of-type(1) {
+      margin-bottom: 26px;
+    }
+
+    &:nth-of-type(2) {
+      margin-bottom: 22px;
+    }
+  }
+
+  .errcue {
+    color: #ff4548;
+    font-size: 14px;
+    margin-top: -12px;
+    margin-bottom: 22px;
+
+    .err-icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      color: #fff;
+      background: #ff4548;
+      margin-right: 12px;
+      border-radius: 50%;
+      margin-left: 20px;
+    }
+  }
+
+  .login-btn {
+    display: block;
+    width: 338px;
+    height: 46px;
+    line-height: 46px;
+    background: #0085e6;
+    border-radius: 23px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 14px;
+  }
+
+  .forgetpwd {
+    font-size: 14px;
+    color: #999;
+    float: left;
+    margin-left: 20px;
+  }
+
+  .register-link {
+    font-size: 14px;
+    color: #0085e6;
+    float: right;
+    margin-right: 20px;
+  }
+}
+
+.register-body {
+  .login-ipt-small {
+    width: 180px;
+    height: 46px;
+    border-radius: 23px;
+    text-indent: 20px;
+    border: 1px solid #d7d7d7;
+    margin-bottom: 22px;
+  }
+
+  .getcode-btn {
+    display: inline-block;
+    width: 132px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    background: #f2f2f2;
+    border-radius: 23px;
+    font-size: 16px;
+    color: #999;
+    margin-left: 21px;
+  }
+}
+
+.footer {
+  width: 100%;
+  background: #2b3845;
+  padding-top: 54px;
+  padding-bottom: 50px;
+
+  .footer-ct {
+    width: 1200px;
+  }
+
+  .tel-wp {
+    text-align: center;
+    font-size: 25px;
+    color: #c8cccf;
+    margin-bottom: 22px;
+  }
+
+  .logo {
+    display: inline-block;
+    width: 164px;
+    margin-right: 48px;
+  }
+
+  .foot-tel {
+    width: 21px;
+    margin-right: 14px;
+  }
+
+  .ads-wp {
+    margin-bottom: 10px;
+    color: #717c83;
+    font-size: 14px;
+    text-align: center;
+
+    .name {
+      margin-right: 34px;
+    }
+  }
+
+  .record {
+    color: #717c83;
+    font-size: 14px;
+    text-align: center;
+  }
+}
