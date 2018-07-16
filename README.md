@@ -67,7 +67,7 @@ $ npm run del
 - [gulp-sequence][12]   -   按顺序运行一系列的gulp任务
 - [gulp-standard][13]   -   js规范检测,基于`JavaScript Standard Style`代码规范
 - [browser-sync][15]   -   省时的浏览器同步/热加载测试工具([中文文档][19])
-- [stylelint][16]   -   css规范检测,基于[stylelint-config-standard][17]
+- [stylelint][16]   -   css规范检测,基于[stylelint-config-standard][17],[详细规则][25]
 - [del][18]   -   删除文件/文件夹
 
 ## License
@@ -96,3 +96,4 @@ All Rights Reserved · Powered by : **小牧COOL**
 [22]:https://github.com/82382780wwj/
 [23]:https://github.com/linyezz/
 [24]:https://github.com/momo2930530311/
+[25]:http://stylelint.cn/user-guide/rules/
