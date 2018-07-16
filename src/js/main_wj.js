@@ -9,9 +9,9 @@ $(function () {
    * @return {Number} 返回值描述.
    */
   /**
-     * 验证手机号码11位数字
-     * @param mobile 手机号码
-     */
+   * 验证手机号码11位数字
+   * @param mobile 手机号码
+   */
   function testmobile (mobile) {
     let mobilereg = /^1\d{10}$/
     return mobilereg.test(mobile)
