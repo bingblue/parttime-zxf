@@ -1,8 +1,9 @@
 @charset "UTF-8";
 /* 可以引入其他人 */
-@import 'main_name.css';
 @import 'main_wj.css';
 @import 'main_momo.css';
+@import 'main_xc.css';
+@import 'main_linye.css';
 
 /* 公共CSS */
 .btn {
