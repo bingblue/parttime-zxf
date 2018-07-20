@@ -47,6 +47,7 @@
   height: 100%;
 }
 
+.midd_header > .nav > li.active,
 .midd_header > .nav > li:hover {
   background: rgba(0, 133, 230, 1);
 }
