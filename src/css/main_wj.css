@@ -202,3 +202,179 @@ button:focus {
     font-size: 14px;
     text-align: center;
   }
+
+.body-myclass .head-wp {
+    width: 1200px;
+    height: 98px;
+    line-height: 98px;
+    background: #fff;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+    border-radius: 8px;
+    margin: 0 auto 15px;
+  }
+
+.body-myclass .hd-icon {
+    width: 34px;
+    margin-left: 30px;
+    margin-right: 4px;
+  }
+
+.body-myclass .myclass {
+    font-size: 16px;
+    color: #333;
+    margin-right: 30px;
+  }
+
+.body-myclass .schoolname,
+  .body-myclass .ads {
+    font-size: 14px;
+    color: #666;
+  }
+
+.body-myclass .ads {
+    margin-right: 10px;
+  }
+
+.body-myclass .grade {
+    font-size: 14px;
+    color: #333;
+  }
+
+.body-myclass .hd-left {
+    float: left;
+  }
+
+.body-myclass .hd-right {
+    float: right;
+    margin-right: 80px;
+  }
+
+.body-myclass .line {
+    display: inline-block;
+    height: 50px;
+    border-left: 1px solid #ebebeb;
+    margin-right: 30px;
+  }
+
+.body-myclass .headmaster-icon {
+    width: 46px;
+    margin-right: 10px;
+  }
+
+.body-myclass .headmaster-title {
+    font-size: 16px;
+    color: #333;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+.body-myclass .headmaser-name {
+    font-size: 14px;
+    color: #666;
+    line-height: 1;
+  }
+
+.body-myclass .headmaster-wp,
+  .body-myclass .line,
+  .body-myclass .headmaster-icon {
+    float: left;
+    position: relative;
+    top: 24px;
+  }
+
+.body-myclass .class-table-wp {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+.body-myclass .table-hd {
+    font-size: 20px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    background: #1393f0;
+    border-radius: 8px 8px 0 0;
+    text-indent: 30px;
+  }
+
+.body-myclass th {
+    font-weight: normal;
+    color: #666;
+    font-size: 16px;
+    height: 50px
+  }
+
+.body-myclass th:nth-of-type(1) {
+  width: 146px;
+}
+
+.body-myclass th:nth-of-type(2) {
+  width: 184px;
+}
+
+.body-myclass th:nth-of-type(3) {
+  width: 146px;
+}
+
+.body-myclass th:nth-of-type(4) {
+  width: 146px;
+}
+
+.body-myclass th:nth-of-type(5) {
+  width: 146px;
+}
+
+.body-myclass th:nth-of-type(6) {
+  width: 146px;
+}
+
+.body-myclass th:nth-of-type(7) {
+  width: 146px;
+}
+
+.body-myclass th:nth-of-type(8) {
+  width: 146px;
+}
+
+.body-myclass .class-table {
+    background: #fff;
+  }
+
+.body-myclass .class-table tr:nth-of-type(odd) {
+  background: #fbfbfb;
+}
+
+.body-myclass .class-table tr:nth-of-type(even) {
+  background: #fff;
+}
+
+.body-myclass .schoolmate {
+    width: 36px;
+  }
+
+.body-myclass td {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+  }
+
+.body-myclass .lv {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    font-size: 14px;
+    background: #0085e6;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+  }
+
+.body-myclass .integral {
+    color: #eeb843;
+  }
+
+.body-myclass .ranking {
+    color: #338bcb;
+  }
