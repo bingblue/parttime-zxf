@@ -1,5 +1,204 @@
 @charset "UTF-8";
 
-body {
-  color: #000;
+.xc-brand {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 20px 0 14px 26px;
+  color: #333;
+}
+
+.xc-brand .link {
+    color: #999;
+  }
+
+.xc-brand .line {
+    font-style: normal;
+    padding: 5px;
+    color: #999;
+  }
+
+.xc-table {
+  font-size: 14px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 8px 8px 8px 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 7px 1px rgb(235, 235, 235);
+          box-shadow: 0 0 7px 1px rgb(235, 235, 235);
+}
+
+.xc-table thead {
+    background-color: #0085e6;
+  }
+
+.xc-table th {
+    color: rgba(251, 251, 251, 1);
+    line-height: 20px;
+    margin: 0;
+    padding: 15px 0;
+    font-weight: normal;
+  }
+
+.xc-table tbody {
+    color: #666;
+    text-align: center;
+  }
+
+.xc-table tbody tr {
+      height: 48px;
+    }
+
+.xc-table tbody td .table-btn {
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: 15px;
+        background-color: #0085e6;
+        border-radius: 15px;
+        color: #fff;
+      }
+
+.xc-table tbody tr:nth-child(2n+1) {
+      background-color: #fff;
+    }
+
+.xc-paging-box {
+  margin: 25px auto 45px;
+  text-align: center;
+  color: #999;
+  font-size: 0;
+}
+
+.xc-paging-box span {
+    font-size: 14px;
+  }
+
+.xc-paging-box .xc-paging {
+    display: inline-block;
+  }
+
+.xc-paging-box .xc-paging .page {
+      margin-right: 5px;
+      display: inline-block;
+      line-height: 28px;
+      height: 28px;
+      padding: 0 5px;
+      min-width: 28px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border-radius: 4px;
+      border: 1px solid rgba(235, 235, 235, 1);
+      background-color: rgba(255, 255, 255, 1)
+    }
+
+.xc-paging-box .xc-paging .page.active {
+  color: #0085e6;
+  border-color: #0085e6;
+}
+
+.xc-paging-box .xc-paging .page img {
+        width: 6px;
+        vertical-align: top;
+        margin-top: 8px;
+}
+
+.xc-paging-box .pages,
+  .xc-paging-box .pages-num,
+  .xc-paging-box .pages-go,
+  .xc-paging-box .page-btn {
+    font-size: 14px;
+    display: inline-block;
+  }
+
+.xc-paging-box .pages-num {
+    margin: 0 10px;
+  }
+
+.xc-paging-box .pages-num span {
+      margin: 0 6px;
+    }
+
+.xc-paging-box .pages-go {
+    margin: 0 10px;
+  }
+
+.xc-paging-box .pages-go input {
+      line-height: 24px;
+      border-radius: 4px;
+      border: 1px solid rgba(235, 235, 235, 1);
+      width: 28px;
+      text-align: center;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      margin: 0 6px;
+    }
+
+.xc-paging-box .page-btn {
+    padding: 0 5px;
+    line-height: 28px;
+    border-radius: 4px;
+    border: 1px solid rgba(235, 235, 235, 1);
+  }
+
+.xc-body {
+  color: #999;
+  font-size: 16px;
+}
+
+.xc-body .xc-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+.xc-body .test-main {
+    background-color: rgba(251, 251, 251, 1);
+  }
+
+.xc-body .test-main .test-nav {
+      font-size: 18px;
+      background-color: #fff;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+.xc-body .test-main .test-nav ul {
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-left: 33px;
+        position: relative;
+      }
+
+.xc-body .test-main .test-nav ul li {
+          width: 79px;
+          line-height: 25px;
+          padding: 27px 0;
+          text-align: center;
+          margin-right: 46px;
+          cursor: pointer
+        }
+
+.xc-body .test-main .test-nav ul li.active {
+  color: #0085e6;
+}
+
+.xc-body .test-main .test-nav ul .line {
+          display: inline-block;
+          width: 79px;
+          height: 3px;
+          background-color: #0085e6;
+          border-radius: 3px;
+          position: absolute;
+          -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+          left: 33px;
+          bottom: 0;
+        }
+
+.xc-body .test-main .test-item {
+      display: none
+    }
+
+.xc-body .test-main .test-item.active {
+  display: block;
 }
