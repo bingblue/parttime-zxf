@@ -23,8 +23,8 @@
   border-spacing: 0;
   border-radius: 8px 8px 8px 8px;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 7px 1px rgb(235, 235, 235);
-          box-shadow: 0 0 7px 1px rgb(235, 235, 235);
+  -webkit-box-shadow: 0 3px 7px 1px rgb(235, 235, 235);
+          box-shadow: 0 3px 7px 1px rgb(235, 235, 235);
 }
 
 .xc-table thead {
@@ -48,6 +48,14 @@
       height: 48px;
     }
 
+.xc-table tbody td {
+      border-right: 1px solid rgba(235, 235, 235, 1)
+    }
+
+.xc-table tbody td.red {
+  color: #ff4548;
+}
+
 .xc-table tbody td .table-btn {
         display: inline-block;
         padding: 5px 15px;
@@ -55,11 +63,38 @@
         background-color: #0085e6;
         border-radius: 15px;
         color: #fff;
-      }
+        cursor: pointer;
+}
+
+.xc-table tbody td .table-btn.mini {
+  font-size: 10px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+.xc-table tbody td .table-btn.red {
+  background-color: rgba(255, 69, 72, 1);
+  color: #fff;
+}
 
 .xc-table tbody tr:nth-child(2n+1) {
       background-color: #fff;
     }
+
+.xc-table.task-table {
+  border-radius: 0 0 8px 8px;
+}
+
+.xc-table.task-table thead {
+      background-color: transparent;
+}
+
+.xc-table.task-table th {
+      color: #666;
+      font-size: 14px;
+      font-weight: 600;
+}
 
 .xc-paging-box {
   margin: 25px auto 45px;
@@ -87,7 +122,8 @@
               box-sizing: border-box;
       border-radius: 4px;
       border: 1px solid rgba(235, 235, 235, 1);
-      background-color: rgba(255, 255, 255, 1)
+      background-color: rgba(255, 255, 255, 1);
+      cursor: pointer
     }
 
 .xc-paging-box .xc-paging .page.active {
@@ -137,6 +173,7 @@
     line-height: 28px;
     border-radius: 4px;
     border: 1px solid rgba(235, 235, 235, 1);
+    cursor: pointer;
   }
 
 .xc-body {
@@ -149,18 +186,18 @@
     margin: 0 auto;
   }
 
-.xc-body .test-main {
+.xc-body .main {
     background-color: rgba(251, 251, 251, 1);
   }
 
-.xc-body .test-main .test-nav {
+.xc-body .main .test-nav {
       font-size: 18px;
       background-color: #fff;
       border-radius: 8px;
       margin-bottom: 16px;
     }
 
-.xc-body .test-main .test-nav ul {
+.xc-body .main .test-nav ul {
         overflow: hidden;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -169,7 +206,7 @@
         position: relative;
       }
 
-.xc-body .test-main .test-nav ul li {
+.xc-body .main .test-nav ul li {
           width: 79px;
           line-height: 25px;
           padding: 27px 0;
@@ -178,11 +215,11 @@
           cursor: pointer
         }
 
-.xc-body .test-main .test-nav ul li.active {
+.xc-body .main .test-nav ul li.active {
   color: #0085e6;
 }
 
-.xc-body .test-main .test-nav ul .line {
+.xc-body .main .test-nav ul .line {
           display: inline-block;
           width: 79px;
           height: 3px;
@@ -195,10 +232,23 @@
           bottom: 0;
         }
 
-.xc-body .test-main .test-item {
+.xc-body .main .test-item {
       display: none
     }
 
-.xc-body .test-main .test-item.active {
+.xc-body .main .test-item.active {
   display: block;
 }
+
+.xc-body .task-main h2 {
+      padding: 0;
+      margin: 0;
+      line-height: 50px;
+      border-radius: 8px 8px 0 0;
+      overflow: hidden;
+      padding-left: 30px;
+      font-size: 20px;
+      color: #fff;
+      background-color: #0085e6;
+      font-weight: 600;
+    }
