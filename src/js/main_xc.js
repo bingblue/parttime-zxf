@@ -11,6 +11,7 @@ $(function () {
   var comment = {
     init: function () {
       this.testNav()
+      this.tableSwitch()
     },
     /**
      * 个人中心测试记录导航切换
@@ -27,6 +28,20 @@ $(function () {
         $li.addClass(activeName).siblings().removeClass(activeName)
         $li.siblings('.line').css('left', $li.position().left)
         $('#test-box .test-item').eq($index).addClass(activeName).siblings().removeClass(activeName)
+      })
+    },
+    /**
+     * 单词表 隐藏全部，显示全部开关
+     * @author xc
+     */
+    tableSwitch: function () {
+      $('.xc-body .table-switch').on('click', function () {
+        var $this = $(this)
+        if ($this.hasClass('active')) {
+          $this.removeClass('active')
+        } else {
+          $this.addClass('active')
+        }
       })
     }
   }
