@@ -128,6 +128,48 @@
   }
 }
 
+.xc-pent {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .pent-head {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 28px;
+    padding: 11px 30px;
+    background-color: #0085e6;
+    overflow: hidden;
+
+    .pent-name {
+      float: left;
+      font-size: 20px;
+      font-weight: 600;
+      padding-right: 30px;
+      border-right: 1px solid rgba(88, 176, 241, 1);
+    }
+
+    .pent-name-small {
+      float: left;
+      padding-left: 30px;
+    }
+
+    .pent-close {
+      width: 28px;
+      float: right;
+      cursor: pointer;
+    }
+  }
+
+  .pent-body {
+    padding: 30px;
+    min-height: 573px;
+    box-sizing: border-box;
+  }
+}
+
 .xc-table-box {
   margin: 15px 0 75px 0;
 }
@@ -641,6 +683,201 @@
       .course-body-right {
         width: 308px;
         float: left;
+      }
+    }
+  }
+
+  .readText-main {
+    .readText-btns {
+      overflow: hidden;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+
+      .readText-loop,
+      .readText-play {
+        .btn-img {
+          width: 50px;
+        }
+
+        width: 56px;
+        float: left;
+        text-align: center;
+        margin-right: 23px;
+        cursor: pointer;
+      }
+    }
+
+    .readText-box {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600;
+
+      .active {
+        color: #0085e6;
+      }
+    }
+  }
+
+  .readText-sentence {
+    font-weight: 200;
+    padding: 170px 0 0 120px;
+
+    .readText-listen {
+      font-size: 14px;
+      font-weight: 400;
+
+      .readText-listen-img {
+        width: 46px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.readText-footer-box {
+  height: 80px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+
+  .readText-footer {
+    padding-left: 40px;
+    position: relative;
+  }
+
+  .readText-footer-img {
+    float: left;
+    width: 86px;
+    padding: 10px 0;
+  }
+
+  .readText-footer-items {
+    float: left;
+    width: 108px;
+    line-height: 20px;
+    padding: 10px 0 10px 20px;
+    font-size: 14px;
+
+    .time {
+      margin-left: 15px;
+      color: #333;
+    }
+  }
+
+  .readText-pro {
+    float: left;
+    padding-top: 10px;
+    margin-left: 45px;
+
+    .readText-pro-name {
+      width: 605px;
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+      line-height: 22px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .readText-pro-item {
+      float: left;
+      font-size: 12px;
+      line-height: 20px;
+      padding: 10px 0;
+      width: 184px;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #ccc;
+        top: 0;
+        left: 20px;
+        z-index: 100;
+      }
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        background-color: #ccc;
+        top: 3px;
+        left: -158px;
+        position: absolute;
+      }
+
+      &:first-child::after {
+        display: none;
+      }
+
+      &.active {
+        color: #0085e6;
+        font-weight: 600;
+      }
+
+      &.active::before {
+        background-color: #0085e6;
+      }
+
+      &.active::after {
+        background-color: #0085e6;
+      }
+    }
+
+    .readText-footer-btns {
+      width: 263px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-align: center;
+      line-height: 30px;
+
+      a {
+        padding: 25px 0;
+        width: 100%;
+        color: #fff;
+        display: block;
+        font-weight: 400;
+        font-size: 20px;
+      }
+
+      .readText-footer-btn.next {
+        background-color: #0085e6;
+      }
+
+      .readText-footer-btnImg {
+        width: 30px;
+        margin-left: 25px;
+        vertical-align: top;
+        cursor: pointer;
+      }
+
+      &.two {
+        .readText-footer-btn {
+          width: 50%;
+          float: left;
+        }
+
+        .readText-footer-btnImg {
+          margin-left: 5px;
+        }
+
+        .readText-footer-btn.prv {
+          a {
+            color: #999;
+          }
+
+          .readText-footer-btnImg {
+            margin-left: 0;
+            margin-right: 5px;
+          }
+        }
       }
     }
   }
