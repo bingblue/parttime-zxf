@@ -30,4 +30,12 @@ $(function () {
     })
   }
   tab($('.course_list_details_list_pointer'), $('.course_list_details_show'), 'active')
+  tab($('.change_course_nav_list'), $('.change_course_details_table'), 'active')
+
+  // close model box
+  var close = $('.close')
+  var model_box = $('.course_center_wrap')
+  close.click(function (e) {
+    model_box.hide()
+  })
 })

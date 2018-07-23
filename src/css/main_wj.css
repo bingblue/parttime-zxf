@@ -66,7 +66,7 @@ button:focus {
   .body-register .register-ct {
     width: 1200px;
     height: 680px;
-    background: url('../../img/login_bg.png') no-repeat;
+    background: url('../img/login_bg.png') no-repeat;
     background-size: cover;
     margin: 0 auto;
     position: relative;
@@ -203,6 +203,10 @@ button:focus {
     text-align: center;
   }
 
+.body-myclass .wrap {
+    background: #fafafb;
+  }
+
 .body-myclass .head-wp {
     width: 1200px;
     height: 98px;
@@ -285,7 +289,11 @@ button:focus {
 
 .body-myclass .class-table-wp {
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 58px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+    border-radius: 10px;
+    overflow: hidden;
   }
 
 .body-myclass .table-hd {
@@ -357,6 +365,7 @@ button:focus {
     font-size: 14px;
     color: #666;
     text-align: center;
+    height: 50px;
   }
 
 .body-myclass .lv {
@@ -378,3 +387,492 @@ button:focus {
 .body-myclass .ranking {
     color: #338bcb;
   }
+
+.body-wordfail .wrap {
+    background: #fafafb;
+  }
+
+.body-wordfail .main {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+.body-wordfail .page-title {
+    text-indent: 30px;
+    height: 54px;
+    line-height: 54px;
+  }
+
+.body-wordfail .grey-link {
+    color: #999;
+  }
+
+.body-wordfail .normal-link {
+    color: #333;
+  }
+
+.body-wordfail .result-wp {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+    padding-top: 56px;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 1);
+  }
+
+.body-wordfail .result-wp {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+  }
+
+.body-wordfail .failcry {
+    width: 258px;
+    margin-left: 400px;
+    margin-right: 10px;
+    float: left;
+  }
+
+.body-wordfail .failright-wp {
+    float: left;
+    margin-bottom: 40px;
+  }
+
+.body-wordfail .fail-title {
+    font-size: 20px;
+    color: #333;
+  }
+
+.body-wordfail .fail-txt {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+  }
+
+.body-wordfail .getscore {
+    font-size: 14px;
+    color: #333;
+  }
+
+.body-wordfail .getscore .score {
+      font-size: 30px;
+      color: #ff4548;
+      margin-left: 6px;
+      margin-bottom: 10px;
+    }
+
+.body-wordfail .fail-txt2 {
+    color: #999;
+    font-size: 14px;
+  }
+
+.body-wordfail .txt1 {
+    margin-right: 5px;
+  }
+
+.body-wordfail .fail-cue {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+.body-wordfail .gotostudy {
+    display: block;
+    width: 188px;
+    height: 36px;
+    background: #0085e6;
+    border-radius: 23px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 auto;
+  }
+
+.body-wordfail .part-title {
+    height: 50px;
+    line-height: 50px;
+    background: #0085e6;
+    color: #fff;
+    text-indent: 30px;
+  }
+
+.body-wordfail .part-title .titl1 {
+      margin-right: 27px;
+    }
+
+.body-wordfail .part-title .title2 {
+      height: 30px;
+      line-height: 30px;
+      border-left: 1px solid #fff;
+      padding-left: 30px;
+    }
+
+.body-wordfail .part1-wp {
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+  }
+
+.body-wordfail .part2-wp {
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+    padding-bottom: 30px;
+  }
+
+.body-wordfail .success-result {
+    color: #33cbb4;
+    font-size: 16px;
+    text-indent: 30px;
+    padding: 18px 0 20px;
+  }
+
+.body-wordfail .fail-result {
+    font-size: 16px;
+    text-indent: 30px;
+    padding: 18px 0 20px;
+    color: #ff4548;
+  }
+
+.body-wordfail .part-ul {
+    margin-left: 30px;
+  }
+
+.body-wordfail .part-ul li {
+      float: left;
+      width: 370px;
+      height: 140px;
+      border-radius: 4px;
+      border: 1px solid #ebebeb;
+      margin-right: 15px
+    }
+
+.body-wordfail .part-ul li:last-of-type {
+  margin-right: 0;
+}
+
+.body-wordfail .part-ul .horn {
+      margin: 0 5px 0 10px;
+    }
+
+.body-wordfail .part-ul .horn img {
+        width: 28px;
+      }
+
+.body-wordfail .part-ul .txt {
+      margin-left: 10px;
+    }
+
+.body-wordfail .part-ul .title {
+      font-size: 14px;
+      color: #999;
+      padding-left: 30px;
+      float: left;
+    }
+
+.body-wordfail .part-ul .right-img {
+      float: right;
+      margin-right: 30px;
+      width: 25px;
+      position: relative;
+      top: 6px;
+    }
+
+.body-wordfail .part-ul .title-wp {
+      height: 40px;
+      line-height: 40px;
+      margin-bottom: 28px;
+    }
+
+.body-wordfail .part-ul .part-ipt {
+      width: 260px;
+      height: 36px;
+      border-radius: 18px;
+      border: 1px solid #d7d7d7;
+      margin-left: 30px;
+      text-indent: 15px;
+      font-size: 14px;
+      color: #333
+    }
+
+.body-wordfail .part-ul .part-ipt:focus {
+  outline: none;
+}
+
+.body-wordfail .suceessbtm-wp {
+    width: 1138px;
+    margin: 30px auto 0;
+    border-top: 1px solid #ebebeb;
+    padding-top: 28px;
+  }
+
+.body-wordfail .learnmoney-img {
+    width: 103px;
+    margin-bottom: 4px;
+  }
+
+.body-wordfail .learnmoney-txt {
+    color: #eeb843;
+    font-size: 14px;
+    text-align: center;
+  }
+
+.body-wordfail .success-left {
+    width: 103px;
+    float: left;
+    margin-left: 370px;
+    margin-right: 26px;
+  }
+
+.body-wordfail .success-right {
+    float: left;
+  }
+
+.body-wordfail .success-right .txt1 {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 14px;
+    }
+
+.body-wordfail .success-right .txt2 {
+      font-size: 16px;
+      color: #0085e6;
+      margin-bottom: 8px;
+    }
+
+.body-wordfail .success-right .txt3 {
+      font-size: 14px;
+      color: #666;
+    }
+
+.body-oralpractice .wrap {
+    background: #fafafb;
+  }
+
+.body-oralpractice .main {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+
+.body-oralpractice .page-title {
+    text-indent: 30px;
+    height: 54px;
+    line-height: 54px;
+  }
+
+.body-oralpractice .grey-link {
+    color: #999;
+  }
+
+.body-oralpractice .normal-link {
+    color: #333;
+  }
+
+.body-oralpractice .practice-wp {
+    width: 1200px;
+    background: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+    border-radius: 8px;
+    padding-top: 42px;
+  }
+
+.body-oralpractice .summary-wp {
+    width: 327px;
+    height: 80px;
+    padding-top: 12px;
+    background: rgba(253, 253, 253, 1);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+    border-radius: 46px;
+    margin: 0 auto 30px;
+  }
+
+.body-oralpractice .clock-img {
+    float: left;
+    width: 110px;
+    margin: 0 22px 0 50px;
+  }
+
+.body-oralpractice .time-wp {
+    float: left;
+  }
+
+.body-oralpractice .time-wp .time-txt {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 6px;
+    }
+
+.body-oralpractice .time-wp .txt {
+      color: #333;
+      margin-left: 10px;
+    }
+
+.body-oralpractice .practice-main {
+    width: 900px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+.body-oralpractice .practice-title {
+    height: 50px;
+    line-height: 50px;
+    background: #0085e6;
+    margin-bottom: 40px;
+  }
+
+.body-oralpractice .practice-title .title {
+      font-size: 20px;
+      color: #fff;
+      height: 30px;
+      line-height: 30px;
+      padding-right: 30px;
+      border-right: 1px solid #58b0f1;
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+
+.body-oralpractice .practice-title .unit {
+      font-size: 14px;
+      color: #fff;
+    }
+
+.body-oralpractice .practice-title a {
+      float: right;
+      width: 35px;
+      height: 35px;
+      position: relative;
+      top: 7px;
+    }
+
+.body-oralpractice .practice-title .close-icon {
+      background: url('../img/close_icon.png') no-repeat;
+      background-size: cover;
+      margin: 0 30px 0 0;
+    }
+
+.body-oralpractice .practice-title .question-icon {
+      background: url('../img/question_icon.png') no-repeat;
+      background-size: cover;
+    }
+
+.body-oralpractice .practice-ct {
+    width: 720px;
+    margin: 0 auto;
+  }
+
+.body-oralpractice .word-left {
+    float: left;
+    width: 434px;
+  }
+
+.body-oralpractice .word-left .word {
+      font-size: 62px;
+      color: #333;
+    }
+
+.body-oralpractice .word-left .word-cue {
+      font-size: 30px;
+      color: #666;
+      margin-bottom: 26px;
+    }
+
+.body-oralpractice .word-left .word-txt {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px
+    }
+
+.body-oralpractice .word-left .word-txt:last-of-type {
+  margin-bottom: 0;
+}
+
+.body-oralpractice .word-left .word-list {
+      color: #0085e6;
+      margin-right: 17px;
+    }
+
+.body-oralpractice .opearte-right {
+    float: left;
+  }
+
+.body-oralpractice .opearte-right .img-wp {
+      height: 120px;
+    }
+
+.body-oralpractice .opearte-right .soundrecord-img {
+      width: 286px;
+    }
+
+.body-oralpractice .opearte-right .soundrecord-txt {
+      font-size: 14px;
+      color: #0085e6;
+      text-align: center;
+    }
+
+.body-oralpractice .btn-ul {
+    margin-left: 16px;
+  }
+
+.body-oralpractice .btn-ul li {
+      float: left;
+      width: 80px;
+      text-align: center;
+    }
+
+.body-oralpractice .btn-ul li .btn-txt {
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+      }
+
+.body-oralpractice .btn-ul li a {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+      }
+
+.body-oralpractice .btn-ul li:nth-of-type(1) a {
+          background: url('../img/playsound.png') no-repeat;
+          background-size: cover;
+}
+
+.body-oralpractice .btn-ul li:nth-of-type(2) a {
+          background: url('../img/speak.png') no-repeat;
+          background-size: cover;
+}
+
+.body-oralpractice .btn-ul li:nth-of-type(3) a {
+          background: url('../img/play.png') no-repeat;
+          background-size: cover;
+}
+
+.body-oralpractice .btn-ul li.active .btn-txt {
+          color: #0085e6;
+}
+
+.body-oralpractice .btn-ul li.active:nth-of-type(1) a {
+            background: url('../img/playsound_active.png') no-repeat;
+            background-size: cover;
+}
+
+.body-oralpractice .btn-ul li.active:nth-of-type(2) a {
+            background: url('../img/speak_active.png') no-repeat;
+            background-size: cover;
+}
+
+.body-oralpractice .btn-ul li.active:nth-of-type(3) a {
+            background: url('../img/play_active.png') no-repeat;
+            background-size: cover;
+}
