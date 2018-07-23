@@ -10,6 +10,10 @@
   clear: both;
 }
 
+.none {
+  display: none;
+}
+
 button {
   border: none
 }
@@ -650,130 +654,10 @@ button:focus {
       color: #666;
     }
 
-.body-oralpractice .wrap {
-    background: #fafafb;
-  }
-
-.body-oralpractice .main {
-    width: 1200px;
-    margin: 0 auto;
-    border: 1px solid red;
-  }
-
-.body-oralpractice .page-title {
-    text-indent: 30px;
-    height: 54px;
-    line-height: 54px;
-  }
-
-.body-oralpractice .grey-link {
-    color: #999;
-  }
-
-.body-oralpractice .normal-link {
-    color: #333;
-  }
-
-.body-oralpractice .practice-wp {
-    width: 1200px;
-    background: rgba(255, 255, 255, 1);
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
-    border-radius: 8px;
-    padding-top: 42px;
-  }
-
-.body-oralpractice .summary-wp {
-    width: 327px;
-    height: 80px;
-    padding-top: 12px;
-    background: rgba(253, 253, 253, 1);
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
-    border-radius: 46px;
-    margin: 0 auto 30px;
-  }
-
-.body-oralpractice .clock-img {
-    float: left;
-    width: 110px;
-    margin: 0 22px 0 50px;
-  }
-
-.body-oralpractice .time-wp {
-    float: left;
-  }
-
-.body-oralpractice .time-wp .time-txt {
-      font-size: 14px;
-      color: #999;
-      margin-bottom: 6px;
-    }
-
-.body-oralpractice .time-wp .txt {
-      color: #333;
-      margin-left: 10px;
-    }
-
-.body-oralpractice .practice-main {
-    width: 900px;
-    background: #fff;
-    border-radius: 8px;
-    border: 1px solid #ebebeb;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-.body-oralpractice .practice-title {
-    height: 50px;
-    line-height: 50px;
-    background: #0085e6;
-    margin-bottom: 40px;
-  }
-
-.body-oralpractice .practice-title .title {
-      font-size: 20px;
-      color: #fff;
-      height: 30px;
-      line-height: 30px;
-      padding-right: 30px;
-      border-right: 1px solid #58b0f1;
-      margin-right: 30px;
-      margin-left: 30px;
-    }
-
-.body-oralpractice .practice-title .unit {
-      font-size: 14px;
-      color: #fff;
-    }
-
-.body-oralpractice .practice-title a {
-      float: right;
-      width: 35px;
-      height: 35px;
-      position: relative;
-      top: 7px;
-    }
-
-.body-oralpractice .practice-title .close-icon {
-      background: url('../img/close_icon.png') no-repeat;
-      background-size: cover;
-      margin: 0 30px 0 0;
-    }
-
-.body-oralpractice .practice-title .question-icon {
-      background: url('../img/question_icon.png') no-repeat;
-      background-size: cover;
-    }
-
-.body-oralpractice .practice-ct {
-    width: 720px;
-    margin: 0 auto;
-  }
-
 .body-oralpractice .word-left {
     float: left;
     width: 434px;
+    padding-bottom: 40px;
   }
 
 .body-oralpractice .word-left .word {
@@ -820,6 +704,47 @@ button:focus {
       text-align: center;
     }
 
+.body-oralpractice .opearte-right .soundanalyse-img {
+      float: left;
+      width: 52px;
+      height: 63px;
+      border: 1px solid red;
+      margin-right: 5px;
+    }
+
+.body-oralpractice .opearte-right .soundanalyse-txt {
+      font-size: 14px;
+      color: #0085e6;
+      height: 63px;
+      line-height: 63px;
+    }
+
+.body-oralpractice .opearte-right .soundresult-img {
+      width: 56px;
+      margin-right: 24px;
+      float: left;
+    }
+
+.body-oralpractice .opearte-right .spundresult-txtwp {
+      float: left;
+      color: #ff4548;
+      font-size: 16px;
+    }
+
+.body-oralpractice .opearte-right .spundresult-txtwp .score {
+        font-size: 30px;
+      }
+
+.body-oralpractice .opearte-right .spundresult-txtwp .soundresult-txt {
+        font-size: 14px;
+        color: #666;
+      }
+
+.body-oralpractice .opearte-right .sound-result,
+    .body-oralpractice .opearte-right .sound-analyse {
+      margin-left: 30px;
+    }
+
 .body-oralpractice .btn-ul {
     margin-left: 16px;
   }
@@ -827,21 +752,8 @@ button:focus {
 .body-oralpractice .btn-ul li {
       float: left;
       width: 80px;
-      text-align: center;
+      text-align: center
     }
-
-.body-oralpractice .btn-ul li .btn-txt {
-        font-size: 14px;
-        color: #666;
-        text-align: center;
-      }
-
-.body-oralpractice .btn-ul li a {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        margin-bottom: 8px;
-      }
 
 .body-oralpractice .btn-ul li:nth-of-type(1) a {
           background: url('../img/playsound.png') no-repeat;
@@ -876,3 +788,254 @@ button:focus {
             background: url('../img/play_active.png') no-repeat;
             background-size: cover;
 }
+
+.body-oralpractice .btn-ul li .btn-txt {
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+}
+
+.body-oralpractice .btn-ul li a {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+}
+
+.body-oralpractice .wrap, .body-preview .wrap {
+    background: #fafafb;
+  }
+
+.body-oralpractice .main, .body-preview .main {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+.body-oralpractice .page-title, .body-preview .page-title {
+    text-indent: 30px;
+    height: 54px;
+    line-height: 54px;
+  }
+
+.body-oralpractice .grey-link, .body-preview .grey-link {
+    color: #999;
+  }
+
+.body-oralpractice .normal-link, .body-preview .normal-link {
+    color: #333;
+  }
+
+.body-oralpractice .practice-wp, .body-preview .practice-wp {
+    width: 1200px;
+    background: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+    border-radius: 8px;
+    padding-top: 42px;
+  }
+
+.body-oralpractice .practice-ct, .body-preview .practice-ct {
+    width: 720px;
+    margin: 0 auto;
+  }
+
+.body-oralpractice .summary-wp, .body-preview .summary-wp {
+    width: 327px;
+    height: 80px;
+    padding-top: 12px;
+    background: rgba(253, 253, 253, 1);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+    border-radius: 46px;
+    margin: 0 auto 30px;
+  }
+
+.body-oralpractice .clock-img, .body-preview .clock-img {
+    float: left;
+    width: 110px;
+    margin: 0 22px 0 50px;
+  }
+
+.body-oralpractice .time-wp, .body-preview .time-wp {
+    float: left;
+  }
+
+.body-oralpractice .time-wp .time-txt, .body-preview .time-wp .time-txt {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 6px;
+    }
+
+.body-oralpractice .time-wp .txt, .body-preview .time-wp .txt {
+      color: #333;
+      margin-left: 10px;
+    }
+
+.body-oralpractice .practice-main, .body-preview .practice-main {
+    width: 900px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+.body-oralpractice .practice-title, .body-preview .practice-title {
+    height: 50px;
+    line-height: 50px;
+    background: #0085e6;
+    margin-bottom: 40px;
+  }
+
+.body-oralpractice .practice-title .title, .body-preview .practice-title .title {
+      font-size: 20px;
+      color: #fff;
+      height: 30px;
+      line-height: 30px;
+      padding-right: 30px;
+      border-right: 1px solid #58b0f1;
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+
+.body-oralpractice .practice-title .unit, .body-preview .practice-title .unit {
+      font-size: 14px;
+      color: #fff;
+    }
+
+.body-oralpractice .practice-title a, .body-preview .practice-title a {
+      float: right;
+      width: 35px;
+      height: 35px;
+      position: relative;
+      top: 7px;
+    }
+
+.body-oralpractice .practice-title .close-icon, .body-preview .practice-title .close-icon {
+      background: url('../img/close_icon.png') no-repeat;
+      background-size: cover;
+      margin: 0 30px 0 0;
+    }
+
+.body-oralpractice .practice-title .question-icon, .body-preview .practice-title .question-icon {
+      background: url('../img/question_icon.png') no-repeat;
+      background-size: cover;
+    }
+
+.body-oralpractice .progress-wp, .body-preview .progress-wp {
+    width: 720px;
+    background: #ebebeb;
+    height: 6px;
+    border-radius: 3px;
+    margin-bottom: 27px;
+  }
+
+.body-oralpractice .progress-wp .progress-ct, .body-preview .progress-wp .progress-ct {
+      position: relative;
+      background: #0085e6;
+      width: 300px;
+      height: 6px;
+      border-radius: 3px;
+    }
+
+.body-oralpractice .progress-wp .percent, .body-preview .progress-wp .percent {
+      font-size: 14px;
+      color: #0085e6;
+      position: absolute;
+      right: -15px;
+      top: -20px;
+    }
+
+.body-oralpractice .summary-ul, .body-preview .summary-ul {
+    padding-bottom: 30px;
+  }
+
+.body-oralpractice .summary-ul li, .body-preview .summary-ul li {
+      float: left;
+      color: #666;
+      font-size: 14px;
+    }
+
+.body-oralpractice .summary-ul li .txt, .body-preview .summary-ul li .txt {
+        color: #333;
+        margin-left: 6px;
+      }
+
+.body-oralpractice .summary-ul li:last-of-type, .body-preview .summary-ul li:last-of-type {
+  float: right;
+}
+
+.body-oralpractice .summary-ul li:nth-of-type(1), .body-preview .summary-ul li:nth-of-type(1) {
+  margin-right: 53px;
+}
+
+.body-oralpractice .summary-ul li:nth-of-type(2), .body-preview .summary-ul li:nth-of-type(2) {
+  margin-right: 80px;
+}
+
+.body-oralpractice .summary-ul .duration-img,
+    .body-oralpractice .summary-ul .newword-img,
+    .body-oralpractice .summary-ul .hourglass-img,
+    .body-preview .summary-ul .duration-img,
+    .body-preview .summary-ul .newword-img,
+    .body-preview .summary-ul .hourglass-img {
+      width: 19px;
+      margin-right: 4px;
+    }
+
+.body-oralpractice .mr-10, .body-preview .mr-10 {
+    margin-right: 10px;
+  }
+
+.body-preview .perview-left {
+    float: left;
+  }
+
+.body-preview .perview-left .horn-wp {
+      height: 36px;
+      line-height: 36px;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 50px;
+    }
+
+.body-preview .perview-left .horn-a {
+      display: inline-block;
+      width: 42px;
+      height: 36px;
+      margin-right: 23px;
+      background: url('../img/horn_gery.png') no-repeat;
+      background-size: cover;
+    }
+
+.body-preview .perview-left .horn-cue {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+.body-preview .perview-left .en-txt {
+      margin-bottom: 14px;
+      font-size: 30px;
+      color: #333;
+    }
+
+.body-preview .perview-left .cn-txt {
+      font-size: 20px;
+      color: #666;
+    }
+
+.body-preview .preview-right {
+    float: right;
+  }
+
+.body-preview .preview-right .next-img {
+      width: 64px;
+      margin-bottom: 6px;
+    }
+
+.body-preview .preview-right .next-txt {
+      color: #0085e6;
+      font-size: 20px;
+      width: 64px;
+      text-align: center;
+    }
