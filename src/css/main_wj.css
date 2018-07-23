@@ -1008,6 +1008,11 @@ button:focus {
       background-size: cover;
     }
 
+.body-preview .perview-left .horn-a-active {
+      background: url('../img/horn_active.png') no-repeat;
+      background-size: cover;
+    }
+
 .body-preview .perview-left .horn-cue {
       display: inline-block;
       vertical-align: top;
@@ -1028,6 +1033,10 @@ button:focus {
     float: right;
   }
 
+.body-preview .preview-right .next-wp {
+      padding-top: 85px;
+    }
+
 .body-preview .preview-right .next-img {
       width: 64px;
       margin-bottom: 6px;
@@ -1039,3 +1048,58 @@ button:focus {
       width: 64px;
       text-align: center;
     }
+
+.body-preview .preview-right .konw-wp {
+      padding-top: 55px;
+    }
+
+.body-preview .preview-right .know-txt {
+      width: 135px;
+      text-align: center;
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 38px;
+    }
+
+.body-preview .preview-right .yes-btn,
+    .body-preview .preview-right .no-btn {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+    }
+
+.body-preview .preview-right .yes-btn {
+      background: url('../img/yes_icon.png') no-repeat;
+      background-size: cover;
+      margin-right: 35px;
+    }
+
+.body-preview .preview-right .no-btn {
+      background: url('../img/no_icon.png') no-repeat;
+      background-size: cover;
+    }
+
+.body-preview .preview-right .correct-wp {
+      padding-top: 55px;
+    }
+
+.body-preview .preview-right .correct-wp .correct-txt {
+        color: #333;
+        font-size: 20px;
+        margin-bottom: 38px;
+      }
+
+.body-preview .preview-right .correct-wp .yes-btn {
+        background: url('../img/correct_icon.png') no-repeat;
+        background-size: cover;
+        margin: 0 35px 0 10px;
+      }
+
+.body-preview .preview-right .correct-wp .no-btn {
+        background: url('../img/fault_icon.png') no-repeat;
+        background-size: cover;
+      }
+
+.content-minheight {
+  min-height: 270px;
+}

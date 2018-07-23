@@ -81,4 +81,15 @@ $(function () {
       errcue('内容不能为空')
     }
   })
+  /**
+   * 点击喇叭 图片高亮
+   */
+  $('.horn-a').click(function () {
+    let boo = $(this).hasClass('horn-a-active')
+    if (boo) {
+      $(this).removeClass('horn-a-active')
+    } else {
+      $(this).addClass('horn-a-active')
+    }
+  })
 })
