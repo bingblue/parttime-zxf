@@ -34,7 +34,7 @@ gulp.task('postcss', () => {
 gulp.task('standard', () => {
   return gulp.src(config.js.src)
     .pipe(standard({
-      fix: true
+      fix: false
     }))
     .pipe(standard.reporter('default', {
       breakOnError: false,
@@ -141,10 +141,12 @@ gulp.task('server', ['dev'], () => {
   })
   gulp.watch(config.css.src, (event)=> {
     console.log('[项目信息] 文件 [' + event.path + '] 有变动,状态为:' + event.type)
+    let t
     sequence(['stylelint'])(() => {
-      setTimeout(function(){
+      clearTimeout(t)
+      t = setTimeout(function(){
         sequence(['postcss'])()
-      }, 3000)
+      }, 1500)
     })
   })
   gulp.watch(config.js.src, ['standard'])
