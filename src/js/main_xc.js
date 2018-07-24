@@ -12,6 +12,42 @@ $(function () {
     init: function () {
       this.testNav()
       this.tableSwitch()
+      this.toSentence()
+      this.fullBlank()
+    },
+    /**
+     * 默写填空相关事件
+     */
+    fullBlank: function () {
+      var $input = $('#readText-blank input')
+      $input.on('focus', function () {
+        var $this = $(this)
+        $this.addClass('active').parent('.readText-blank-item').siblings().find('input').removeClass('active')
+      })
+      $input.on('blur', function () {
+        $(this).removeClass('active')
+      })
+      $input.eq(0).focus()
+    },
+    /**
+     * 看字组句页面事件
+     */
+    toSentence: function () {
+      // input框背景切换
+      var $input = $('#readText-write input')
+      $input.on('focus', function () {
+        var $this = $(this)
+        $this.addClass('active').parent().siblings().find('input').removeClass('active')
+      })
+      $input.on('blur', function () {
+        var $this = $(this)
+        $this.removeClass('active')
+      })
+      $input.eq(0).focus()
+      var $btn = $('#readText-write .readText-write-btn')
+      $btn.on('click', function () {
+        $input.val('').eq(0).focus()
+      })
     },
     /**
      * 个人中心测试记录导航切换

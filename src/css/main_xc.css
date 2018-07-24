@@ -270,7 +270,6 @@
         padding: 5px 15px;
         border-radius: 15px;
         background-color: #0085e6;
-        border-radius: 15px;
         color: #fff;
         cursor: pointer;
 }
@@ -742,6 +741,125 @@
         margin-right: 20px;
       }
 
+.xc-body .readText-sentence .readText-write {
+      color: #333;
+      font-size: 30px;
+      margin-top: 40px;
+    }
+
+.xc-body .readText-sentence .readText-write .readText-write-item {
+        display: inline-block;
+        margin-right: 10px;
+        padding-bottom: 5px;
+        border-bottom: 3px solid rgba(0, 133, 230, 1);
+      }
+
+.xc-body .readText-sentence .readText-write .h1 {
+        font-weight: 600;
+        display: inline-block;
+      }
+
+.xc-body .readText-sentence .readText-write .readText-write-btn {
+        width: 95px;
+        height: 36px;
+        background: #0085e6 url('../img/readText-reset.png') no-repeat 15px center;
+        background-size: 21px 17px;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 18px;
+        display: inline-block;
+        line-height: 36px;
+        text-indent: 46px;
+        margin-left: 15px;
+        cursor: pointer;
+      }
+
+.xc-body .readText-sentence .readText-write input {
+        width: 66px;
+        height: 42px;
+        line-height: 42px;
+        font-size: 30px;
+        border: none;
+        background: none;
+        outline: none;
+        text-align: center;
+        margin: 0;
+        padding: 0
+      }
+
+.xc-body .readText-sentence .readText-write input.active {
+  background-color: #d9efff;
+}
+
+.xc-body .readText-sentence .readText-example {
+      font-size: 0;
+      margin-top: 25px;
+    }
+
+.xc-body .readText-sentence .readText-example .readText-example-item {
+        font-size: 16px;
+        line-height: 22px;
+        color: #666;
+        width: 66px;
+        text-align: center;
+        background-color: rgba(250, 250, 251, 1);
+        border-radius: 13px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+.xc-body .readText-blank {
+    font-weight: 200;
+  }
+
+.xc-body .readText-blank .readText-blank-item {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: rgba(102, 102, 102, 1);
+      vertical-align: top;
+    }
+
+.xc-body .readText-blank .readText-blank-item .sure {
+        color: #33cbb4;
+      }
+
+.xc-body .readText-blank .readText-blank-item .readText-blank-div {
+        display: inline-block;
+        padding-bottom: 2px;
+        border-bottom: 2px solid rgba(0, 133, 230, 1);
+        height: 26px;
+        position: relative;
+        width: 60px;
+        vertical-align: top;
+        color: #33cbb4;
+        text-align: center
+      }
+
+.xc-body .readText-blank .readText-blank-item .readText-blank-div.error {
+  color: #ff4548;
+}
+
+.xc-body .readText-blank .readText-blank-item .readText-blank-div input {
+          width: 60px;
+          height: 20px;
+          line-height: 20px;
+          font-size: 20px;
+          border: none;
+          outline: none;
+          background: none;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          bottom: 2px;
+          left: 0;
+}
+
+.xc-body .readText-blank .readText-blank-item .readText-blank-div input.active {
+  background-color: #d9efff;
+}
+
 .readText-footer-box {
   height: 80px;
   background: rgba(255, 255, 255, 1);
@@ -854,7 +972,7 @@
         width: 100%;
         color: #fff;
         display: block;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 20px;
       }
 
