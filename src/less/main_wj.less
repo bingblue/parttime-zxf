@@ -11,7 +11,7 @@
 }
 
 .none {
-  display: none;
+  display: none !important;
 }
 
 button {
@@ -396,7 +396,8 @@ button {
 }
 
 .body-oralpractice,
-.body-preview {
+.body-preview,
+.body-readsetene {
   .wrap {
     background: #fafafb;
   }
@@ -525,7 +526,7 @@ button {
     .progress-ct {
       position: relative;
       background: #0085e6;
-      width: 300px;
+      width: 360px;
       height: 6px;
       border-radius: 3px;
     }
@@ -631,6 +632,7 @@ button {
     .next-img {
       width: 64px;
       margin-bottom: 6px;
+      cursor: pointer;
     }
 
     .next-txt {
@@ -1115,6 +1117,163 @@ button {
 
 .content-minheight {
   min-height: 270px;
+}
+
+.setencecomb-wp {
+  .ipt {
+    border: none;
+    border-bottom: 3px solid #0085e6;
+    width: 66px;
+    margin-right: 10px;
+    height: 42px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .quertion-txt {
+    font-size: 30px;
+    color: #333;
+    margin-right: 15px;
+    position: relative;
+    top: 5px;
+  }
+
+  .reset-icon {
+    display: inline-block;
+    width: 21px;
+    height: 17px;
+    background: url('../img/combined_icon.png') no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 3px;
+  }
+
+  .reset-btn {
+    display: inline-block;
+    width: 95px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background: #0085e6;
+    border-radius: 15px;
+  }
+
+  .sentence-txt {
+    display: inline-block;
+    width: 66px;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-right: 10px;
+  }
+
+  .setence-wp {
+    padding-top: 22px;
+  }
+}
+
+.body-readsetene {
+  .perview-left {
+    float: left;
+    padding-top: 30px;
+
+    .en-text {
+      font-size: 30px;
+      color: #333;
+      margin-bottom: 26px;
+    }
+
+    .en-ipt {
+      text-indent: 15px;
+      border-radius: 18px;
+      width: 370px;
+      height: 36px;
+      font-size: 14px;
+      color: #999;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .reset-icon {
+      display: inline-block;
+      width: 21px;
+      height: 17px;
+      background: url('../img/combined_icon.png') no-repeat;
+      background-size: cover;
+      vertical-align: middle;
+      margin-right: 3px;
+    }
+  
+    .reset-btn {
+      display: inline-block;
+      width: 95px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      background: #0085e6;
+      border-radius: 15px;
+      margin-left: 32px;
+    }
+  }
+
+  .preview-right {
+    float: right;
+  }
+
+  .next-wp {
+    padding-top: 85px;
+  }
+
+  .next-img {
+    width: 64px;
+    margin-bottom: 6px;
+    cursor: pointer;
+  }
+
+  .next-txt {
+    color: #0085e6;
+    font-size: 20px;
+    width: 64px;
+    text-align: center;
+  }
+
+  .result-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-left: 15px;
+    position: relative;
+    top: 10px;
+  }
+
+  .success {
+    background: url('../img/right_icon.png') no-repeat;
+    background-size: cover;
+  }
+
+  .fail {
+    background: url('../img/fail_icon.png') no-repeat;
+    background-size: cover;
+  }
+
+  .correct-txt {
+    font-size: 14px;
+    color: #333;
+    text-indent: 15px;
+    padding-top: 15px;
+  }
+
+  .success-txt {
+    color: #33cbb4;
+  }
 }
 
 /* stylelint-enable */

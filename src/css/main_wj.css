@@ -11,7 +11,7 @@
 }
 
 .none {
-  display: none;
+  display: none !important;
 }
 
 button {
@@ -392,30 +392,30 @@ button:focus {
     color: #338bcb;
   }
 
-.body-oralpractice .wrap, .body-preview .wrap {
+.body-oralpractice .wrap, .body-preview .wrap, .body-readsetene .wrap {
     background: #fafafb;
   }
 
-.body-oralpractice .main, .body-preview .main {
+.body-oralpractice .main, .body-preview .main, .body-readsetene .main {
     width: 1200px;
     margin: 0 auto;
   }
 
-.body-oralpractice .page-title, .body-preview .page-title {
+.body-oralpractice .page-title, .body-preview .page-title, .body-readsetene .page-title {
     text-indent: 30px;
     height: 54px;
     line-height: 54px;
   }
 
-.body-oralpractice .grey-link, .body-preview .grey-link {
+.body-oralpractice .grey-link, .body-preview .grey-link, .body-readsetene .grey-link {
     color: #999;
   }
 
-.body-oralpractice .normal-link, .body-preview .normal-link {
+.body-oralpractice .normal-link, .body-preview .normal-link, .body-readsetene .normal-link {
     color: #333;
   }
 
-.body-oralpractice .practice-wp, .body-preview .practice-wp {
+.body-oralpractice .practice-wp, .body-preview .practice-wp, .body-readsetene .practice-wp {
     width: 1200px;
     background: rgba(255, 255, 255, 1);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
@@ -424,12 +424,12 @@ button:focus {
     padding-top: 42px;
   }
 
-.body-oralpractice .practice-ct, .body-preview .practice-ct {
+.body-oralpractice .practice-ct, .body-preview .practice-ct, .body-readsetene .practice-ct {
     width: 720px;
     margin: 0 auto;
   }
 
-.body-oralpractice .summary-wp, .body-preview .summary-wp {
+.body-oralpractice .summary-wp, .body-preview .summary-wp, .body-readsetene .summary-wp {
     width: 327px;
     height: 80px;
     padding-top: 12px;
@@ -440,28 +440,28 @@ button:focus {
     margin: 0 auto 30px;
   }
 
-.body-oralpractice .clock-img, .body-preview .clock-img {
+.body-oralpractice .clock-img, .body-preview .clock-img, .body-readsetene .clock-img {
     float: left;
     width: 110px;
     margin: 0 22px 0 50px;
   }
 
-.body-oralpractice .time-wp, .body-preview .time-wp {
+.body-oralpractice .time-wp, .body-preview .time-wp, .body-readsetene .time-wp {
     float: left;
   }
 
-.body-oralpractice .time-wp .time-txt, .body-preview .time-wp .time-txt {
+.body-oralpractice .time-wp .time-txt, .body-preview .time-wp .time-txt, .body-readsetene .time-wp .time-txt {
       font-size: 14px;
       color: #999;
       margin-bottom: 6px;
     }
 
-.body-oralpractice .time-wp .txt, .body-preview .time-wp .txt {
+.body-oralpractice .time-wp .txt, .body-preview .time-wp .txt, .body-readsetene .time-wp .txt {
       color: #333;
       margin-left: 10px;
     }
 
-.body-oralpractice .practice-main, .body-preview .practice-main {
+.body-oralpractice .practice-main, .body-preview .practice-main, .body-readsetene .practice-main {
     width: 900px;
     background: #fff;
     border-radius: 8px;
@@ -470,14 +470,14 @@ button:focus {
     overflow: hidden;
   }
 
-.body-oralpractice .practice-title, .body-preview .practice-title {
+.body-oralpractice .practice-title, .body-preview .practice-title, .body-readsetene .practice-title {
     height: 50px;
     line-height: 50px;
     background: #0085e6;
     margin-bottom: 40px;
   }
 
-.body-oralpractice .practice-title .title, .body-preview .practice-title .title {
+.body-oralpractice .practice-title .title, .body-preview .practice-title .title, .body-readsetene .practice-title .title {
       font-size: 20px;
       color: #fff;
       height: 30px;
@@ -488,12 +488,12 @@ button:focus {
       margin-left: 30px;
     }
 
-.body-oralpractice .practice-title .unit, .body-preview .practice-title .unit {
+.body-oralpractice .practice-title .unit, .body-preview .practice-title .unit, .body-readsetene .practice-title .unit {
       font-size: 14px;
       color: #fff;
     }
 
-.body-oralpractice .practice-title a, .body-preview .practice-title a {
+.body-oralpractice .practice-title a, .body-preview .practice-title a, .body-readsetene .practice-title a {
       float: right;
       width: 35px;
       height: 35px;
@@ -501,18 +501,18 @@ button:focus {
       top: 7px;
     }
 
-.body-oralpractice .practice-title .close-icon, .body-preview .practice-title .close-icon {
+.body-oralpractice .practice-title .close-icon, .body-preview .practice-title .close-icon, .body-readsetene .practice-title .close-icon {
       background: url('../img/close_icon.png') no-repeat;
       background-size: cover;
       margin: 0 30px 0 0;
     }
 
-.body-oralpractice .practice-title .question-icon, .body-preview .practice-title .question-icon {
+.body-oralpractice .practice-title .question-icon, .body-preview .practice-title .question-icon, .body-readsetene .practice-title .question-icon {
       background: url('../img/question_icon.png') no-repeat;
       background-size: cover;
     }
 
-.body-oralpractice .progress-wp, .body-preview .progress-wp {
+.body-oralpractice .progress-wp, .body-preview .progress-wp, .body-readsetene .progress-wp {
     width: 720px;
     background: #ebebeb;
     height: 6px;
@@ -520,15 +520,15 @@ button:focus {
     margin-bottom: 27px;
   }
 
-.body-oralpractice .progress-wp .progress-ct, .body-preview .progress-wp .progress-ct {
+.body-oralpractice .progress-wp .progress-ct, .body-preview .progress-wp .progress-ct, .body-readsetene .progress-wp .progress-ct {
       position: relative;
       background: #0085e6;
-      width: 300px;
+      width: 360px;
       height: 6px;
       border-radius: 3px;
     }
 
-.body-oralpractice .progress-wp .percent, .body-preview .progress-wp .percent {
+.body-oralpractice .progress-wp .percent, .body-preview .progress-wp .percent, .body-readsetene .progress-wp .percent {
       font-size: 14px;
       color: #0085e6;
       position: absolute;
@@ -536,30 +536,30 @@ button:focus {
       top: -20px;
     }
 
-.body-oralpractice .summary-ul, .body-preview .summary-ul {
+.body-oralpractice .summary-ul, .body-preview .summary-ul, .body-readsetene .summary-ul {
     padding-bottom: 30px;
   }
 
-.body-oralpractice .summary-ul li, .body-preview .summary-ul li {
+.body-oralpractice .summary-ul li, .body-preview .summary-ul li, .body-readsetene .summary-ul li {
       float: left;
       color: #666;
       font-size: 14px;
     }
 
-.body-oralpractice .summary-ul li .txt, .body-preview .summary-ul li .txt {
+.body-oralpractice .summary-ul li .txt, .body-preview .summary-ul li .txt, .body-readsetene .summary-ul li .txt {
         color: #333;
         margin-left: 6px;
       }
 
-.body-oralpractice .summary-ul li:last-of-type, .body-preview .summary-ul li:last-of-type {
+.body-oralpractice .summary-ul li:last-of-type, .body-preview .summary-ul li:last-of-type, .body-readsetene .summary-ul li:last-of-type {
   float: right;
 }
 
-.body-oralpractice .summary-ul li:nth-of-type(1), .body-preview .summary-ul li:nth-of-type(1) {
+.body-oralpractice .summary-ul li:nth-of-type(1), .body-preview .summary-ul li:nth-of-type(1), .body-readsetene .summary-ul li:nth-of-type(1) {
   margin-right: 53px;
 }
 
-.body-oralpractice .summary-ul li:nth-of-type(2), .body-preview .summary-ul li:nth-of-type(2) {
+.body-oralpractice .summary-ul li:nth-of-type(2), .body-preview .summary-ul li:nth-of-type(2), .body-readsetene .summary-ul li:nth-of-type(2) {
   margin-right: 80px;
 }
 
@@ -568,12 +568,15 @@ button:focus {
     .body-oralpractice .summary-ul .hourglass-img,
     .body-preview .summary-ul .duration-img,
     .body-preview .summary-ul .newword-img,
-    .body-preview .summary-ul .hourglass-img {
+    .body-preview .summary-ul .hourglass-img,
+    .body-readsetene .summary-ul .duration-img,
+    .body-readsetene .summary-ul .newword-img,
+    .body-readsetene .summary-ul .hourglass-img {
       width: 19px;
       margin-right: 4px;
     }
 
-.body-oralpractice .mr-10, .body-preview .mr-10 {
+.body-oralpractice .mr-10, .body-preview .mr-10, .body-readsetene .mr-10 {
     margin-right: 10px;
   }
 
@@ -630,6 +633,7 @@ button:focus {
 .body-preview .preview-right .next-img {
       width: 64px;
       margin-bottom: 6px;
+      cursor: pointer;
     }
 
 .body-preview .preview-right .next-txt {
@@ -1098,5 +1102,158 @@ button:focus {
 .content-minheight {
   min-height: 270px;
 }
+
+.setencecomb-wp .ipt {
+    border: none;
+    border-bottom: 3px solid #0085e6;
+    width: 66px;
+    margin-right: 10px;
+    height: 42px
+  }
+
+.setencecomb-wp .ipt:focus {
+  outline: none;
+}
+
+.setencecomb-wp .quertion-txt {
+    font-size: 30px;
+    color: #333;
+    margin-right: 15px;
+    position: relative;
+    top: 5px;
+  }
+
+.setencecomb-wp .reset-icon {
+    display: inline-block;
+    width: 21px;
+    height: 17px;
+    background: url('../img/combined_icon.png') no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 3px;
+  }
+
+.setencecomb-wp .reset-btn {
+    display: inline-block;
+    width: 95px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background: #0085e6;
+    border-radius: 15px;
+  }
+
+.setencecomb-wp .sentence-txt {
+    display: inline-block;
+    width: 66px;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-right: 10px;
+  }
+
+.setencecomb-wp .setence-wp {
+    padding-top: 22px;
+  }
+
+.body-readsetene .perview-left {
+    float: left;
+    padding-top: 30px;
+  }
+
+.body-readsetene .perview-left .en-text {
+      font-size: 30px;
+      color: #333;
+      margin-bottom: 26px;
+    }
+
+.body-readsetene .perview-left .en-ipt {
+      text-indent: 15px;
+      border-radius: 18px;
+      width: 370px;
+      height: 36px;
+      font-size: 14px;
+      color: #999
+    }
+
+.body-readsetene .perview-left .en-ipt:focus {
+  outline: none;
+}
+
+.body-readsetene .perview-left .reset-icon {
+      display: inline-block;
+      width: 21px;
+      height: 17px;
+      background: url('../img/combined_icon.png') no-repeat;
+      background-size: cover;
+      vertical-align: middle;
+      margin-right: 3px;
+    }
+
+.body-readsetene .perview-left .reset-btn {
+      display: inline-block;
+      width: 95px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      background: #0085e6;
+      border-radius: 15px;
+      margin-left: 32px;
+    }
+
+.body-readsetene .preview-right {
+    float: right;
+  }
+
+.body-readsetene .next-wp {
+    padding-top: 85px;
+  }
+
+.body-readsetene .next-img {
+    width: 64px;
+    margin-bottom: 6px;
+    cursor: pointer;
+  }
+
+.body-readsetene .next-txt {
+    color: #0085e6;
+    font-size: 20px;
+    width: 64px;
+    text-align: center;
+  }
+
+.body-readsetene .result-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-left: 15px;
+    position: relative;
+    top: 10px;
+  }
+
+.body-readsetene .success {
+    background: url('../img/right_icon.png') no-repeat;
+    background-size: cover;
+  }
+
+.body-readsetene .fail {
+    background: url('../img/fail_icon.png') no-repeat;
+    background-size: cover;
+  }
+
+.body-readsetene .correct-txt {
+    font-size: 14px;
+    color: #333;
+    text-indent: 15px;
+    padding-top: 15px;
+  }
+
+.body-readsetene .success-txt {
+    color: #33cbb4;
+  }
 
 /* stylelint-enable */
