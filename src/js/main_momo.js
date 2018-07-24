@@ -34,8 +34,8 @@ $(function () {
 
   // close model box
   var close = $('.close')
-  var model_box = $('.course_center_wrap')
+  var modelBox = $('.course_center_wrap')
   close.click(function (e) {
-    model_box.hide()
+    modelBox.hide()
   })
 })

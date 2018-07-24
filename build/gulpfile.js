@@ -144,7 +144,7 @@ gulp.task('server', ['dev'], () => {
     sequence(['stylelint'])(() => {
       setTimeout(function(){
         sequence(['postcss'])()
-      }, 500)
+      }, 3000)
     })
   })
   gulp.watch(config.js.src, ['standard'])
