@@ -727,63 +727,63 @@ button:focus {
     }
 
 .body-oralpractice .opearte-right {
-    float: left;
+    float: right;
   }
 
 .body-oralpractice .opearte-right .img-wp {
       height: 120px;
     }
 
-.body-oralpractice .opearte-right .soundrecord-img {
-      width: 286px;
+.body-oralpractice .soundrecord-img {
+    width: 286px;
+  }
+
+.body-oralpractice .soundrecord-txt {
+    font-size: 14px;
+    color: #0085e6;
+    text-align: center;
+  }
+
+.body-oralpractice .soundanalyse-img {
+    float: left;
+    width: 52px;
+    height: 63px;
+    border: 1px solid red;
+    margin-right: 5px;
+  }
+
+.body-oralpractice .soundanalyse-txt {
+    font-size: 14px;
+    color: #0085e6;
+    height: 63px;
+    line-height: 63px;
+  }
+
+.body-oralpractice .soundresult-img {
+    width: 56px;
+    margin-right: 24px;
+    float: left;
+  }
+
+.body-oralpractice .spundresult-txtwp {
+    float: left;
+    color: #ff4548;
+    font-size: 16px;
+  }
+
+.body-oralpractice .spundresult-txtwp .score {
+      font-size: 30px;
     }
 
-.body-oralpractice .opearte-right .soundrecord-txt {
+.body-oralpractice .spundresult-txtwp .soundresult-txt {
       font-size: 14px;
-      color: #0085e6;
-      text-align: center;
+      color: #666;
     }
 
-.body-oralpractice .opearte-right .soundanalyse-img {
-      float: left;
-      width: 52px;
-      height: 63px;
-      border: 1px solid red;
-      margin-right: 5px;
-    }
-
-.body-oralpractice .opearte-right .soundanalyse-txt {
-      font-size: 14px;
-      color: #0085e6;
-      height: 63px;
-      line-height: 63px;
-    }
-
-.body-oralpractice .opearte-right .soundresult-img {
-      width: 56px;
-      margin-right: 24px;
-      float: left;
-    }
-
-.body-oralpractice .opearte-right .spundresult-txtwp {
-      float: left;
-      color: #ff4548;
-      font-size: 16px;
-    }
-
-.body-oralpractice .opearte-right .spundresult-txtwp .score {
-        font-size: 30px;
-      }
-
-.body-oralpractice .opearte-right .spundresult-txtwp .soundresult-txt {
-        font-size: 14px;
-        color: #666;
-      }
-
-.body-oralpractice .opearte-right .sound-result,
-    .body-oralpractice .opearte-right .sound-analyse {
-      margin-left: 30px;
-    }
+.body-oralpractice .sound-result,
+  .body-oralpractice .sound-analyse {
+    margin-left: 30px;
+  }
 
 .body-oralpractice .btn-ul {
     margin-left: 16px;
@@ -1254,6 +1254,41 @@ button:focus {
 
 .body-readsetene .success-txt {
     color: #33cbb4;
+  }
+
+.oraltraining-ct {
+  min-height: 267px;
+}
+
+.oraltraining-ct .oraltraining-left {
+    float: left;
+  }
+
+.oraltraining-ct .oraltraining-left .oral-txt-en {
+      font-size: 30px;
+      color: #333;
+      margin-bottom: 14px;
+      padding-top: 18px;
+    }
+
+.oraltraining-ct .oraltraining-left .oral-txt-cn {
+      font-size: 20px;
+      color: #666;
+      margin-bottom: 24px;
+    }
+
+.oraltraining-ct .soundrecord-txt {
+    font-size: 14px;
+    color: #0085e6;
+    margin-left: 37px;
+  }
+
+.oraltraining-ct .sound-analyse {
+    margin-left: 0;
+  }
+
+.oraltraining-ct .soundanalyse-txt {
+    float: left;
   }
 
 /* stylelint-enable */
