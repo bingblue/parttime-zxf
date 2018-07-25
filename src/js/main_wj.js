@@ -92,4 +92,10 @@ $(function () {
       $(this).addClass('horn-a-active')
     }
   })
+  /**
+   * 弹框消失
+   */
+  $('.delete-icon').click(function () {
+    $('.bomb-wp').hide()
+  })
 })

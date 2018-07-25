@@ -1464,4 +1464,211 @@ button {
   margin-bottom: 30px;
 }
 
+.body-synchrotest {
+  .main {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-title {
+    text-indent: 30px;
+    height: 54px;
+    line-height: 54px;
+  }
+
+  .grey-link {
+    color: #999;
+  }
+
+  .normal-link {
+    color: #333;
+  }
+
+  .synchrotest-box {
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin: 0 auto 15px;
+
+    .unit {
+      float: left;
+      font-size: 20px;
+      color: #0085E6;
+      margin-right: 16px;
+      margin-left: 30px;
+      height: 60px;
+      line-height: 60px;
+    }
+
+    .changecourse {
+      float: left;
+      height: 60px;
+      line-height: 60px;
+      color: #6DBBF4;
+      font-size: 14px;
+    }
+
+    .change-icon {
+      display: inline-block;
+      width: 19px;
+      height: 15px;
+      background: url('../img/course-reset.png') no-repeat;
+      background-size: cover;
+      margin-right: 5px;
+      position: relative;
+      top: 3px;
+    }
+
+    .return-coursecenter {
+      float: right;
+      margin-right: 30px;
+      font-size: 14px;
+      color: #0085E6;
+    }
+  }
+
+  .synchrotest-wp {
+    border-radius: 8px;
+    overflow: hidden;
+    width: 1200px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+
+    .title {
+      height: 50px;
+      line-height: 50px;
+      color: #fff;
+      font-size: 20px;
+      text-indent: 30px;
+      background: #0085E6;
+    }
+
+    .unit-txt {
+      font-size: 14px;
+      color: #666;
+      display: inline-block;
+      width: 300px;
+      text-align: center;
+    }
+
+    .history-fa {
+      display: inline-block;
+      width: 300px;
+      text-align: center;
+    }
+
+    .history {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .answer-fa {
+      display: inline-block;
+      width: 290px;
+      text-align: center;
+    }
+
+    .pass {
+      display: inline-block;
+      width: 300px;
+      text-align: center;
+      font-size: 14px;
+      color: #33CBB4;
+    }
+
+    .notpass {
+      display: inline-block;
+      width: 300px;
+      text-align: center;
+      font-size: 14px;
+      color: #FF4548;
+    }
+
+    .answer-again {
+      display: inline-block;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      width: 80px;
+      height: 26px;
+      line-height: 26px;
+      background: #0085E6;
+      border-radius: 13px;
+    }
+
+    li {
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+
+  .synchrotest-ul {
+    li {
+      &:nth-of-type(odd) {
+        background: #FAFAFB;
+      }
+
+      &:nth-of-type(even) {
+        background: #fff;
+      }
+    }
+  }
+}
+
+.bomb-wp {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+
+  .bomb-ct {
+    width: 1000px;
+    height: 289px;
+    background: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    margin-top: -180px;
+  }
+
+  .bomb-title {
+    font-size: 16px;
+    color: #333;
+    text-indent: 58px;
+    padding-top: 19px;
+    margin-bottom: 49px;
+  }
+
+  .delete-icon {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    background: url('../img/delete_icon.png') no-repeat;
+    background-size: cover;
+    top: 19px;
+    right: 30px;
+  }
+
+  .link-wp {
+    a {
+      display: inline-block;
+      width: 294px;
+      height: 169px;
+      margin-right: 17px;
+      border: 1px solid red;
+
+      &:first-of-type {
+        margin-left: 40px;
+      }
+    }
+  }
+}
+
 /* stylelint-enable */

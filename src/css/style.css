@@ -120,3 +120,7 @@ audio {
     transform: rotate(36000deg);
   }
 }
+
+body {
+  background: rgba(250, 250, 251, 1);
+}
