@@ -980,6 +980,7 @@ button {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
     padding-bottom: 30px;
     margin-bottom: 15px;
+    background: #fff;
   }
 
   .part2-wp {
@@ -987,6 +988,7 @@ button {
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
     padding-bottom: 30px;
+    background: #fff;
   }
 
   .success-result {
@@ -1309,6 +1311,157 @@ button {
   .soundanalyse-txt {
     float: left;
   }
+}
+
+.posttest-part {
+  width: 1140px;
+  border-radius: 4px;
+  border: 1px solid #EBEBEB;
+  margin: 0 auto 15px;
+  padding-bottom: 20px;
+
+  .posttest-title {
+    text-indent: 30px;
+    height: 44px;
+    line-height: 44px;
+    background: #fbfbfc;
+    font-size: 14px;
+    color: #666666;
+  }
+
+  .posttest-ul {
+    background: #fff;
+    padding-top: 20px;
+    li {
+      margin-left: 30px;
+      margin-bottom: 10px;
+      height: 20px;
+      font-size: 14px;
+      color: #666;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      input {
+        display: none;
+      }
+    }
+
+    .right-li {
+      color: #33CBB4;
+    }
+
+    input[type="radio"] + label {
+      display: inline-block;
+      position: relative;
+      width: 14px;
+      margin-right: 10px;
+      vertical-align: top;
+      cursor: pointer;
+    }
+
+    input[type="radio"] + label::before {
+      content: "\a0"; /*不换行空格*/
+      display: inline-block;
+      vertical-align: middle;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 1px solid #D7D7D7;
+      line-height: 1;
+    }
+
+    input[type="radio"]:checked + label::before {
+      background-color: #0085E6;
+      background-clip: content-box;
+      border: 1px solid #0085E6;
+    }
+
+    input[type="radio"]:checked + label::after {
+      content: "";
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      position: absolute;
+      top: 7px;
+      left: 6px;
+      background: #fff;
+      z-index: 11;
+    }
+  }
+}
+
+.posttest-part2 {
+  width: 1140px;
+  border-radius: 4px;
+  border: 1px solid #EBEBEB;
+  padding: 30px 0;
+  margin: 0 auto 15px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .completion {
+    width: 1080px;
+    font-size: 14px;
+    color: #666;
+    margin: 0 auto;
+    line-height: 32px;
+  }
+
+  .ipt-completion {
+    width: 140px;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    border-bottom: 2px solid #0085E6;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .right-completion {
+    color: #33CBB4;
+  }
+
+  .fail-completion {
+    color: #FF4548;
+  }
+}
+
+.body-wordfail {
+  .result-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .result-right-icon {
+    background: url('../img/right_icon.png') no-repeat;
+    background-size: cover;
+  }
+
+  .result-fail-icon {
+    background: url('../img/fail_icon.png') no-repeat;
+    background-size: cover;
+  }
+
+  .q-explain {
+    font-size: 14px;
+    color: #999999;
+    text-indent: 30px;
+    padding-top: 20px;
+  }
+}
+
+.mb-30 {
+  margin-bottom: 30px;
 }
 
 /* stylelint-enable */
