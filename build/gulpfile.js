@@ -55,7 +55,7 @@ gulp.task('stylelint', ()=> {
         {formatter: 'string', console: true}
       ]
     }))
-    .pipe(gulp.dest('../src/less'))
+    //.pipe(gulp.dest('../src/less'))
 })
 /*
  * 生成HTML
@@ -141,13 +141,7 @@ gulp.task('server', ['dev'], () => {
   })
   gulp.watch(config.css.src, (event)=> {
     console.log('[项目信息] 文件 [' + event.path + '] 有变动,状态为:' + event.type)
-    let t
-    sequence(['stylelint'])(() => {
-      clearTimeout(t)
-      t = setTimeout(function(){
-        sequence(['postcss'])()
-      }, 1500)
-    })
+    sequence(['stylelint'],['postcss'])()
   })
   gulp.watch(config.js.src, ['standard'])
   gulp.watch(config.html.watch, ['html'])
