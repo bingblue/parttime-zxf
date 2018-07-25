@@ -152,30 +152,6 @@
         }
       };
 
-    // Set initial language
-    setLanguage(opts);
-
-    // Listen for changes
-    $('[data-set-lang]').on('click', function(){
-
-      currLang = $(this).data('setLang');
-
-      if ( currLang ) {
-        
-        opts.language = currLang;
-
-        setLanguage(opts);
-
-        activateDropdown($(this));
-      }
-
-    });
-    
-
-    function setLanguage(options) {
-      $("[data-localize]").localize(packName, options);
-    }
-
     // Set the current clicked text as the active dropdown text
     function activateDropdown(elem) {
       var menu = elem.parents('.dropdown-menu');
