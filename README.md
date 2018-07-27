@@ -10,7 +10,7 @@
   <h1>parttime-zxf</h1>
   <br>
   <p>
-    智厢逢-英语培训系统前端切图
+    智厢逢-英语培训系统教师后台切图
   <p>
   <br>
   <br>
@@ -36,38 +36,18 @@ $ npm start
 // 替换HTML内容
 $ npm run html //如:head.html代码在part文件夹下，运行此命令会替换所有html的头部代码
 
-// 编译less,检查css、js语法
-$ npm run dev
-
-// 编译less,检查css、js语法,替换HTML内容
-$ npm run build
-
 // 删除替换HTML内容,删除生成文件
 $ npm run del
 ```
-
-### 荣誉榜(参与人员)
-昵称  | **QQ号** | 勋章(page) | 备注(页面编号)
----- |--------- |:------------:| ----
-[小牧COOL][20] | 895355044  | **total:** 38 | 小队长
-[小成][21]     | 707996290  | 12            | `10` `11` `12` `13` `14` `27` `28` `777(5)`
-[wj][22]      | 8*******0  | 13           | `01` `02` `04` `20` `21` `22` `23` `24` `25` `26` `31` `32` `34`
-[momo][24]      | 2*******1  | 6            | `03` `15` `16` `17` `18` `19`
-[壮实][23]     | 1271314601 | 7            | `05` `06` `07` `08` `09` `29` `30`
-
-**Tips:** 保护隐私，未经对方同意，不公开他人QQ号，如想公开，自己改下
 
 ## 涉及技术
 
 - [H5][2]     -   HTML5
 - [JQuery][3] -   Javascript类库
 - [gulp][4]   -   自动化构建工具([中文文档][5])
-- [gulp-postcss][6]   -   css预/后 处理器,使用了插件[[cssnano][7] [postcss-cssnext][8] [precss][9]]
 - [gulp-html-replace][10] -   用HTML替换构建块
 - [gulp-sequence][12]   -   按顺序运行一系列的gulp任务
-- [gulp-standard][13]   -   js规范检测,基于`JavaScript Standard Style`代码规范
 - [browser-sync][15]   -   省时的浏览器同步/热加载测试工具([中文文档][19])
-- [stylelint][16]   -   css规范检测,基于[stylelint-config-standard][17],[详细规则][25]
 - [del][18]   -   删除文件/文件夹
 
 ## License
