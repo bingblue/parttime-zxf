@@ -14,6 +14,40 @@ $(function () {
       this.tableSwitch()
       this.toSentence()
       this.fullBlank()
+      this.customRadio()
+    },
+    /**
+     * 闯关答题
+     */
+    /**
+     * 
+     * 
+     */
+    /**
+     * 
+     * 
+     */
+    customRadio: function () {
+      /**
+       * 模拟单选框
+       */
+      $('.coustom-label.can .label').on('click', function () {
+        var $this = $(this)
+        if ($this.hasClass('active')) {
+        } else {
+          $this.addClass('active').parent().siblings().find('.label').removeClass('active')
+          $this.find('input').prop('checked', true)
+        }
+        console.log($this.parent().parent().find('input:checked').val())
+        return false
+      })
+      var $writeInput = $(".coustom-label .write-input")
+      $writeInput.on('focus', function() {
+        $(this).addClass('active')
+      })
+      $writeInput.on('blur', function() {
+        $(this).removeClass('active')
+      })
     },
     /**
      * 默写填空相关事件
