@@ -300,6 +300,11 @@ button {
     overflow: hidden;
   }
 
+  .sort-icon {
+    width: 9px;
+    margin-left: 4px;
+  }
+
   .table-hd {
     font-size: 20px;
     color: #fff;
@@ -427,6 +432,8 @@ button {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
     border-radius: 8px;
     padding-top: 42px;
+    padding-bottom: 115px;
+    margin-bottom: 56px;
   }
 
   .practice-ct {
@@ -750,7 +757,6 @@ button {
     float: left;
     width: 52px;
     height: 63px;
-    border: 1px solid red;
     margin-right: 5px;
   }
 
@@ -989,6 +995,7 @@ button {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
     padding-bottom: 30px;
     background: #fff;
+    margin-bottom: 15px;
   }
 
   .success-result {
@@ -1535,6 +1542,7 @@ button {
     width: 1200px;
     background: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 68px;
 
     .title {
       height: 50px;
@@ -1662,10 +1670,21 @@ button {
       width: 294px;
       height: 169px;
       margin-right: 17px;
-      border: 1px solid red;
 
       &:first-of-type {
         margin-left: 40px;
+        background: url('../img/link3.png') no-repeat;
+        background-size: cover;
+      }
+
+      &:nth-of-type(2) {
+        background: url('../img/link2.png') no-repeat;
+        background-size: cover;
+      }
+
+      &:nth-of-type(3) {
+        background: url('../img/link1.png') no-repeat;
+        background-size: cover;
       }
     }
   }
