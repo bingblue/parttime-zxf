@@ -15,17 +15,23 @@ $(function () {
       this.toSentence()
       this.fullBlank()
       this.customRadio()
+      this.clasProHover()
+    },
+    /**
+     * 课程进度hover 
+     */
+    clasProHover: function(){
+      $('#class-pro').hover(
+        function () {
+          $(this).find('.course-list').show();
+        },
+        function () {
+          $(this).find('.course-list').hide();
+        }
+      )
     },
     /**
      * 闯关答题
-     */
-    /**
-     * 
-     * 
-     */
-    /**
-     * 
-     * 
      */
     customRadio: function () {
       /**
