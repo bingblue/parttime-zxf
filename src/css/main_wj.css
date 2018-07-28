@@ -300,6 +300,11 @@ button:focus {
     overflow: hidden;
   }
 
+.body-myclass .sort-icon {
+    width: 9px;
+    margin-left: 4px;
+  }
+
 .body-myclass .table-hd {
     font-size: 20px;
     color: #fff;
@@ -422,6 +427,8 @@ button:focus {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
     border-radius: 8px;
     padding-top: 42px;
+    padding-bottom: 115px;
+    margin-bottom: 56px;
   }
 
 .body-oralpractice .practice-ct, .body-preview .practice-ct, .body-readsetene .practice-ct {
@@ -748,7 +755,6 @@ button:focus {
     float: left;
     width: 52px;
     height: 63px;
-    border: 1px solid red;
     margin-right: 5px;
   }
 
@@ -974,6 +980,7 @@ button:focus {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
     padding-bottom: 30px;
     background: #fff;
+    margin-bottom: 15px;
   }
 
 .body-wordfail .success-result {
@@ -1515,6 +1522,7 @@ button:focus {
     background: #fff;
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
+    margin-bottom: 68px;
   }
 
 .body-synchrotest .synchrotest-wp .title {
@@ -1637,12 +1645,23 @@ button:focus {
       display: inline-block;
       width: 294px;
       height: 169px;
-      margin-right: 17px;
-      border: 1px solid red
+      margin-right: 17px
     }
 
 .bomb-wp .link-wp a:first-of-type {
   margin-left: 40px;
+  background: url('../img/link3.png') no-repeat;
+  background-size: cover;
+}
+
+.bomb-wp .link-wp a:nth-of-type(2) {
+  background: url('../img/link2.png') no-repeat;
+  background-size: cover;
+}
+
+.bomb-wp .link-wp a:nth-of-type(3) {
+  background: url('../img/link1.png') no-repeat;
+  background-size: cover;
 }
 
 /* stylelint-enable */
