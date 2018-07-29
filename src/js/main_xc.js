@@ -16,11 +16,22 @@ $(function () {
       this.fullBlank()
       this.customRadio()
       this.clasProHover()
+      this.intelTextNav()
+    },
+    intelTextNav: function () {
+      var $navli = $("#intelText-classes .intelText-class")
+      $navli.on('click', function(){
+        var $this = $(this);
+        if (!$this.hasClass('active')) {
+          $this.addClass('active').siblings().removeClass('active')
+          $this.siblings('.intelText-line').css({'left': $this.position().left, 'width': $this.innerWidth()})
+        }
+      })
     },
     /**
      * 课程进度hover 
      */
-    clasProHover: function(){
+    clasProHover: function () {
       $('#class-pro').hover(
         function () {
           $(this).find('.course-list').show();
