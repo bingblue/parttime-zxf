@@ -17,11 +17,30 @@ $(function () {
       this.customRadio()
       this.clasProHover()
       this.intelTextNav()
+      this.writeTextHeight()
+    },
+    /**
+     * 作文高度自适应 和 范文切换
+     */
+    writeTextHeight: function () {
+      $('#xc-writing').on('keyup', function () {
+        this.style.height = 'auto'
+        this.style.height = this.scrollHeight + 'px'
+      })
+      var $li = $('#writing-list .xc-writing-list-item')
+      $li.on('click', function () {
+        var $this = $(this)
+        if (!$this.hasClass('active')) {
+          var index = $this.index()
+          $this.addClass('active').siblings().removeClass('active')
+          $('#writing-list').siblings('.xc-writing-div').find('li').eq(index).addClass('active').siblings().removeClass('active')
+        }
+      })
     },
     intelTextNav: function () {
-      var $navli = $("#intelText-classes .intelText-class")
-      $navli.on('click', function(){
-        var $this = $(this);
+      var $navli = $('#intelText-classes .intelText-class')
+      $navli.on('click', function () {
+        var $this = $(this)
         if (!$this.hasClass('active')) {
           $this.addClass('active').siblings().removeClass('active')
           $this.siblings('.intelText-line').css({'left': $this.position().left, 'width': $this.innerWidth()})
@@ -29,15 +48,15 @@ $(function () {
       })
     },
     /**
-     * 课程进度hover 
+     * 课程进度hover
      */
     clasProHover: function () {
       $('#class-pro').hover(
         function () {
-          $(this).find('.course-list').show();
+          $(this).find('.course-list').show()
         },
         function () {
-          $(this).find('.course-list').hide();
+          $(this).find('.course-list').hide()
         }
       )
     },
@@ -58,11 +77,11 @@ $(function () {
         console.log($this.parent().parent().find('input:checked').val())
         return false
       })
-      var $writeInput = $(".coustom-label .write-input")
-      $writeInput.on('focus', function() {
+      var $writeInput = $('.coustom-label .write-input')
+      $writeInput.on('focus', function () {
         $(this).addClass('active')
       })
-      $writeInput.on('blur', function() {
+      $writeInput.on('blur', function () {
         $(this).removeClass('active')
       })
     },
