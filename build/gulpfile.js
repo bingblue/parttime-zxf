@@ -40,7 +40,7 @@ gulp.task('standard', () => {
       breakOnError: false,
       quiet: false
     }))
-    .pipe(gulp.dest(config.js.dest))
+    //.pipe(gulp.dest(config.js.dest))
 })
 
 /**
