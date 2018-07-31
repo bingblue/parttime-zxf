@@ -428,19 +428,19 @@
   background-position: center center;
 }
 
-.course_list_details li:nth-last-of-type(1) > .course_list_details_icon {
+.course_list_details li:nth-of-type(1) > .course_list_details_icon {
   background-image: url(../img/index/Oval_f.png);
 }
 
-.course_list_details li:nth-last-of-type(2) > .course_list_details_icon {
+.course_list_details li:nth-of-type(2) > .course_list_details_icon {
   background-image: url(../img/index/Oval_s.png);
 }
 
-.course_list_details li:nth-last-of-type(3) > .course_list_details_icon {
+.course_list_details li:nth-of-type(3) > .course_list_details_icon {
   background-image: url(../img/index/Oval_t.png);
 }
 
-.course_list_details li:nth-last-of-type(4) > .course_list_details_icon {
+.course_list_details li:nth-of-type(4) > .course_list_details_icon {
   background-image: url(../img/index/Oval_fo.png);
 }
 
