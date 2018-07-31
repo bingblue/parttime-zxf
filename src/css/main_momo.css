@@ -568,7 +568,7 @@
   width: 112px;
   height: 40px;
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   left: 85px;
   text-align: center;
   line-height: 40px;
@@ -775,6 +775,10 @@
   display: block;
 }
 
+.alphabet-wp{
+  margin-bottom: 24px;
+}
+
 .alphabet-wp a,
 .alphabet-wp span {
   float: left;
@@ -789,17 +793,8 @@
 .alphabet-wp .alphabet {
   font-size: 30px;
   color: rgba(102, 102, 102, 1);
-  line-height: 42px;
+  line-height: 32px;
   margin-right: 30px;
-}
-
-.alphabet-a {
-  width: 42px;
-  height: 48px;
-  background-image: url('../img/horn_gery.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
 }
 
 .word-mean:nth-child(1) {
@@ -816,30 +811,6 @@
 .word-mean > span {
   color: rgba(0, 133, 230, 1);
   margin-right: 20px;
-}
-
-.click-status {
-  position: absolute;
-  top: 82px;
-  right: 140px;
-  cursor: pointer
-}
-
-.click-status > a {
-  display: block;
-  height: 36px;
-  width: 64px;
-  background-image: url(../img/click_status.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  margin-bottom: 10px;
-}
-
-.click-status > p {
-  font-size: 16px;
-  color: rgba(255, 69, 72, 1);
-  line-height: 22px;
 }
 
 .preview-right > .marker-txt {

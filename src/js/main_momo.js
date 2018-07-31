@@ -22,7 +22,7 @@ $(function () {
 
   // 选项卡
   function tab (navTagName, changeTagName, activeClassName) {
-    navTagName.mouseover(function () {
+    navTagName.click(function () {
       navTagName.not($(this)).removeClass(activeClassName)
       $(this).addClass(activeClassName)
       changeTagName.removeClass(activeClassName)
