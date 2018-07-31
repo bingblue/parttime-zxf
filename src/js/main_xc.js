@@ -40,7 +40,9 @@ $(function () {
     intelTextNav: function () {
       var $navli = $('#intelText-classes .intelText-class.active')
       var $this = $navli
-      $this.siblings('.intelText-line').css({'left': $this.position().left, 'width': $this.innerWidth()}).show();
+      if ($this.length) {
+        $this.siblings('.intelText-line').css({'left': $this.position().left, 'width': $this.innerWidth()}).show()
+      }
     },
     /**
      * 课程进度hover
