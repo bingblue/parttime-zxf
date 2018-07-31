@@ -34,10 +34,10 @@ $(function () {
     clasProHover: function () {
       $('#class-pro').hover(
         function () {
-          $(this).find('.course-list').show();
+          $(this).find('.course-list').show()
         },
         function () {
-          $(this).find('.course-list').hide();
+          $(this).find('.course-list').hide()
         }
       )
     },
