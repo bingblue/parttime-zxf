@@ -19,8 +19,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <link rel="stylesheet" href="/css/main_linye.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/main_linye.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="linye-personal-data">
@@ -116,6 +116,7 @@
                         <img class="edit-icon" src="../img/07/rectangle32x.png" alt="">
                     </p>
                     <div class="change-detail-list">
+                            <form id="form" action="" method="post" data-parsley-validate>
                         <div class="change-detail-item">
                             <div class="change-detail-name">真实姓名：</div>
                             <input type="text" placeholder="请输入真实姓名">
@@ -123,7 +124,7 @@
                         <div class="change-detail-item">
                             <div class="change-detail-name">性别：</div>
                             <div class="detail-select">
-                                <select name="" id="">
+                                <select name="" id="" class="select">
                                     <option value="男">男</option>
                                     <option value="女">女</option>
                                 </select>
@@ -131,12 +132,18 @@
                         </div>
                         <div class="change-detail-item change-detail-middle">
                             <div class="change-detail-name">出生日期：</div>
-                            <input type="text" placeholder="">
+                            <input type="date"  placeholder="">
                         </div>
                         <div class="change-detail-item">
                             <div class="change-detail-name">所在地区：</div>
-                            <div class="detail-select2">
-                                浙江省/杭州市/西湖区
+                             <div class="detail-select2">
+                            <select name="" id="" class="prov" provinceId='110000'>
+                                    <option value=""  ></option>
+                                </select>
+                                /&nbsp;&nbsp;
+                                <select name="" id="" class="city" cityId='110001'>
+                                    <option value=""  ></option>
+                                </select>
                             </div>
                         </div>
                         <div class="change-detail-item">
@@ -146,7 +153,7 @@
                         <div class="change-detail-item">
                             <div class="change-detail-name">年级：</div>
                             <div class="detail-select">
-                                <select name="" id="">
+                                <select name="" id="" class="select">
                                     <option value="男">一年级</option>
                                     <option value="女">二年级</option>
                                     <option value="女">三年级</option>
@@ -160,19 +167,21 @@
                             </div>
                         </div>
                         <div class="change-detail-item">
-                            <div class="change-detail-name ">班级</div>
+                            <div class="change-detail-name ">班级：</div>
                             <input type="text" placeholder="请输入所在班级">
                         </div>
                         <div class="change-detail-item">
                             <div class="change-detail-name ">家长手机：</div>
-                            <input type="text" placeholder="请输入家长手机">
+                            <input type="text" placeholder="请输入家长手机"  
+                            data-parsley-type="number" data-parsley-required-message='请输入正确手机号' data-parsley-minlength="11">
                         </div>
                         <div class="btn-list">
                             <button class="back-btn">取消</button>
                             <button class="save-btn">保存</button>
                         </div>
+                        </form>
                     </div>
-                    <img src="" alt="" class="page-img">
+                    <img src="../img/07/zu62x.png" alt="" class="page-img">
                     
                 </div>
             </div>
@@ -182,11 +191,13 @@
     </div>
 
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/cityselect.js"></script>
-    <script src="/js/parsley.min.js"></script>
-    <script src="/js/main_linye.js"></script>
+    <script src="../js/cityselect.js"></script>
+    <script src="../js/parsley.min.js"></script>
+    <script src="../js/main_linye.js"></script>
     <script type="text/javascript">
-	
+        $(function(){
+            $('#form').parsley();//调用parsley表单验证插件
+        });
     </script>
 </body>
 

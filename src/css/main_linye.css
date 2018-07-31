@@ -58,11 +58,12 @@ body {
   display: inline-block;
 }
 
-ul,
-ol,
-li {
+ul,ol,li {
   list-style: none;
   text-indent: 0;
+}
+a{
+  text-decoration:none;
 }
 .midd_header {
   margin: 0 auto;
@@ -704,7 +705,7 @@ li {
 .linye-personal-data .person-head {
   width: 100%;
   height: 216px;
-  background: url(../img/07/banner@2x.png) no-repeat;
+  background: url(../img/07/banner2x.png) no-repeat;
   background-size: 100% 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -821,7 +822,7 @@ li {
 }
 
 .linye-personal-data .page-img {
-  width: 114px;
+  width: 144px;
   height: 192px;
   position: absolute;
   bottom: 52px;
@@ -883,7 +884,7 @@ li {
   line-height: 20px;
 }
 
-.linye-personal-data select {
+.linye-personal-data .select {
   background: transparent;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -896,6 +897,20 @@ li {
   font-size: 14px;
   color: rgba(153, 153, 153, 1);
   line-height: 20px;
+}
+.linye-personal-data .detail-select2 select {
+  background: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  // padding: 8px 15px;
+  font-size: 14px;
+  color: rgba(153, 153, 153, 1);
+  line-height: 20px;
+  border: none;
+  min-width: 0px;
+  height: auto;
+  display: inline-block;
 }
 
 .linye-personal-data .detail-select {
@@ -916,6 +931,12 @@ li {
   font-size: 14px;
   color: rgba(153, 153, 153, 1);
   line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .linye-personal-data .detail-select::after,
