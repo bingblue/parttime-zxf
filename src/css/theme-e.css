@@ -153,3 +153,6 @@ body,
   background-color: #ffffff;
   color: #515253;
 }
+.panel-primary > .panel-heading {
+  background-color: #0085E6;
+}

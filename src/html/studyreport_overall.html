@@ -18,6 +18,7 @@
   <!-- endbuild -->
 
 
+
 </head>
 
 <body>
@@ -46,29 +47,21 @@
               </a>
             </li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right mu-head-user">
             <li>
-              <a href="#" data-search-open="">
-                <em class="icon-magnifier"></em>
-              </a>
+              <span><i class="fa fa-user"></i>admin</span><span>|</span>
             </li>
             <li>
-              <a href="#" data-toggle-state="offsidebar-open" data-no-persist="true">
-                <em class="icon-notebook"></em>
+              <a href="#">
+                退出
               </a>
             </li>
           </ul>
         </div>
-        <form role="search" action="search.html" class="navbar-form">
-          <div class="form-group has-feedback">
-            <input type="text" placeholder="Type and hit enter ..." class="form-control">
-            <div data-search-dismiss="" class="fa fa-times form-control-feedback"></div>
-          </div>
-          <button type="submit" class="hidden btn btn-default">Submit</button>
-        </form>
       </nav>
     </header>
     <!-- endbuild -->
+
 
 
     <!-- build:sidebar -->
@@ -77,9 +70,12 @@
       <div class="aside-inner">
         <nav data-sidebar-anyclick-close="" class="sidebar">
           <ul class="nav">
+            <li class="nav-heading ">
+              <span>欢迎来到智厢逢教师后台</span>
+            </li>
             <li class=" ">
               <a href="#studyreport" title="学习报告" data-toggle="collapse">
-                <em class="icon-folder"></em>
+                <em class="icon-speedometer"></em>
                 <span>学习报告</span>
               </a>
               <ul id="studyreport" class="nav sidebar-subnav collapse">
@@ -98,7 +94,7 @@
             </li>
             <li class=" ">
               <a href="#coursemanagement" title="课程管理" data-toggle="collapse">
-                <em class="icon-folder"></em>
+                <em class="icon-graduation"></em>
                 <span>课程管理</span>
               </a>
               <ul id="coursemanagement" class="nav sidebar-subnav collapse">
@@ -125,6 +121,7 @@
       </div>
     </aside>
     <!-- endbuild -->
+
 
 
     <!-- 主要内容 -->
@@ -187,61 +184,47 @@
               <div class="panel-heading">今日学况</div>
               <div class="panel-body">
                 <div class="col-lg-3 col-sm-6">
-                  <div class="panel widget bg-gray">
-                    <div class="row row-table">
-                      <div class="col-xs-4 text-center bg-gray-light pv-lg">
-                        <em class="icon-user-unfollow fa-3x"></em>
+                  <div class="panel widget">
+                    <div class="panel-body text-center">
+                      <div class="text-right text-muted">
+                        <em class="icon-user-unfollow fa-2x"></em>
                       </div>
-                      <div class="col-xs-8 pv-lg">
-                        <div class="h2 mt0">33
-                          <small>人</small>
-                        </div>
-                        <div class="text-uppercase">未学人数</div>
-                      </div>
+                      <h3 class="mt0">33</h3>
+                      <p class="text-muted">未学人数</p>
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="col-lg-3 col-sm-6">
-                  <div class="panel widget bg-gray">
-                    <div class="row row-table">
-                      <div class="col-xs-4 text-center bg-gray-light pv-lg">
-                        <em class="icon-clock fa-3x"></em>
+                  <div class="panel widget">
+                    <div class="panel-body text-center">
+                      <div class="text-right text-muted">
+                        <em class="icon-clock fa-2x"></em>
                       </div>
-                      <div class="col-xs-8 pv-lg">
-                        <div class="h2 mt0">03:30:12</div>
-                        <div class="text-uppercase">人均有效学习时长</div>
-                      </div>
+                      <h3 class="mt0">03:30:12</h3>
+                      <p class="text-muted">人均有效学习时长</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
-                  <div class="panel widget bg-gray">
-                    <div class="row row-table">
-                      <div class="col-xs-4 text-center bg-gray-light pv-lg">
-                        <em class="fa fa-star-half-o fa-3x"></em>
+                  <div class="panel widget">
+                    <div class="panel-body text-center">
+                      <div class="text-right text-muted">
+                        <em class="fa fa-star-half-o fa-2x"></em>
                       </div>
-                      <div class="col-xs-8 pv-lg">
-                        <div class="h2 mt0">12
-                          <small>个</small>
-                        </div>
-                        <div class="text-uppercase">人均学币获取</div>
-                      </div>
+                      <h3 class="mt0">12</h3>
+                      <p class="text-muted">人均学币获取</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                  <div class="panel widget bg-gray">
-                    <div class="row row-table">
-                      <div class="col-xs-4 text-center bg-gray-light pv-lg">
-                        <em class="fa fa-star fa-3x"></em>
+                <div class="col-lg-3">
+                  <div class="panel widget">
+                    <div class="panel-body text-center">
+                      <div class="text-right text-muted">
+                        <em class="fa fa-star fa-2x"></em>
                       </div>
-                      <div class="col-xs-8 pv-lg">
-                        <div class="h2 mt0">388
-                          <small>个</small>
-                        </div>
-                        <div class="text-uppercase">总学币获取</div>
-                      </div>
+                      <h3 class="mt0">388</h3>
+                      <p class="text-muted">总学币获取</p>
                     </div>
                   </div>
                 </div>
@@ -267,7 +250,7 @@
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="col-lg-3 col-sm-6">
                   <div class="panel widget">
                     <div class="panel-body text-center">
@@ -318,6 +301,7 @@
     <!-- endbuild -->
 
 
+
   </div>
 
   <!-- build:js -->
@@ -331,6 +315,7 @@
   <script src="../js/vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+
 
 
 </body>

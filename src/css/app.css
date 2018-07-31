@@ -7820,7 +7820,22 @@ fieldset[disabled] .flatdoc-wrapper .button.active {
 
 .form-lineH {
   line-height: 35px;
+  padding-top: 15px;
 }
 .form-lineH label {
   font-weight: 400;
+}
+.mu-head-user {
+  margin-right: 30px;
+}
+.mu-head-user span {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  padding-left: 15px;
+}
+.mu-head-user span i {
+  margin-right: 5px;
 }
