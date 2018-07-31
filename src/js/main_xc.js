@@ -38,14 +38,9 @@ $(function () {
       })
     },
     intelTextNav: function () {
-      var $navli = $('#intelText-classes .intelText-class')
-      $navli.on('click', function () {
-        var $this = $(this)
-        if (!$this.hasClass('active')) {
-          $this.addClass('active').siblings().removeClass('active')
-          $this.siblings('.intelText-line').css({'left': $this.position().left, 'width': $this.innerWidth()})
-        }
-      })
+      var $navli = $('#intelText-classes .intelText-class.active')
+      var $this = $navli
+      $this.siblings('.intelText-line').css({'left': $this.position().left, 'width': $this.innerWidth()}).show();
     },
     /**
      * 课程进度hover

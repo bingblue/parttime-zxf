@@ -1,16 +1,13 @@
 @charset "UTF-8";
-
 .xc-brand {
   font-size: 14px;
   line-height: 20px;
   padding: 20px 0 14px 26px;
   color: #333;
 }
-
 .xc-brand .link {
     color: #999;
   }
-
 .xc-brand .line {
     font-style: normal;
     padding: 5px;
@@ -94,6 +91,7 @@
       }
 .xc-table-box{
   min-height: 600px;
+  margin-bottom: 50px;
 }
 .coustom-body {
   background-color: rgba(255, 255, 255, 1);
@@ -890,6 +888,12 @@
   background: rgba(250, 250, 251, 1);
 }
 
+.xc-body .course-main .course-head .course-head-top .course-head-classes li .course-list .course-list-right .course-list-classes-item.active::before {
+  border-color: #0085E6;
+  background: #0085E6 url('../img/word_right.png') no-repeat center center;
+  background-size: 15px auto;
+}
+
 .xc-body .course-main .course-head .course-head-top .course-head-types {
           display: inline-block;
           float: right;
@@ -1254,9 +1258,9 @@
 
 .readText-footer-box .readText-footer-items {
     float: left;
-    width: 108px;
+    min-width: 108px;
     line-height: 20px;
-    padding: 0 0 10px 20px;
+    padding: 10px 0 10px 20px;
     font-size: 14px;
   }
 
@@ -1480,8 +1484,7 @@
         border-radius: 3px;
         background-color: #0085e6;
         cursor: pointer;
-        -webkit-transition: all linear 0.2s;
-        transition: all linear 0.2s;
+        display: none;
       }
 .intelText-box .intelText-classes-box .intelText-classes .intelText-class {
         display: inline-block;
@@ -2054,4 +2057,19 @@
 }
 .xc-readCom-corrects .xc-readCom-correct + .xc-readCom-correct {
   margin-top: 10px;
+}
+.xc-html {
+  height: 100%;
+}
+.xc-html .xc-body {
+    height: 100%;
+  }
+.xc-html .xc-body .wrap {
+      min-height: calc(100% - 300px)
+    }
+.xc-html .xc-body .wrap.ml {
+  min-height: calc(100% - 144px);
+}
+.xc-html .xc-body .wrap.mt {
+  min-height: calc(100% - 160px);
 }
