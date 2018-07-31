@@ -171,8 +171,7 @@ li {
   height: 202px;
   position: relative;
   background: url('../img/05/rectangle32x.png') no-repeat;
-<<<<<<< HEAD
-  background-size:100% 100%;
+  background-size: 100% 100%;
   margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -925,10 +924,6 @@ li {
   position: absolute;
   right: 20px;
   top: 50%;
-  -webkit-transform: translate(0,-50%);
-          transform: translate(0,-50%);
-  background: url(../img/07/rectangle192x.png) no-repeat;
-  background-size:100% auto;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   background: url(../img/07/rectangle192x.png) no-repeat;
@@ -1056,9 +1051,6 @@ li {
   background: #0085e6;
 }
 
-.linye-change-password .progress-item-finish{
-  background: url(../img/07/group2x.png) no-repeat;
-  background-size:100% 100%; 
 .linye-change-password .progress-item-finish {
   background: url(../img/07/group2x.png) no-repeat;
   background-size: 100% 100%;
@@ -1861,7 +1853,6 @@ li {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-.linye-learn .list-img-checked{
 .linye-learn .list-img-checked {
   background: url(../img/30/rectangle12x.png) no-repeat;
   background-size: 100% auto;

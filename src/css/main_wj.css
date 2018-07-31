@@ -1374,7 +1374,7 @@ button:focus {
       height: 4px;
       border-radius: 50%;
       position: absolute;
-      top: 7px;
+      top: 9px;
       left: 6px;
       background: #fff;
       z-index: 11;
