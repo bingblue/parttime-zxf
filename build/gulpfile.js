@@ -101,7 +101,7 @@ gulp.task('delHtml', () => {
  * 删除生成的文件
  */
 gulp.task('delFile', () =>
-  console.log('无可删除文件~')
+  console.log('[项目信息] 无可删除文件~')
   // del(config.clean.src, {
   //   force: true
   // })
