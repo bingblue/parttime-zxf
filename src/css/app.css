@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic);
 /*!
  *
  * Angle - Bootstrap Admin App + jQuery
@@ -7817,4 +7816,11 @@ fieldset[disabled] .flatdoc-wrapper .button.active {
 .flatdoc-wrapper .button .badge {
   color: #23b7e5;
   background-color: #ffffff;
+}
+
+.form-lineH {
+  line-height: 35px;
+}
+.form-lineH label {
+  font-weight: 400;
 }
