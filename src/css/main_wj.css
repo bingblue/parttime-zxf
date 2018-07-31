@@ -41,7 +41,7 @@ button:focus {
     border-radius: 23px;
     font-size: 16px;
     color: #999;
-    margin-left: 20px;
+    margin-left: 16px;
   }
 
 .body-login .none, .body-register .none {
