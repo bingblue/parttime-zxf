@@ -1105,7 +1105,8 @@
 
 .xc-body .readText-sentence {
     font-weight: 200;
-    padding: 170px 0 0 120px;
+    width: 380px;
+    margin: 170px auto 120px;
   }
 
 .xc-body .readText-sentence .readText-listen {
@@ -1400,6 +1401,7 @@
 .xc-coustom-footer {
   line-height: 64px;
   height: 64px;
+  overflow: hidden;
   background-color: rgba(255, 255, 255, 1);
   -webkit-box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, .05);
           box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, .05);
