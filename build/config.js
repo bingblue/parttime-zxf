@@ -4,7 +4,7 @@ module.exports = {
     dest: '../src/css'
   },
   js: {
-    src: ['../src/js/*.js', '!../src/js/jquery-3.3.1.min.js'],
+    src: ['../src/js/*.js', '!../src/js/jquery-3.3.1.min.js', '!../src/js/cityselect.js', '!../src/js/parsley.min.js'],
     dest: '../src/js'
   },
   html: {

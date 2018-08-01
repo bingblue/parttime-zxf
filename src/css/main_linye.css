@@ -14,17 +14,12 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-.linye-ranking-points .footer {
-  padding-top: 54px;
-  padding-bottom: 50px;
-}
 .linye-shopping * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .linye-personal-data * {
   margin: 0;
   padding: 0;
@@ -55,6 +50,11 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.footer {
+  padding-top: 54px !important;
+  padding-bottom: 50px !important;
 }
 
 .linye-ranking-points span {
