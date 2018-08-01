@@ -8,7 +8,7 @@ module.exports = {
     dest: '../src/js'
   },
   html: {
-    src: ['../src/html/**/*.html', '!../src/html/part/*.html', '!../src/html/模板.html'],
+    src: ['../src/html/**/*.html', '!../src/html/part/*.html', '!../src/html/页面编号_模板取名.html'],
     dest: '../src/html/',
     watch: '../src/html/part/*.html'
   },
