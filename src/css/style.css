@@ -33,6 +33,7 @@
 
 .wrap {
   width: 100%;
+  min-width: 1200px;
   min-height: 650px;
   margin: 0 auto;
   font-family: "微软雅黑", "宋体", Arial, Helvetica, sans-serif;

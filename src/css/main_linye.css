@@ -4,9 +4,6 @@ body {
   color: #000;
   margin: 0;
 }
-::-webkit-scrollbar {
-  width: 0px;
-}
 
 .linye-ranking-points * {
   margin: 0;
