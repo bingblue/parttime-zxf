@@ -89,7 +89,7 @@
         color: #FF4548;
         margin-left: 5px;
       }
-.xc-table-box{
+.xc-table-box {
   min-height: 600px;
   margin-bottom: 50px;
 }
@@ -817,7 +817,7 @@
               border-radius: 4px;
 }
 
-.xc-body .course-main .course-head .course-head-top .course-head-classes li .course-list::before{
+.xc-body .course-main .course-head .course-head-top .course-head-classes li .course-list::before {
   content: "";
   width: 0;
   height: 0;
@@ -1002,7 +1002,7 @@
   background-color: #FFC74E;
 }
 
-.xc-body .course-main .course-body .course-body-left .course-untiy-imgs .img.re::after{
+.xc-body .course-main .course-body .course-body-left .course-untiy-imgs .img.re::after {
   -webkit-transform: rotate(60deg);
           transform: rotate(60deg);
   -webkit-transform-origin: left center;
@@ -1105,7 +1105,8 @@
 
 .xc-body .readText-sentence {
     font-weight: 200;
-    padding: 170px 0 0 120px;
+    width: 380px;
+    margin: 170px auto 120px;
   }
 
 .xc-body .readText-sentence .readText-listen {
@@ -1400,6 +1401,7 @@
 .xc-coustom-footer {
   line-height: 64px;
   height: 64px;
+  overflow: hidden;
   background-color: rgba(255, 255, 255, 1);
   -webkit-box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, .05);
           box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, .05);
@@ -1474,7 +1476,7 @@
       display: inline-block;
       position: relative;
     }
-.intelText-box .intelText-classes-box .intelText-classes .intelText-line{
+.intelText-box .intelText-classes-box .intelText-classes .intelText-line {
         position: absolute;
         content: '';
         left: 0;
@@ -1584,7 +1586,7 @@
   border-radius: 4px;
   border: 1px solid rgba(235, 235, 235, 1)
 }
-.xc-body .intelText-blan-item + .intelText-blan-item  {
+.xc-body .intelText-blan-item + .intelText-blan-item {
   margin-top: 10px;
 }
 .xc-body .intelText-blan-item .intelText-blan-div {
@@ -1972,7 +1974,7 @@
       float: right;
       vertical-align: top;
     }
-.readCom-answer-changs .readCom-answer-chang .answer-chang-box .answer-chang-input{
+.readCom-answer-changs .readCom-answer-chang .answer-chang-box .answer-chang-input {
         width: 90px;
         text-align: center;
         background: none;

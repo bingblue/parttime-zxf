@@ -23,6 +23,7 @@ button {
 }
 
 .register-body {
+
   .login-ipt-small {
     width: 180px;
     height: 46px;
@@ -48,6 +49,12 @@ button {
 
 .body-login,
 .body-register {
+  input {
+    &:focus {
+      outline: none;
+    }
+  }
+
   .none {
     display: none;
   }
@@ -211,6 +218,7 @@ button {
 .body-myclass {
   .wrap {
     background: #fafafb;
+    padding-top: 26px;
   }
 
   .head-wp {
@@ -1122,6 +1130,31 @@ button {
       color: #666;
     }
   }
+
+  .result-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .result-right-icon {
+    background: url('../img/right_icon.png') no-repeat;
+    background-size: cover;
+  }
+
+  .result-fail-icon {
+    background: url('../img/fail_icon.png') no-repeat;
+    background-size: cover;
+  }
+
+  .q-explain {
+    font-size: 14px;
+    color: #999999;
+    text-indent: 30px;
+    padding-top: 20px;
+  }
 }
 
 .content-minheight {
@@ -1203,6 +1236,7 @@ button {
       height: 36px;
       font-size: 14px;
       color: #999;
+      border: 1px solid #D7D7D7;
 
       &:focus {
         outline: none;
@@ -1440,33 +1474,6 @@ button {
   }
 }
 
-.body-wordfail {
-  .result-icon {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    margin-right: 8px;
-    vertical-align: middle;
-  }
-
-  .result-right-icon {
-    background: url('../img/right_icon.png') no-repeat;
-    background-size: cover;
-  }
-
-  .result-fail-icon {
-    background: url('../img/fail_icon.png') no-repeat;
-    background-size: cover;
-  }
-
-  .q-explain {
-    font-size: 14px;
-    color: #999999;
-    text-indent: 30px;
-    padding-top: 20px;
-  }
-}
-
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -1687,6 +1694,71 @@ button {
         background-size: cover;
       }
     }
+  }
+}
+
+.fixedfoot-wp {
+  width: 100%;
+  height: 64px;
+  background: #fff;
+  box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.05);
+  line-height: 64px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  .fixedfoot-ct {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .submit-btn {
+    float: right;
+    color: #fff;
+    font-size: 20px;
+    width: 148px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    background: #0085E6;
+    margin-left: 40px;
+  }
+
+  .returnback {
+    float: right;
+    color: #666666;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+
+  .cutdown {
+    float: right;
+    font-size: 30px;
+    color: #333333;
+    margin-left: 5px;
+  }
+
+  .cutdown-txt {
+    float: right;
+    font-size: 14px;
+    color: #999;
+    margin-left: 10px;
+  }
+
+  .cutdown-icon {
+    float: right;
+    width: 20px;
+    height: 20px;
+    background: url('../img/test_time.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 20px;
+  }
+}
+
+.posttest-body {
+  .wrap {
+    padding-bottom: 80px;
   }
 }
 
