@@ -26,7 +26,7 @@
 
 ## 使用方法
 
-**注意 ：大部分css无需自己写，请参考：[bingblue.com/demo/angle][26],源代码：[XiaoMuCOOL/backend-jquery][27]**
+**注意 ：大部分css无需自己写，请参考：[bingblue.com/demo/angle][26]，源代码：[XiaoMuCOOL/backend-jquery][27]**
 
 ```cmd
 // 安装依赖
