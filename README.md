@@ -7,10 +7,10 @@
   <a href="https://jq.qq.com/?_wv=1027&k=5tyQDAd">
 		<img src="https://img.shields.io/badge/QQ%20Group-215259343-blue.svg">
 	</a>
-  <h1>parttime-zxf</h1>
+  <h1>parttime-zxf-admin</h1>
   <br>
   <p>
-    智厢逢-英语培训系统教师后台切图
+    智厢逢-英语培训系统-后台切图
   <p>
   <br>
   <br>
@@ -25,6 +25,8 @@
 **QQ群** ： [215259343][1]
 
 ## 使用方法
+
+**注意 ：大部分css无需自己写，请参考：[bingblue.com/demo/angle][26],源代码：[XiaoMuCOOL/backend-jquery][27]**
 
 ```cmd
 // 安装依赖
@@ -77,3 +79,5 @@ All Rights Reserved · Powered by : **小牧COOL**
 [23]:https://github.com/linyezz/
 [24]:https://github.com/momo2930530311/
 [25]:http://stylelint.cn/user-guide/rules/
+[26]:https://www.bingblue.com/demo/angle
+[27]:https://github.com/XiaoMuCOOL/backend-jquery
