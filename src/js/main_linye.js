@@ -29,7 +29,7 @@ $(function () {
    * @param {String} className  类名
    * @param {String} selectedName 选中之后的类名
    */
-  function clickCheck(className, selectedName) {
+  function clickCheck (className, selectedName) {
     $('.' + className).on('click', function () {
       $(this).addClass(selectedName)
       $(this).siblings().removeClass(selectedName)
@@ -38,12 +38,11 @@ $(function () {
   /**
    * 进度条
    * @author <linye>
-   * @param {int} has_rank 拥有的数量
-   * @param {int} all_rank 总共的数量
+   * @param {int} hasRank 拥有的数量
+   * @param {int} allRank 总共的数量
    * @param {int} widths 进度条的长度
    */
-  function progressColor(has_rank, all_rank, widths) {
-    $('.progress-color').css('width', (has_rank / all_rank) * 180 + 'px')
+  function progressColor (hasRank, allRank, widths) {
+    $('.progress-color').css('width', (hasRank / allRank) * 180 + 'px')
   }
-
 })
