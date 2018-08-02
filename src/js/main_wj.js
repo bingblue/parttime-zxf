@@ -98,4 +98,10 @@ $(function () {
   $('.delete-icon').click(function () {
     $('.bomb-wp').hide()
   })
+  /**
+   * 重置
+   */
+  $('.reset-btn').click(function () {
+    $(this).siblings('.ipt').val('')
+  })
 })
