@@ -248,6 +248,19 @@
     $body    = $('body');
     $sidebar = $('.sidebar');
     mq       = APP_MEDIAQUERY;
+
+    // 左侧菜单栏
+    let url = window.location.pathname
+    $('.sidebar a').each(function(i) {
+      let $href = $(this).attr('href')
+      if($href.indexOf(".") > -1) {
+        let str = $href.substring($href.indexOf("."), $href.length)
+        $href = $href.replace(str, '')
+      }
+      if(url.indexOf($href) > -1) {
+        $(this).parent('li').addClass('active')
+      }
+    })
     
     // AUTOCOLLAPSE ITEMS 
     // ----------------------------------- 
@@ -685,8 +698,6 @@
 (function(window, document, $, undefined){
 
   $(function(){
-
-    // document ready
 
   });
 
