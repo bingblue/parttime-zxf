@@ -8,20 +8,28 @@ $(function () {
    * @param {object} option 配置信息.
    * @return {Number} 返回值描述.
    */
-  clickCheck('tab-item', 'tab-selectd')
-  clickCheck('search-name', 'search-selectd')
-  clickCheck('page-item', 'page-selectd')
-  clickCheck('class-type-item', 'certificate-selected')
-  clickCheck('son-type-item', 'certificate-selected')
-  progressColor(40, 56, 180)
+  clickCheck('tab-item', 'tab-selectd');
+  clickCheck('search-name', 'search-selectd');
+  clickCheck('page-item', 'page-selectd');
+  clickCheck('class-type-item', 'certificate-selected');
+  clickCheck('son-type-item', 'certificate-selected');
+  progressColor(40, 56, 180);
 
   /**
    * 选项卡
    */
   $('.nag-tag').on('click', function () {
-    var className = $(this).attr('name')
-    $('.section').css('display', 'none')
-    $('.' + className).css('display', 'block')
+    var className = $(this).attr('name');
+    $('.section').css('display', 'none');
+    $('.' + className).css('display', 'block');
+  })
+  /**
+   * 05选项卡
+   */
+  $('.ranking-tag').on('click', function () {
+    var classNames = $(this).attr('name');
+    $('.ranking-section').css('display', 'none');
+    $('.' + classNames).css('display', 'block');
   })
   /**
    * 点击选中
@@ -31,8 +39,8 @@ $(function () {
    */
   function clickCheck (className, selectedName) {
     $('.' + className).on('click', function () {
-      $(this).addClass(selectedName)
-      $(this).siblings().removeClass(selectedName)
+      $(this).addClass(selectedName);
+      $(this).siblings().removeClass(selectedName);
     })
   }
   /**
@@ -43,6 +51,41 @@ $(function () {
    * @param {int} widths 进度条的长度
    */
   function progressColor (hasRank, allRank, widths) {
-    $('.progress-color').css('width', (hasRank / allRank) * 180 + 'px')
+    $('.progress-color').css('width', (hasRank / allRank) * 180 + 'px');
   }
+  
+  /**
+   * 换密码
+   */
+  $('.sendCode').on('click',function(){
+  	$('.step1').css('display','none');
+  	$('.step2').css('display','block');
+  	$('.progress-line1').eq(0).addClass('progress-line1-finish');
+  	$('.progress-item').eq(0).addClass('progress-item-finish');
+  	$('.progress-item').eq(1).addClass('progress-item-ing');
+  	$('.progress-item span').eq(0).text('');
+  	$('.progress-name').eq(1).addClass('progress-name-finish');
+  })
+  $('.testCode').on('click',function(){
+  	$('.step2').css('display','none');
+  	$('.step3').css('display','block');
+  	$('.progress-line1').eq(1).addClass('progress-line1-finish');
+  	$('.progress-item').eq(1).addClass('progress-item-finish');
+  	$('.progress-item').eq(2).addClass('progress-item-ing');
+  	$('.progress-item span').eq(1).text('');
+  	$('.progress-name').eq(2).addClass('progress-name-finish');
+  })
+  $('.changeFinish').on('click',function(){
+  	$('.progress-line1').eq(2).addClass('progress-line1-finish');
+  	$('.progress-item').eq(2).addClass('progress-item-finish');
+  	$('.progress-item span').eq(2).text('');
+  })
+  
+  /**
+   * 点击编辑
+   */
+  $('.edit-icon').on('click',function(){
+  	$('.linye-personal-data .data-detail').css('display', 'none');
+  	$('.linye-personal-data .data-detail2').css('display', 'block');
+  })
 })

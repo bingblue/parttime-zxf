@@ -4,12 +4,10 @@ body {
   color: #000;
   margin: 0;
 }
-<<<<<<< HEAD
+
 .linye-body ::-webkit-scrollbar {
   width: 0px;
 }
-=======
->>>>>>> 27a621d27d3060351542859a290a4b2e8a067b62
 
 .linye-ranking-points * {
   margin: 0;
@@ -218,6 +216,10 @@ a {
   color: #0085e6;
 }
 
+.linye-ranking-points .junxian {
+    display: none;
+}
+
 .linye-ranking-points .table-head {
   width: 1200px;
   height: 202px;
@@ -234,6 +236,10 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.linye-ranking-points .junxian-table-head {
+  background: url('../img/05/group62x.png') no-repeat;
+  background-size: 100% 100%;
 }
 
 .linye-ranking-points .middle-table-body {
@@ -259,6 +265,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.linye-ranking-points .junxian-table-my {
+  background:rgba(91, 223, 203, 1);
 }
 
 .linye-ranking-points .table-my img {
@@ -809,6 +818,15 @@ a {
   top: 16px;
   right: 30px;
 }
+.linye-personal-data .change-possword>a {
+  color: #fff;
+}
+.linye-personal-data .change-possword>a:active {
+  color: #fff;
+}
+.linye-personal-data .change-possword>a:hover {
+  color: #fff;
+}
 
 .linye-personal-data .data-detail {
   width: 100%;
@@ -818,7 +836,7 @@ a {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
   border-radius: 0, 0, 8px, 8px;
   position: relative;
-  display: none;
+  
 }
 
 .linye-personal-data .data-detail2 {
@@ -829,6 +847,7 @@ a {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05);
   border-radius: 0px, 0px, 8px, 8px;
   position: relative;
+  display: none;
 }
 .linye-personal-data .middle-body {
   width: 1200px;
@@ -1252,6 +1271,12 @@ a {
   color: rgba(153, 153, 153, 1);
   line-height: 20px;
   margin-top: 10px;
+}
+.linye-change-password .step2 {
+  display: none;
+}
+.linye-change-password .step3 {
+  display: none;
 }
 /*09荣耀中心*/
 .linye-honour .data-title {
