@@ -1,0 +1,13 @@
+.sweet-alert input {
+  height: 35px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.sweet-alert fieldset {
+  display: none !important;
+}
+
+.sweet-alert {
+  width: 600px;
+}
