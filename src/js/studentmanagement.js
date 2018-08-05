@@ -1,4 +1,5 @@
 $(function(){
+  // 学生列表 修改资料
   $(".jq-edit").click(function(){
     swal({
       title: "",
@@ -34,6 +35,20 @@ $(function(){
       })
     }, 50)
   })
+  $('.datetimepicker').datetimepicker({
+    icons: {
+      time: 'fa fa-clock-o',
+      date: 'fa fa-calendar',
+      up: 'fa fa-chevron-up',
+      down: 'fa fa-chevron-down',
+      previous: 'fa fa-chevron-left',
+      next: 'fa fa-chevron-right',
+      today: 'fa fa-crosshairs',
+      clear: 'fa fa-trash'
+    },
+    format: 'YYYY-MM-DD'
+  })
+  // 学生列表 改绑手机
   $('.jq-phone').click(function(){
     swal({
       title: "输入新手机",
@@ -62,6 +77,7 @@ $(function(){
       }
     })
   })
+  // 学生列表 重置密码
   $('.jq-pswd').click(function(){
     swal({
       title: "确认重置学生 【学生名】【学生手机号】的密码吗",
@@ -94,7 +110,7 @@ $(function(){
       })
     }
   })
-  // 换班级
+  // 学生列表 换班级
   $('.jq-changeclass').click(function(){
     swal({
       title: "确认调换调换班级",
@@ -112,6 +128,43 @@ $(function(){
       } else {
         swal("取消")
       }
+    })
+  })
+  // 班级管理 创建班级
+  $('.jq-createclass').click(function(){
+    swal({
+      title: "创建/修改班级",
+      text: createclass(),
+      type: "input",
+      html: true,
+      showCancelButton : true,
+      confirmButtonColor : "#DD6B55",
+      confirmButtonText : "创建/保存",
+      cancelButtonText : "取消",
+      closeOnConfirm : false,
+      closeOnCancel : false
+    }, function (isConfirm) {
+      if (isConfirm) {
+        swal("成功", "success")
+      } else {
+        swal("取消")
+      }
+    })
+  })
+  // 班级管理 删除班级
+  $('.jq-deleteclass').click(function(){
+    swal({ 
+      title: "确定删除吗？", 
+      text: "确认删除该班级吗？删除后班级下的学生将自动转到“未分班”班级", 
+      type: "warning",
+      showCancelButton: true, 
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "确定删除！",
+      cancelButtonText : "取消",
+      closeOnConfirm: false
+    },
+    function(){
+      swal("删除！", "success")
     })
   })
 })
@@ -223,6 +276,20 @@ function changeclass () {
               <option value="4">4</option>
               <option value="5">5</option>
             </select>
+          </div>
+        </div>
+     </div>
+  </div>
+</form>`
+}
+function createclass () {
+  return `<form method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
+  <div class="panel panel-dark panel-flat">
+     <div class="panel-body">
+        <div class="form-group">
+           <label class="control-label col-sm-5">班级名称</label>
+           <div class="col-sm-6">
+            <input type="text" name="name" placeholder="请输入" required class="form-control">
           </div>
         </div>
      </div>

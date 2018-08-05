@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="../css/app.css" id="maincss">
   <link rel="stylesheet" href="../css/theme-e.css">
   <!-- endbuild -->
+  <link rel="stylesheet" href="../css/wj.css">
+
 
 
 </head>
@@ -62,6 +64,8 @@
       </nav>
     </header>
     <!-- endbuild -->
+
+
 
 
 
@@ -179,6 +183,8 @@
 
 
 
+
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
@@ -187,7 +193,213 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            这里是内容
+            <!-- START panel-->
+            <div class="panel-default">
+              <div class="panel-heading">
+                <form class="text-right form-lineH">
+                  <div class="row">
+                    <div class="form-group col-sm-3">
+                      <label class="col-sm-4">选择班级：</label>
+                      <div class="col-sm-8">
+                        <select name="" id="" class="form-control">
+                          <option value="">全部</option>
+                          <option value="1">未分班</option>
+                          <option value="2">过期学员</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-3">
+                      <label class="col-sm-4">查询时间：</label>
+                      <div class="col-sm-8">
+                        <p class="input-group date col-sm-12 datetimepicker">
+                          <input type="text" class="form-control" placeholder="请选择开始时间">
+                          <span class="input-group-addon">
+                              <span class="fa fa-calendar"></span>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-2">
+                      <div class="radio c-radio">
+                        <label>
+                           <input type="radio" name="a" value="option1">
+                           <span class="fa fa-circle"></span>全部</label>
+                     </div>
+                    </div>
+                    <div class="form-group col-sm-2">
+                      <div class="radio c-radio">
+                        <label>
+                           <input type="radio" name="a" value="option1">
+                           <span class="fa fa-circle"></span>本周</label>
+                     </div>
+                    </div>
+                    <div class="form-group col-sm-2">
+                      <div class="radio c-radio">
+                        <label>
+                           <input type="radio" name="a" value="option1">
+                           <span class="fa fa-circle"></span>上周</label>
+                     </div>
+                    </div>
+                    <div class="form-group col-sm-2">
+                      <div class="radio c-radio">
+                        <label>
+                           <input type="radio" name="a" value="option1">
+                           <span class="fa fa-circle"></span>本月</label>
+                     </div>
+                    </div>
+                    <div class="form-group col-sm-2">
+                      <div class="radio c-radio">
+                        <label>
+                           <input type="radio" name="a" value="option1">
+                           <span class="fa fa-circle"></span>上月</label>
+                     </div>
+                    </div>
+
+                  </div>
+                </form>
+              </div>
+              <!-- START table-responsive-->
+              <div class="panel-heading">
+                <div class="table-responsive">
+                  <table id="table-ext-1" class="table table-bordered table-hover dataTable">
+                    <thead>
+                      <tr>
+                        <th data-check-all>
+                          <div data-toggle="tooltip" data-title="全选" class="checkbox c-checkbox">
+                            <label>
+                              <input class="jq-allcheck" type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </th>
+                        <th>学生手机</th>
+                        <th>姓名</th>
+                        <th>昵称</th>
+                        <th>学员组</th>
+                        <th class="sorting">有效期</th>
+                        <th class="sorting">注册日期</th>
+                        <th class="sorting">到期日期</th>
+                        <th class="sorting">当前学币</th>
+                        <th class="sorting">年级</th>
+                        <th>操作</th>
+                      </tr>
+                    </thead>
+                    <tbody id="designerlist">
+                      <tr>
+                        <td>
+                          <div class="checkbox c-checkbox">
+                            <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td class="text-warning">18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td>小学</td>
+                        <td class="text-danger">5天</td>
+                        <td>2015-01-21</td>
+                        <td>2015-01-21</td>
+                        <td>500</td>
+                        <td>七年级</td>
+                        <td>
+                          <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
+                          <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
+                          <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox c-checkbox">
+                            <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td>18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td>小学</td>
+                        <td>5天</td>
+                        <td>2015-01-21</td>
+                        <td class="text-danger">2015-01-21</td>
+                        <td>500</td>
+                        <td>七年级</td>
+                        <td>
+                          <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
+                          <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
+                          <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox c-checkbox">
+                            <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td>18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td>小学</td>
+                        <td>5天</td>
+                        <td>2015-01-21</td>
+                        <td>2015-01-21</td>
+                        <td>500</td>
+                        <td>七年级</td>
+                        <td>
+                          <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
+                          <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
+                          <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="btn btn-primary jq-changeclass" href="javascript:;">调换班级</a>
+                </div>
+
+                <!-- build:pages -->
+                <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+                <!-- endbuild -->
+
+
+
+
+
+
+
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -199,6 +411,8 @@
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
+
+
 
 
 
@@ -214,8 +428,14 @@
   <script src="../js/vendor/animo.js/animo.js"></script>
   <script src="../js/vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
   <script src="../vendor/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../../js/vendor/moment/min/moment-with-locales.min.js"></script>
+  <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+
+ 
+  <script src="../js/studentmanagement.js"></script>
+
 
 
 

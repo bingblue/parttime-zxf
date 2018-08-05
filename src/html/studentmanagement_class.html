@@ -20,6 +20,9 @@
   <!-- endbuild -->
 
 
+  <link rel="stylesheet" href="../css/wj.css">
+
+
 </head>
 
 <body>
@@ -62,6 +65,9 @@
       </nav>
     </header>
     <!-- endbuild -->
+
+
+
 
 
 
@@ -179,6 +185,9 @@
 
 
 
+
+
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
@@ -187,7 +196,100 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            这里是内容
+            <!-- START panel-->
+            <div class="panel-default">
+              <div class="panel-heading">
+                <form class="text-right form-lineH">
+                  <div class="row">
+                    <div class="col-sm-1">
+                      <button type="button" class="btn btn-primary jq-createclass">创建班级</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- START table-responsive-->
+              <div class="panel-heading">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover dataTable">
+                    <thead>
+                      <tr>
+                        <th class="sorting">创建时间</th>
+                        <th>班级名称</th>
+                        <th>学生人数</th>
+                        <th>操作</th>
+                      </tr>
+                    </thead>
+                    <tbody id="designerlist">
+                      <tr>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>未分班</td>
+                        <td>10</td>
+                        <td>
+                          <a class="btn btn-primary jq-createclass" href="javascript:;">编辑班级</a>
+                          <a class="btn btn-primary jq-deleteclass" href="javascript:;">删除班级</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>过期学员</td>
+                        <td>10</td>
+                        <td>
+                          <a class="btn btn-primary jq-createclass" href="javascript:;">编辑班级</a>
+                          <a class="btn btn-primary jq-deleteclass" href="javascript:;">删除班级</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>班级名称班级名称</td>
+                        <td>10</td>
+                        <td>
+                          <a class="btn btn-primary jq-createclass" href="javascript:;">编辑班级</a>
+                          <a class="btn btn-primary jq-deleteclass" href="javascript:;">删除班级</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- build:pages -->
+                <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+                <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -199,6 +301,9 @@
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
+
+
+
 
 
 
@@ -214,8 +319,13 @@
   <script src="../js/vendor/animo.js/animo.js"></script>
   <script src="../js/vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
   <script src="../vendor/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../../js/vendor/moment/min/moment-with-locales.min.js"></script>
+  <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+
+
+  <script src="../js/studentmanagement.js"></script>
 
 
 
