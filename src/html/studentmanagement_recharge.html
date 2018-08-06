@@ -18,12 +18,13 @@
   <link rel="stylesheet" href="../css/app.css" id="maincss">
   <link rel="stylesheet" href="../css/theme-e.css">
   <!-- endbuild -->
+  <link rel="stylesheet" href="../css/wj.css">
 
 
 
 </head>
 
-<body>
+<body class="recharge-body">
   <div class="wrapper">
     <!-- build:head -->
     <header class="topnavbar-wrapper">
@@ -63,6 +64,7 @@
       </nav>
     </header>
     <!-- endbuild -->
+
 
 
 
@@ -182,6 +184,7 @@
 
 
 
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
@@ -190,7 +193,179 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            这里是内容
+            <!-- START panel-->
+            <div class="panel-default">
+              <div class="panel-heading">
+                <form class="form-lineH">
+                  <div class="row">
+                    <div class="form-group col-sm-3">
+                      <label class="col-sm-4">学生手机：</label>
+                      <div class="col-sm-8">
+                        <input type="tel" name="" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-1">
+                      <button type="button" class="btn btn-primary">搜索</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col-sm-1">选择学生</label>
+                    <div class="form-group col-sm-2">
+                      <div class="radio c-radio">
+                        <label>
+                           <input type="radio" name="a" value="option1">
+                           <span class="fa fa-circle"></span>全部学生</label>
+                     </div>
+                    </div>
+                    <div class="form-group col-sm-2">
+                      <div class="radio c-radio">
+                        <label>
+                           <input type="radio" name="a" value="option1">
+                           <span class="fa fa-circle"></span>体验学生</label>
+                     </div>
+                    </div>
+                    <div class="form-group col-sm-2">
+                      <div class="radio c-radio">
+                        <label>
+                           <input type="radio" name="a" value="option1">
+                           <span class="fa fa-circle"></span>不看体验学生</label>
+                     </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- START table-responsive-->
+              <div class="panel-heading">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover dataTable">
+                    <thead>
+                      <tr>
+                        <th data-check-all>
+                          <div data-toggle="tooltip" data-title="全选" class="checkbox c-checkbox">
+                            <label>
+                              <input class="jq-allcheck" type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </th>
+                        <th>学生手机</th>
+                        <th>姓名</th>
+                        <th>昵称</th>
+                        <th class="sorting">有效期</th>
+                        <th class="sorting">到期日期</th>
+                        <th>班级</th>
+                        <th>当前学员组</th>
+                        <th>操作</th>
+                      </tr>
+                    </thead>
+                    <tbody id="designerlist">
+                      <tr>
+                        <td>
+                          <div class="checkbox c-checkbox">
+                            <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td class="text-warning">18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td class="text-danger">5天</td>
+                        <td>2015-01-21</td>
+                        <td>班级班级</td>
+                        <td>小学</td>
+                        <td>
+                          <a class="btn btn-primary jq-rechargerecord" href="javascript:;">充值记录</a>
+                          <a class="btn btn-primary jq-recharge" href="javascript:;">充值</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox c-checkbox">
+                            <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td class="text-warning">18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td class="text-danger">5天</td>
+                        <td>2015-01-21</td>
+                        <td>班级班级</td>
+                        <td>小学</td>
+                        <td>
+                          <a class="btn btn-primary jq-rechargerecord" href="javascript:;">充值记录</a>
+                          <a class="btn btn-primary jq-recharge" href="javascript:;">充值</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox c-checkbox">
+                            <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td class="text-warning">18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td class="text-danger">5天</td>
+                        <td class="text-danger">2015-01-21</td>
+                        <td>班级班级</td>
+                        <td>小学</td>
+                        <td>
+                          <a class="btn btn-primary jq-rechargerecord" href="javascript:;">充值记录</a>
+                          <a class="btn btn-primary jq-recharge" href="javascript:;">充值</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="btn btn-primary jq-recharge" href="javascript:;">充值</a>
+                </div>
+
+                <!-- build:pages -->
+                <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+                <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -202,6 +377,7 @@
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
+
 
 
 
@@ -222,6 +398,7 @@
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+  <script src="../js/studentmanagement.js"></script>
 
 
 

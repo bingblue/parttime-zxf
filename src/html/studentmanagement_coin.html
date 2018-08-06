@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="../css/app.css" id="maincss">
   <link rel="stylesheet" href="../css/theme-e.css">
   <!-- endbuild -->
+
+
   <link rel="stylesheet" href="../css/wj.css">
 
 
@@ -64,6 +66,8 @@
       </nav>
     </header>
     <!-- endbuild -->
+
+
 
 
 
@@ -185,6 +189,8 @@
 
 
 
+
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
@@ -261,7 +267,7 @@
               <!-- START table-responsive-->
               <div class="panel-heading">
                 <div class="table-responsive">
-                  <table id="table-ext-1" class="table table-bordered table-hover dataTable">
+                  <table class="table table-bordered table-hover dataTable">
                     <thead>
                       <tr>
                         <th data-check-all>
@@ -275,12 +281,11 @@
                         <th>学生手机</th>
                         <th>姓名</th>
                         <th>昵称</th>
-                        <th>学员组</th>
-                        <th class="sorting">有效期</th>
-                        <th class="sorting">注册日期</th>
-                        <th class="sorting">到期日期</th>
-                        <th class="sorting">当前学币</th>
-                        <th class="sorting">年级</th>
+                        <th class="sorting">历史总学币</th>
+                        <th class="sorting">当前持有</th>
+                        <th class="sorting">累计学习获取</th>
+                        <th class="sorting">累计手动增加</th>
+                        <th class="sorting">累计手动减少</th>
                         <th>操作</th>
                       </tr>
                     </thead>
@@ -297,16 +302,15 @@
                         <td class="text-warning">18000000000</td>
                         <td>名字名字</td>
                         <td>昵称昵称</td>
-                        <td>小学</td>
-                        <td class="text-danger">5天</td>
-                        <td>2015-01-21</td>
+                        <td>5天</td>
                         <td>2015-01-21</td>
                         <td>500</td>
-                        <td>七年级</td>
+                        <td>500</td>
+                        <td>500</td>
                         <td>
-                          <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
-                          <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
-                          <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
+                          <a class="btn btn-primary jq-add" href="javascript:;">增加</a>
+                          <a class="btn btn-primary jq-reduce" href="javascript:;">减少</a>
+                          <a class="btn btn-primary jq-record" href="javascript:;">记录</a>
                         </td>
                       </tr>
                       <tr>
@@ -321,16 +325,15 @@
                         <td>18000000000</td>
                         <td>名字名字</td>
                         <td>昵称昵称</td>
-                        <td>小学</td>
                         <td>5天</td>
                         <td>2015-01-21</td>
-                        <td class="text-danger">2015-01-21</td>
                         <td>500</td>
-                        <td>七年级</td>
+                        <td>500</td>
+                        <td>500</td>
                         <td>
-                          <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
-                          <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
-                          <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
+                          <a class="btn btn-primary jq-add" href="javascript:;">增加</a>
+                          <a class="btn btn-primary jq-reduce" href="javascript:;">减少</a>
+                          <a class="btn btn-primary jq-record" href="javascript:;">记录</a>
                         </td>
                       </tr>
                       <tr>
@@ -345,21 +348,21 @@
                         <td>18000000000</td>
                         <td>名字名字</td>
                         <td>昵称昵称</td>
-                        <td>小学</td>
                         <td>5天</td>
                         <td>2015-01-21</td>
-                        <td>2015-01-21</td>
                         <td>500</td>
-                        <td>七年级</td>
+                        <td>500</td>
+                        <td>500</td>
                         <td>
-                          <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
-                          <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
-                          <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
+                          <a class="btn btn-primary jq-add" href="javascript:;">增加</a>
+                          <a class="btn btn-primary jq-reduce" href="javascript:;">减少</a>
+                          <a class="btn btn-primary jq-record" href="javascript:;">记录</a>
                         </td>
                       </tr>
                     </tbody>
                   </table>
-                  <a class="btn btn-primary jq-changeclass" href="javascript:;">调换班级</a>
+                  <a class="btn btn-primary jq-add" href="javascript:;">增加学币</a>
+                  <a class="btn btn-primary jq-reduce" href="javascript:;">减少学币</a>
                 </div>
 
                 <!-- build:pages -->
@@ -398,6 +401,8 @@
 
 
 
+
+
               </div>
             </div>
           </div>
@@ -411,6 +416,8 @@
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
+
+
 
 
 
@@ -432,6 +439,8 @@
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+
+
 
  
   <script src="../js/studentmanagement.js"></script>

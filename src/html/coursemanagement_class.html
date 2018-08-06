@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="../css/app.css" id="maincss">
   <link rel="stylesheet" href="../css/theme-e.css">
   <!-- endbuild -->
+  <link rel="stylesheet" href="../css/wj.css">
 
 
 
@@ -63,6 +64,7 @@
       </nav>
     </header>
     <!-- endbuild -->
+
 
 
 
@@ -186,18 +188,113 @@
 
 
 
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
-          主题 <span class="text-sm hidden-xs">同行副标题</span>
-          <small>同列副标题</small>
+          班级课程
         </div>
         <div class="row">
-          <div class="col-xs-12">
-            这里是内容
+          <!-- <div class="col-md-12">
+              <div id="nestable" class="dd">
+                <ol class="dd-list">
+                  <li data-id="1" class="dd-item">
+                    <div class="dd-handle row">
+                      <div class="col-sm-3">班级名称</div>
+                      <div class="col-sm-2">学生人数</div>
+                      <div class="col-sm-3">主课程数</div>
+                      <div class="col-sm-3">完成课程学生</div>
+                    </div>
+                  </li>
+                  <li data-id="1" class="dd-item">
+                    <div class="dd-handle row">
+                      <div class="col-sm-3">班级名称</div>
+                      <div class="col-sm-2">6</div>
+                      <div class="col-sm-3">6</div>
+                      <div class="col-sm-3">6</div>
+                    </div>
+                    <ol class="dd-list" style="">
+                      <li data-id="2" class="dd-item">
+                        <div class="dd-handle">1 小学英语 - 北师大版 ● 三年级上册<a href="javascript:;" class="pull-right">删除课程</a></div>
+                      </li>
+                      <li data-id="3" class="dd-item">
+                        <div class="dd-handle">2 成人考试 - 大学英语自学教程 ● 上册(一)<a href="javascript:;" class="pull-right">删除课程</a></div>
+                      </li>
+                      <li data-id="4" class="dd-item">
+                        <div class="dd-handle">3 小学英语 - EEC ● 二年级下<a href="javascript:;" class="pull-right">删除课程</a></div>
+                      </li>
+                    </ol>
+                  </li>
+                  <li data-id="5" class="dd-item">
+                    <div class="dd-handle row">
+                      <div class="col-sm-3">班级名称</div>
+                      <div class="col-sm-2">6</div>
+                      <div class="col-sm-3">6</div>
+                      <div class="col-sm-3">6</div>
+                    </div>
+                    <ol class="dd-list" style="">
+                      <li data-id="6" class="dd-item">
+                        <div class="dd-handle">1 小学英语 - 北师大版 ● 三年级上册<a href="javascript:;" class="pull-right">删除课程</a></div>
+                      </li>
+                      <li data-id="7" class="dd-item">
+                        <div class="dd-handle">2 成人考试 - 大学英语自学教程 ● 上册(一)<a href="javascript:;" class="pull-right">删除课程</a></div>
+                      </li>
+                      <li data-id="8" class="dd-item">
+                        <div class="dd-handle">3 小学英语 - EEC ● 二年级下<a href="javascript:;" class="pull-right">删除课程</a></div>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </div>
+          </div> -->
+          <div id="panelDemo1" class="panel panel-default">
+            <div class="panel-heading">
+              <div class="dd-handle row">
+                <a href="#" data-tool="panel-collapse" data-toggle="tooltip" title="" class="pull-left" data-original-title="Collapse Panel">
+                  <em class="fa fa-minus"></em>
+                </a>
+                <div class="col-sm-3">班级名称</div>
+                <div class="col-sm-2">学生人数</div>
+                <div class="col-sm-3">主课程数</div>
+                <div class="col-sm-3">完成课程学生</div>
+              </div>
+            </div>
+            <div class="panel-wrapper collapse in" aria-expanded="true">
+                <div class="panel-body">
+                  <p>Panel can be collapsed clicking on the chevron up/down icon on the top right corner</p>
+                </div>
+                <div class="panel-footer">Panel Footer</div>
+            </div>
           </div>
         </div>
+         <!-- 分页 -->
+         <div class="row">
+            <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+              <ul class="pagination pagination-sm m0">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">1</a>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li class="active">
+                  <a href="#">3</a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>  
+          <!-- endbuild -->
       </div>
     </section>
     <!-- 主要内容END -->
@@ -207,6 +304,7 @@
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
+
 
 
 
@@ -229,6 +327,8 @@
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+  <script src="../vendor/nestable/jquery.nestable.js"></script>
+  <script src="../js/coursemanagement.js"></script>
 
 
 

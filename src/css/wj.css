@@ -11,3 +11,31 @@
 .sweet-alert {
   width: 600px;
 }
+
+.table > tbody > tr > .reason {
+  height: 51px;
+  max-width: 240px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.table > tbody > tr > .reason:hover {
+  height: 51px;
+  max-width: 240px;
+  overflow: auto;
+  white-space: normal;
+  text-overflow: initial;
+}
+
+.recharge-body .sweet-alert {
+  width: 800px;
+}
+
+.recharge-body .sweet-alert .text-danger {
+  color: #f05050;
+}
+
+.dd {
+  max-width: 100%;
+}
