@@ -219,6 +219,7 @@
     }
 .xc-head .xc-head-bottom .xc-head-categories .xc-head-category {
         float: left;
+        cursor: pointer;
       }
 .xc-head .xc-head-bottom .xc-head-categories .circle {
         vertical-align: top;
@@ -932,7 +933,8 @@
             line-height: 24px;
             padding: 0 10px;
             border-radius: 12px;
-            border: 1px solid #fff
+            border: 1px solid #fff;
+            cursor: pointer
           }
 
 .xc-body .course-main .course-head .course-head-bottom .course-head-courses .course-head-course.active {
@@ -966,7 +968,8 @@
           line-height: 20px;
           padding: 15px 30px;
           overflow: hidden;
-          height: 20px
+          height: 20px;
+          cursor: pointer
         }
 
 .xc-body .course-main .course-body .course-body-left .course-body-untiy:nth-child(2n + 2) {
@@ -2074,4 +2077,14 @@
 }
 .xc-html .xc-body .wrap.mt {
   min-height: calc(100% - 160px);
+}
+.course-body-box {
+  width: 920px;
+  float: left;
+}
+.course-body-box .course-body-box-item {
+    display: none
+  }
+.course-body-box .course-body-box-item.active {
+  display: block;
 }

@@ -227,6 +227,7 @@
 
       .xc-head-category {
         float: left;
+        cursor: pointer;
       }
 
       .circle {
@@ -943,7 +944,7 @@
             padding: 0 10px;
             border-radius: 12px;
             border: 1px solid #fff;
-
+            cursor: pointer;
             &.active {
               color: #0085e6;
               border-color: #0085e6;
@@ -977,7 +978,7 @@
           padding: 15px 30px;
           overflow: hidden;
           height: 20px;
-
+          cursor: pointer;
           &:nth-child(2n + 2) {
             background-color: #fff;
           }
@@ -2067,6 +2068,16 @@
       &.mt {
         min-height: calc(100% - 160px);
       }
+    }
+  }
+}
+.course-body-box {
+  width: 920px;
+  float: left;
+  .course-body-box-item {
+    display: none;
+    &.active {
+      display: block;
     }
   }
 }

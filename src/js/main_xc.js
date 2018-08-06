@@ -18,6 +18,70 @@ $(function () {
       this.clasProHover()
       this.intelTextNav()
       this.writeTextHeight()
+      this.addSyncClass()
+      this.addSyncBody()
+      this.wordsAct()
+      this.endTime()
+    },
+    endTime: function () {
+      var $time = $('#xc-time')
+      var timer = ''
+      function start () {
+        var time = Number($time.attr('time'))
+        if (time - 1) {
+          $time.text(returnTime(time))
+        } else {
+          timer && clearInterval(timer)
+          $time.addClass('end')
+        }
+      }
+      start()
+      timer = setInterval(function () {
+        start()
+        $time.attr('time', Number($time.attr('time')) -1)
+      }, 1000)
+      function returnTime (time) {
+        return addZero(parseInt(time / 60 / 60 % 24)) + ':' + addZero(parseInt(time / 60 % 60))
+      }
+      function addZero (num) {
+        if (num < 9) {
+          return '0' + num
+        } else {
+          return num
+        }
+      }
+    },
+    addSyncBody: function () {
+      $('.course-body .course-body-untiy').on('click', function () {
+        var $this = $(this)
+        if (!$this.hasClass('active')) {
+          $this.addClass('active').siblings().removeClass('active')
+          var $index = $this.index()
+          $('.course-body .course-body-box-item').eq($index).addClass('active').siblings().removeClass('active')
+        }
+      })
+    },
+    /**
+     * 單詞表
+     */
+    wordsAct: function () {
+      $('.xc-head-categories .radio').click(function () {
+        var $this = $(this).find('.circle')
+        if (!$this.hasClass('active')) {
+          $this.addClass('active').parent().siblings().find('.circle').removeClass('active')
+        }
+      })
+    },
+    /**
+     * 同步课程导航切换
+     */
+    addSyncClass: function () {
+      $('.course-head-courses .course-head-course').click(function () {
+        var $this = $(this)
+        if (!$this.hasClass('active')) {
+          $this.addClass('active').siblings().removeClass('active')
+        }
+      })
     },
     /**
      * 作文高度自适应 和 范文切换
@@ -138,12 +202,18 @@ $(function () {
      * @author xc
      */
     tableSwitch: function () {
-      $('.xc-body .table-switch').on('click', function () {
+      $('.xc-table .table-switch').on('click', function () {
         var $this = $(this)
+        var $index = $this.parent().index()
+        console.log($index)
         if ($this.hasClass('active')) {
           $this.removeClass('active')
+          $this.find('.tit').text('隐藏全部')
+          $this.parents('.xc-table').find('tbody tr :nth-child(' + ($index + 1) + ') span').css('display', 'inline')
         } else {
           $this.addClass('active')
+          $this.find('.tit').text('显示全部')
+          $this.parents('.xc-table').find('tbody tr :nth-child(' + ($index + 1) + ') span').css('display', 'none')
         }
       })
     }
