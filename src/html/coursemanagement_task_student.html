@@ -198,8 +198,8 @@
         <div class="">
           <div id="panelDemo14" class="panel panel-default">
             <div class="panel-heading">
-              <a class="wj-a wj-a-active" href="javascript:;">班级任务</a>
-              <a class="wj-a" href="./coursemanagement_task_student.html">学生任务</a>
+              <a class="wj-a" href="./coursemanagement_task.html">班级任务</a>
+              <a class="wj-a wj-a-active" href="javascript:;">学生任务</a>
               <form class="text-right form-lineH">
                   <div class="row">
                     <div class="form-group col-sm-3">
@@ -207,6 +207,16 @@
                       <div class="col-sm-8">
                         <select name="" id="" class="form-control">
                           <option value="">XXXXXX班（22名学生）</option>
+                          <option value="1">未分班</option>
+                          <option value="2">过期学员</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-3">
+                      <label class="col-sm-4">选择学生：</label>
+                      <div class="col-sm-8">
+                        <select name="" id="" class="form-control">
+                          <option value="">张三（18000000000）</option>
                           <option value="1">未分班</option>
                           <option value="2">过期学员</option>
                         </select>
@@ -240,6 +250,7 @@
                               <th>课程</th>
                               <th>创建时间</th>
                               <th>任务时间</th>
+                              <th>完成任务时间</th>
                               <th>智学单词（单元）</th>
                               <th>智学句子（单元）</th>
                               <th>同步课程（单元）</th>
@@ -251,6 +262,7 @@
                             <tr>
                               <td>初中英语-牛津上海版  七年级上册</td>
                               <td>2018-01-01~2018-01-01</td>
+                              <td class="text-danger">2018-01-01~2018-01-01</td>
                               <td>2018-01-01~2018-01-01</td>
                               <td>5</td>
                               <td>10</td>
@@ -264,6 +276,7 @@
                             <tr>
                               <td>初中英语-牛津上海版  七年级上册</td>
                               <td>2018-01-01~2018-01-01</td>
+                              <td class="text-danger">2018-01-01~暂未完成</td>
                               <td>2018-01-01~2018-01-01</td>
                               <td>5</td>
                               <td>10</td>
@@ -276,6 +289,21 @@
                             </tr>
                             <tr>
                               <td>初中英语-牛津上海版  七年级上册</td>
+                              <td>2018-01-01~2018-01-01</td>
+                              <td class="text-danger">未开始任务</td>
+                              <td>2018-01-01~2018-01-01</td>
+                              <td>5</td>
+                              <td>10</td>
+                              <td>5</td>
+                              <td>10</td>
+                              <td>
+                                <a class="btn btn-primary jq-createclass" href="javascript:;">修改</a>
+                                <a class="btn btn-primary jq-deleteclass" href="javascript:;">删除</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>初中英语-牛津上海版  七年级上册</td>
+                              <td>2018-01-01~2018-01-01</td>
                               <td>2018-01-01~2018-01-01</td>
                               <td>2018-01-01~2018-01-01</td>
                               <td>5</td>
@@ -301,6 +329,7 @@
                               <th>课程</th>
                               <th>创建时间</th>
                               <th>任务时间</th>
+                              <th>完成任务时间</th>
                               <th>互动学习（单元）</th>
                               <th>学后智测（单元）</th>
                               <th>操作</th>
@@ -310,6 +339,7 @@
                             <tr>
                               <td>初中语法-代词</td>
                               <td>2018-01-01~2018-01-01</td>
+                              <td class="text-danger">2018-01-01~暂未完成</td>
                               <td>2018-01-01~2018-01-01</td>
                               <td>5</td>
                               <td>10</td>
@@ -321,6 +351,7 @@
                             <tr>
                               <td>初中语法-代词</td>
                               <td>2018-01-01~2018-01-01</td>
+                              <td class="text-danger">2018-01-01~暂未完成</td>
                               <td>2018-01-01~2018-01-01</td>
                               <td>5</td>
                               <td>10</td>
@@ -332,6 +363,7 @@
                             <tr>
                               <td>初中语法-代词</td>
                               <td>2018-01-01~2018-01-01</td>
+                              <td>2018-01-01~暂未完成</td>
                               <td>2018-01-01~2018-01-01</td>
                               <td>5</td>
                               <td>10</td>
@@ -354,6 +386,7 @@
                               <th>课程</th>
                               <th>创建时间</th>
                               <th>任务时间</th>
+                              <th>完成任务时间</th>
                               <th>同步智测 易（单元）</th>
                               <th>同步智测 中（单元）</th>
                               <th>同步智测 难（单元）</th>
@@ -365,6 +398,7 @@
                             <tr>
                               <td>初中英语-牛津上海版  七年级上册</td>
                               <td>2018-01-01~2018-01-01</td>
+                              <td class="text-danger">2018-01-01~暂未完成</td>
                               <td>2018-01-01~2018-01-01</td>
                               <td>5</td>
                               <td>10</td>
@@ -378,6 +412,7 @@
                             <tr>
                               <td>初中英语-牛津上海版  七年级上册</td>
                               <td>2018-01-01~2018-01-01</td>
+                              <td class="text-danger">2018-01-01~暂未完成</td>
                               <td>2018-01-01~2018-01-01</td>
                               <td>5</td>
                               <td>10</td>
@@ -391,6 +426,7 @@
                             <tr>
                               <td>初中英语-牛津上海版  七年级上册</td>
                               <td>2018-01-01~2018-01-01</td>
+                              <td class="text-danger">2018-01-01~暂未完成</td>
                               <td>2018-01-01~2018-01-01</td>
                               <td>5</td>
                               <td>10</td>

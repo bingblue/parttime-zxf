@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="../css/app.css" id="maincss">
   <link rel="stylesheet" href="../css/theme-e.css">
   <!-- endbuild -->
-
+  <link rel="stylesheet" href="../css/wj.css">
 
 
 
@@ -193,12 +193,249 @@
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
-          主题 <span class="text-sm hidden-xs">同行副标题</span>
-          <small>同列副标题</small>
+          复习模式管理
         </div>
         <div class="row">
           <div class="col-xs-12">
-            这里是内容
+            <!-- START panel-->
+            <div class="panel-default">
+              <div class="panel-heading">
+                <form class="text-right form-lineH">
+                  <div class="row">
+                    <div class="form-group col-sm-3">
+                      <label class="col-sm-4">选择班级：</label>
+                      <div class="col-sm-8">
+                        <select name="" id="" class="form-control">
+                          <option value="">全部</option>
+                          <option value="1">未分班</option>
+                          <option value="2">过期学员</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-3">
+                      <label class="col-sm-4">学生手机：</label>
+                      <div class="col-sm-8">
+                        <input type="tel" name="" class="form-control" placeholder="请输入学生注册手机号检索">
+                      </div>
+                    </div>
+                    <div class="col-sm-1">
+                      <button type="button" class="btn btn-primary">搜索</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- START table-responsive-->
+              <div class="panel-heading">
+                <div class="table-responsive">
+                  <table id="table-ext-1" class="table table-bordered table-hover dataTable">
+                    <thead>
+                      <tr>
+                        <th data-check-all>
+                          <div data-toggle="tooltip" data-title="全选" class="checkbox c-checkbox">
+                            <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </th>
+                        <th>学生手机</th>
+                        <th>姓名</th>
+                        <th>强制复习范围</th>
+                        <th>强制复习范围</th>
+                      </tr>
+                    </thead>
+                    <tbody id="designerlist">
+                      <tr>
+                        <td>
+                          <div class="checkbox c-checkbox">
+                            <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td class="text-warning">18000000000</td>
+                        <td>名字名字</td>
+                        <td>
+                          <label class="radio-inline c-radio">
+                              <input type="radio" name="a" value="option1">
+                              <span class="fa fa-circle"></span>自由学习</label>
+                          <label class="radio-inline c-radio">
+                              <input type="radio" name="a" value="option1">
+                              <span class="fa fa-circle"></span>当前课程强制</label>
+                          <label class="radio-inline c-radio">
+                              <input type="radio" name="a" value="option1">
+                              <span class="fa fa-circle"></span>班级课程强制</label>
+                          <label class="radio-inline c-radio">
+                              <input type="radio" name="a" value="option1">
+                              <span class="fa fa-circle"></span>全部课程强制</label>
+                        </td>
+                        <td>
+                          <label class="checkbox-inline c-checkbox">
+                              <input id="inlineCheckbox10" type="checkbox" value="option1">
+                              <span class="fa fa-check"></span>听音写词</label>
+                          <label class="checkbox-inline c-checkbox">
+                              <input id="inlineCheckbox10" type="checkbox" value="option1">
+                              <span class="fa fa-check"></span>看字拼词</label>
+                          <label class="checkbox-inline c-checkbox">
+                              <input id="inlineCheckbox10" type="checkbox" value="option1">
+                              <span class="fa fa-check"></span>看字组句</label>
+                          <label class="checkbox-inline c-checkbox">
+                              <input id="inlineCheckbox10" type="checkbox" value="option1">
+                              <span class="fa fa-check"></span>看字拼句</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox c-checkbox">
+                            <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td>18000000000</td>
+                        <td>名字名字</td>
+                        <td>
+                          <label class="radio-inline c-radio">
+                              <input type="radio" name="a" value="option1">
+                              <span class="fa fa-circle"></span>自由学习</label>
+                          <label class="radio-inline c-radio">
+                              <input type="radio" name="a" value="option1">
+                              <span class="fa fa-circle"></span>当前课程强制</label>
+                          <label class="radio-inline c-radio">
+                              <input type="radio" name="a" value="option1">
+                              <span class="fa fa-circle"></span>班级课程强制</label>
+                          <label class="radio-inline c-radio">
+                              <input type="radio" name="a" value="option1">
+                              <span class="fa fa-circle"></span>全部课程强制</label>
+                        </td>
+                        <td>
+                          <label class="checkbox-inline c-checkbox">
+                              <input id="inlineCheckbox10" type="checkbox" value="option1">
+                              <span class="fa fa-check"></span>听音写词</label>
+                          <label class="checkbox-inline c-checkbox">
+                              <input id="inlineCheckbox10" type="checkbox" value="option1">
+                              <span class="fa fa-check"></span>看字拼词</label>
+                          <label class="checkbox-inline c-checkbox">
+                              <input id="inlineCheckbox10" type="checkbox" value="option1">
+                              <span class="fa fa-check"></span>看字组句</label>
+                          <label class="checkbox-inline c-checkbox">
+                              <input id="inlineCheckbox10" type="checkbox" value="option1">
+                              <span class="fa fa-check"></span>看字拼句</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox c-checkbox">
+                            <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td>18000000000</td>
+                        <td>名字名字</td>
+                        <td>
+                          <label class="radio-inline c-radio">
+                              <input type="radio" name="a" value="option1">
+                              <span class="fa fa-circle"></span>自由学习</label>
+                          <label class="radio-inline c-radio">
+                              <input type="radio" name="a" value="option1">
+                              <span class="fa fa-circle"></span>当前课程强制</label>
+                          <label class="radio-inline c-radio">
+                              <input type="radio" name="a" value="option1">
+                              <span class="fa fa-circle"></span>班级课程强制</label>
+                          <label class="radio-inline c-radio">
+                              <input type="radio" name="a" value="option1">
+                              <span class="fa fa-circle"></span>全部课程强制</label>
+                        </td>
+                        <td>
+                          <label class="checkbox-inline c-checkbox">
+                              <input id="inlineCheckbox10" type="checkbox" value="option1">
+                              <span class="fa fa-check"></span>听音写词</label>
+                          <label class="checkbox-inline c-checkbox">
+                              <input id="inlineCheckbox10" type="checkbox" value="option1">
+                              <span class="fa fa-check"></span>看字拼词</label>
+                          <label class="checkbox-inline c-checkbox">
+                              <input id="inlineCheckbox10" type="checkbox" value="option1">
+                              <span class="fa fa-check"></span>看字组句</label>
+                          <label class="checkbox-inline c-checkbox">
+                              <input id="inlineCheckbox10" type="checkbox" value="option1">
+                              <span class="fa fa-check"></span>看字拼句</label>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="padding-10">
+                    <label class="radio-inline c-radio">
+                        <input type="radio" name="a" value="option1">
+                        <span class="fa fa-circle"></span>自由学习</label>
+                    <label class="radio-inline c-radio">
+                        <input type="radio" name="a" value="option1">
+                        <span class="fa fa-circle"></span>当前课程强制</label>
+                    <label class="radio-inline c-radio">
+                        <input type="radio" name="a" value="option1">
+                        <span class="fa fa-circle"></span>班级课程强制</label>
+                    <label class="radio-inline c-radio">
+                        <input type="radio" name="a" value="option1">
+                        <span class="fa fa-circle"></span>全部课程强制</label>
+                    <label class="checkbox-inline c-checkbox">
+                        <input id="inlineCheckbox10" type="checkbox" value="option1">
+                        <span class="fa fa-check"></span>听音写词</label>
+                    <label class="checkbox-inline c-checkbox">
+                        <input id="inlineCheckbox10" type="checkbox" value="option1">
+                        <span class="fa fa-check"></span>看字拼词</label>
+                    <label class="checkbox-inline c-checkbox">
+                        <input id="inlineCheckbox10" type="checkbox" value="option1">
+                        <span class="fa fa-check"></span>看字组句</label>
+                    <label class="checkbox-inline c-checkbox">
+                        <input id="inlineCheckbox10" type="checkbox" value="option1">
+                        <span class="fa fa-check"></span>看字拼句</label>
+                    <a class="btn btn-primary jq-changeclass" href="javascript:;">批量提交</a>
+                  </div>
+                </div>
+
+                <!-- build:pages -->
+                <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+                <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -94,20 +94,6 @@ $(function(){
       }
     })
   })
-  // 全选
-  $('.jq-allcheck').click(function(){
-    let isallchecked = $('.jq-allcheck').is(':checked')
-    const checkedli = $('#designerlist').find('input[type=checkbox]').length
-    if(isallchecked) {
-      $('#designerlist').find('input[type=checkbox]').each(function(){
-        $(this).attr("checked",true)
-      })
-    } else {
-      $('#designerlist').find('input[type=checkbox]').each(function(){
-        $(this).attr("checked",false)
-      })
-    }
-  })
   // 学生列表 换班级
   $('.jq-changeclass').click(function(){
     swal({
