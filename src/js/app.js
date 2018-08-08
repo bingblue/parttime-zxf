@@ -804,13 +804,21 @@
 
   });
 
-})(window, document, window.jQuery);
+})(window, document, window.jQuery)
 
-(function(window, document, $, undefined){
+// Morris
+// ----------------------------------- 
 
-  $(function(){
+
+
+// NAVBAR SEARCH
+// ----------------------------------- 
+
+// (function(window, document, $, undefined){
+
+//   $(function(){
     
 
-  });
+//   });
 
-})(window, document, window.jQuery);
+// })(window, document, window.jQuery);

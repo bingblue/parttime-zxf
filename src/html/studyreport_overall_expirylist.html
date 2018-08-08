@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>学生兑换管理-未兑换</title>
+  <title>学习报告-总体报告-即将到期学员</title>
   <!-- build:css -->
   <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="../css/app.css" id="maincss">
   <link rel="stylesheet" href="../css/theme-e.css">
   <!-- endbuild -->
-
   <link rel="stylesheet" href="../css/wj.css">
 
 
@@ -65,6 +64,8 @@
       </nav>
     </header>
     <!-- endbuild -->
+
+
 
 
 
@@ -188,35 +189,25 @@
 
 
 
+
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
-          未兑换
+          即将到期学员
         </div>
         <div class="row">
           <div class="col-xs-12">
             <!-- START panel-->
             <div class="panel-default">
               <div class="panel-heading">
-                <form class="text-right form-lineH">
+                <form class="form-lineH">
                   <div class="row">
-                    <div class="form-group col-sm-2">
-                      <label class="radio-inline c-radio">
-                          <input type="radio" name="a" value="option1">
-                          <span class="fa fa-circle"></span>全部</label>
-                    </div>
-                    <div class="form-group col-sm-4">
-                        <label class="radio-inline c-radio col-sm-3">
-                            <input type="radio" name="a" value="option1">
-                            <span class="fa fa-circle"></span>选择班级</label>
-                      <div class="col-sm-8">
-                        <select name="" id="" class="form-control">
-                          <option value="">全部</option>
-                          <option value="1">未分班</option>
-                          <option value="2">过期学员</option>
-                        </select>
-                      </div>
+                    <div class="form-group col-sm-3">
+                        <label class="checkbox-inline c-checkbox">
+                            <input id="inlineCheckbox10" type="checkbox" value="option1">
+                            <span class="fa fa-check"></span>不显示体验学员</label>
                     </div>
                   </div>
                 </form>
@@ -227,80 +218,49 @@
                   <table class="table table-bordered table-hover dataTable">
                     <thead>
                       <tr>
-                        <th data-check-all>
-                          <div data-toggle="tooltip" data-title="全选" class="checkbox c-checkbox">
-                            <label>
-                              <input class="jq-allcheck" type="checkbox">
-                              <span class="fa fa-check"></span>
-                            </label>
-                          </div>
-                        </th>
-                        <th class="sorting">下单时间</th>
-                        <th>兑换学员</th>
-                        <th>商品名称</th>
-                        <th>商品价格</th>
-                        <th>操作</th>
+                        <th>学生手机</th>
+                        <th>姓名</th>
+                        <th>昵称</th>
+                        <th class="sorting">有效期</th>
+                        <th class="sorting">注册日期</th>
+                        <th class="sorting">到期日期</th>
+                        <th class="sorting">当前学币</th>
+                        <th class="sorting">年级</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="designerlist">
                       <tr>
-                        <td>
-                          <div class="checkbox c-checkbox">
-                            <label>
-                              <input type="checkbox">
-                              <span class="fa fa-check"></span>
-                            </label>
-                          </div>
-                        </td>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>学员名+学员手机</td>
-                        <td>商品名称商品名称</td>
-                        <td>10</td>
-                        <td>
-                          <a class="btn btn-primary jq-edit" href="javascript:;">兑换</a>
-                          <a class="btn btn-primary jq-cancle" href="javascript:;">取消</a>
-                        </td>
+                        <td class="text-warning">18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td class="text-danger">5天</td>
+                        <td>2015-01-21</td>
+                        <td>2015-01-21</td>
+                        <td>500</td>
+                        <td>七年级</td>
                       </tr>
                       <tr>
-                        <td>
-                          <div class="checkbox c-checkbox">
-                            <label>
-                              <input type="checkbox">
-                              <span class="fa fa-check"></span>
-                            </label>
-                          </div>
-                        </td>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>学员名+学员手机</td>
-                        <td>商品名称商品名称</td>
-                        <td>10</td>
-                        <td>
-                          <a class="btn btn-primary jq-edit" href="javascript:;">兑换</a>
-                          <a class="btn btn-primary jq-cancle" href="javascript:;">取消</a>
-                        </td>
+                        <td>18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td>5天</td>
+                        <td>2015-01-21</td>
+                        <td class="text-danger">2015-01-21</td>
+                        <td>500</td>
+                        <td>七年级</td>
                       </tr>
                       <tr>
-                        <td>
-                          <div class="checkbox c-checkbox">
-                            <label>
-                              <input type="checkbox">
-                              <span class="fa fa-check"></span>
-                            </label>
-                          </div>
-                        </td>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>学员名+学员手机</td>
-                        <td>商品名称商品名称</td>
-                        <td>10</td>
-                        <td>
-                          <a class="btn btn-primary jq-edit" href="javascript:;">兑换</a>
-                          <a class="btn btn-primary jq-cancle" href="javascript:;">取消</a>
-                        </td>
+                        <td>18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td>5天</td>
+                        <td>2015-01-21</td>
+                        <td>2015-01-21</td>
+                        <td>500</td>
+                        <td>七年级</td>
                       </tr>
                     </tbody>
                   </table>
-                  <a class="btn btn-primary jq-all" href="javascript:;">批量兑换</a>
-                  <a class="btn btn-primary jq-qllcancle" href="javascript:;">批量取消</a>
                 </div>
 
                 <!-- build:pages -->
@@ -341,7 +301,6 @@
 
 
 
-
               </div>
             </div>
           </div>
@@ -349,12 +308,14 @@
       </div>
     </section>
     <!-- 主要内容END -->
-    
+
     <!-- build:foot -->
     <footer>
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
+
+
 
 
 
@@ -378,7 +339,9 @@
   <script src="../js/app.js"></script>
   <!-- endbuild -->
 
-  <script src="../js/exchangemanagement.js"></script>
+
+
+
 
 
 

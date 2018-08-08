@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="../css/app.css" id="maincss">
   <link rel="stylesheet" href="../css/theme-e.css">
   <!-- endbuild -->
-
+  <link rel="stylesheet" href="../css/wj.css">
 
 
 
@@ -199,7 +199,10 @@
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
-          张三（18000000000）的学习报告
+          <div class="clearfix">
+              <span class="pull-left">张三（18000000000）的学习报告</span>
+              <button class="pull-right btn btn-info" type="button">返回</button>
+          </div>
           <ol class="breadcrumb">
             <li><a href="#">学习报告</a></li>
             <li><a href="#">全部报告</a></li>
@@ -208,7 +211,108 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            这里是内容
+            <div class="mb-20">
+              <a class="wj-a wj-a-active" href="./studyreport_all_info.html">今日学况</a>
+              <a class="wj-a" href="./studyreport_all_info_2.html">学习日记</a>
+              <a class="wj-a" href="./studyreport_all_info_3.html">学习记录</a>
+              <a class="wj-a" href="./studyreport_all_info_4.html">学习地图</a>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">学习时长</div>
+              <div class="panel-body">
+                <p><span class="width-100">在线时长</span><span>02:20:31</span></p>
+                <p><span class="width-100">有效时长</span><span>02:20:31</span></p>
+                <p><span class="width-100">有效时长占比</span><span>100%</span></p>
+              </div>
+              <!-- START table-responsive-->
+            <div class="panel-heading">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover dataTable">
+                    <thead>
+                      <tr>
+                        <th class="sorting">开始时间</th>
+                        <th class="sorting">有效时间</th>
+                        <th>学习板块</th>
+                        <th>次级板块</th>
+                        <th>单元信息</th>
+                        <th>学习结果</th>
+                        <th>得分</th>
+                      </tr>
+                    </thead>
+                    <tbody id="designerlist">
+                      <tr>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>22:22:22</td>
+                        <td>同步课程-智学单词</td>
+                        <td>智能预习</td>
+                        <td>牛津上海版  七年级上册  Unit2</td>
+                        <td>完成</td>
+                        <td>120</td>
+                      </tr>
+                      <tr>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>22:22:22</td>
+                        <td>同步课程-智学单词</td>
+                        <td>智能预习</td>
+                        <td>牛津上海版  七年级上册  Unit2</td>
+                        <td>完成</td>
+                        <td>120</td>
+                      </tr>
+                      <tr>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>22:22:22</td>
+                        <td>同步课程-智学单词</td>
+                        <td>智能预习</td>
+                        <td>牛津上海版  七年级上册  Unit2</td>
+                        <td>完成</td>
+                        <td>120</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="btn btn-primary jq-changeclass" href="javascript:;">调换班级</a>
+                </div>
+  
+                <!-- build:pages -->
+                <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+                <!-- endbuild -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -247,7 +351,7 @@
   <script src="../js/app.js"></script>
   <!-- endbuild -->
 
-
+ 
 
 
 

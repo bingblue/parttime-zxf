@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>学生兑换管理-未兑换</title>
+  <title>学习报告-详细记录</title>
   <!-- build:css -->
   <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
@@ -18,7 +18,8 @@
   <link rel="stylesheet" href="../css/app.css" id="maincss">
   <link rel="stylesheet" href="../css/theme-e.css">
   <!-- endbuild -->
-
+  <link rel="stylesheet" href="../vendor/raphael/raphael.js">
+  <link rel="stylesheet" href="../vendor/morris.js/morris.css">
   <link rel="stylesheet" href="../css/wj.css">
 
 
@@ -65,6 +66,10 @@
       </nav>
     </header>
     <!-- endbuild -->
+
+
+
+
 
 
 
@@ -188,168 +193,90 @@
 
 
 
+
+
+
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
-          未兑换
+          <div class="clearfix">
+              <span class="pull-left">张三（18000000000）的学习报告</span>
+              <button class="pull-right btn btn-info" type="button">返回</button>
+          </div>
+          <ol class="breadcrumb">
+            <li><a href="#">学习报告</a></li>
+            <li><a href="#">全部报告</a></li>
+            <li class="active">详细记录</li>
+          </ol>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <!-- START panel-->
-            <div class="panel-default">
+            <div class="mb-20">
+              <a class="wj-a" href="javascript:;">今日学况</a>
+              <a class="wj-a wj-a-active" href="javascript:;">学习日记</a>
+              <a class="wj-a" href="javascript:;">学习记录</a>
+              <a class="wj-a" href="javascript:;">学习地图</a>
+            </div>
+            <div class="panel panel-default">
               <div class="panel-heading">
-                <form class="text-right form-lineH">
+                <form class="form-lineH">
                   <div class="row">
+                    <label class="col-sm-1">时间段</label>
                     <div class="form-group col-sm-2">
-                      <label class="radio-inline c-radio">
-                          <input type="radio" name="a" value="option1">
-                          <span class="fa fa-circle"></span>全部</label>
-                    </div>
-                    <div class="form-group col-sm-4">
-                        <label class="radio-inline c-radio col-sm-3">
+                      <div class="radio c-radio">
+                        <label>
                             <input type="radio" name="a" value="option1">
-                            <span class="fa fa-circle"></span>选择班级</label>
-                      <div class="col-sm-8">
-                        <select name="" id="" class="form-control">
-                          <option value="">全部</option>
-                          <option value="1">未分班</option>
-                          <option value="2">过期学员</option>
-                        </select>
+                            <span class="fa fa-circle"></span>最近30天</label>
                       </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <div class="radio c-radio col-sm-4">
+                        <label>
+                            <input type="radio" name="a" value="option1">
+                            <span class="fa fa-circle"></span>选择月份</label>
+                      </div>
+                      <div class="col-sm-6">
+                          <p class="input-group date datetimepicker">
+                            <input type="text" class="form-control" placeholder="请选择开始时间">
+                            <span class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </span>
+                          </p>
+                        </div>
                     </div>
                   </div>
                 </form>
-              </div>
-              <!-- START table-responsive-->
-              <div class="panel-heading">
-                <div class="table-responsive">
-                  <table class="table table-bordered table-hover dataTable">
-                    <thead>
-                      <tr>
-                        <th data-check-all>
-                          <div data-toggle="tooltip" data-title="全选" class="checkbox c-checkbox">
-                            <label>
-                              <input class="jq-allcheck" type="checkbox">
-                              <span class="fa fa-check"></span>
-                            </label>
-                          </div>
-                        </th>
-                        <th class="sorting">下单时间</th>
-                        <th>兑换学员</th>
-                        <th>商品名称</th>
-                        <th>商品价格</th>
-                        <th>操作</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="checkbox c-checkbox">
-                            <label>
-                              <input type="checkbox">
-                              <span class="fa fa-check"></span>
-                            </label>
-                          </div>
-                        </td>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>学员名+学员手机</td>
-                        <td>商品名称商品名称</td>
-                        <td>10</td>
-                        <td>
-                          <a class="btn btn-primary jq-edit" href="javascript:;">兑换</a>
-                          <a class="btn btn-primary jq-cancle" href="javascript:;">取消</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="checkbox c-checkbox">
-                            <label>
-                              <input type="checkbox">
-                              <span class="fa fa-check"></span>
-                            </label>
-                          </div>
-                        </td>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>学员名+学员手机</td>
-                        <td>商品名称商品名称</td>
-                        <td>10</td>
-                        <td>
-                          <a class="btn btn-primary jq-edit" href="javascript:;">兑换</a>
-                          <a class="btn btn-primary jq-cancle" href="javascript:;">取消</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="checkbox c-checkbox">
-                            <label>
-                              <input type="checkbox">
-                              <span class="fa fa-check"></span>
-                            </label>
-                          </div>
-                        </td>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>学员名+学员手机</td>
-                        <td>商品名称商品名称</td>
-                        <td>10</td>
-                        <td>
-                          <a class="btn btn-primary jq-edit" href="javascript:;">兑换</a>
-                          <a class="btn btn-primary jq-cancle" href="javascript:;">取消</a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <a class="btn btn-primary jq-all" href="javascript:;">批量兑换</a>
-                  <a class="btn btn-primary jq-qllcancle" href="javascript:;">批量取消</a>
-                </div>
-
-                <!-- build:pages -->
-                <!-- 分页 -->
                 <div class="row">
-                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
-                    <ul class="pagination pagination-sm m0">
-                      <li>
-                        <a href="#" aria-label="Previous">
-                          <span aria-hidden="true">«</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">1</a>
-                      </li>
-                      <li>
-                        <a href="#">2</a>
-                      </li>
-                      <li class="active">
-                        <a href="#">3</a>
-                      </li>
-                      <li>
-                        <a href="#" aria-label="Next">
-                          <span aria-hidden="true">»</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>  
-                <!-- endbuild -->
-
-
-
-
-
-
-
-
-
-
-
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                           <div class="panel-heading">Bar</div>
+                           <div class="panel-body">
+                              <div id="morris-bar"></div>
+                           </div>
+                        </div>
+                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                           <div class="panel-heading">Line</div>
+                           <div class="panel-body">
+                              <div id="morris-line"></div>
+                           </div>
+                        </div>
+                     </div>
+                </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
     </section>
     <!-- 主要内容END -->
-    
+
     <!-- build:foot -->
     <footer>
       <span>&copy; 2018 - 智厢逢</span>
@@ -361,8 +288,11 @@
 
 
 
-  </div>
 
+
+
+
+  </div>
   <!-- build:js -->
   <!-- =============== JS ===============-->
   <script src="../js/vendor/modernizr/modernizr.custom.js"></script>
@@ -377,8 +307,14 @@
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+  <script src="../vendor/raphael/raphael.js"></script>
+  <script src="../vendor/morris.js/morris.js"></script>
+  <script src="../js/studyreport.js"></script>
 
-  <script src="../js/exchangemanagement.js"></script>
+
+
+
+
 
 
 

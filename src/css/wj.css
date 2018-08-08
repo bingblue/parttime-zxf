@@ -84,3 +84,47 @@
   width: 100%;
   max-height: 200px;
 }
+
+.mall-body .sweet-alert {
+  width: 800px;
+}
+
+.mall-body .sweet-alert .title-p {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.mall-body .sweet-alert .record-table {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.nodecation:hover {
+  text-decoration: none;
+}
+
+.white-color {
+  color: #fff;
+}
+
+.white-color:hover {
+  color: #fff;
+}
+
+.normalcolor {
+  color: #515253;
+}
+
+.normalcolor:hover {
+  color: #515253;
+}
+
+.width-100 {
+  display: inline-block;
+  width: 100px;
+}
+
+.table-bordered {
+  border: 1px solid #eee !important;
+}
