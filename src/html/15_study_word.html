@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta content="webkit" name="renderer" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,12 +20,13 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/main_momo.css">
 </head>
+
 <body class="body-preview">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
   <!-- build:head -->
-  
+
   <header class="comm-header">
     <div class="midd_header clearfix">
       <div class="index_icon">
@@ -64,9 +66,15 @@
         <div class="summary-wp clearfix">
           <img src="../img/clock_icon.png" alt="" class="clock-img">
           <div class="time-wp">
-            <p class="time-txt">在线时长<span class="txt">02:00</span></p>
-            <p class="time-txt">学习时长<span class="txt">02:00</span></p>
-            <p class="time-txt">时间效率<span class="txt">50%</span></p>
+            <p class="time-txt">在线时长
+              <span class="txt">02:00</span>
+            </p>
+            <p class="time-txt">学习时长
+              <span class="txt">02:00</span>
+            </p>
+            <p class="time-txt">时间效率
+              <span class="txt">50%</span>
+            </p>
           </div>
         </div>
         <div class="practice-main">
@@ -74,7 +82,7 @@
             <span class="title">智学单词-新词预习</span>
             <span class="unit">牛津上海版——二年级上册 Unit 1</span>
             <a href="javascript:;" class="close-icon"></a>
-            <a href="javascript:;" class="question-icon"></a>
+            <a href="javascript:;" class="question-icon" id="xc-question"></a>
           </p>
           <div class="practice-ct">
             <div class="clearfix content-minheight">
@@ -84,9 +92,12 @@
                   <span class="alphabet">[wɜ:d]</span>
                   <a href="javascript:;" class="horn-a"></a>
                 </p>
-                <p class="word-mean"><span>n. </span>单词；话语；诺言；消息；</p>
-                <p class="word-mean"><span>vt.</span>措辞，用词；用言语表达；</p>
-                <p class="word-mean"><span>vi.</span>讲话；</p>
+                <p class="word-mean">
+                  <span>n. </span>单词；话语；诺言；消息；</p>
+                <p class="word-mean">
+                  <span>vt.</span>措辞，用词；用言语表达；</p>
+                <p class="word-mean">
+                  <span>vi.</span>讲话；</p>
               </div>
               <div class="preview-right">
                 <div class="next-wp">
@@ -122,6 +133,42 @@
       </div>
     </div>
   </div>
+  <div class="xc-banner">
+    <div class="xc-banner-marker"></div>
+    <div class="xc-banner-body">
+      <h2 class="xc-banner-title">教程说明
+        <img class="xc-banner-close" src="../img/xc-banner-close.png" alt="">
+      </h2>
+      <div class="xc-banner-items-box">
+        <div class="xc-banner-items">
+          <div class="xc-banner-item active">
+            <img class="xc-banner-img" src="../img/13_words_1.png" alt="教程">
+          </div>
+          <div class="xc-banner-item">
+            <img class="xc-banner-img" src="../img/13_words_2.png" alt="教程">
+          </div>
+          <div class="xc-banner-item">
+            <img class="xc-banner-img" src="../img/13_words_3.png" alt="教程">
+          </div>
+          <div class="xc-banner-item">
+            <img class="xc-banner-img" src="../img/13_words_4.png" alt="教程">
+          </div>
+          <div class="xc-banner-item">
+            <img class="xc-banner-img" src="../img/13_words_5.png" alt="教程">
+          </div>
+          <div class="xc-banner-item">
+            <img class="xc-banner-img" src="../img/13_words_6.png" alt="教程">
+          </div>
+        </div>
+      </div>
+      <div class="xc-banner-btns">
+        <span class="active">1</span>/
+        <span>6</span>
+        <span class="xc-banner-btn xc-banner-prv"></span>
+        <span class="xc-banner-btn xc-banner-next"></span>
+      </div>
+    </div>
+  </div>
   <!-- build:foot -->
   <!-- 底部 -->
   <div class="footer">
@@ -141,6 +188,7 @@
 
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
   <script src="../js/main_wj.js"></script>
+  <script src="../js/main_xc.js"></script>
 </body>
 
 </html>

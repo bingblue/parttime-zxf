@@ -22,7 +22,50 @@ $(function () {
       this.addSyncBody()
       this.wordsAct()
       this.endTime()
+      this.banner()
     },
+    /**
+     * 幻灯
+     */
+    banner: function () {
+      $('#xc-question').on('click', function () {
+        $('.xc-banner').show()
+      })
+      var $index = 1
+      var $items = $('.xc-banner .xc-banner-item')
+      var $prv = $('.xc-banner .xc-banner-prv')
+      var $next = $('.xc-banner .xc-banner-next')
+      var $active = $('.xc-banner .xc-banner-btns .active')
+      $('.xc-banner-marker,.xc-banner-close').on('click', function () {
+        $(this).parents('.xc-banner').hide()
+      })
+      $prv.on('click', function () {
+        prv()
+      })
+      $next.on('click', function () {
+        next()
+      })
+      var $maxIndex = $items.length
+      function next () {
+        if ($index + 1 <= $maxIndex) {
+          $index += 1
+          changeIndex()
+        }
+      }
+      function prv () {
+        if ($index - 1 > 0) {
+          $index = $index - 1
+          changeIndex()
+        }
+      }
+      function changeIndex () {
+        $items.eq($index - 1).addClass('active').siblings().removeClass('active')
+        $active.text($index)
+      }
+    },
+    /**
+     * 倒计时
+     */
     endTime: function () {
       var $time = $('#xc-time')
       var timer = ''
@@ -38,7 +81,7 @@ $(function () {
       start()
       timer = setInterval(function () {
         start()
-        $time.attr('time', Number($time.attr('time')) -1)
+        $time.attr('time', Number($time.attr('time')) - 1)
       }, 1000)
       function returnTime (time) {
         return addZero(parseInt(time / 60 / 60 % 24)) + ':' + addZero(parseInt(time / 60 % 60))

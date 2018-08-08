@@ -2081,3 +2081,89 @@
     }
   }
 }
+.xc-banner {
+  display: none;
+  .xc-banner-marker {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 99999;
+    cursor: pointer;
+  }
+  .xc-banner-body {
+    width: 900px;
+    height: 568.8px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    position: fixed;
+    z-index: 100000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .xc-banner-title {
+    font-size: 16px;
+    line-height: 60px;
+    padding: 0;
+    color: #333333;
+    text-indent: 38px;
+    margin: 0;
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
+  }
+  .xc-banner-close {
+    width: 19px;
+    height: 19px;
+    float: right;
+    margin-right: 38px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .xc-banner-items-box {
+    padding: 30px 50px;
+  }
+  .xc-banner-items {
+    width: 100%;
+    .xc-banner-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .xc-banner-item {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  .xc-banner-btns {
+    position: relative;
+    width: 133px;
+    height: 25px;
+    margin: 0 auto;
+    line-height: 20px;
+    font-size: 28px;
+    background: url('../img/xc-banner-btn.png') no-repeat;
+    text-align: center;
+    color: #333333;
+    .active {
+      color: #0085e6;
+    }
+    .xc-banner-btn {
+      position: absolute;
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      top: 0;
+      cursor: pointer;
+    }
+    .xc-banner-next {
+      right: 0;
+    }
+    .xc-banner-prv {
+      left: 0;
+    }
+  }
+}
