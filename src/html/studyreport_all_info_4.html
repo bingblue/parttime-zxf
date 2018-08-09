@@ -17,7 +17,10 @@
   <link rel="stylesheet" href="../vendor/sweetalert/dist/sweetalert.css">
   <link rel="stylesheet" href="../css/app.css" id="maincss">
   <link rel="stylesheet" href="../css/theme-e.css">
+  <link rel="stylesheet" href="../js/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
   <!-- endbuild -->
+
+
   <link rel="stylesheet" href="../css/wj.css">
 
 
@@ -64,6 +67,8 @@
       </nav>
     </header>
     <!-- endbuild -->
+
+
 
 
 
@@ -195,6 +200,8 @@
 
 
 
+
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
@@ -212,104 +219,318 @@
         <div class="row">
           <div class="col-xs-12">
             <div class="mb-20">
-              <a class="wj-a" href="javascript:;">今日学况</a>
-              <a class="wj-a" href="javascript:;">学习日记</a>
-              <a class="wj-a" href="javascript:;">学习记录</a>
-              <a class="wj-a wj-a-active" href="javascript:;">学习地图</a>
+              <a class="wj-a" href="./studyreport_all_info.html">今日学况</a>
+              <a class="wj-a" href="./studyreport_all_info_2.html">学习日记</a>
+              <a class="wj-a" href="./studyreport_all_info_3.html">学习记录</a>
+              <a class="wj-a wj-a-active" href="./studyreport_all_info_4.html">学习地图</a>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading">学习时长</div>
-              <div class="panel-body">
-                <p><span class="width-100">在线时长</span><span>02:20:31</span></p>
-                <p><span class="width-100">有效时长</span><span>02:20:31</span></p>
-                <p><span class="width-100">有效时长占比</span><span>100%</span></p>
-              </div>
               <!-- START table-responsive-->
-            <div class="panel-heading">
-                <div class="table-responsive">
-                  <table class="table table-bordered table-hover dataTable">
-                    <thead>
-                      <tr>
-                        <th class="sorting">开始时间</th>
-                        <th class="sorting">有效时间</th>
-                        <th>学习板块</th>
-                        <th>次级板块</th>
-                        <th>单元信息</th>
-                        <th>学习结果</th>
-                        <th>得分</th>
-                      </tr>
-                    </thead>
-                    <tbody id="designerlist">
-                      <tr>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>22:22:22</td>
-                        <td>同步课程-智学单词</td>
-                        <td>智能预习</td>
-                        <td>牛津上海版  七年级上册  Unit2</td>
-                        <td>完成</td>
-                        <td>120</td>
-                      </tr>
-                      <tr>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>22:22:22</td>
-                        <td>同步课程-智学单词</td>
-                        <td>智能预习</td>
-                        <td>牛津上海版  七年级上册  Unit2</td>
-                        <td>完成</td>
-                        <td>120</td>
-                      </tr>
-                      <tr>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>22:22:22</td>
-                        <td>同步课程-智学单词</td>
-                        <td>智能预习</td>
-                        <td>牛津上海版  七年级上册  Unit2</td>
-                        <td>完成</td>
-                        <td>120</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <a class="btn btn-primary jq-changeclass" href="javascript:;">调换班级</a>
-                </div>
-  
-                <!-- build:pages -->
-                <!-- 分页 -->
+              <form class="form-lineH">
                 <div class="row">
-                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
-                    <ul class="pagination pagination-sm m0">
-                      <li>
-                        <a href="#" aria-label="Previous">
-                          <span aria-hidden="true">«</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">1</a>
-                      </li>
-                      <li>
-                        <a href="#">2</a>
-                      </li>
-                      <li class="active">
-                        <a href="#">3</a>
-                      </li>
-                      <li>
-                        <a href="#" aria-label="Next">
-                          <span aria-hidden="true">»</span>
-                        </a>
-                      </li>
-                    </ul>
+                  <div class="form-group col-sm-3">
+                    <label class="col-sm-4">选择课程：</label>
+                    <div class="col-sm-8">
+                      <select name="" id="" class="form-control">
+                        <option value="">同步课程</option>
+                        <option value="1">搞定语法</option>
+                        <option value="2">智能培优</option>
+                      </select>
+                    </div>
                   </div>
-                </div>  
-                <!-- endbuild -->
+                </div>
+              </form>
+              <div class="panel-body">
+                  <div role="tabpanel">
+                    <!-- Nav tabs-->
+                    <ul role="tablist" class="nav nav-tabs">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">按目录</a>
+                        </li>
+                        <li role="presentation" class=""><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false">按详情</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panes-->
+                    <div class="tab-content">
+
+                      <!-- 按目录 start -->
+                      <div id="home" role="tabpanel" class="tab-pane active">
+                        按目录          
+                      </div>
+                      <!-- 按目录 end -->
+                      <!-- 按详情 start -->
+                      <div id="profile" role="tabpanel" class="tab-pane">
+                        <div class="row">
+                          <form class="text-right form-lineH">
+                            <div class="form-group col-sm-2">
+                              排序方式
+                            </div>
+                            <div class="form-group col-sm-2">
+                              <div class="radio c-radio">
+                                <label>
+                                    <input type="radio" name="a" value="option1">
+                                    <span class="fa fa-circle"></span>最后一次学习</label>
+                              </div>
+                            </div>
+                            <div class="form-group col-sm-2">
+                              <div class="radio c-radio">
+                                <label>
+                                    <input type="radio" name="a" value="option1">
+                                    <span class="fa fa-circle"></span>按学习内容</label>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <!-- table1 -->
+                        <div class="table-responsive">
+                          <table class="table table-bordered table-hover dataTable">
+                            <thead>
+                              <tr>
+                                <th>单元</th>
+                                <th>最后一次学习</th>
+                                <th>总进度</th>
+                                <th colspan="6">智学单词</th>
+                                <th colspan="6">智学句子</th>
+                                <th colspan="4">同步课文</th>
+                                <th>智能闯关</th>
+                              </tr>
+                              <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>预习</th>
+                                <th>初识</th>
+                                <th>听写</th>
+                                <th>默写</th>
+                                <th>智测</th>
+                                <th>口语</th>
+                                <th>预习</th>
+                                <th>初识</th>
+                                <th>听写</th>
+                                <th>默写</th>
+                                <th>智测</th>
+                                <th>口语</th>
+                                <th>跟读</th>
+                                <th>背诵</th>
+                                <th>组句</th>
+                                <th>默写</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody id="designerlist">
+                              <tr>
+                                <td>初中英语-牛津上海版  七年级上册  Unit2</td>
+                                <td>2018-01-0122:22:22</td>
+                                <td class="text-success">完成</td>
+                                <td class="text-success">20/20</td>
+                                <td class="text-success">20/20</td>
+                                <td class="text-success">20/20</td>
+                                <td class="text-success">20/20</td>
+                                <td class="text-success">通过</td>
+                                <td class="text-success">20/20</td>
+                                <td class="text-success">0/20</td>
+                                <td class="text-success">0/20</td>
+                                <td class="text-success">0/20</td>
+                                <td class="text-success">0/20</td>
+                                <td class="text-success">通过</td>
+                                <td class="text-success">0/20</td>
+                                <td class="text-success">已学</td>
+                                <td class="text-success">已学</td>
+                                <td class="text-success">已学</td>
+                                <td class="text-success">通过</td>
+                                <td class="text-success">通过</td>
+                              </tr>
+                              <tr>
+                                <td>初中英语-牛津上海版  七年级上册  Unit2</td>
+                                <td>2018-01-0122:22:22</td>
+                                <td class="text-info">进行</td>
+                                <td class="text-muted">0/20</td>
+                                <td class="text-muted">0/20</td>
+                                <td class="text-muted">0/20</td>
+                                <td class="text-muted">0/20</td>
+                                <td class="text-muted">未测试</td>
+                                <td class="text-muted">0/20</td>
+                                <td class="text-muted">0/20</td>
+                                <td class="text-muted">0/20</td>
+                                <td class="text-muted">0/20</td>
+                                <td class="text-muted">0/20</td>
+                                <td class="text-muted">未测试</td>
+                                <td class="text-muted">0/20</td>
+                                <td class="text-muted">未学</td>
+                                <td class="text-muted">未学</td>
+                                <td class="text-muted">未学</td>
+                                <td class="text-muted">未测试</td>
+                                <td class="text-muted">未测试</td>
+                              </tr>
+                              <tr>
+                                <td>初中英语-牛津上海版  七年级上册  Unit2</td>
+                                <td>2018-01-0122:22:22</td>
+                                <td class="text-success">完成</td>
+                                <td class="text-info">10/20</td>
+                                <td class="text-info">10/20</td>
+                                <td class="text-info">10/20</td>
+                                <td class="text-info">10/20</td>
+                                <td class="text-danger">未通过</td>
+                                <td class="text-info">10/20</td>
+                                <td class="text-info">10/20</td>
+                                <td class="text-info">10/20</td>
+                                <td class="text-info">10/20</td>
+                                <td class="text-info">10/20</td>
+                                <td class="text-danger">未通过</td>
+                                <td class="text-info">10/20</td>
+                                <td class="text-success">已学</td>
+                                <td class="text-success">已学</td>
+                                <td class="text-success">已学</td>
+                                <td class="text-danger">未通过</td>
+                                <td class="text-danger">未通过</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div> 
+                        <!-- table2 -->
+                        <div class="table-responsive">
+                          <table class="table table-bordered table-hover dataTable">
+                            <thead>
+                              <tr>
+                                <th>单元</th>
+                                <th>最后一次学习</th>
+                                <th>总进度</th>
+                                <th>互动学习</th>
+                                <th>学后测试</th>
+                              </tr>
+                            </thead>
+                            <tbody id="designerlist">
+                              <tr>
+                                <td>小学语法-代词 Unit2</td>
+                                <td>2018-01-0122:22:22</td>
+                                <td class="text-success">完成</td>
+                                <td class="text-success">已学</td>
+                                <td class="text-success">80</td>
+                              </tr>
+                              <tr>
+                                <td>小学语法-代词 Unit2</td>
+                                <td>2018-01-0122:22:22</td>
+                                <td class="text-info">进行</td>
+                                <td class="text-muted">未学</td>
+                                <td class="text-danger">未测试</td>
+                              </tr>
+                              <tr>
+                                <td>小学语法-代词 Unit2</td>
+                                <td>2018-01-0122:22:22</td>
+                                <td class="text-success">完成</td>
+                                <td class="text-success">已学</td>
+                                <td class="text-danger">28</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- table3 -->
+                        <div class="table-responsive">
+                          <table class="table table-bordered table-hover dataTable">
+                            <thead>
+                              <tr>
+                                <th>单元</th>
+                                <th>最后一次学习</th>
+                                <th>总进度</th>
+                                <th>易</th>
+                                <th>中</th>
+                                <th>难</th>
+                              </tr>
+                            </thead>
+                            <tbody id="designerlist">
+                              <tr>
+                                <td>初中英语-牛津上海版  七年级上册  Unit2</td>
+                                <td>2018-01-0122:22:22</td>
+                                <td class="text-success">完成</td>
+                                <td class="text-success">90</td>
+                                <td class="text-success">90</td>
+                                <td class="text-success">90</td>
+                              </tr>
+                              <tr>
+                                <td>初中英语-牛津上海版  七年级上册  Unit2</td>
+                                <td>2018-01-0122:22:22</td>
+                                <td class="text-info">进行</td>
+                                <td class="text-muted">未测试</td>
+                                <td class="text-muted">未测试</td>
+                                <td class="text-muted">未测试</td>
+                              </tr>
+                              <tr>
+                                <td>初中英语-牛津上海版  七年级上册  Unit2</td>
+                                <td>2018-01-0122:22:22</td>
+                                <td class="text-success">完成</td>
+                                <td class="text-danger">28</td>
+                                <td class="text-danger">28</td>
+                                <td class="text-danger">28</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- table4 -->
+                        <div class="table-responsive">
+                          <table class="table table-bordered table-hover dataTable">
+                            <thead>
+                              <tr>
+                                <th>单元</th>
+                                <th>最后一次学习</th>
+                                <th>总进度</th>
+                                <th>历史最佳成绩</th>
+                              </tr>
+                            </thead>
+                            <tbody id="designerlist">
+                              <tr>
+                                <td>中考冲刺-真题模拟测试一</td>
+                                <td>2018-01-0122:22:22</td>
+                                <td class="text-success">完成</td>
+                                <td class="text-success">90</td>
+                              </tr>
+                              <tr>
+                                <td>中考冲刺-真题模拟测试一</td>
+                                <td>2018-01-0122:22:22</td>
+                                <td class="text-info">进行</td>
+                                <td class="text-success">90</td>
+                              </tr>
+                              <tr>
+                                <td>中考冲刺-真题模拟测试一</td>
+                                <td>2018-01-0122:22:22</td>
+                                <td class="text-muted">未学</td>
+                                <td class="text-danger">28</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>  
+                      </div>
+                      <!-- 按详情 end -->
+                       <!-- build:pages -->
+                       <!-- 分页 -->
+                        <div class="row">
+                          <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                            <ul class="pagination pagination-sm m0">
+                              <li>
+                                <a href="#" aria-label="Previous">
+                                  <span aria-hidden="true">«</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">1</a>
+                              </li>
+                              <li>
+                                <a href="#">2</a>
+                              </li>
+                              <li class="active">
+                                <a href="#">3</a>
+                              </li>
+                              <li>
+                                <a href="#" aria-label="Next">
+                                  <span aria-hidden="true">»</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>  
+                       <!-- endbuild -->
   
   
-  
-  
-  
-  
-  
-  
-  
-  
+                    </div>
+                  </div>
               </div>
             </div>
             
@@ -324,6 +545,8 @@
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
+
+
 
 
 
@@ -350,6 +573,8 @@
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+
+
 
 
 
