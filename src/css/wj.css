@@ -128,3 +128,6 @@
 .table-bordered {
   border: 1px solid #eee !important;
 }
+.form-lineH .radio label{
+  line-height: 20px;
+}
