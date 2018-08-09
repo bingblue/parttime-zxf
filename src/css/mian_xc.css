@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* 表格相关 */
+.table>thead>tr>th {
+    padding: 16px 8px 16px 20px;
+}
+
+.table>tbody>tr>td {
+    padding: 12px 8px 12px 20px;
+}
+
+.table .btn+.btn {
+    margin-left: 5px;
+}
+
+.table .visHideen {
+    visibility: hidden;
+}
+/* 表格相关 */
+/* 真题冲刺 start*/
+
+.xc-text-group {
+    float: none;
+    padding-top: 20px;
+}
+
+.xc-text-item {
+    text-align: center;
+    padding: 80px 0;
+    width: 100%;
+    border: 1px solid rgba(235, 235, 235, 1);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* 真题冲刺 end */
