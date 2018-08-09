@@ -128,6 +128,12 @@
 .table-bordered {
   border: 1px solid #eee !important;
 }
-.form-lineH .radio label{
+
+.form-lineH .radio label,
+.form-lineH .radio-inline label{
   line-height: 20px;
+}
+
+.body-studentmanagementlist .pdlr-15 {
+  padding: 0 15px;
 }

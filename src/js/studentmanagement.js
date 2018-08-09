@@ -11,12 +11,10 @@ $(function(){
       confirmButtonText: "确认修改",
       cancelButtonText: "取消",
       closeOnConfirm: false,
-      closeOnCancel: false
+      closeOnCancel: true
     }, function (isConfirm) {
       if (isConfirm) {
         swal("修改成功", "success")
-      } else {
-        swal("失败", "请填完表单内容")
       }
     })
     setTimeout(function(){
@@ -60,7 +58,7 @@ $(function(){
       confirmButtonText: "确认修改",
       cancelButtonText: "取消",
       closeOnConfirm: false,
-      closeOnCancel: false
+      closeOnCancel: true
     }, function (isConfirm) {
       const testmb = /^1\d{10}$/
       const mobile1 = $('.jq-mobile1').val()
@@ -185,7 +183,7 @@ $(function(){
       html: true,
       confirmButtonColor: "#DD6B55",
       closeOnConfirm: false,
-      closeOnCancel: false
+      closeOnCancel: true
     })
   })
   $('.jq-recharge').click(function(){
@@ -232,7 +230,7 @@ function text () {
         </div>
         <div class="form-group">
           <label class="control-label col-sm-5">出生日期：</label>
-          <p class="input-group date col-sm-6 datetimepicker">
+          <p class="input-group date col-sm-6 datetimepicker pdlr-15">
             <input type="text" class="form-control" placeholder="请选择开始时间">
             <span class="input-group-addon">
                 <span class="fa fa-calendar"></span>
