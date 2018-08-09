@@ -137,3 +137,8 @@
 .body-studentmanagementlist .pdlr-15 {
   padding: 0 15px;
 }
+
+.btm15 {
+  position: relative;
+  top: -15px;
+}
