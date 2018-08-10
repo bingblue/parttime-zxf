@@ -130,7 +130,8 @@
 }
 
 .form-lineH .radio label,
-.form-lineH .radio-inline label{
+.form-lineH .radio-inline label,
+.form-lineH .checkbox-inline{
   line-height: 20px;
 }
 
@@ -141,4 +142,8 @@
 .btm15 {
   position: relative;
   top: -15px;
+}
+
+.mode-body .radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
+  margin-left: 0;
 }
