@@ -22,6 +22,7 @@
 
 
 
+
 </head>
 
 <body>
@@ -64,6 +65,7 @@
       </nav>
     </header>
     <!-- endbuild -->
+
 
 
 
@@ -174,6 +176,7 @@
 
 
 
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
@@ -192,23 +195,17 @@
                 <form class="text-right form-lineH">
                   <div class="row">
                     <div class="form-group col-sm-3">
-                      <label class="col-sm-4">选择班级：</label>
+                      <label class="col-sm-4">选择：</label>
                       <div class="col-sm-8">
                         <select name="" id="" class="form-control">
                           <option value="">全部</option>
-                          <option value="1">班级1</option>
-                          <option value="2">班级2</option>
+                          <option value="1">学校余额</option>
+                          <option value="2">学生充值</option>
                         </select>
                       </div>
                     </div>
-                    <div class="form-group col-sm-3">
-                      <label class="col-sm-4">学生手机：</label>
-                      <div class="col-sm-8">
-                        <input type="tel" name="" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-sm-1">
-                      <button type="button" class="btn btn-primary">搜索</button>
+                    <div class="col-sm-9">
+                      <button type="button" class="btn btn-primary">返回</button>
                     </div>
                   </div>
                 </form>
@@ -219,52 +216,42 @@
                   <table id="" class="table table-bordered table-hover">
                     <thead>
                       <tr>
-                        <th>学生手机</th>
-                        <th>姓名</th>
-                        <th>总学习效率</th>
-                        <th>最后一天学习效率</th>
-                        <th>连续未学</th>
-                        <th>学生总积分</th>
-                        <th>总学习天数</th>
-                        <th>操作</th>
+                        <th class="sorting">时间</th>
+                        <th>操作类型</th>
+                        <th>增减</th>
+                        <th>金额</th>
+                        <th>学生充值类型</th>
+                        <th>被充值学生</th>
+                        <th>操作人</th>
                       </tr>
                     </thead>
                     <tbody id="designerlist">
                       <tr>
-                        <td>18000000000</td>
-                        <td>名字名字</td>
-                        <td>52%（01:13:59/02:22:05）</td>
-                        <td>52%（01:13:59/02:22:05）</td>
-                        <td>5天</td>
-                        <td>500</td>
-                        <td>500</td>
-                        <td>
-                          <a class="btn btn-primary" href="studyreport_all_info.html">查看</a>
-                        </td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>学校余额</td>
+                        <td class="text-success">增加</td>
+                        <td class="text-success">10000</td>
+                        <td>30天充值</td>
+                        <td>姓名（18000000000）</td>
+                        <td>老师-姓名（A000000）</td>
                       </tr>
                       <tr>
-                        <td>18000000000</td>
-                        <td>名字名字</td>
-                        <td>52%（01:13:59/02:22:05）</td>
-                        <td>52%（01:13:59/02:22:05）</td>
-                        <td>5天</td>
-                        <td>500</td>
-                        <td>500</td>
-                        <td>
-                          <a class="btn btn-primary" href="studyreport_all_info.html">查看</a>
-                        </td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>学校余额</td>
+                        <td class="text-danger">减少</td>
+                        <td class="text-danger">10000</td>
+                        <td>30天充值</td>
+                        <td>姓名（18000000000）</td>
+                        <td>老师-姓名（A000000）</td>
                       </tr>
                       <tr>
-                        <td>18000000000</td>
-                        <td>名字名字</td>
-                        <td>52%（01:13:59/02:22:05）</td>
-                        <td>52%（01:13:59/02:22:05）</td>
-                        <td>5天</td>
-                        <td>500</td>
-                        <td>500</td>
-                        <td>
-                          <a class="btn btn-primary" href="studyreport_all_info.html">查看</a>
-                        </td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>学校余额</td>
+                        <td class="text-danger">减少</td>
+                        <td class="text-danger">10000</td>
+                        <td>30天充值</td>
+                        <td>姓名（18000000000）</td>
+                        <td>老师-姓名（A000000）</td>
                       </tr>
                     </tbody>
                   </table>
@@ -306,6 +293,7 @@
 
 
 
+
               </div>
             </div>
           </div>
@@ -330,6 +318,7 @@
 
 
 
+
   </div>
 
   <!-- build:js -->
@@ -343,6 +332,7 @@
   <script src="../js/vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+
 
 
 

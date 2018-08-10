@@ -21,6 +21,7 @@
 
 
 
+
 </head>
 
 <body>
@@ -63,6 +64,7 @@
       </nav>
     </header>
     <!-- endbuild -->
+
 
 
 
@@ -161,6 +163,7 @@
 
 
 
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
@@ -169,7 +172,123 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            这里是内容
+            <div class="panel-default">
+              <div class="panel-heading">
+                <form class="text-right form-lineH">
+                  <div class="row">
+                    <div class="form-group col-sm-3">
+                      <label class="col-sm-4">账号状态：</label>
+                      <div class="col-sm-8">
+                        <select name="" id="" class="form-control">
+                          <option value="">全部</option>
+                          <option value="1">正常</option>
+                          <option value="2">停用</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-9">
+                      <button type="button" class="btn btn-primary">创建教师</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- START table-responsive-->
+              <div class="panel-heading">
+                <p>根据条件找到 99 名老师</p>
+                <div class="table-responsive">
+                  <table id="" class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>教师编号</th>
+                        <th class="sorting">创建时间</th>
+                        <th>状态</th>
+                        <th>最近登陆</th>
+                        <th class="sorting">近30天平均每日登陆(次)</th>
+                        <th>教师姓名</th>
+                        <th>操作</th>
+                      </tr>
+                    </thead>
+                    <tbody id="designerlist">
+                      <tr>
+                        <td>A000001</td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td class="text-success">正常</td>
+                        <td>今天</td>
+                        <td>3.1</td>
+                        <td>姓名姓名</td>
+                        <td>
+                          <a class="btn btn-primary jq-stop" href="javascript:;">停用账号</a>
+                          <a class="btn btn-primary jq-check" href="javascript:;">查看班级</a>
+                          <a class="btn btn-primary jq-change" href="javascript:;">修改资料</a>
+                          <a class="btn btn-primary jq-pwd" href="javascript:;">重置密码</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>A000001</td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>停用</td>
+                        <td>今天</td>
+                        <td>3.1</td>
+                        <td>姓名姓名</td>
+                        <td>
+                          <a class="btn btn-primary jq-stop" href="javascript:;">停用账号</a>
+                          <a class="btn btn-primary jq-check" href="javascript:;">查看班级</a>
+                          <a class="btn btn-primary jq-change" href="javascript:;">修改资料</a>
+                          <a class="btn btn-primary jq-pwd" href="javascript:;">重置密码</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>学校余额</td>
+                        <td class="text-danger">减少</td>
+                        <td class="text-danger">10000</td>
+                        <td>30天充值</td>
+                        <td>姓名（18000000000）</td>
+                        <td>老师-姓名（A000000）</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- build:pages -->
+                <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+                <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -181,6 +300,7 @@
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
+
 
 
 
@@ -199,6 +319,7 @@
   <script src="../js/vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+
 
 
 

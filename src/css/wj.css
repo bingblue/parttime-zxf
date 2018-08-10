@@ -7,3 +7,11 @@
 .form-lineH .checkbox-inline{
   line-height: 20px;
 }
+
+.normalcolor {
+  color: #515253;
+}
+
+.normalcolor:hover {
+  color: #515253;
+}
