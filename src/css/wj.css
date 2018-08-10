@@ -142,3 +142,7 @@
   position: relative;
   top: -15px;
 }
+
+.mode-body .radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
+  margin-left: 0;
+}
