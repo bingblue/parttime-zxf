@@ -13,10 +13,16 @@
   <link rel="stylesheet" href="../js/vendor/animate.css/animate.min.css">
   <link rel="stylesheet" href="../js/vendor/whirl/dist/whirl.css">
   <link rel="stylesheet" href="../css/bootstrap.css" id="bscss">
+  <link rel="stylesheet" href="../js/vendor/datatable-bootstrap/css/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="../js/vendor/sweetalert/dist/sweetalert.css">
+  <link rel="stylesheet" href="../js/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
   <link rel="stylesheet" href="../css/app.css" id="maincss">
   <link rel="stylesheet" href="../css/theme-e.css">
   <link rel="stylesheet" href="../css/wj.css">
   <!-- endbuild -->
+
+  <link rel="stylesheet" href="../css/wj.css">
+
 
 
 
@@ -65,6 +71,7 @@
       </nav>
     </header>
     <!-- endbuild -->
+
 
 
 
@@ -167,26 +174,189 @@
 
 
 
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
-          未分配学生列表 <span class="text-sm hidden-xs">所在学校编号：A00001 学生注册时请指导学生在完善信息页填写学校编码，填写编码的学生将直接分配给校区，不填写将无法直接操作该学生</span>
+          未分配学生列表
+          <span class="text-sm hidden-xs">所在学校编号：A00001 学生注册时请指导学生在完善信息页填写学校编码，填写编码的学生将直接分配给校区，不填写将无法直接操作该学生</span>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            这里是内容
+            <!-- START panel-->
+            <div class="panel-default">
+              <div class="panel-heading">
+                <form class="text-right form-lineH">
+                  <div class="row">
+                    <div class="form-group col-sm-3">
+                      <label class="col-sm-4">学生手机：</label>
+                      <div class="col-sm-8">
+                        <input type="tel" name="" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-1">
+                      <button type="button" class="btn btn-primary">搜索</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- START table-responsive-->
+              <div class="panel-heading">
+                <div class="table-responsive">
+                  <table id="table-ext-1" class="table table-bordered table-hover dataTable">
+                    <thead>
+                      <tr>
+                        <th data-check-all="">
+                          <div data-toggle="tooltip" data-title="全选" class="checkbox c-checkbox" data-original-title="" title="">
+                            <label>
+                              <input class="jq-allcheck" type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </th>
+                        <th>学生手机</th>
+                        <th>姓名</th>
+                        <th>昵称</th>
+                        <th>所属教师</th>
+                        <th>所属班级</th>
+                        <th>有效期</th>
+                        <th>注册日期</th>
+                        <th>到期日期</th>
+                        <th>当前学币</th>
+                        <th>年级</th>
+                        <th>操作</th>
+                      </tr>
+                    </thead>
+                    <tbody id="designerlist">
+                      <tr>
+                        <td>
+                          <div class="checkbox c-checkbox">
+                            <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td class="text-warning">18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td>教师</td>
+                        <td>班级</td>
+                        <td class="text-danger">5天</td>
+                        <td>2015-01-21</td>
+                        <td>2015-01-21</td>
+                        <td>500</td>
+                        <td>七年级</td>
+                        <td>
+                          <a class="btn btn-primary jq-changeschool" href="javascript:;">分配教师</a>
+                          <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
+                          <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
+                          <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox c-checkbox">
+                            <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td>18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td>教师</td>
+                        <td>班级</td>
+                        <td>5天</td>
+                        <td>2015-01-21</td>
+                        <td class="text-danger">2015-01-21</td>
+                        <td>500</td>
+                        <td>七年级</td>
+                        <td>
+                          <a class="btn btn-primary jq-changeschool" href="javascript:;">分配教师</a>
+                          <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
+                          <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
+                          <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox c-checkbox">
+                            <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td>18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td>教师</td>
+                        <td>班级</td>
+                        <td>5天</td>
+                        <td>2015-01-21</td>
+                        <td>2015-01-21</td>
+                        <td>500</td>
+                        <td>七年级</td>
+                        <td>
+                          <a class="btn btn-primary jq-changeschool" href="javascript:;">分配教师</a>
+                          <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
+                          <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
+                          <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a class="btn btn-primary jq-changeschool" href="javascript:;">分配教师</a>
+                </div>
+
+                <!-- build:pages -->
+                <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+                <!-- endbuild -->
+
+
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- 主要内容END -->
-    
+
     <!-- build:foot -->
     <footer>
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
+
 
 
 
@@ -205,8 +375,15 @@
   <script src="../js/vendor/jquery.easing/js/jquery.easing.js"></script>
   <script src="../js/vendor/animo.js/animo.js"></script>
   <script src="../js/vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
+  <script src="../js/vendor/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../js/vendor/moment/min/moment-with-locales.min.js"></script>
+  <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+
+
+  <script src="../js/studentmanagement.js"></script>
+
 
 
 

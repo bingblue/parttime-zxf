@@ -1,3 +1,106 @@
+@charset "UTF-8";
+/* 弹框相关 */
+.clearfix::after {
+  content: ' ';
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.sweet-alert input {
+  height: 35px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.sweet-alert fieldset {
+  display: none !important;
+}
+
+.sweet-alert {
+  width: 600px;
+}
+
+.table > tbody > tr > .reason {
+  height: 51px;
+  max-width: 240px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.table > tbody > tr > .reason:hover {
+  height: 51px;
+  max-width: 240px;
+  overflow: auto;
+  white-space: normal;
+  text-overflow: initial;
+}
+
+.recharge-body .sweet-alert {
+  width: 800px;
+}
+
+.recharge-body .sweet-alert .text-danger {
+  color: #f05050;
+}
+
+.coursemanagement-list {
+  padding: 10px 0 0;
+  margin-bottom: 21px;
+  background: #fff;
+}
+
+.coursemanagement-wp .panel {
+  margin-bottom: 0;
+}
+
+.coursemanagement-list .panel-heading {
+  padding: 0px 15px;
+}
+
+.wj-a {
+  color: #000;
+  padding: 5px 10px;
+}
+
+.wj-a-active {
+  color: #0085e6;
+  border-bottom: 2px solid #0085e6;
+}
+
+.padding-10 {
+  padding: 10px 0;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.foot-img {
+  width: 100%;
+  max-height: 200px;
+}
+
+.mall-body .sweet-alert {
+  width: 800px;
+}
+
+.mall-body .sweet-alert .title-p {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.mall-body .sweet-alert .record-table {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
 .nodecation:hover {
   text-decoration: none;
 }
@@ -7,6 +110,13 @@
 .form-lineH .checkbox-inline{
   line-height: 20px;
 }
+.white-color {
+  color: #fff;
+}
+
+.white-color:hover {
+  color: #fff;
+}
 
 .normalcolor {
   color: #515253;
@@ -15,3 +125,27 @@
 .normalcolor:hover {
   color: #515253;
 }
+
+.width-100 {
+  display: inline-block;
+  width: 100px;
+}
+
+.table-bordered {
+  border: 1px solid #eee !important;
+}
+
+.form-lineH .radio label,
+.form-lineH .radio-inline label {
+  line-height: 20px;
+}
+
+.datetimepicker.pdlr-15 {
+  padding: 0 15px;
+}
+
+.btm15 {
+  position: relative;
+  top: -15px;
+}
+/* 弹框相关END */
