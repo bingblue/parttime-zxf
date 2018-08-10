@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>教师管理-销售数据</title>
+  <title>数据统计</title>
   <!-- build:css -->
   <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="../css/theme-e.css">
   <link rel="stylesheet" href="../css/wj.css">
   <!-- endbuild -->
+
+
 
 
 
@@ -63,6 +65,11 @@
       </nav>
     </header>
     <!-- endbuild -->
+
+
+
+
+
 
 
 
@@ -161,26 +168,139 @@
 
 
 
+
+
+
+
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
-          销售数据
+          全部有效学员
         </div>
         <div class="row">
           <div class="col-xs-12">
-            这里是内容
+            <div class="panel-default">
+              
+            
+              <div class="panel-heading">
+                <form class="form-lineH">
+                  <div class="row">
+                    <div class="form-group col-sm-3">
+                        <label class="checkbox-inline c-checkbox">
+                          <input id="inlineCheckbox10" type="checkbox" value="option1">
+                          <span class="fa fa-check"></span>不显示体验学员</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- START table-responsive-->
+              <div class="panel-heading">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover dataTable">
+                    <thead>
+                      <tr>
+                        <th>学生手机</th>
+                        <th>姓名</th>
+                        <th>昵称</th>
+                        <th>所属教师</th>
+                        <th>所属班级</th>
+                        <th class="sorting">有效期</th>
+                        <th class="sorting">注册日期</th>
+                        <th class="sorting">到期日期</th>
+                        <th class="sorting">当前学币</th>
+                        <th class="sorting">年级</th>
+                      </tr>
+                    </thead>
+                    <tbody id="designerlist">
+                      <tr>
+                        <td class="text-warning">18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td>教师教师</td>
+                        <td>班级班级</td>
+                        <td>5天</td>
+                        <td>2015-01-21</td>
+                        <td class="text-danger">2015-01-21</td>
+                        <td>500</td>
+                        <td>七年级</td>
+                      </tr>
+                      <tr>
+                        <td class="text-warning">18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td>教师教师</td>
+                        <td>班级班级</td>
+                        <td>5天</td>
+                        <td>2015-01-21</td>
+                        <td class="text-danger">2015-01-21</td>
+                        <td>500</td>
+                        <td>七年级</td>
+                      </tr>
+                      <tr>
+                        <td>18000000000</td>
+                        <td>名字名字</td>
+                        <td>昵称昵称</td>
+                        <td>教师教师</td>
+                        <td>班级班级</td>
+                        <td>5天</td>
+                        <td>2015-01-21</td>
+                        <td>2015-01-21</td>
+                        <td>500</td>
+                        <td>七年级</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- build:pages -->
+                <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+                <!-- endbuild -->
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- 主要内容END -->
-    
+
     <!-- build:foot -->
     <footer>
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
+
+
+
+
+
 
 
 
@@ -199,6 +319,11 @@
   <script src="../js/vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+
+
+
+
+
 
 
 
