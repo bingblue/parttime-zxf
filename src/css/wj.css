@@ -130,7 +130,8 @@
 }
 
 .form-lineH .radio label,
-.form-lineH .radio-inline label{
+.form-lineH .radio-inline label,
+.form-lineH .checkbox-inline{
   line-height: 20px;
 }
 
