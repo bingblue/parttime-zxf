@@ -92,10 +92,10 @@ $(function(){
       }
     })
   })
-  // 学生管理 分配学校
+  // 学生管理 分配教师
   $('.jq-changeschool').click(function(){
     swal({
-      title: "分配学校",
+      title: "分配教师",
       text: changeschool(),
       html: true,
       showCancelButton: true,
@@ -110,10 +110,10 @@ $(function(){
       }
     })
   })
-  // 学生管理 调换学校
+  // 学生管理 调换老师
   $('.jq-exchangeschool').click(function(){
     swal({
-      title: "调换学校",
+      title: "调换老师",
       text: changeschool(),
       html: true,
       showCancelButton: true,
@@ -229,7 +229,7 @@ function changeschool () {
   <div class="panel panel-dark panel-flat">
      <div class="panel-body">
         <div class="form-group">
-           <label class="control-label col-sm-5">选择学校：</label>
+           <label class="control-label col-sm-5">选择教师：</label>
            <div class="col-sm-6">
             <select name="" id="label" class="form-control">
               <option value="1">1</option>
