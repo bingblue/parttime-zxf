@@ -21,6 +21,7 @@
   <!-- endbuild -->
 
 
+
   <link rel="stylesheet" href="../css/main_xc.css">
 </head>
 
@@ -52,7 +53,9 @@
           </ul>
           <ul class="nav navbar-nav navbar-right mu-head-user">
             <li>
-              <span><i class="fa fa-user"></i>admin</span><span>|</span>
+              <span>
+                <i class="fa fa-user"></i>admin</span>
+              <span>|</span>
             </li>
             <li>
               <a href="#">
@@ -64,6 +67,7 @@
       </nav>
     </header>
     <!-- endbuild -->
+
 
 
 
@@ -215,6 +219,7 @@
 
 
 
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
@@ -223,108 +228,507 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <table class="table table-bordered">
-              <thead style="background-color: rgba(243, 243, 243, 1)">
-                <tr>
-                  <th class="col-xs-2">课程阶段</th>
-                  <th class="col-xs-4">选择版本
-                    <button type="button" class="btn btn-primary btn-xs pull-right">新增教材版本</button>
-                  </th>
-                  <th class="col-xs-4">课本
-                    <button type="button" class="btn btn-primary btn-xs pull-right">新增课本</button>
-                  </th>
-                  <th class="col-xs-2">单元
-                    <button type="button" class="btn btn-primary btn-xs pull-right">新增单元</button>
-                  </th>
-                </tr>
-              </thead>
-              <tbody style="background-color: #fff">
-                <tr>
-                  <td>小学英语
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>教材版本
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>第一册（一年级上学期）
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>Unit 1 Part1
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                    <button type="button" class="btn btn-primary btn-xs pull-right">详情</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>初中英语
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>教材版本
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>第一册（一年级上学期）
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>Unit 1 Part1
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                    <button type="button" class="btn btn-primary btn-xs pull-right">详情</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>高中英语
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>教材版本
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>第一册（一年级上学期）
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>Unit 1 Part1
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                    <button type="button" class="btn btn-primary btn-xs pull-right">详情</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="visHideen"></td>
-                  <td>教材版本
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>第一册（一年级上学期）
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>Unit 1 Part1
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                    <button type="button" class="btn btn-primary btn-xs pull-right">详情</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="visHideen"></td>
-                  <td>教材版本
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>第一册（一年级上学期）
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>Unit 1 Part1
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                    <button type="button" class="btn btn-primary btn-xs pull-right">详情</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="visHideen"></td>
-                  <td>教材版本
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>第一册（一年级上学期）
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                  </td>
-                  <td>Unit 1 Part1
-                    <button type="button" class="btn btn-primary btn-xs pull-right">删除</button>
-                    <button type="button" class="btn btn-primary btn-xs pull-right">详情</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="xc-table">
+              <div class="xc-table-head">
+                <ul>
+                  <li class="col-xs-2">课程阶段</li>
+                  <li class="col-xs-4">选择版本
+                    <button type="button" data-toggle="modal" data-target="#jiaocai" class="btn pull-right btn-primary ">新增教材版本</button>
+                  </li>
+                  <li class="col-xs-4">课本
+                    <button type="button" data-toggle="modal" data-target="#keben" class="btn pull-right btn-primary ">新增课本</button>
+                  </li>
+                  <li class="col-xs-2">单元
+                    <button type="button" data-toggle="modal" data-target="#danyuan" class="btn pull-right btn-primary ">新增单元</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="xc-table-body">
+                <ul class="jq-xc-table" style="height: 290px;">
+                  <li class="one active">小学英语
+                    <button type="button" class="btn pull-right btn-primary jq-del-j">删除</button>
+                    <ul class="two">
+                      <li class="active">小学教材
+                        <button type="button" class="btn pull-right btn-primary jq-del-b">删除</button>
+                        <ul class="three">
+                          <li class="active">小学教材1
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                小学教材1-1untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                小学教材1-2untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>小学教材1
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                小学教材1-3untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                小学教材1-4untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>小学教材
+                        <button type="button" class="btn pull-right btn-primary jq-del-b">删除</button>
+                        <ul class="three">
+                          <li class="active">小学教材2
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                小学教材2-1untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                小学教材2-2untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>小学教材2
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                小学教材2-3untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                小学教材2-4untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>小学教材
+                        <button type="button" class="btn pull-right btn-primary jq-del-b">删除</button>
+                        <ul class="three">
+                          <li class="active">小学教材3
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                小学教材3-1untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                小学教材3-2untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>小学教材3
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                小学教材3-3untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                小学教材3-4untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>小学教材
+                        <button type="button" class="btn pull-right btn-primary jq-del-b">删除</button>
+                        <ul class="three">
+                          <li class="active">小学教材4
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                小学教材4-1untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                小学教材4-2untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>小学教材4
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                小学教材4-3untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                小学教材4-4untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="one">初中英语
+                    <button type="button" class="btn pull-right btn-primary jq-del-j">删除</button>
+                    <ul class="two">
+                      <li class="active">初中英语教材
+                        <button type="button" class="btn pull-right btn-primary jq-del-b">删除</button>
+                        <ul class="three">
+                          <li class="active">初中英语1
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                初中英语1-1untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                初中英语1-2untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>初中英语1
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                初中英语2-3untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                初中英语2-4untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>初中英语教材
+                        <button type="button" class="btn pull-right btn-primary jq-del-b">删除</button>
+                        <ul class="three">
+                          <li class="active">初中英语2
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                初中英语2-1untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                初中英语2-2untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>初中英语2
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                初中英语2-3untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                初中英语2-3untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>初中英语教材
+                        <button type="button" class="btn pull-right btn-primary jq-del-b">删除</button>
+                        <ul class="three">
+                          <li class="active">初中英语3
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                初中英语3-1untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                初中英语3-2untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>初中英语3
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                初中英语3-3untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                初中英语3-4untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>初中英语教材
+                        <button type="button" class="btn pull-right btn-primary jq-del-b">删除</button>
+                        <ul class="three">
+                          <li class="active">初中英语4
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                初中英语4-1untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                初中英语4-2untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>初中英语4
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                初中英语4-2untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                初中英语4-4untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="one">高中英语
+                    <button type="button" class="btn pull-right btn-primary jq-del-j">删除</button>
+                    <ul class="two">
+                      <li class="active">高中英语教材
+                        <button type="button" class="btn pull-right btn-primary jq-del-b">删除</button>
+                        <ul class="three">
+                          <li class="active">高中英语教材1
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                高中英语教材1-1untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                高中英语教材1-2untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>高中英语教材1
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                高中英语教材1-3untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                高中英语教材1-4untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>高中英语教材
+                        <button type="button" class="btn pull-right btn-primary jq-del-b">删除</button>
+                        <ul class="three">
+                          <li class="active">高中英语教材2
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                高中英语教材2-1untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                高中英语教材2-2untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>高中英语教材2
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                高中英语教材2-3untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                高中英语教材2-4untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>高中英语教材
+                        <button type="button" class="btn pull-right btn-primary jq-del-b">删除</button>
+                        <ul class="three">
+                          <li class="active">高中英语教材3
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                高中英语教材3-1untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                高中英语教材3-2untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>高中英语教材3
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                高中英语教材3-3untiy1
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                高中英语教材3-4untiy2
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>高中英语教材
+                        <button type="button" class="btn pull-right btn-primary jq-del-b">删除</button>
+                        <ul class="three">
+                          <li class="active">高中英语教材4
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                高中英语教材4-1untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                高中英语教材4-2untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>高中英语教材4
+                            <button type="button" class="btn pull-right btn-primary  jq-del-k">删除</button>
+                            <ul class="four">
+                              <li>
+                                高中英语教材4-3untiy1
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                              <li>
+                                高中英语教材4-4untiy2
+
+                                <a type="button" href="./intelligent_unit.html" class="btn pull-right btn-primary">详情</a>
+                                <button type="button" class="btn pull-right btn-primary  jq-del-d">删除</button>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -341,8 +745,73 @@
 
 
 
-  </div>
 
+  </div>
+  <!-- 新增弹窗start -->
+  <div id="jiaocai" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 id="myModalLabel" class="modal-title">新增教材版本</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <input type="text" placeholder="请输入教材版本名" class="form-control">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-default">取消</button>
+          <button type="button" class="btn btn-primary">新增</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="keben" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 id="myModalLabel" class="modal-title">新增课本</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <input type="text" placeholder="请输入课本名" class="form-control">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-default">取消</button>
+          <button type="button" class="btn btn-primary">新增</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="danyuan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 id="myModalLabel" class="modal-title">新增单元</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <input type="text" placeholder="请输入单元名" class="form-control">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-default">取消</button>
+          <button type="button" class="btn btn-primary">新增</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 新增弹窗end -->
   <!-- build:js -->
   <!-- =============== JS ===============-->
   <script src="../js/vendor/modernizr/modernizr.custom.js"></script>
@@ -357,6 +826,7 @@
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+  <script src="../js/intelligent.js"></script>
 
 
 

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>同步课程-课文编辑</title>
+  <title>同步课程-编辑句子</title>
   <!-- build:css -->
   <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
@@ -228,7 +228,10 @@
             <li>
               <a href="./synchronize_unit.html">单元</a>
             </li>
-            <li class="active">课文编辑</li>
+            <li>
+              <a href="./synchronize_unit_sentence.html">句子列表</a>
+            </li>
+            <li class="active">编辑句子</li>
           </ol>
         </div>
         <div class="row">
@@ -237,54 +240,12 @@
               <div class="panel-heading">
                 <div class="xc-tab jq-xc-tab">
                   <ul class="xc-tab-head">
-                    <li>课文录入</li>
-                    <li>看字组句</li>
-                    <li>默写填空</li>
+                    <li>基础属性</li>
+                    <li>闯关題</li>
                     <span class="line"></span>
                   </ul>
                   <ul class="xc-tab-body">
                     <li class="active">
-                      <form class="form-horizontal">
-                        <div>
-                          <h4>录入句子</h4>
-                          <div class="form-group-box">
-                            <div class="form-group col-xs-12">
-                              <label class="col-lg-1 control-label">第一句：</label>
-                              <div class="col-lg-11">
-                                <button class="btn btn-default">删除</button>
-                              </div>
-                            </div>
-                            <div class="form-group col-xs-12">
-                              <label class="col-lg-1 control-label">请填写：</label>
-                              <div class="col-lg-11">
-                                <input type="text" class="form-control" placeholder="请输入英文句子" />
-                              </div>
-                            </div>
-                            <div class="form-group col-xs-12">
-                              <label class="col-lg-1 control-label">句意：</label>
-                              <div class="col-lg-11">
-                                <input type="text" class="form-control" placeholder="请输入句意" />
-                              </div>
-                            </div>
-                            <div class="form-group col-xs-12">
-                              <label class="col-lg-1 control-label">发音：</label>
-                              <div class="col-lg-11">
-                                <div>
-                                  <span class="btn btn-default jq-fileinput-button">
-                                    <i class="fa fa-fw fa-upload"></i>
-                                    <span>上传文件</span>
-                                  </span>
-                                  <button class="btn btn-default pull-right">播放录音</button>
-                                  <p>支持扩展名：.xxx .xxx .xxx</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <button class="btn btn-default"> + 增加句子</button>
-                        </div>
-                      </form>
-                    </li>
-                    <li>
                       <form class="form-horizontal">
                         <input type="file" class="file" name="file" style="display: none">
                         <div>
@@ -325,37 +286,37 @@
                             <div class="col-lg-11 tab-input-group">
                               <div>
                                 <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="sentence" placeholder="请输入" />
+                                  <input type="text" class="form-control" value="" placeholder="请输入" />
                                 </div>
                                 <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="sentence" placeholder="请输入" />
+                                  <input type="text" class="form-control" value="" placeholder="请输入" />
                                 </div>
                                 <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="sentence" placeholder="请输入" />
+                                  <input type="text" class="form-control" value="" placeholder="请输入" />
                                 </div>
                                 <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="sentence" placeholder="请输入" />
+                                  <input type="text" class="form-control" value="" placeholder="请输入" />
                                 </div>
                                 <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="sentence" placeholder="请输入" />
+                                  <input type="text" class="form-control" value="" placeholder="请输入" />
                                 </div>
                                 <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="sentence" placeholder="请输入" />
+                                  <input type="text" class="form-control" value="" placeholder="请输入" />
                                 </div>
                                 <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="sentence" placeholder="请输入" />
+                                  <input type="text" class="form-control" value="" placeholder="请输入" />
                                 </div>
                                 <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="sentence" placeholder="请输入" />
+                                  <input type="text" class="form-control" value="" placeholder="请输入" />
                                 </div>
                                 <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="blank" placeholder="请输入" />
+                                  <input type="text" class="form-control" value="" placeholder="请输入" />
                                 </div>
                                 <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="blank" placeholder="请输入" />
+                                  <input type="text" class="form-control" value="" placeholder="请输入" />
                                 </div>
                               </div>
-                              <button class="btn btn-default jq-test-addInput"> + 增加一行输入框</button>
+                              <button class="btn btn-default jq-sentence-addInput"> + 增加一行输入框</button>
                             </div>
                           </div>
                           <div class="form-group col-xs-12">
@@ -380,7 +341,7 @@
                             <h4>录入句意</h4>
                             <label class="col-lg-1 control-label">句意：</label>
                             <div class="col-lg-11 tab-input-group">
-                              <input type="text" placeholder="请输入句意" class="form-control">
+                                <input type="text" placeholder="请输入句意" class="form-control">
                             </div>
                           </div>
                         </div>
@@ -389,55 +350,90 @@
                     <li>
                       <form class="form-horizontal">
                         <div>
-                          <div class="form-group col-xs-12">
-                            <label class="col-lg-1 control-label">课文：</label>
-                            <div class="col-lg-11">
-                              <textarea class="form-control" rows="5" placeholder="请输入文本"></textarea>
-                              <p class="error">注意：课文中要设置填空的部分使用下方的文本格式</p>
-                              <p class="error">sssss {$name} aaaaa</p>
-                              <p class="error">例如：How are you，设置are为填空内容，则将正文写为：How sssss {$are} aaaaa you,并在下方相应顺序的答案框内填写are</p>
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-12 clearfix">
-                            <label class="col-lg-1 control-label">按顺序填写答案：</label>
-                            <div class="col-lg-11 tab-input-group">
-                              <div>
-                                <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="blank" placeholder="请输入答案" />
-                                </div>
-                                <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="blank" placeholder="请输入答案" />
-                                </div>
-                                <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="blank" placeholder="请输入答案" />
-                                </div>
-                                <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="blank" placeholder="请输入答案" />
-                                </div>
-                                <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="blank" placeholder="请输入答案" />
-                                </div>
-                                <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="blank" placeholder="请输入答案" />
-                                </div>
-                                <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="blank" placeholder="请输入答案" />
-                                </div>
-                                <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="blank" placeholder="请输入答案" />
-                                </div>
-                                <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="blank" placeholder="请输入答案" />
-                                </div>
-                                <div class="col-xs-1">
-                                  <input type="text" class="form-control" name="blank" placeholder="请输入答案" />
-                                </div>
+                          <h4>英译汉：选项为汉语释义</h4>
+                          <div class="clearfix">
+                            <div class="form-group col-xs-6">
+                              <label class="col-lg-2 control-label">正确答案：</label>
+                              <div class="col-lg-10">
+                                <select name="account" class="form-control m-b">
+                                  <option value="">请选择正确答案</option>
+                                  <option>A</option>
+                                  <option>B</option>
+                                  <option>C</option>
+                                  <option>D</option>
+                                </select>
                               </div>
-                              <button class="btn btn-default jq-test-mx"> + 增加一行输入框</button>
                             </div>
                           </div>
-                          <button class="btn btn-primary">保存</button>
+                          <div class="form-group col-xs-6">
+                            <label class="col-lg-2 control-label">A：</label>
+                            <div class="col-lg-10">
+                              <input type="text" placeholder="请输入汉语释义" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group col-xs-6">
+                            <label class="col-lg-2 control-label">B：</label>
+                            <div class="col-lg-10">
+                              <input type="text" placeholder="请输入汉语释义" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group col-xs-6">
+                            <label class="col-lg-2 control-label">C：</label>
+                            <div class="col-lg-10">
+                              <input type="text" placeholder="请输入汉语释义" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group col-xs-6">
+                            <label class="col-lg-2 control-label">D：</label>
+                            <div class="col-lg-10">
+                              <input type="text" placeholder="请输入汉语释义" class="form-control">
+                            </div>
+                          </div>
                         </div>
+                        <div>
+                          <div class="clearfix">
+                            <h4>英译汉：选项为英文句子</h4>
+                          </div>
+                          <div class="clearfix">
+                            <div class="form-group col-xs-6">
+                              <label class="col-lg-2 control-label">正确答案：</label>
+                              <div class="col-lg-10">
+                                <select name="account" class="form-control m-b">
+                                  <option value="">请选择正确答案</option>
+                                  <option>A</option>
+                                  <option>B</option>
+                                  <option>C</option>
+                                  <option>D</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group col-xs-6">
+                            <label class="col-lg-2 control-label">A：</label>
+                            <div class="col-lg-10">
+                              <input type="text" placeholder="请输入英文句子" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group col-xs-6">
+                            <label class="col-lg-2 control-label">B：</label>
+                            <div class="col-lg-10">
+                              <input type="text" placeholder="请输入英文句子" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group col-xs-6">
+                            <label class="col-lg-2 control-label">C：</label>
+                            <div class="col-lg-10">
+                              <input type="text" placeholder="请输入英文句子" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group col-xs-6">
+                            <label class="col-lg-2 control-label">D：</label>
+                            <div class="col-lg-10">
+                              <input type="text" placeholder="请输入英文句子" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary">保存</button>
                       </form>
                     </li>
                   </ul>
