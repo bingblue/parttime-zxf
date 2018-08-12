@@ -213,6 +213,7 @@
   margin: 5px 0;
   color: #FF0000;
 }
+/* tab切換end */
 /* 搞定语法单选题、填空题start */
 .ml5 {
   margin-left: 5px;
@@ -268,7 +269,16 @@
   border-top: 1px solid rgba(102, 102, 102, 0.34901);
 }
 /* 听力测试end */
-/* tab切換end */
+/* 学员组课程管理start */
+.xc-stu-group .switch input:checked + span {
+  background-color: rgba(135, 208, 104, 1);
+  border-color: rgba(135, 208, 104, 1);
+}
+.xc-stu-group .switch span {
+  background-color: rgba(204, 204, 204, 1);
+  border-color: rgba(204, 204, 204, 1);
+}
+/* 学员组课程管理end */
 /* 弹框相关 */
 .clearfix::after {
   content: ' ';
@@ -414,3 +424,6 @@
   top: -15px;
 }
 /* 弹框相关END */
+.xc-mb10 {
+  margin-bottom: 10px;
+}
