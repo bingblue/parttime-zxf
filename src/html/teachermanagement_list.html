@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="../css/app.css" id="maincss">
   <link rel="stylesheet" href="../css/theme-e.css">
   <!-- endbuild -->
-
+  <link rel="stylesheet" href="../css/main_xc.css">
 
 
 
@@ -53,7 +53,9 @@
           </ul>
           <ul class="nav navbar-nav navbar-right mu-head-user">
             <li>
-              <span><i class="fa fa-user"></i>admin</span><span>|</span>
+              <span>
+                <i class="fa fa-user"></i>admin</span>
+              <span>|</span>
             </li>
             <li>
               <a href="#">
@@ -224,13 +226,423 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            这里是内容
+            <div class="panel-default">
+              <div class="panel-heading">
+                <form class="text-right form-lineH">
+                  <div class="row">
+                    <div class="form-group col-sm-3">
+                      <label class="col-sm-4">教师：</label>
+                      <div class="col-sm-8">
+                        <input type="tel" name="" class="form-control" placeholder="请输入教师编号或教师姓名">
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-3">
+                      <label class="col-sm-4">所属学校：</label>
+                      <div class="col-sm-8">
+                        <select name="" id="" class="form-control">
+                          <option value="">全部</option>
+                          <option value="1">学校1</option>
+                          <option value="2">学校2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-3">
+                      <label class="col-sm-4">账号状态：</label>
+                      <div class="col-sm-8">
+                        <select name="" id="" class="form-control">
+                          <option value="">全部</option>
+                          <option value="1">正常</option>
+                          <option value="2">停用</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-1">
+                      <button type="button" class="btn btn-primary">搜索</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- START table-responsive-->
+              <div class="panel-heading">
+                <p>
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">根据条件找到99 名老师</font>
+                  </font>
+                </p>
+                <div class="table-responsive">
+                  <table id="" class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">教师编号</font>
+                          </font>
+                        </th>
+                        <th>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">创建时间</font>
+                          </font>
+                        </th>
+                        <th>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">状态</font>
+                          </font>
+                        </th>
+                        <th>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">最近登陆</font>
+                          </font>
+                        </th>
+                        <th>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">近30天平均每日登陆(次)</font>
+                          </font>
+                        </th>
+                        <th>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">教师姓名</font>
+                          </font>
+                        </th>
+                        <th>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">教师手机</font>
+                          </font>
+                        </th>
+                        <th>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">学生总数</font>
+                          </font>
+                        </th>
+                        <th>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">付费学生</font>
+                          </font>
+                        </th>
+                        <th>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">教师当前学币</font>
+                          </font>
+                        </th>
+                        <th>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">教师累计学币</font>
+                          </font>
+                        </th>
+                        <th>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">操作</font>
+                          </font>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody id="designerlist">
+                      <tr>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">A000001</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">2018-01-01 22:22:22</font>
+                          </font>
+                        </td>
+                        <td class="text-success">
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">正常</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">今天</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">3.1</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">姓名姓名</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">18000000000</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">9999</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">9999</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">9999</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">9999</font>
+                          </font>
+                        </td>
+                        <td>
+                          <a class="btn btn-primary jq-stop" href="javascript:;">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">停用账号</font>
+                            </font>
+                          </a>
+                          <a class="btn btn-primary jq-check" href="javascript:;">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">查看班级</font>
+                            </font>
+                          </a>
+                          <a class="btn btn-primary jq-change" href="javascript:;">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">修改资料</font>
+                            </font>
+                          </a>
+                          <a class="btn btn-primary jq-pwd" href="javascript:;">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">重置密码</font>
+                            </font>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">A000001</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">2018-01-01 22:22:22</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">停用</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">今天</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">3.1</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">姓名姓名</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">18000000000</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">9999</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">9999</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">9999</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">9999</font>
+                          </font>
+                        </td>
+                        <td>
+                          <a class="btn btn-primary jq-stop" href="javascript:;">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">停用账号</font>
+                            </font>
+                          </a>
+                          <a class="btn btn-primary jq-check" href="javascript:;">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">查看班级</font>
+                            </font>
+                          </a>
+                          <a class="btn btn-primary jq-change" href="javascript:;">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">修改资料</font>
+                            </font>
+                          </a>
+                          <a class="btn btn-primary jq-pwd" href="javascript:;">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">重置密码</font>
+                            </font>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">A000001</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">2018-01-01 22:22:22</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">停用</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">今天</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">3.1</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">姓名姓名</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">18000000000</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">9999</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">9999</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">9999</font>
+                          </font>
+                        </td>
+                        <td>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">9999</font>
+                          </font>
+                        </td>
+                        <td>
+                          <a class="btn btn-primary jq-stop" href="javascript:;">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">停用账号</font>
+                            </font>
+                          </a>
+                          <a class="btn btn-primary jq-check" href="javascript:;">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">查看班级</font>
+                            </font>
+                          </a>
+                          <a class="btn btn-primary jq-change" href="javascript:;">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">修改资料</font>
+                            </font>
+                          </a>
+                          <a class="btn btn-primary jq-pwd" href="javascript:;">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">重置密码</font>
+                            </font>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- build:pages -->
+                <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">«</font>
+                            </font>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">1</font>
+                          </font>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">2</font>
+                          </font>
+                        </a>
+                      </li>
+                      <li class="active">
+                        <a href="#">
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">3</font>
+                          </font>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">»</font>
+                            </font>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- 主要内容END -->
-    
+
     <!-- build:foot -->
     <footer>
       <span>&copy; 2018 - 智厢逢</span>
@@ -257,7 +669,7 @@
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
-
+  <script src="../js/teachermanagement.js"></script>
 
 
 
