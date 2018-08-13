@@ -3,6 +3,9 @@
 .nodecation:hover {
   text-decoration: none;
 }
+.upload-img {
+  max-width: 50px;
+}
 .xc-table {
   border: 1px solid #eeeeee;
   overflow: hidden;

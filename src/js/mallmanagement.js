@@ -72,8 +72,22 @@ $(function(){
       }
     })
   })
+  // 上传图片
+  $('body').on('change','.file-ipt',function(){
+    upload(this)
+  })
   
 })
+function upload (target) {
+  let file = target.files[0]
+  let reader = new FileReader()
+  reader.readAsDataURL(file)
+  reader.onload = function(e) {
+    $(target).parent('span').siblings('img').attr('src', e.target.result)
+    $(target).siblings('img').css('display', 'inline-block')
+    $(target).siblings('span').html('更换图片')
+  }
+}
 
 function text () {
   return `<form method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
@@ -99,8 +113,9 @@ function text () {
         </div>
         <span class="btn btn-success fileinput-button"><i class="fa fa-fw fa-plus"></i>
           <span>上传图片</span>
-          <input type="file" name="files[]" multiple="">
+          <input type="file" name="files[]" multiple="" class="file-ipt">
         </span>
+        <img class="upload-img" src="">
      </div>
   </div>
 </form>`
