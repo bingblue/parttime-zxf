@@ -69,7 +69,7 @@ function stop () {
     <p>停用该教师账号，您必须将账号下的学生和班级转移给其他老师</p>
      <div class="panel-body">
         <div class="form-group">
-           <label class="control-label col-sm-5">选择班级：</label>
+           <label class="control-label col-sm-5">转移给：</label>
            <div class="col-sm-6">
             <select name="" id="label" class="form-control">
               <option value="1">1</option>
@@ -134,16 +134,6 @@ function change () {
            <div class="col-sm-6">
             <input type="text" name="name" placeholder="请输入" required class="form-control">
           </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label col-sm-5">账号状态：</label>
-          <div class="col-sm-6 text-lt">
-            <label class="switch switch-lg">
-              <input type="checkbox" checked="checked">
-              <span></span>
-            </label>
-          </div>
-          
         </div>
      </div>
   </div>
