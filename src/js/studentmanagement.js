@@ -128,7 +128,42 @@ $(function(){
       }
     })
   })
-  
+  // 学生管理 充值
+  $('.jq-recharge').click(function(){
+    swal({
+      title: "为学生充值",
+      text: recharge(),
+      html: true,
+      showCancelButton: true,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "确定",
+      cancelButtonText: "取消",
+      closeOnConfirm: false,
+      closeOnCancel: true
+    }, function (isConfirm) {
+      if (isConfirm) {
+        swal({
+          title: "确定为学生：【学生名】【电话】、【学生名】【电话】、【学生名】【电话】、【学生名】【电话】 进行充值吗？",
+          text: rechargeconfim(),
+          html: true,
+          confirmButtonColor: "#DD6B55",
+          closeOnConfirm: false,
+          closeOnCancel: false
+        })
+      }
+    })
+  })
+  // 学生管理 充值记录
+  $('.jq-record').click(function(){
+    swal({
+      title: "充值记录",
+      text: rechargerecord(),
+      html: true,
+      confirmButtonColor: "#DD6B55",
+      closeOnConfirm: false,
+      closeOnCancel: true
+    })
+  })
 })
 
 function text () {

@@ -148,4 +148,12 @@
   position: relative;
   top: -15px;
 }
+
+.text-lt {
+  text-align: left;
+}
+
+.upload-img {
+  max-width: 50px;
+}
 /* 弹框相关END */
