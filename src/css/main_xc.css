@@ -102,6 +102,22 @@
 .table-words thead {
   background-color: rgba(243, 243, 243, 1);
 }
+.table-words .blue {
+  color: #009900;
+}
+.table-words .end {
+  color: #ccc;
+}
+.table-words .xc-red {
+  color: #FF0000;
+}
+.table-words .col {
+  background-color: #dcaf31;
+  color: #000;
+}
+.table-words .base {
+  background-color: rgba(255, 204, 0, 0.298039215686275)
+}
 .table-words > thead > tr > th {
   font-weight: 200;
   color: #666666;
@@ -215,7 +231,8 @@
   padding-top: 10px;
 }
 .xc-tab .error,
-.xc-questions .error {
+.xc-questions .error,
+.xc-error {
   margin: 5px 0;
   color: #FF0000;
 }

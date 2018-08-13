@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="../css/app.css" id="maincss">
   <link rel="stylesheet" href="../css/theme-e.css">
   <!-- endbuild -->
+
   <link rel="stylesheet" href="../css/main_xc.css">
 
 
@@ -68,6 +69,7 @@
       </nav>
     </header>
     <!-- endbuild -->
+
 
 
 
@@ -233,6 +235,7 @@
 
 
 
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
@@ -245,13 +248,19 @@
             <div class="panel-default">
               <div class="panel-heading">
                 <div class="xc-mb10">
-                  <button class="btn btn-primary">创建学校</button>
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#edit">创建学校</button>
                 </div>
                 <form class="form-horizontal">
                   <div class="form-group">
                     <label class="col-lg-1 control-label">选择省份</label>
                     <div class="col-lg-4">
-                      <input type="email" placeholder="Email" class="form-control">
+                      <select name="account" class="form-control m-b" placeholder='请选择省份'>
+                        <option>请选择省份</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                      </select>
                     </div>
                     <label class="col-lg-1 control-label">检索学校</label>
                     <div class="col-lg-4">
@@ -262,6 +271,267 @@
                     </div>
                   </div>
                 </form>
+                <div class="table-responsive" style="margin-bottom: 10px">
+                  <table class="table table-words">
+                    <thead>
+                      <tr>
+                        <th class="col-xs-1" style="min-width: 80px;">学校编号</th>
+                        <th class="col-xs-1" style="min-width: 80px;">学校名称</th>
+                        <th class="col-xs-1" style="min-width: 160px;">创建时间</th>
+                        <th class="col-xs-3" style="min-width: 340px;">辖区</th>
+                        <th class="col-xs-1" style="min-width: 80px;">状态</th>
+                        <th class="col-xs-1" style="min-width: 80px;">校长姓名</th>
+                        <th class="col-xs-1" style="min-width: 80px;">校长手机</th>
+                        <th class="col-xs-1" style="min-width: 80px;">学生总数</th>
+                        <th class="col-xs-1 xc-red" style="min-width: 80px;">当前余额</th>
+                        <th class="col-xs-1 xc-red" style="min-width: 120px;">历史总充值</th>
+                        <th class="col-xs-1" style="min-width: 80px;">付费学生</th>
+                        <th class="col-xs-1" style="min-width: 80px;">教师人数</th>
+                        <th class="col-xs-3" style="min-width: 483px;">操作</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>A000001</td>
+                        <td>名字名字</td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>上海市（徐汇、静安、虹口），江苏（苏州、无锡）</td>
+                        <td class="blue">正常</td>
+                        <td>姓名姓名</td>
+                        <td>18000000000</td>
+                        <td>9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#yue">增减余额</button>
+                          <button class="btn btn-primary">课程权限</button>
+                          <button class="btn btn-primary">停用账号</button>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#edit">修改资料</button>
+                          <button class="btn btn-primary jq-reset-pw">重置密码</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>A000001</td>
+                        <td>名字名字</td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>上海市（徐汇、静安、虹口），江苏（苏州、无锡）</td>
+                        <td class="blue">正常</td>
+                        <td>姓名姓名</td>
+                        <td>18000000000</td>
+                        <td>9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#yue">增减余额</button>
+                          <button class="btn btn-primary">课程权限</button>
+                          <button class="btn btn-primary">停用账号</button>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#edit">修改资料</button>
+                          <button class="btn btn-primary jq-reset-pw">重置密码</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>A000001</td>
+                        <td>名字名字</td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>上海市（徐汇、静安、虹口），江苏（苏州、无锡）</td>
+                        <td class="blue">正常</td>
+                        <td>姓名姓名</td>
+                        <td>18000000000</td>
+                        <td>9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#yue">增减余额</button>
+                          <button class="btn btn-primary">课程权限</button>
+                          <button class="btn btn-primary">停用账号</button>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#edit">修改资料</button>
+                          <button class="btn btn-primary jq-reset-pw">重置密码</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>A000001</td>
+                        <td>名字名字</td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>上海市（徐汇、静安、虹口），江苏（苏州、无锡）</td>
+                        <td class="blue">正常</td>
+                        <td>姓名姓名</td>
+                        <td>18000000000</td>
+                        <td>9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#yue">增减余额</button>
+                          <button class="btn btn-primary">课程权限</button>
+                          <button class="btn btn-primary">停用账号</button>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#edit">修改资料</button>
+                          <button class="btn btn-primary jq-reset-pw">重置密码</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>A000001</td>
+                        <td>名字名字</td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>上海市（徐汇、静安、虹口），江苏（苏州、无锡）</td>
+                        <td class="blue">正常</td>
+                        <td>姓名姓名</td>
+                        <td>18000000000</td>
+                        <td>9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#yue">增减余额</button>
+                          <button class="btn btn-primary">课程权限</button>
+                          <button class="btn btn-primary">停用账号</button>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#edit">修改资料</button>
+                          <button class="btn btn-primary jq-reset-pw">重置密码</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>A000001</td>
+                        <td>名字名字</td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>上海市（徐汇、静安、虹口），江苏（苏州、无锡）</td>
+                        <td class="blue">正常</td>
+                        <td>姓名姓名</td>
+                        <td>18000000000</td>
+                        <td>9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#yue">增减余额</button>
+                          <button class="btn btn-primary">课程权限</button>
+                          <button class="btn btn-primary">停用账号</button>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#edit">修改资料</button>
+                          <button class="btn btn-primary jq-reset-pw">重置密码</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>A000001</td>
+                        <td>名字名字</td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>上海市（徐汇、静安、虹口），江苏（苏州、无锡）</td>
+                        <td class="blue">正常</td>
+                        <td>姓名姓名</td>
+                        <td>18000000000</td>
+                        <td>9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#yue">增减余额</button>
+                          <button class="btn btn-primary">课程权限</button>
+                          <button class="btn btn-primary">停用账号</button>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#edit">修改资料</button>
+                          <button class="btn btn-primary jq-reset-pw">重置密码</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>A000001</td>
+                        <td>名字名字</td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>上海市（徐汇、静安、虹口），江苏（苏州、无锡）</td>
+                        <td class="blue">正常</td>
+                        <td>姓名姓名</td>
+                        <td>18000000000</td>
+                        <td>9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#yue">增减余额</button>
+                          <button class="btn btn-primary">课程权限</button>
+                          <button class="btn btn-primary">停用账号</button>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#edit">修改资料</button>
+                          <button class="btn btn-primary jq-reset-pw">重置密码</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>A000001</td>
+                        <td>名字名字</td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>上海市（徐汇、静安、虹口），江苏（苏州、无锡）</td>
+                        <td class="end">停用</td>
+                        <td>姓名姓名</td>
+                        <td>18000000000</td>
+                        <td>9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#yue">增减余额</button>
+                          <button class="btn btn-primary">课程权限</button>
+                          <button class="btn btn-primary">停用账号</button>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#edit">修改资料</button>
+                          <button class="btn btn-primary jq-reset-pw">重置密码</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>A000001</td>
+                        <td>名字名字</td>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>上海市（徐汇、静安、虹口），江苏（苏州、无锡）</td>
+                        <td class="end">停用</td>
+                        <td>姓名姓名</td>
+                        <td>18000000000</td>
+                        <td>9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td class="xc-red">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#yue">增减余额</button>
+                          <button class="btn btn-primary">课程权限</button>
+                          <button class="btn btn-primary">停用账号</button>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#edit">修改资料</button>
+                          <button class="btn btn-primary jq-reset-pw">重置密码</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- build:pages -->
+                <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- endbuild -->
               </div>
             </div>
           </div>
@@ -287,8 +557,100 @@
 
 
 
-  </div>
 
+  </div>
+  <div id="edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade in">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 id="myModalLabel" class="modal-title">创建学校/修改资料</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="col-lg-1 col-lg-offset-3 control-label" style="min-width: 100px;">学校名称</label>
+              <div class="col-lg-5">
+                <input type="text" placeholder="请输入学校名称" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-1 col-lg-offset-3 control-label" style="min-width: 100px;">校长姓名</label>
+              <div class="col-lg-5">
+                <input type="text" placeholder="请输入校长姓名" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-1 col-lg-offset-3 control-label" style="min-width: 100px;">校长手机</label>
+              <div class="col-lg-5">
+                <input type="text" placeholder="请输入校长手机" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-1 col-lg-offset-3 control-label" style="min-width: 100px;">设置辖区</label>
+              <div class="col-lg-5">
+                <select name="" id="label" class="form-control">
+                  <option value="">浙江省 / 杭州市/ 西湖区</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">保存</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="yue" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade in">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 id="myModalLabel" class="modal-title">增减余额</h4>
+        </div>
+        <div class="modal-body">
+            <p class="xc-error">请谨慎操作</p>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="col-lg-2  control-label">增减</label>
+              <div class="col-lg-6">
+                <select name="" id="label" class="form-control">
+                  <option value="">增加</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-2  control-label">增减数额</label>
+              <div class="col-lg-6">
+                <input type="text" placeholder="请输入" class="form-control">
+              </div>
+              <label class="col-lg-1 control-label">元</label>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default">取消</button>
+          <button type="button" class="btn btn-primary">保存</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- build:js -->
   <!-- =============== JS ===============-->
   <script src="../js/vendor/modernizr/modernizr.custom.js"></script>
@@ -302,7 +664,9 @@
   <script src="../js/vendor/moment/min/moment-with-locales.min.js"></script>
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
+  <script src="../js/schoolmanagement.js"></script>
   <!-- endbuild -->
+
 
 
 

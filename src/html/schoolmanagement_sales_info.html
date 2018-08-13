@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="../css/app.css" id="maincss">
   <link rel="stylesheet" href="../css/theme-e.css">
   <!-- endbuild -->
+  <link rel="stylesheet" href="../css/main_xc.css">
 
 
 
@@ -55,7 +56,9 @@
           </ul>
           <ul class="nav navbar-nav navbar-right mu-head-user">
             <li>
-              <span><i class="fa fa-user"></i>admin</span><span>|</span>
+              <span>
+                <i class="fa fa-user"></i>admin</span>
+              <span>|</span>
             </li>
             <li>
               <a href="#">
@@ -67,6 +70,7 @@
       </nav>
     </header>
     <!-- endbuild -->
+
 
 
 
@@ -232,20 +236,283 @@
 
 
 
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
           【学校名】的详细报表
           <ol class="breadcrumb">
-            <li><a href="#">学校管理</a></li>
-            <li><a href="#">销售数据</a></li>
+            <li>
+              <a href="./schoolmanagement_list.html">学校管理</a>
+            </li>
+            <li>
+              <a href="./schoolmanagement_sales.html">销售数据</a>
+            </li>
             <li class="active">详细报表</li>
           </ol>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            这里是内容
+            <!-- START panel-->
+            <div class="panel-default">
+              <div class="panel-heading">
+                <div class="table-responsive" style="margin-bottom: 10px">
+                  <table class="table table-words">
+                    <thead>
+                      <tr>
+                        <th class="col-xs-1" style="min-width: 120px;">月份</th>
+                        <th class="col-xs-1 xc-red" style="min-width: 80px;">月末余额</th>
+                        <th class="col-xs-1" style="min-width: 120px;">学校储值情况</th>
+                        <th class="col-xs-1 col" style="min-width: 130px;">本月续费人数(次)</th>
+                        <th class="col-xs-1 col" style="min-width: 130px;">本月总充值(次)</th>
+                        <th class="col-xs-1 col" style="min-width: 130px;">本月30天续费(次)</th>
+                        <th class="col-xs-1 col" style="min-width: 130px;">本月60天续费(次)</th>
+                        <th class="col-xs-1 col" style="min-width: 130px;">本月90天续费(次)</th>
+                        <th class="col-xs-1 col" style="min-width: 140px;">本月6个月续费(次)</th>
+                        <th class="col-xs-1 col" style="min-width: 130px;">本月3年续费(次)</th>
+                        <th class="col-xs-1" style="min-width: 130px;">月末付费学生总数</th>
+                        <th class="col-xs-1" style="min-width: 80px;">过期人数</th>
+                        <th class="col-xs-1" style="min-width: 80px;">流失学员</th>
+                        <th class="col-xs-1" style="min-width: 80px;">转化人数</th>
+                        <th class="col-xs-1" style="min-width: 80px;">转化率</th>
+                        <th class="col-xs-1" style="min-width: 80px;">操作</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2018年06月</td>
+                        <td class="xc-red">9999999</td>
+                        <td>+9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>100%</td>
+                        <td>
+                          <a class="btn btn-primary" href="javascript:;">余额明细</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018年06月</td>
+                        <td class="xc-red">9999999</td>
+                        <td>+9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>100%</td>
+                        <td>
+                          <a class="btn btn-primary" href="javascript:;">余额明细</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018年06月</td>
+                        <td class="xc-red">9999999</td>
+                        <td>+9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>100%</td>
+                        <td>
+                          <a class="btn btn-primary" href="javascript:;">余额明细</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018年06月</td>
+                        <td class="xc-red">9999999</td>
+                        <td>+9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>100%</td>
+                        <td>
+                          <a class="btn btn-primary" href="javascript:;">余额明细</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018年06月</td>
+                        <td class="xc-red">9999999</td>
+                        <td>+9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>100%</td>
+                        <td>
+                          <a class="btn btn-primary" href="javascript:;">余额明细</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018年06月</td>
+                        <td class="xc-red">9999999</td>
+                        <td>+9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>100%</td>
+                        <td>
+                          <a class="btn btn-primary" href="javascript:;">余额明细</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018年06月</td>
+                        <td class="xc-red">9999999</td>
+                        <td>+9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>100%</td>
+                        <td>
+                          <a class="btn btn-primary" href="javascript:;">余额明细</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018年06月</td>
+                        <td class="xc-red">9999999</td>
+                        <td>+9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>100%</td>
+                        <td>
+                          <a class="btn btn-primary" href="javascript:;">余额明细</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018年06月</td>
+                        <td class="xc-red">9999999</td>
+                        <td>+9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>100%</td>
+                        <td>
+                          <a class="btn btn-primary" href="javascript:;">余额明细</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018年06月</td>
+                        <td class="xc-red">9999999</td>
+                        <td class="xc-red">-9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td class="base">9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>9999999</td>
+                        <td>100%</td>
+                        <td>
+                          <a class="btn btn-primary" href="javascript:;">余额明细</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- build:pages -->
+                <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- endbuild -->
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -257,6 +524,7 @@
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
+
 
 
 
@@ -285,6 +553,7 @@
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+
 
 
 
