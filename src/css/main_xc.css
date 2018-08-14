@@ -193,6 +193,9 @@
   left: 0;
   transition: all 0.2s;
 }
+.xc-tab .xc-read .line {
+  width: 60px;
+}
 .xc-tab .xc-tab-head li {
   display: inline-block;
   width: 105px;
@@ -214,13 +217,16 @@
 }
 .xc-tab .xc-bas li a{
   color: #989898;
+  display: inline-block;
+  width: 100%;
 }
 .xc-tab .xc-bas li.active a,
 .xc-tab .xc-bas li:hover a{
   color: #108EE9;
   text-decoration: none;
 }
-.xc-tab .xc-bas li  {
+.xc-tab .xc-bas li,
+.xc-tab .xc-read li{
   width: 60px;
 }
 .xc-tab .xc-bas .active {
@@ -473,4 +479,8 @@
 /* 弹框相关END */
 .xc-mb10 {
   margin-bottom: 10px;
+}
+.xc-bas-item {
+  padding: 10px 0;
+  border-top: 1px solid #eeeeee;
 }

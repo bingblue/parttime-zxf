@@ -1,4 +1,12 @@
 $(function () {
+    $('.jq-xc-tab .xc-tab-head').on('click', 'li', function () {
+      var $this = $(this),
+          $left = $this.position().left,
+          $index = $this.index()
+      $this.siblings('.line').css('left', $left)
+      $this.addClass('active').siblings().removeClass('active')
+      $this.parent().siblings('.xc-tab-body').find('>li').eq($index).addClass('active').siblings().removeClass('active')
+    });
     // 同步课程table切换
     calcTableHeight()
     $(".jq-xc-table li").on('click', function () {
@@ -101,6 +109,21 @@ $(function () {
       }, function (isConfirm) {
         if (isConfirm) {
           swal("清空成功", "success")
+        }
+      })
+    })
+    $('.jq-del-sj').click(function(){
+      swal({
+        title: "确认删除该试卷【试卷】吗？",
+        showCancelButton: true,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "删除",
+        cancelButtonText: "取消",
+        closeOnConfirm: false,
+        closeOnCancel: true
+      }, function (isConfirm) {
+        if (isConfirm) {
+          swal("删除成功", "success")
         }
       })
     })
