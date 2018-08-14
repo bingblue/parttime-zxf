@@ -344,7 +344,7 @@ function record () {
   <table class="table table-bordered table-hover dataTable">
     <thead>
       <tr>
-        <th class="sorting">操作时间</th>
+        <th >操作时间</th>
         <th>操作类型</th>
         <th>数量</th>
         <th>原因</th>
@@ -393,7 +393,7 @@ function rechargerecord () {
   <table class="table table-bordered table-hover dataTable">
     <thead>
       <tr>
-        <th class="sorting">充值时间</th>
+        <th >充值时间</th>
         <th>充值学员组</th>
         <th>时长</th>
         <th>学生手机</th>
@@ -481,7 +481,24 @@ function recharge () {
             </select>
           </div>
         </div>
+        <div class="form-group">
+           <label class="control-label col-sm-5">单价：</label>
+           <div class="col-sm-6">￥100</div>
+        </div>
+        <div class="form-group">
+           <label class="control-label col-sm-5">数量：</label>
+           <div class="col-sm-6">99</div>
+        </div>
+        <div class="form-group">
+           <label class="control-label col-sm-5">合计：</label>
+           <div class="col-sm-6">￥9900</div>
+        </div>
+        <div class="form-group">
+           <label class="control-label col-sm-5">当前学余额：</label>
+           <div class="col-sm-6">￥22200</div>
+        </div>
      </div>
+
   </div>
 </form>`
 }
