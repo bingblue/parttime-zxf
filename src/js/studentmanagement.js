@@ -344,7 +344,7 @@ function record () {
   <table class="table table-bordered table-hover dataTable">
     <thead>
       <tr>
-        <th >操作时间</th>
+        <th>操作时间</th>
         <th>操作类型</th>
         <th>数量</th>
         <th>原因</th>
@@ -393,7 +393,7 @@ function rechargerecord () {
   <table class="table table-bordered table-hover dataTable">
     <thead>
       <tr>
-        <th >充值时间</th>
+        <th>充值时间</th>
         <th>充值学员组</th>
         <th>时长</th>
         <th>学生手机</th>
