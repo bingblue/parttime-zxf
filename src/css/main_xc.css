@@ -199,7 +199,31 @@
   text-align: center;
   cursor: pointer;
 }
-.xc-tab .xc-tab-head .active {
+.xc-tab .xc-bas li {
+  position: relative;
+}
+.xc-tab .xc-bas li.active::after {
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #108EE9;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.xc-tab .xc-bas li a{
+  color: #989898;
+}
+.xc-tab .xc-bas li.active a,
+.xc-tab .xc-bas li:hover a{
+  color: #108EE9;
+  text-decoration: none;
+}
+.xc-tab .xc-bas li  {
+  width: 60px;
+}
+.xc-tab .xc-bas .active {
   color: #108EE9;
 }
 .xc-tab .xc-tab-body li {
