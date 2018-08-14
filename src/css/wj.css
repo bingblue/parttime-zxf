@@ -147,3 +147,102 @@
 .mode-body .radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
   margin-left: 0;
 }
+/* 表格相关 */
+.xc-table {
+  border: 1px solid #eeeeee;
+  overflow: hidden;
+}
+.xc-table ul {
+  padding: 0;
+  margin: 0;
+}
+.xc-table .btn + .btn {
+  margin-right: 5px;
+}
+.xc-table li {
+  list-style: none;
+  padding: 12px 10px 12px 25px;
+  line-height: 33px;
+}
+.xc-table .xc-table-head {
+  overflow: hidden;
+  background-color: rgba(243, 243, 243, 1);
+}
+.xc-table .xc-table-head li {
+  border-right: 1px solid #eeeeee;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.xc-table-body {
+  background-color: #fff;
+}
+.xc-table-body .col-xs-4,
+.xc-table-body .col-xs-2 {
+  padding: 0px;
+}
+.xc-table-body > div + div {
+  border-left: 1px solid #eeeeee; 
+}
+.xc-table-body > ul {
+  position: relative;
+}
+.xc-table-body .one ul {
+  position: absolute;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.xc-table-body .one .two {
+  width: calc(100% / 3);
+  left: calc(100% / 6);
+  top: 0;
+}
+.xc-table-body .one .four {
+  left:  100%;
+  top: 0;
+  width: calc(50% + 2px);
+}
+.xc-table-body .one .four li {
+  border-right: none;
+}
+.xc-table-body .one .three {
+  width: calc(100% + 3px);
+  left:  100%;
+  top: 0;
+}
+.xc-table-body .one .three.big {
+  width: calc(150% + 5px)
+}
+.xc-table-body .one ul {
+  display: none;
+}
+.xc-table-body li {
+  color: #656565;
+}
+.xc-table-body .active {
+  color: #999999;
+}
+.xc-table-body .active > ul {
+  display: block;
+}
+.xc-table-body .one {
+  width: 16.6666667%;
+}
+.xc-table-body li {
+  border-bottom: 1px solid #eeeeee;
+  background-color: #fff;
+  z-index: 100;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* 表格相关 */
+.wj-table .circle {
+  margin: 0;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+.xc-table-body .one .two.big {
+  width: calc(83% + 5px);
+}

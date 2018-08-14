@@ -5,6 +5,35 @@
 (function(window, document, $, undefined){
 
   $(function(){
+    // 同步课程table切换
+    calcTableHeight()
+    $(".jq-xc-table li").on('click', function () {
+        var $this = $(this);
+        if (!$this.hasClass('active')) {
+            $this.addClass('active').siblings().removeClass('active')
+        }
+        calcTableHeight()
+    })
+    // 详情弹窗
+    $(".jq-xc-table li").on('click','.jq-detail',function(){
+      swal({
+        title: "",
+        text: detail(),
+        html: true,
+        confirmButtonColor: "#DD6B55",
+        closeOnConfirm: false,
+        closeOnCancel: false
+      })
+    })
+    function calcTableHeight () {
+     var $maxHeight = 0;
+     $('.jq-xc-table ul').each(function(index, ele) {
+          if($(ele).parent().hasClass('active')){
+              $maxHeight = Math.max($maxHeight, $(ele).height())
+          }
+     });
+     $(".jq-xc-table").height($maxHeight)
+    }
     $('.datetimepicker').datetimepicker({
       icons: {
         time: 'fa fa-clock-o',
@@ -98,6 +127,38 @@
     //   resize: true
     // })
 
+    
+
   })
 
 })(window, document, window.jQuery)
+function detail () {
+  return `<div class="table-responsive">
+  <table class="table table-bordered table-hover dataTable">
+    <thead>
+      <tr>
+        <th>单元</th>
+        <th>最后一次学习</th>
+        <th>总进度</th>
+      </tr>
+    </thead>
+    <tbody id="designerlist">
+      <tr>
+        <td>小学语法-代词 Unit2</td>
+        <td>2018-01-0122:22:22</td>
+        <td class="text-success">完成</td>
+      </tr>
+      <tr>
+        <td>小学语法-代词 Unit2</td>
+        <td>2018-01-0122:22:22</td>
+        <td class="text-info">进行</td>
+      </tr>
+      <tr>
+        <td>小学语法-代词 Unit2</td>
+        <td>2018-01-0122:22:22</td>
+        <td class="text-success">完成</td>
+      </tr>
+    </tbody>
+  </table>
+</div>`
+}

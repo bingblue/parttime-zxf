@@ -35,4 +35,33 @@ $(function(){
       }
     })
   })
+  // 同步课程table切换
+  calcTableHeight()
+  $(".jq-xc-table li").on('click', function () {
+      var $this = $(this);
+      if (!$this.hasClass('active')) {
+          $this.addClass('active').siblings().removeClass('active')
+      }
+      calcTableHeight()
+  })
+  function calcTableHeight () {
+   var $maxHeight = 0;
+   $('.jq-xc-table ul').each(function(index, ele) {
+        if($(ele).parent().hasClass('active')){
+            $maxHeight = Math.max($maxHeight, $(ele).height())
+        }
+   });
+   $(".jq-xc-table").height($maxHeight)
+  }
+  // 班级课程 添加课程
+  $('.jq-addclass').click(function(){
+    swal({
+      title: "成功添加课程",
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "确认",
+      cancelButtonText: "取消",
+      closeOnConfirm: false,
+      closeOnCancel: true
+    })
+  })
 })
