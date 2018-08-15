@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>同步课程-编辑单词</title>
+  <title>同步智测-词汇与语法</title>
   <!-- build:css -->
   <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
@@ -21,6 +21,7 @@
   <!-- endbuild -->
 
   <link rel="stylesheet" href="../css/main_xc.css">
+
 
 
 </head>
@@ -53,7 +54,9 @@
           </ul>
           <ul class="nav navbar-nav navbar-right mu-head-user">
             <li>
-              <span><i class="fa fa-user"></i>admin</span><span>|</span>
+              <span>
+                <i class="fa fa-user"></i>admin</span>
+              <span>|</span>
             </li>
             <li>
               <a href="#">
@@ -222,175 +225,171 @@
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
+          基础知识
           <ol class="breadcrumb">
             <li>
-              <a href="./synchronize.html">同步课程</a>
+              <a href="./intelligent_test.html">同步智测</a>
             </li>
             <li>
-              <a href="./synchronize_unit.html">单元</a>
+              <a href="./intelligent_test_unit.html">分卷</a>
             </li>
             <li>
-              <a href="./synchronize_unit_word.html">单词列表</a>
+              <a href="./intelligent_test_unit_unit.html">卷内试题目录</a>
             </li>
-            <li class="active">编辑单词</li>
+            <li class="active">词汇与语法2</li>
           </ol>
         </div>
         <div class="row">
           <div class="col-xs-12">
             <div class="panel-default">
               <div class="panel-heading">
-                <div class="xc-tab jq-xc-tab">
-                  <ul class="xc-tab-head">
-                    <li>基础属性</li>
-                    <li>闯关題</li>
-                    <span class="line"></span>
-                  </ul>
-                  <ul class="xc-tab-body">
+                <div class="xc-tab xc-mb10">
+                  <ul class="xc-tab-head xc-bas">
+                    <li>
+                      <a href="./intelligent_real_words_01.html">Ⅰ</a>
+                    </li>
                     <li class="active">
-                      <form class="form-horizontal">
-                        <div>
-                          <input class="file" type="file" name="files" multiple="" style="display: none">
-                          <div class="form-group col-xs-6">
-                            <label class="col-lg-2 control-label">单词</label>
-                            <div class="col-lg-10">
-                              <input type="text" placeholder="请输入单词" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-6">
-                            <label class="col-lg-2 control-label">音标</label>
-                            <div class="col-lg-10">
-                              <input type="text" placeholder="请输入音标" class="form-control">
-                            </div>
-                          </div>
-                          <div class="clearfix">
-                            <div class="form-group col-xs-6">
-                              <label class="col-lg-2 control-label">发音</label>
-                              <div class="col-lg-10">
-                                <span class="btn btn-default jq-fileinput-button">
-                                  <i class="fa fa-fw fa-upload"></i>
-                                  <span>上传文件</span>
-                                </span>
-                                <p>支持扩展名：.xxx .xxx .xxx</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-6">
-                            <label class="col-lg-2 control-label">词性</label>
-                            <div class="col-lg-10">
-                              <select name="account" class="form-control m-b">
-                                <option value="">请选择词性</option>
-                                <option>词性 1</option>
-                                <option>词性 2</option>
-                                <option>词性 3</option>
-                                <option>词性 4</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-6">
-                            <label class="col-lg-2 control-label">词义</label>
-                            <div class="col-lg-10">
-                              <input type="text" placeholder="请输入词义" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-6">
-                            <label class="col-lg-2 control-label">
-                              <button class="btn btn-default btn-small"> + 增加词性词义</button>
-                            </label>
-                          </div>
-                        </div>
-                      </form>
+                      <ahref="javascript:;">
+                        Ⅱ</a>
                     </li>
                     <li>
-                      <form class="form-horizontal">
-                        <div>
-                          <h4>英译汉：选项为汉语释义</h4>
-                          <div class="clearfix">
-                            <div class="form-group col-xs-6">
-                              <label class="col-lg-2 control-label xc-nowrap">正确答案：</label>
-                              <div class="col-lg-10">
-                                <select name="account" class="form-control m-b">
-                                  <option value="">请选择正确答案</option>
-                                  <option>A</option>
-                                  <option>B</option>
-                                  <option>C</option>
-                                  <option>D</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-6">
-                            <label class="col-lg-2 control-label">A：</label>
-                            <div class="col-lg-10">
-                              <input type="text" placeholder="请输入汉语释义" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-6">
-                            <label class="col-lg-2 control-label">B：</label>
-                            <div class="col-lg-10">
-                              <input type="text" placeholder="请输入汉语释义" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-6">
-                            <label class="col-lg-2 control-label">C：</label>
-                            <div class="col-lg-10">
-                              <input type="text" placeholder="请输入汉语释义" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-6">
-                            <label class="col-lg-2 control-label">D：</label>
-                            <div class="col-lg-10">
-                              <input type="text" placeholder="请输入汉语释义" class="form-control">
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <div class="clearfix">
-                            <h4>英译汉：选项为汉语释义</h4>
-                          </div>
-                          <div class="clearfix">
-                            <div class="form-group col-xs-6">
-                              <label class="col-lg-2 control-label xc-nowrap">正确答案：</label>
-                              <div class="col-lg-10">
-                                <select name="account" class="form-control m-b">
-                                  <option value="">请选择正确答案</option>
-                                  <option>A</option>
-                                  <option>B</option>
-                                  <option>C</option>
-                                  <option>D</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-6">
-                            <label class="col-lg-2 control-label">A：</label>
-                            <div class="col-lg-10">
-                              <input type="text" placeholder="请输入汉语释义" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-6">
-                            <label class="col-lg-2 control-label">B：</label>
-                            <div class="col-lg-10">
-                              <input type="text" placeholder="请输入汉语释义" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-6">
-                            <label class="col-lg-2 control-label">C：</label>
-                            <div class="col-lg-10">
-                              <input type="text" placeholder="请输入汉语释义" class="form-control">
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-6">
-                            <label class="col-lg-2 control-label">D：</label>
-                            <div class="col-lg-10">
-                              <input type="text" placeholder="请输入汉语释义" class="form-control">
-                            </div>
-                          </div>
-                        </div>
-                        <button class="btn btn-primary">保存</button>
-                      </form>
+                      <a href="./intelligent_real_words_03.html">Ⅲ</a>
+                    </li>
+                    <li>
+                      <a href="./intelligent_real_words_04.html">Ⅳ</a>
+                    </li>
+                    <li>
+                      <a href="./intelligent_real_words_05.html">
+                        Ⅴ</a>
                     </li>
                   </ul>
                 </div>
+                <form class="form-horizontal">
+                  <div class="xc-mb10">
+                    <button class="btn btn-primary">保存</button>
+                    <button class="btn btn-default">清空代码</button>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-1 control-label xc-nowrap">题目文本：</label>
+                    <div class="col-lg-11">
+                      <input type="text" placeholder="将代表单词或词组的字母填入空格，每空一词，每个单词或词组只能用一次" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-1 control-label">短文：</label>
+                    <div class="col-lg-11">
+                      <textarea class="form-control" placeholder="请输入文本" rows="5"></textarea>
+                      <p class="xc-error">注意：短文内的题目号应为 _____1_____ , _____2_____ , _____3_____ , _____4_____ , _____5_____</p>
+                    </div>
+                  </div>
+                  <h4>选项</h4>
+                  <div class="form-group">
+                    <label class="col-lg-1 control-label">A：</label>
+                    <div class="col-lg-5">
+                      <input type="text" placeholder="请输入A选项" class="form-control">
+                    </div>
+                    <label class="col-lg-1 control-label">B：</label>
+                    <div class="col-lg-5">
+                      <input type="text" placeholder="请输入B选项" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-1 control-label">C：</label>
+                    <div class="col-lg-5">
+                      <input type="text" placeholder="请输入A选项" class="form-control">
+                    </div>
+                    <label class="col-lg-1 control-label">D：</label>
+                    <div class="col-lg-5">
+                      <input type="text" placeholder="请输入B选项" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-1 control-label">E：</label>
+                    <div class="col-lg-5">
+                      <input type="text" placeholder="请输入E选项" class="form-control">
+                    </div>
+                    <label class="col-lg-1 control-label">F：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入F选项" class="form-control">
+                      </div>
+                  </div>
+                  <h4>答案与解析</h4>
+                  <div class="form-group">
+                    <label class="col-lg-1 control-label">1：</label>
+                    <div class="col-lg-2">
+                      <select name="account" class="form-control m-b">
+                        <option value="">请选择答案</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-9">
+                      <input type="text" placeholder="请输入解析" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-1 control-label">2：</label>
+                    <div class="col-lg-2">
+                      <select name="account" class="form-control m-b">
+                        <option value="">请选择答案</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-9">
+                      <input type="text" placeholder="请输入解析" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-1 control-label">3：</label>
+                    <div class="col-lg-2">
+                      <select name="account" class="form-control m-b">
+                        <option value="">请选择答案</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-9">
+                      <input type="text" placeholder="请输入解析" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-1 control-label">4：</label>
+                    <div class="col-lg-2">
+                      <select name="account" class="form-control m-b">
+                        <option value="">请选择答案</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-9">
+                      <input type="text" placeholder="请输入解析" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-1 control-label">5：</label>
+                    <div class="col-lg-2">
+                      <select name="account" class="form-control m-b">
+                        <option value="">请选择答案</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-9">
+                      <input type="text" placeholder="请输入解析" class="form-control">
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -427,7 +426,7 @@
   <script src="../js/app.js"></script>
   <!-- endbuild -->
 
-  <script src="../js/synchronize.js"></script>
+
 
 
 

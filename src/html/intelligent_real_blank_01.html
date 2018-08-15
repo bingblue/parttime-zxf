@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>同步智测-基础知识</title>
+  <title>同步智测-完形填空</title>
   <!-- build:css -->
   <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
@@ -225,80 +225,71 @@
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
-          基础知识
+          阅读理解
           <ol class="breadcrumb">
             <li>
-              <a href="./intelligent_test.html">同步智测</a>
+              <a href="./intelligent_real.html">高考冲刺</a>
             </li>
             <li>
-              <a href="./intelligent_test_unit.html">分卷</a>
+              <a href="./intelligent_real_detail.html">试卷</a>
             </li>
             <li>
-              <a href="./intelligent_test_unit_unit.html">卷内试题目录</a>
+              <a href="./intelligent_real_unit.html">卷内试题目录</a>
             </li>
-            <li class="active">基础知识四</li>
+            <li class="active">完形填空一</li>
           </ol>
         </div>
         <div class="row">
           <div class="col-xs-12">
             <div class="panel-default">
               <div class="panel-heading">
-                <div class="xc-tab xc-mb10">
-                  <ul class="xc-tab-head xc-bas">
-                    <li>
-                      <a href="./intelligent_test_bas_01.html">Ⅰ</a>
-                    </li>
-                    <li>
-                      <a href="./intelligent_test_bas_02.html">
-                        Ⅱ</a>
-                    </li>
-                    <li>
-                      <a href="./intelligent_test_bas_03.html">Ⅲ</a>
-                    </li>
-                    <li class="active">
-                      <a href="javascript:;">Ⅳ</a>
-                    </li>
-                    <li>
-                      <a href="./intelligent_test_bas_05.html">
-                        Ⅴ</a>
-                    </li>
-                    <li>
-                      <a href="./intelligent_test_bas_06.html">
-                        Ⅵ</a>
-                    </li>
-                  </ul>
-                </div>
                 <form class="form-horizontal">
                   <div class="xc-mb10">
                     <button class="btn btn-primary">保存</button>
-                    <button class="btn btn-default">清空代码</button>
+                    <button class="btn btn-default">清空本页</button>
                   </div>
                   <div class="form-group">
                     <label class="col-lg-1 control-label xc-nowrap">题目文本：</label>
                     <div class="col-lg-11">
-                      <input type="text" placeholder="读单词，选出划线部分发音不同的单词，用A, B, C或D表示" class="form-control">
+                      <input type="text" placeholder="根据短文内容，选择最恰当的答案" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-1 control-label">短文：</label>
+                    <div class="col-lg-11">
+                      <textarea class="form-control" placeholder="请输入短文" rows="5"></textarea>
+                      <p class="xc-error">注意：短文内的题目号应为 _____1_____ ~ _____20_____</p>
                     </div>
                   </div>
                   <div class="xc-bas-item">
-                    <h4>01</h4>
+                    <h4>01.</h4>
                     <div class="form-group">
-                      <label class="col-lg-1 control-label">题干：</label>
-                      <div class="col-lg-11">
-                        <input type="text" placeholder="请输入题干" class="form-control">
-                        <p class="xc-error">注意：设置填空的部分使用下方的文本格式</p>
-                        <p class="xc-error">sssss {$name} aaaaa</p>
-                        <p class="xc-error">例如：How are you，设置are为填空内容，则将正文写为：How sssss {$are} aaaaa you,并在下方的答案框内填写are</p>
+                      <label class="col-lg-1 control-label">A：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项A" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">B：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项B" class="form-control">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="col-lg-1 control-label xc-nowrap">答案&解析：</label>
+                      <label class="col-lg-1 control-label">C：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项C" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">D：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项D" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-lg-1 control-label xc-nowrap">答案&amp;解析：</label>
                       <div class="col-lg-2">
                         <select name="account" class="form-control m-b">
                           <option value="">请选择答案</option>
-                          <option>Option 1</option>
-                          <option>Option 2</option>
-                          <option>Option 3</option>
-                          <option>Option 4</option>
+                          <option>1</option>
+                          <option>2</option>
                         </select>
                       </div>
                       <div class="col-lg-9">
@@ -307,25 +298,34 @@
                     </div>
                   </div>
                   <div class="xc-bas-item">
-                    <h4>02</h4>
+                    <h4>02.</h4>
                     <div class="form-group">
-                      <label class="col-lg-1 control-label">题干：</label>
-                      <div class="col-lg-11">
-                        <input type="text" placeholder="请输入题干" class="form-control">
-                        <p class="xc-error">注意：设置填空的部分使用下方的文本格式</p>
-                        <p class="xc-error">sssss {$name} aaaaa</p>
-                        <p class="xc-error">例如：How are you，设置are为填空内容，则将正文写为：How sssss {$are} aaaaa you,并在下方的答案框内填写are</p>
+                      <label class="col-lg-1 control-label">A：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项A" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">B：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项B" class="form-control">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="col-lg-1 control-label xc-nowrap">答案&解析：</label>
+                      <label class="col-lg-1 control-label">C：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项C" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">D：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项D" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-lg-1 control-label xc-nowrap">答案&amp;解析：</label>
                       <div class="col-lg-2">
                         <select name="account" class="form-control m-b">
                           <option value="">请选择答案</option>
-                          <option>Option 1</option>
-                          <option>Option 2</option>
-                          <option>Option 3</option>
-                          <option>Option 4</option>
+                          <option>1</option>
+                          <option>2</option>
                         </select>
                       </div>
                       <div class="col-lg-9">
@@ -334,25 +334,142 @@
                     </div>
                   </div>
                   <div class="xc-bas-item">
-                    <h4>03</h4>
+                    <h4>03.</h4>
                     <div class="form-group">
-                      <label class="col-lg-1 control-label">题干：</label>
-                      <div class="col-lg-11">
-                        <input type="text" placeholder="请输入题干" class="form-control">
-                        <p class="xc-error">注意：设置填空的部分使用下方的文本格式</p>
-                        <p class="xc-error">sssss {$name} aaaaa</p>
-                        <p class="xc-error">例如：How are you，设置are为填空内容，则将正文写为：How sssss {$are} aaaaa you,并在下方的答案框内填写are</p>
+                      <label class="col-lg-1 control-label">A：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项A" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">B：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项B" class="form-control">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="col-lg-1 control-label xc-nowrap">答案&解析：</label>
+                      <label class="col-lg-1 control-label">C：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项C" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">D：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项D" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-lg-1 control-label xc-nowrap">答案&amp;解析：</label>
                       <div class="col-lg-2">
                         <select name="account" class="form-control m-b">
                           <option value="">请选择答案</option>
-                          <option>Option 1</option>
-                          <option>Option 2</option>
-                          <option>Option 3</option>
-                          <option>Option 4</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-9">
+                        <input type="text" placeholder="请输入解析" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="xc-bas-item">
+                    <h4>04.</h4>
+                    <div class="form-group">
+                      <label class="col-lg-1 control-label">A：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项A" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">B：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项B" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-lg-1 control-label">C：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项C" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">D：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项D" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-lg-1 control-label xc-nowrap">答案&amp;解析：</label>
+                      <div class="col-lg-2">
+                        <select name="account" class="form-control m-b">
+                          <option value="">请选择答案</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-9">
+                        <input type="text" placeholder="请输入解析" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="xc-bas-item">
+                    <h4>05.</h4>
+                    <div class="form-group">
+                      <label class="col-lg-1 control-label">A：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项A" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">B：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项B" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-lg-1 control-label">C：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项C" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">D：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项D" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-lg-1 control-label xc-nowrap">答案&amp;解析：</label>
+                      <div class="col-lg-2">
+                        <select name="account" class="form-control m-b">
+                          <option value="">请选择答案</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-9">
+                        <input type="text" placeholder="请输入解析" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="xc-bas-item">
+                    <h4>06.</h4>
+                    <div class="form-group">
+                      <label class="col-lg-1 control-label">A：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项A" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">B：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项B" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-lg-1 control-label">C：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项C" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">D：</label>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="请输入选项D" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-lg-1 control-label xc-nowrap">答案&amp;解析：</label>
+                      <div class="col-lg-2">
+                        <select name="account" class="form-control m-b">
+                          <option value="">请选择答案</option>
+                          <option>1</option>
+                          <option>2</option>
                         </select>
                       </div>
                       <div class="col-lg-9">
@@ -396,7 +513,7 @@
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
-
+  <script src="../js/intelligent.js"></script>
 
 
 

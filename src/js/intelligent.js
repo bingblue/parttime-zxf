@@ -127,4 +127,17 @@ $(function () {
         }
       })
     })
+    $(".jq-add-jz").on("click", function(event) {
+      event.preventDefault()
+      var formGroup = [],
+          $this = $(this),
+          $index = $this.siblings('.form-group').length
+      formGroup.push("<div class='form-group'>")
+        formGroup.push("<label class='col-lg-1 control-label'>" + ($index + 1) + "：</label>")
+        formGroup.push("<div class='col-lg-11'>")
+          formGroup.push("<input type='text' name='" + ('name' + ( $index + 1 )) + "' placeholder='请输入句子' class='form-control'>")
+        formGroup.push("</div>")
+      formGroup.push("</div>")
+      $this.before(formGroup.join(''))
+    })
  })
