@@ -243,6 +243,47 @@
 .ml-5 {
   margin-left: 5px;
 }
+
 .xc-table-body .one .two.big {
   width: calc(83% + 5px);
+}
+
+.right-circle {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  line-height: 15px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid #27c24c;
+}
+
+.fault-circle {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  line-height: 15px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid #f05050;
+}
+
+.circle-half {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #5d9cec;
+  position: relative;
+  border-radius: 50%;
+}
+
+.circle-half::before {
+  position: absolute;
+  background: #0085E6;
+  content: '';
+  width: 6px;
+  height: 11px;
+  border-radius: 6px 0 0 6px;
 }
