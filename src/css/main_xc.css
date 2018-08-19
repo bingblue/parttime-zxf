@@ -487,3 +487,72 @@
 .xc-nowrap {
   white-space: nowrap;
 }
+.c99 {
+  color: #999999;
+}
+.c66 {
+  color: #666666;
+}
+.xc-power {
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+.xc-power-head,
+.xc-power-body{
+  display: flex;
+}
+.xc-power .xc-power-left {
+  width: 140px;
+  border-right: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+.xc-power .xc-power-right {
+  flex: 1;
+  box-sizing: border-box;
+}
+.xc-power-head {
+  background-color: rgba(243, 243, 243, 1);
+}
+.xc-power-head .xc-power-left,
+.xc-power-head .xc-power-right {
+  padding: 15px 20px;
+}
+.xc-power-conter {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.xc-power-conter li {
+  padding: 0 20px;
+  line-height: 44px;
+  border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
+}
+.cblue {
+  color: #009900;
+}
+.cf60 {
+  color: #f60;
+}
+.xc-power-right .xc-power-conter {
+  display: none;
+}
+.xc-power-right .xc-power-conter.active {
+  display: block;
+}
+.xc-power-left .xc-power-conter .active {
+  background-color: rgba(243, 243, 243, 1);
+}
+.xc-power .checkbox {
+  margin-top: 0;
+}
+.xc-power-right .xc-power-conter .pull-right {
+  margin-top: 15px;
+}
+.xc-power-head .checkbox {
+  padding-right: 25px;
+}
+.xc-power-head .checkbox .jq-power-all {
+  margin-left: 0;
+  right: 0;
+}
