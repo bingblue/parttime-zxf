@@ -281,6 +281,17 @@
       margin-top: 5px;
       margin-right: 5px;
     }
+.xc-coustom-pent .coustom-pent-head .pent-btn {
+      display: inline-block;
+      padding: 0 10px;
+      border-radius: 20px;
+      line-height: 20px;
+      font-size: 16px;
+      color: #000000;
+      font-weight: 400;
+      border: 1px solid #7f7676;
+      margin-left: 15px;
+    }
 .xc-coustom-pent .coustom-pent-body {
     padding: 30px;
   }
@@ -350,6 +361,9 @@
 }
 .xc-coustom-pent .coustom-pent-body .coustom-label .write-input .error {
           color: #FF4548;
+}
+.xc-coustom-pent .coustom-pent-body .coustom-label .write-input.xc-blue {
+  color: #0085e6;
 }
 .xc-coustom-pent + .xc-coustom-pent {
   margin-top: 15px;
@@ -1079,7 +1093,7 @@
 }
 
 .xc-body .course-main .course-body .course-body-center > div {
-          padding:  0 100px !important;
+          padding: 0 100px !important;
 }
 
 .xc-body .course-main .course-body .course-body-right {
@@ -2225,3 +2239,59 @@
     left: 22px;
     color: #fff;
   }
+.input-items {
+  color: #333;
+  font-size: 20px;
+}
+.input-items .input-item {
+    background: none;
+    width: 70px;
+    line-height: 30px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #0085E6;
+    margin-right: 10px;
+    outline: none;
+    text-align: center;
+    font-size: 20px
+  }
+.input-items .input-item.error {
+  color: #ff4548;
+}
+.input-items .input-span {
+    font-weight: 600;
+  }
+.instr-time-box {
+  margin: 15px 0;
+}
+.instr-time {
+  overflow: hidden;
+  width: 327px;
+  padding: 6px 0;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .05);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .05);
+  border-radius: 46px;
+  margin: 0 auto;
+  padding-right: 44px;
+}
+.instr-time .instr-img {
+    width: 155px;
+    height: 79px;
+    float: left;
+    margin-left: 44px;
+  }
+.instr-time .instr-des {
+    color: #999999;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 13px;
+  }
+.instr-time .instr-itme {
+    color: #333333;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
+.xc-blue {
+  color: #33CBB4;
+}
