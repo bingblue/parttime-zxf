@@ -85,17 +85,18 @@
                 </p>
                 <div class="setencecomb-wp">
                   <div class="input-wp">
-                    <input type="text" class="ipt">
-                    <input type="text" class="ipt">
-                    <input type="text" class="ipt">
+                    <!-- 如果答案错误 给对应的input加err-ipt类名 -->
+                    <input type="text" class="ipt err-ipt" value="aaa">
+                    <input type="text" class="ipt" value="are">
+                    <input type="text" class="ipt" value="you">
                     <span class="quertion-txt">?</span>
-                    <a href="javascript:;" class="reset-btn"><i class="reset-icon"></i>重置</a>
+                    <!-- 答案正确 -->
+                    <!-- <i class="right-icon"></i> -->
+                    <!-- 答案错误 -->
+                    <i class="default-icon"></i>
                   </div>
-                  <div class="setence-wp">
-                    <span class="sentence-txt">you</span>
-                    <span class="sentence-txt">are</span>
-                    <span class="sentence-txt">how</span>
-                  </div>
+                  <p class="right-result-txt">正确答案：how are you?</p>
+                  <p class="setence-text-cn">你好吗？</p>
                 </div>
               </div>
             </div>
