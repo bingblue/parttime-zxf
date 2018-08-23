@@ -88,4 +88,14 @@ $(function () {
   	$('.linye-personal-data .data-detail').css('display', 'none');
   	$('.linye-personal-data .data-detail2').css('display', 'block');
   })
+
+  $('.linye-shopping .option-record').on('click',function(){
+    $('.linye-shopping .obtain-histry-alert').css('display', 'flex');
+  })
+  $('.linye-shopping .buy-record').on('click',function(){
+    $('.linye-shopping .buy-histry-alert').css('display', 'flex');
+  })
+  $('.linye-shopping .alert-close').on('click',function(){
+    $('.linye-shopping .alert-layer').css('display', 'none');
+  })
 })
