@@ -1168,6 +1168,8 @@ button {
     width: 66px;
     margin-right: 10px;
     height: 42px;
+    text-align: center;
+    font-size: 17px;
 
     &:focus {
       outline: none;
@@ -1204,6 +1206,28 @@ button {
     border-radius: 15px;
   }
 
+  .right-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    background: url('../img/right_icon.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 20px;
+  }
+
+  .default-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    background: url('../img/word_fault.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 20px;
+  }
+
   .sentence-txt {
     display: inline-block;
     width: 66px;
@@ -1213,8 +1237,24 @@ button {
     margin-right: 10px;
   }
 
+  .setence-text-cn {
+    font-size: 14px;
+    color: #999;
+  }
+
   .setence-wp {
     padding-top: 22px;
+  }
+
+  .right-result-txt {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #999;
+    padding-top: 22px;
+  }
+
+  .err-ipt {
+    color: #ff4c4f;
   }
 }
 

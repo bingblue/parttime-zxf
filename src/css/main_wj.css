@@ -1147,7 +1147,9 @@ button:focus {
     border-bottom: 3px solid #0085e6;
     width: 66px;
     margin-right: 10px;
-    height: 42px
+    height: 42px;
+    text-align: center;
+    font-size: 17px
   }
 
 .setencecomb-wp .ipt:focus {
@@ -1184,6 +1186,28 @@ button:focus {
     border-radius: 15px;
   }
 
+.setencecomb-wp .right-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    background: url('../img/right_icon.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 20px;
+  }
+
+.setencecomb-wp .default-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    background: url('../img/word_fault.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 20px;
+  }
+
 .setencecomb-wp .sentence-txt {
     display: inline-block;
     width: 66px;
@@ -1193,8 +1217,24 @@ button:focus {
     margin-right: 10px;
   }
 
+.setencecomb-wp .setence-text-cn {
+    font-size: 14px;
+    color: #999;
+  }
+
 .setencecomb-wp .setence-wp {
     padding-top: 22px;
+  }
+
+.setencecomb-wp .right-result-txt {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #999;
+    padding-top: 22px;
+  }
+
+.setencecomb-wp .err-ipt {
+    color: #ff4c4f;
   }
 
 .body-readsetene .perview-left {
