@@ -24,4 +24,44 @@ $(function () {
         }
         })
     })
+    // 权限更改切换
+    $('.jq-power-conter li').on('click', function() {
+        var $this = $(this),
+            $index = $this.index()
+        if (!$this.hasClass('active')) {
+            $this.addClass('active').siblings().removeClass('active')
+            changeBody($index)
+        }
+        function changeBody (index) {
+            $('.jq-power-body>ul').eq(index).addClass('active').siblings().removeClass('active')
+            reviewAll()
+        }
+    })
+    $('.jq-power-all').on('change', function() {
+        var ischeck = $(this).prop('checked');
+        if (ischeck) {
+            $('.jq-power-body .active .pull-right').prop('checked', true)
+        } else {
+            $('.jq-power-body .active .pull-right').prop('checked', false)
+        }
+    })
+    $('.jq-power-body li .pull-right').on('change', function() {
+        reviewAll()
+    })
+    function reviewAll () {
+        var checkAll = true;
+        $('.jq-power-body .active .pull-right').each(function(index, ele) {
+            var ischeck = $(ele).prop('checked')
+            if (!ischeck) {
+                checkAll = false;
+                return false;
+            }
+        })
+        if (checkAll) {
+            $('.jq-power-all').prop('checked', true)
+        } else {
+            $('.jq-power-all').prop('checked', false)
+        }
+    }
+    reviewAll()
 })
