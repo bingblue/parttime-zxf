@@ -173,9 +173,12 @@
   color: #999;
 
   .xc-head-top {
-    overflow: hidden;
     line-height: 36px;
-
+    height: 36px;
+    &::after {
+      display: block;
+      clear: both;
+    }
     .xc-head-name {
       color: #0085e6;
       font-size: 20px;
@@ -188,25 +191,6 @@
       margin-left: 30px;
       padding-left: 30px;
       border-left: 1px solid rgba(235, 235, 235, 1);
-
-      .xc-head-select {
-        display: inline-block;
-        line-height: 34px;
-        border: 1px solid rgba(235, 235, 235, 1);
-        width: 90px;
-        padding: 0 15px;
-        border-radius: 18px;
-        margin-left: 10px;
-        position: relative;
-        cursor: pointer;
-
-        .xc-head-selectImg {
-          position: absolute;
-          right: 10px;
-          top: 13px;
-          width: 12px;
-        }
-      }
     }
 
     .return {
@@ -2278,4 +2262,49 @@
 }
 .xc-blue {
   color: #33CBB4;
+}
+.xc-head-select {
+  display: inline-block;
+  line-height: 34px;
+  border: 1px solid rgba(235, 235, 235, 1);
+  width: 90px;
+  padding: 0 15px;
+  border-radius: 18px;
+  margin-left: 10px;
+  position: relative;
+  cursor: pointer;
+  z-index: 999999;
+
+  .xc-head-selectImg {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    width: 12px;
+    transition: all linear 0.2s;
+  }
+  .xc-head-select-ul {
+    z-index: 999999;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 36px;
+    left: 0;
+    background-color: #fff;
+    li {
+      text-indent: 15px;
+      &.active {
+        color: #0085e6;
+      }
+    }
+    border-radius: 6px;
+    box-shadow: 0 3px 7px 1px rgb(235, 235, 235);
+  }
+  &.select {
+    .xc-head-select-ul {
+      display: block;
+    }
+    .xc-head-selectImg {
+      transform: rotate(180deg)
+    }
+  }
 }

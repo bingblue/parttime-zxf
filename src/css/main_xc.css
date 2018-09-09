@@ -171,45 +171,32 @@
   color: #999;
 }
 .xc-head .xc-head-top {
-    overflow: hidden;
     line-height: 36px;
+    height: 36px
   }
+.xc-head .xc-head-top::after {
+  display: block;
+  clear: both;
+}
 .xc-head .xc-head-top .xc-head-name {
       color: #0085e6;
       font-size: 20px;
       font-weight: bold;
       float: left;
-    }
+}
 .xc-head .xc-head-top .xc-head-unit {
       float: left;
       margin-left: 30px;
       padding-left: 30px;
       border-left: 1px solid rgba(235, 235, 235, 1);
-    }
-.xc-head .xc-head-top .xc-head-unit .xc-head-select {
-        display: inline-block;
-        line-height: 34px;
-        border: 1px solid rgba(235, 235, 235, 1);
-        width: 90px;
-        padding: 0 15px;
-        border-radius: 18px;
-        margin-left: 10px;
-        position: relative;
-        cursor: pointer;
-      }
-.xc-head .xc-head-top .xc-head-unit .xc-head-select .xc-head-selectImg {
-          position: absolute;
-          right: 10px;
-          top: 13px;
-          width: 12px;
-        }
+}
 .xc-head .xc-head-top .return {
       float: right;
       display: inline-block;
       padding-left: 30px;
       border-left: rgba(235, 235, 235, 1) 1px solid;
       color: #0085e6;
-    }
+}
 .xc-head .xc-head-bottom {
     overflow: hidden;
     margin-top: 15px;
@@ -2294,4 +2281,49 @@
   }
 .xc-blue {
   color: #33CBB4;
+}
+.xc-head-select {
+  display: inline-block;
+  line-height: 34px;
+  border: 1px solid rgba(235, 235, 235, 1);
+  width: 90px;
+  padding: 0 15px;
+  border-radius: 18px;
+  margin-left: 10px;
+  position: relative;
+  cursor: pointer;
+  z-index: 999999;
+}
+.xc-head-select .xc-head-selectImg {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    width: 12px;
+    -webkit-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+  }
+.xc-head-select .xc-head-select-ul {
+    z-index: 999999;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 36px;
+    left: 0;
+    background-color: #fff;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 7px 1px rgb(235, 235, 235);
+            box-shadow: 0 3px 7px 1px rgb(235, 235, 235);
+  }
+.xc-head-select .xc-head-select-ul li {
+      text-indent: 15px
+    }
+.xc-head-select .xc-head-select-ul li.active {
+  color: #0085e6;
+}
+.xc-head-select.select .xc-head-select-ul {
+      display: block;
+}
+.xc-head-select.select .xc-head-selectImg {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
 }

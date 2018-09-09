@@ -23,6 +23,33 @@ $(function () {
       this.wordsAct()
       this.endTime()
       this.banner()
+      this.select()
+    },
+    /**
+     * 模拟下拉框
+     */
+    select: function () {
+      $('.xc-head-select').on('click', function(event) {
+        event.stopPropagation()
+        var $this = $(this)
+        if ($this.hasClass('select')) {
+          $this.removeClass('select')
+        } else {
+          $this.addClass('select')
+        }
+      })
+      $('.xc-head-select .xc-head-select-ul li').on('click', function () {
+        var $this = $(this)
+        if (!$this.hasClass('active')) {
+          $this.addClass('active').siblings().removeClass('active')
+          var $name = $this.parent().siblings('.name')
+          $name.text($this.text())
+          $name.attr('value',$this.attr('value'))
+        }
+      })
+      $('body').on('click', function() {
+        $('.xc-head-select').removeClass('select')
+      })
     },
     /**
      * 幻灯
