@@ -196,7 +196,7 @@
 .xc-tab .xc-read .line {
   width: 60px;
 }
-.xc-tab .xc-tab-head li {
+.xc-tab .xc-tab-head > li {
   display: inline-block;
   width: 105px;
   text-align: center;
@@ -232,12 +232,15 @@
 .xc-tab .xc-bas .active {
   color: #108EE9;
 }
-.xc-tab .xc-tab-body li {
+.xc-tab .xc-tab-body > li {
   display: none;
   padding-top: 10px;
 }
-.xc-tab .xc-tab-body li.active {
+.xc-tab .xc-tab-body>li.active {
   display: block;
+}
+.xc-tab .xc-tab-head>li.active {
+  display: inline-block;
 }
 .xc-tab .xc-tab-body .form-horizontal > div {
   overflow: hidden
@@ -265,6 +268,31 @@
 .xc-error {
   margin: 5px 0;
   color: #FF0000;
+}
+.tab-btn .xc-tab-head {
+  display: inline-block;
+  border: none;
+  font-size: 0;
+}
+.tab-btn .xc-tab-head li {
+  border: 1px solid #eee;
+  font-size: 14px;
+  width: auto;
+  padding: 0 20px;
+}
+.tab-btn .xc-tab-head li:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.tab-btn .xc-tab-head li:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.tab-btn .xc-tab-head li.active {
+  color: #0085e6;
+  border-color: #0085e6;
+  position: relative;
+  z-index: 100;
 }
 /* tab切換end */
 /* 搞定语法单选题、填空题start */
@@ -555,4 +583,126 @@
 .xc-power-head .checkbox .jq-power-all {
   margin-left: 0;
   right: 0;
+}
+
+.curriculum_head_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(243, 243, 243, 1);
+  border: 1px solid rgba(235, 235, 235, 1);
+}
+.curriculum_head_list li {
+  padding: 0;
+  margin: 0;
+  line-height: 54px;
+  color: #656565;
+  text-align: center
+}
+.curriculum_body  {
+  margin-bottom: 10px;
+}
+.curriculum_body ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.curriculum_body li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 40px;
+  text-align: center;
+}
+.curriculum_body_one li {
+  border-bottom: 1px solid rgba(235, 235, 235, 1);
+}
+.curriculum_body-child {
+  background-color: rgba(251, 251, 251, 1);
+  display: none;
+}
+.curriculum_body-child li {
+  color: #666666;
+  border-bottom: 1px solid rgba(235, 235, 235, 1);
+}
+.curriculum_body .fa {
+  left: -20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.curriculum_body .relative {
+  position: relative;
+  cursor: pointer;
+}
+.curriculum_body a {
+  margin-left: 20px;
+}
+.curriculum_body-child .left{
+  text-align: left;
+}
+.curriculum_body-child .center {
+  text-align: center;
+}
+.curriculum .xc-table-body .one .two {
+  width: calc(100% / 6);
+}
+.curriculum .xc-table-body .one .three {
+  width: calc(200% + 6px);
+}
+.curriculum .xc-table-body .one .four {
+  width: calc(100% + 2px)
+}
+.curriculum .xc-table .xc-table-head li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.curriculum .xc-table li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.curriculum{
+  height: 400px;
+  overflow-y: scroll;
+}
+.curriculum .xc-table-body .active {
+  color: #0085e6;
+}
+.curr-review td > label{
+  display: inline-block;
+  width: 24%;
+  vertical-align: middle;
+  font-weight: normal;
+}
+.curr-review td > label.all {
+  width: 100%;
+}
+.curr-review td > label > input {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.rewardmall-price {
+  display: flex;
+  line-height: 40px;
+  box-shadow: 0px 1px 5px rgba(153, 153, 153, 0.349019607843137);
+  border-radius: 4px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+.rewardmall-price .text-primary {
+  width: 100px;
+  text-align: right;
+}
+.rewardmall-price .rewardmall-left {
+  min-width: 230px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #0085e6;
+}
+.rewardmall-price .rewardmall-left span {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.rewardmall-price .rewardmall-center {
+  line-height: 20px;
 }

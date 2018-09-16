@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>学习报告-全部报告</title>
+  <!-- build:css -->
+  <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../js/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../js/vendor/whirl/dist/whirl.css">
+  <link rel="stylesheet" href="../css/bootstrap.css" id="bscss">
+  <link rel="stylesheet" href="../js/vendor/datatable-bootstrap/css/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="../js/vendor/sweetalert/dist/sweetalert.css">
+  <link rel="stylesheet" href="../js/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="../css/app.css" id="maincss">
+  <link rel="stylesheet" href="../css/theme-e.css">
+  <!-- endbuild -->
+
+
+
+
+
+
+  <link rel="stylesheet" href="../css/main_xc.css">
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- build:head -->
+    <header class="topnavbar-wrapper">
+      <nav role="navigation" class="navbar topnavbar">
+        <div class="navbar-header">
+          <a href="#/" class="navbar-brand">
+            <div class="brand-logo">
+              <img src="../img/logo.png" alt="App Logo" class="img-responsive">
+            </div>
+            <div class="brand-logo-collapsed">
+              <img src="../img/logo-single.png" alt="App Logo" class="img-responsive">
+            </div>
+          </a>
+        </div>
+        <div class="nav-wrapper">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#" data-toggle-state="aside-collapsed" class="hidden-xs">
+                <em class="fa fa-navicon"></em>
+              </a>
+              <a href="#" data-toggle-state="aside-toggled" data-no-persist="true" class="visible-xs sidebar-toggle">
+                <em class="fa fa-navicon"></em>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right mu-head-user">
+            <li>
+              <span><i class="fa fa-user"></i>admin</span><span>|</span>
+            </li>
+            <li>
+              <a href="#">
+                退出
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- build:sidebar -->
+    <!-- 左侧菜单 -->
+    <aside class="aside">
+      <div class="aside-inner">
+        <nav data-sidebar-anyclick-close="" class="sidebar">
+          <ul class="nav">
+            <li class="nav-heading ">
+              <span>课程管理</span>
+            </li>
+            <li class=" ">
+              <a href="synchronize.html" title="同步课程">
+                <em class="icon-refresh"></em>
+                <span>同步课程</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="grammar.html" title="搞定语法">
+                <em class="icon-book-open"></em>
+                <span>搞定语法</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="#intelligent" title="智能培优" data-toggle="collapse">
+                <em class="icon-graph"></em>
+                <span>智能培优</span>
+              </a>
+              <ul id="intelligent" class="nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">智能培优</li>
+                <li class=" ">
+                  <a href="intelligent_test.html" title="同步智测">
+                    <span>同步智测</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="intelligent_real.html" title="真题冲刺">
+                    <span>真题冲刺</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-heading ">
+              <span>教务管理</span>
+            </li>
+            <li class=" ">
+              <a href="datastatistics.html" title="数据统计">
+                <em class="icon-speedometer"></em>
+                <span>数据统计</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="#studyreport" title="学校管理" data-toggle="collapse">
+                <em class="icon-home"></em>
+                <span>学习报告</span>
+              </a>
+              <ul id="studyreport" class="nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">学习报告</li>
+                <li class=" ">
+                  <a href="studyreport_population.html" title="学校列表">
+                    <span>总体报告</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="studyreport_all.html" title="销售数据">
+                    <span>全部报告</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=" ">
+              <a href="groupcoursemanagement.html" title="学员组课程管理">
+                <em class="icon-layers"></em>
+                <span>学员组课程管理</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="#schoolmanagement" title="学校管理" data-toggle="collapse">
+                <em class="icon-home"></em>
+                <span>学校管理</span>
+              </a>
+              <ul id="schoolmanagement" class="nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">学校管理</li>
+                <li class=" ">
+                  <a href="schoolmanagement_list.html" title="学校列表">
+                    <span>学校列表</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="schoolmanagement_sales.html" title="销售数据">
+                    <span>销售数据</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="schoolmanagement_setting.html" title="扣费设置">
+                    <span>扣费设置</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=" ">
+              <a href="#teachermanagement" title="教师管理" data-toggle="collapse">
+                <em class="icon-people"></em>
+                <span>教师管理</span>
+              </a>
+              <ul id="teachermanagement" class="nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">教师管理</li>
+                <li class=" ">
+                  <a href="teachermanagement_list.html" title="教师列表">
+                    <span>教师列表</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="teachermanagement_sales.html" title="销售数据">
+                    <span>销售数据</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=" ">
+              <a href="#curriculum" title="课程管理" data-toggle="collapse">
+                <em class="icon-home"></em>
+                <span>课程管理</span>
+              </a>
+              <ul id="curriculum" class="nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">课程管理</li>
+                <li class=" ">
+                  <a href="curriculum_class.html" title="班级管理">
+                    <span>课程管理-班级管理</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="curriculum_study.html" title="学习任务">
+                    <span>课程管理-学习任务</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="curriculum_review.html" title="复习模式">
+                    <span>课程管理-复习模式</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=" ">
+              <a href="#studentmanagement" title="学生管理" data-toggle="collapse">
+                <em class="icon-graduation"></em>
+                <span>学生管理</span>
+              </a>
+              <ul id="studentmanagement" class="nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">学生管理</li>
+                <li class=" ">
+                  <a href="studentmanagement_unallocated.html" title="未分配学生列表">
+                    <span>未分配学生列表</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="studentmanagement_allocated.html" title="已分配学生列表">
+                    <span>已分配学生列表</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=" ">
+              <a href="#mallmanagement" title="商城管理" data-toggle="collapse">
+                <em class="icon-present"></em>
+                <span>商城管理</span>
+              </a>
+              <ul id="mallmanagement" class="nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">商城管理</li>
+                <li class=" ">
+                  <a href="mallmanagement_commodity.html" title="商品管理">
+                    <span>商品管理</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="mallmanagement_order.html" title="订单管理">
+                    <span>订单管理</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=" ">
+                <a href="#rewardmall" title="商城管理" data-toggle="collapse">
+                  <em class="icon-present"></em>
+                  <span>奖励商城</span>
+                </a>
+                <ul id="rewardmall" class="nav sidebar-subnav collapse">
+                  <li class="sidebar-subnav-header">奖励商城</li>
+                  <li class=" ">
+                    <a href="rewardmall.html" title="商品管理">
+                      <span>奖励商城</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 主要内容 -->
+    <section>
+      <div class="content-wrapper">
+        <div class="content-heading">
+          班级管理
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- START panel-->
+            <div class="panel-default">
+              <div class="panel-heading">
+                <div class="row">
+                  <ul class="col-xs-12 curriculum_head_list">
+                    <li class="col-xs-2">班级名称</li>
+                    <li class="col-xs-2">学生人数</li>
+                    <li class="col-xs-2">主课程数</li>
+                    <li class="col-xs-2">完成课程学生</li>
+                  </ul>
+                </div>
+                <div class="curriculum_body row">
+                  <div>
+                    <ul class="curriculum_body_one">
+                      <li class="col-xs-2">
+                        <span class="relative className"><em class="fa fa-plus-square-o jq-curriculum-toogle"></em>1班</span>
+                      </li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6<a href="javascript:;">查看</a></li>
+                      <li class="col-xs-4"><span class="relative" data-toggle="modal" data-target="#add"><em class="fa fa-plus-square"></em>新增课程</span></li>
+                    </ul>
+                    <ul class="curriculum_body-child">
+                      <li class="row">
+                        <span class="col-xs-2 center">1</span>
+                        <span class="col-xs-6 left name">小学英语 - 北师大版 ● 三年级上册</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">2</span>
+                        <span class="col-xs-6 left name">成人考试 - 大学英语自学教程 ● 上册(一)</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">3</span>
+                        <span class="col-xs-6 left name">小学英语 - EEC ● 二年级下</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="curriculum_body_one">
+                      <li class="col-xs-2">
+                        <span class="relative className"><em class="fa fa-plus-square-o jq-curriculum-toogle"></em>2班</span>
+                      </li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6<a href="javascript:;">查看</a></li>
+                      <li class="col-xs-4"><span class="relative" data-toggle="modal" data-target="#add"><em class="fa fa-plus-square"></em>新增课程</span></li>
+                    </ul>
+                    <ul class="curriculum_body-child">
+                      <li class="row">
+                        <span class="col-xs-2 center">1</span>
+                        <span class="col-xs-6 left name">小学英语 - 北师大版 ● 三年级上册</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">2</span>
+                        <span class="col-xs-6 left name">成人考试 - 大学英语自学教程 ● 上册(一)</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">3</span>
+                        <span class="col-xs-6 left name">小学英语 - EEC ● 二年级下</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="curriculum_body_one">
+                      <li class="col-xs-2">
+                        <span class="relative className"><em class="fa fa-plus-square-o jq-curriculum-toogle"></em>3班</span>
+                      </li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6<a href="javascript:;">查看</a></li>
+                      <li class="col-xs-4"><span class="relative" data-toggle="modal" data-target="#add"><em class="fa fa-plus-square"></em>新增课程</span></li>
+                    </ul>
+                    <ul class="curriculum_body-child">
+                      <li class="row">
+                        <span class="col-xs-2 center">1</span>
+                        <span class="col-xs-6 left name">小学英语 - 北师大版 ● 三年级上册</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">2</span>
+                        <span class="col-xs-6 left name">成人考试 - 大学英语自学教程 ● 上册(一)</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">3</span>
+                        <span class="col-xs-6 left name">小学英语 - EEC ● 二年级下</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="curriculum_body_one">
+                      <li class="col-xs-2">
+                        <span class="relative className"><em class="fa fa-plus-square-o jq-curriculum-toogle"></em>4班</span>
+                      </li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6<a href="javascript:;">查看</a></li>
+                      <li class="col-xs-4"><span class="relative" data-toggle="modal" data-target="#add"><em class="fa fa-plus-square"></em>新增课程</span></li>
+                    </ul>
+                    <ul class="curriculum_body-child">
+                      <li class="row">
+                        <span class="col-xs-2 center">1</span>
+                        <span class="col-xs-6 left name">小学英语 - 北师大版 ● 三年级上册</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">2</span>
+                        <span class="col-xs-6 left name">成人考试 - 大学英语自学教程 ● 上册(一)</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">3</span>
+                        <span class="col-xs-6 left name">小学英语 - EEC ● 二年级下</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="curriculum_body_one">
+                      <li class="col-xs-2">
+                        <span class="relative className"><em class="fa fa-plus-square-o jq-curriculum-toogle"></em>5班</span>
+                      </li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6<a href="javascript:;">查看</a></li>
+                      <li class="col-xs-4"><span class="relative" data-toggle="modal" data-target="#add"><em class="fa fa-plus-square"></em>新增课程</span></li>
+                    </ul>
+                    <ul class="curriculum_body-child">
+                      <li class="row">
+                        <span class="col-xs-2 center">1</span>
+                        <span class="col-xs-6 left name">小学英语 - 北师大版 ● 三年级上册</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">2</span>
+                        <span class="col-xs-6 left name">成人考试 - 大学英语自学教程 ● 上册(一)</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">3</span>
+                        <span class="col-xs-6 left name">小学英语 - EEC ● 二年级下</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="curriculum_body_one">
+                      <li class="col-xs-2">
+                        <span class="relative className"><em class="fa fa-plus-square-o jq-curriculum-toogle"></em>6班</span>
+                      </li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6<a href="javascript:;">查看</a></li>
+                      <li class="col-xs-4"><span class="relative" data-toggle="modal" data-target="#add"><em class="fa fa-plus-square"></em>新增课程</span></li>
+                    </ul>
+                    <ul class="curriculum_body-child">
+                      <li class="row">
+                        <span class="col-xs-2 center">1</span>
+                        <span class="col-xs-6 left name">小学英语 - 北师大版 ● 三年级上册</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">2</span>
+                        <span class="col-xs-6 left name">成人考试 - 大学英语自学教程 ● 上册(一)</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">3</span>
+                        <span class="col-xs-6 left name">小学英语 - EEC ● 二年级下</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="curriculum_body_one">
+                      <li class="col-xs-2">
+                        <span class="relative className"><em class="fa fa-plus-square-o jq-curriculum-toogle"></em>7班</span>
+                      </li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6<a href="javascript:;">查看</a></li>
+                      <li class="col-xs-4"><span class="relative" data-toggle="modal" data-target="#add"><em class="fa fa-plus-square"></em>新增课程</span></li>
+                    </ul>
+                    <ul class="curriculum_body-child">
+                      <li class="row">
+                        <span class="col-xs-2 center">1</span>
+                        <span class="col-xs-6 left name">小学英语 - 北师大版 ● 三年级上册</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">2</span>
+                        <span class="col-xs-6 left name">成人考试 - 大学英语自学教程 ● 上册(一)</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">3</span>
+                        <span class="col-xs-6 left name">小学英语 - EEC ● 二年级下</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="curriculum_body_one">
+                      <li class="col-xs-2">
+                        <span class="relative className"><em class="fa fa-plus-square-o jq-curriculum-toogle"></em>8班</span>
+                      </li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6<a href="javascript:;">查看</a></li>
+                      <li class="col-xs-4"><span class="relative" data-toggle="modal" data-target="#add"><em class="fa fa-plus-square"></em>新增课程</span></li>
+                    </ul>
+                    <ul class="curriculum_body-child">
+                      <li class="row">
+                        <span class="col-xs-2 center">1</span>
+                        <span class="col-xs-6 left name">小学英语 - 北师大版 ● 三年级上册</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">2</span>
+                        <span class="col-xs-6 left name">成人考试 - 大学英语自学教程 ● 上册(一)</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">3</span>
+                        <span class="col-xs-6 left name">小学英语 - EEC ● 二年级下</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="curriculum_body_one">
+                      <li class="col-xs-2">
+                        <span class="relative className"><em class="fa fa-plus-square-o jq-curriculum-toogle"></em>9班</span>
+                      </li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6<a href="javascript:;">查看</a></li>
+                      <li class="col-xs-4"><span class="relative" data-toggle="modal" data-target="#add"><em class="fa fa-plus-square"></em>新增课程</span></li>
+                    </ul>
+                    <ul class="curriculum_body-child">
+                      <li class="row">
+                        <span class="col-xs-2 center">1</span>
+                        <span class="col-xs-6 left name">小学英语 - 北师大版 ● 三年级上册</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">2</span>
+                        <span class="col-xs-6 left name">成人考试 - 大学英语自学教程 ● 上册(一)</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">3</span>
+                        <span class="col-xs-6 left name">小学英语 - EEC ● 二年级下</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="curriculum_body_one">
+                      <li class="col-xs-2">
+                        <span class="relative className"><em class="fa fa-plus-square-o jq-curriculum-toogle"></em>10班</span>
+                      </li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6</li>
+                      <li class="col-xs-2">6<a href="javascript:;">查看</a></li>
+                      <li class="col-xs-4"><span class="relative" data-toggle="modal" data-target="#add"><em class="fa fa-plus-square"></em>新增课程</span></li>
+                    </ul>
+                    <ul class="curriculum_body-child">
+                      <li class="row">
+                        <span class="col-xs-2 center">1</span>
+                        <span class="col-xs-6 left name">小学英语 - 北师大版 ● 三年级上册</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">2</span>
+                        <span class="col-xs-6 left name">成人考试 - 大学英语自学教程 ● 上册(一)</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                      <li class="row">
+                        <span class="col-xs-2 center">3</span>
+                        <span class="col-xs-6 left name">小学英语 - EEC ● 二年级下</span>
+                        <span class="col-xs-4">
+                          <span class="relative jq-curriculum-delete"><em class="fa fa-minus-square"></em>删除课程</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- build:pages -->
+                <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+                <!-- endbuild -->
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 主要内容END -->
+
+    <!-- build:foot -->
+    <footer>
+      <span>&copy; 2018 - 智厢逢</span>
+    </footer>
+    <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+  </div>
+  <div id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade in">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 id="myModalLabelLarge" class="modal-title">添加课程</h4>
+        </div>
+        <div class="modal-body curriculum">
+          <div class="xc-table">
+            <div class="xc-table-head">
+              <ul>
+                <li class="col-xs-2">课程阶段</li>
+                <li class="col-xs-2">课程类型
+                </li>
+                <li class="col-xs-4">选择版本
+                </li>
+                <li class="col-xs-4">课本
+                </li>
+              </ul>
+            </div>
+            <div class="xc-table-body">
+              <ul class="jq-xc-table" style="height: 400px;">
+                <li class="one active">启蒙课程
+                  <ul class="two">
+                    <li class="active">
+                      启蒙课程1
+                    </li>
+                    <li>
+                      启蒙课程2
+                    </li>
+                    <li>
+                      启蒙课程3
+                    </li>
+                    <li>
+                      启蒙课程4
+                    </li>
+                    <li>
+                      启蒙课程4
+                    </li>
+                    <li>
+                      启蒙课程4
+                    </li>
+                    <li>
+                      启蒙课程4
+                    </li>
+                    <li>
+                      启蒙课程4
+                    </li>
+                  </ul>
+                </li>
+                <li class="one">小学英语
+                  <ul class="two">
+                    <li class="active">小学教材
+                      <ul class="three">
+                        <li class="active">小学教材1
+                          <ul class="four">
+                            <li class="active">
+                              小学教材1-1untiy1
+                            </li>
+                            <li>
+                              小学教材1-2untiy2
+                            </li>
+                          </ul>
+                        </li>
+                        <li>小学教材1
+
+                          <ul class="four">
+                            <li class="active">
+                              小学教材1-3untiy1
+                            </li>
+                            <li>
+                              小学教材1-4untiy2
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>小学教材
+
+                      <ul class="three">
+                        <li class="active">小学教材2
+
+                          <ul class="four">
+                            <li class="active">
+                              小学教材2-1untiy1
+                            </li>
+                            <li>
+                              小学教材2-2untiy2
+                            </li>
+                          </ul>
+                        </li>
+                        <li>小学教材2
+
+                          <ul class="four">
+                            <li class="active">
+                              小学教材2-3untiy1
+                            </li>
+                            <li>
+                              小学教材2-4untiy2
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>小学教材
+
+                      <ul class="three">
+                        <li class="active">小学教材3
+
+                          <ul class="four">
+                            <li class="active">
+                              小学教材3-1untiy1
+                            </li>
+                            <li>
+                              小学教材3-2untiy2
+                            </li>
+                          </ul>
+                        </li>
+                        <li>小学教材3
+
+                          <ul class="four">
+                            <li class="active">
+                              小学教材3-3untiy1
+                            </li>
+                            <li>
+                              小学教材3-4untiy2
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>小学教材
+
+                      <ul class="three">
+                        <li class="active">小学教材4
+
+                          <ul class="four">
+                            <li class="active">
+                              小学教材4-1untiy1
+                            </li>
+                            <li>
+                              小学教材4-2untiy2
+                            </li>
+                          </ul>
+                        </li>
+                        <li>小学教材4
+
+                          <ul class="four">
+                            <li class="active">
+                              小学教材4-3untiy1
+                            </li>
+                            <li>
+                              小学教材4-4untiy2
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="one">初中英语
+
+                  <ul class="two">
+                    <li class="active">初中英语教材
+
+                      <ul class="three">
+                        <li class="active">初中英语1
+
+                          <ul class="four">
+                            <li class="active">
+                              初中英语1-1untiy1
+                            </li>
+                            <li>
+                              初中英语1-2untiy2
+                            </li>
+                          </ul>
+                        </li>
+                        <li>初中英语1
+
+                          <ul class="four">
+                            <li class="active">
+                              初中英语2-3untiy1
+                            </li>
+                            <li>
+                              初中英语2-4untiy2
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>初中英语教材
+
+                      <ul class="three">
+                        <li class="active">初中英语2
+
+                          <ul class="four">
+                            <li class="active">
+                              初中英语2-1untiy1
+                            </li>
+                            <li>
+                              初中英语2-2untiy2
+                            </li>
+                          </ul>
+                        </li>
+                        <li>初中英语2
+
+                          <ul class="four">
+                            <li class="active">
+                              初中英语2-3untiy1
+                            </li>
+                            <li>
+                              初中英语2-3untiy2
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>初中英语教材
+
+                      <ul class="three">
+                        <li class="active">初中英语3
+
+                          <ul class="four">
+                            <li class="active">
+                              初中英语3-1untiy1
+                            </li>
+                            <li>
+                              初中英语3-2untiy2
+                            </li>
+                          </ul>
+                        </li>
+                        <li>初中英语3
+
+                          <ul class="four">
+                            <li class="active">
+                              初中英语3-3untiy1
+                            </li>
+                            <li>
+                              初中英语3-4untiy2
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>初中英语教材
+
+                      <ul class="three">
+                        <li class="active">初中英语4
+
+                          <ul class="four">
+                            <li class="active">
+                              初中英语4-1untiy1
+                            </li>
+                            <li>
+                              初中英语4-2untiy2
+                            </li>
+                          </ul>
+                        </li>
+                        <li>初中英语4
+
+                          <ul class="four">
+                            <li class="active">
+                              初中英语4-2untiy1
+                            </li>
+                            <li>
+                              初中英语4-4untiy2
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="one">高中英语
+
+                  <ul class="two">
+                    <li class="active">高中英语教材
+
+                      <ul class="three">
+                        <li class="active">高中英语教材1
+
+                          <ul class="four">
+                            <li class="active">
+                              高中英语教材1-1untiy1
+                            </li>
+                            <li>
+                              高中英语教材1-2untiy2
+                            </li>
+                          </ul>
+                        </li>
+                        <li>高中英语教材1
+
+                          <ul class="four">
+                            <li class="active">
+                              高中英语教材1-3untiy1
+                            </li>
+                            <li>
+                              高中英语教材1-4untiy2
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>高中英语教材
+
+                      <ul class="three">
+                        <li class="active">高中英语教材2
+
+                          <ul class="four">
+                            <li class="active">
+                              高中英语教材2-1untiy1
+                            </li>
+                            <li>
+                              高中英语教材2-2untiy2
+                            </li>
+                          </ul>
+                        </li>
+                        <li>高中英语教材2
+
+                          <ul class="four">
+                            <li class="active">
+                              高中英语教材2-3untiy1
+                            </li>
+                            <li>
+                              高中英语教材2-4untiy2
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>高中英语教材
+
+                      <ul class="three">
+                        <li class="active">高中英语教材3
+
+                          <ul class="four">
+                            <li class="active">
+                              高中英语教材3-1untiy1
+                            </li>
+                            <li>
+                              高中英语教材3-2untiy2
+                            </li>
+                          </ul>
+                        </li>
+                        <li>高中英语教材3
+
+                          <ul class="four">
+                            <li class="active">
+                              高中英语教材3-3untiy1
+                            </li>
+                            <li>
+                              高中英语教材3-4untiy2
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>高中英语教材
+
+                      <ul class="three">
+                        <li class="active">高中英语教材4
+
+                          <ul class="four">
+                            <li class="active">
+                              高中英语教材4-1untiy1
+                            </li>
+                            <li>
+                              高中英语教材4-2untiy2
+                            </li>
+                          </ul>
+                        </li>
+                        <li>高中英语教材4
+
+                          <ul class="four">
+                            <li class="active">
+                              高中英语教材4-3untiy1
+                            </li>
+                            <li>
+                              高中英语教材4-4untiy2
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">确认添加</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- build:js -->
+  <!-- =============== JS ===============-->
+  <script src="../js/vendor/modernizr/modernizr.custom.js"></script>
+  <script src="../js/vendor/jquery/dist/jquery.js"></script>
+  <script src="../js/vendor/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../js/vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
+  <script src="../js/vendor/jquery.easing/js/jquery.easing.js"></script>
+  <script src="../js/vendor/animo.js/animo.js"></script>
+  <script src="../js/vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
+  <script src="../js/vendor/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../js/vendor/moment/min/moment-with-locales.min.js"></script>
+  <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="../js/app.js"></script>
+  <!-- endbuild -->
+
+  <script src='../js/curriculum.js'></script>
+
+
+
+
+</body>
+
+</html>
