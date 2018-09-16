@@ -108,7 +108,7 @@
 .table-words .end {
   color: #ccc;
 }
-.table-words .xc-red {
+.xc-red{
   color: #FF0000;
 }
 .table-words .col {
@@ -705,4 +705,59 @@
 }
 .rewardmall-price .rewardmall-center {
   line-height: 20px;
+}
+.admin-radio {
+  margin: 10px 0;
+}
+.admin-radio-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.admin-radio-body li {
+  margin: 0;
+  display: inline-block;
+  line-height: 16px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.admin-radio-body li.active {
+  background-color: #0085e6;
+  color: #fff;
+}
+.admin-radio-body {
+  line-height: 50px;
+  border: 1px solid rgb(233, 233, 233);
+  border-radius: 6px;
+}
+.admin-radio-body > span {
+  width: 135px;
+  background-color: #eee;
+  display: inline-block;
+  text-indent: 60px;
+}
+.table-admin th .checkbox {
+  width: 100%;
+}
+.table-admin td .checkbox{
+  display: inline-block;
+  width: auto;
+}
+.table-admin th > .checkbox,
+.table-admin td > .checkbox {
+  display: none;
+}
+.table-admin.edit th > .checkbox {
+  display: block;
+}
+.table-admin.edit td > .checkbox {
+  display: inline-block;
+}
+.table-admin.edit th > span,
+.table-admin.edit td > span {
+  display: none;
 }

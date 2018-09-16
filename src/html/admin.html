@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>运营账号管理</title>
+  <!-- build:css -->
+  <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../js/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../js/vendor/whirl/dist/whirl.css">
+  <link rel="stylesheet" href="../css/bootstrap.css" id="bscss">
+  <link rel="stylesheet" href="../js/vendor/datatable-bootstrap/css/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="../js/vendor/sweetalert/dist/sweetalert.css">
+  <link rel="stylesheet" href="../js/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="../css/app.css" id="maincss">
+  <link rel="stylesheet" href="../css/theme-e.css">
+  <!-- endbuild -->
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="../css/main_xc.css">
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- build:head -->
+    <header class="topnavbar-wrapper">
+      <nav role="navigation" class="navbar topnavbar">
+        <div class="navbar-header">
+          <a href="#/" class="navbar-brand">
+            <div class="brand-logo">
+              <img src="../img/logo.png" alt="App Logo" class="img-responsive">
+            </div>
+            <div class="brand-logo-collapsed">
+              <img src="../img/logo-single.png" alt="App Logo" class="img-responsive">
+            </div>
+          </a>
+        </div>
+        <div class="nav-wrapper">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#" data-toggle-state="aside-collapsed" class="hidden-xs">
+                <em class="fa fa-navicon"></em>
+              </a>
+              <a href="#" data-toggle-state="aside-toggled" data-no-persist="true" class="visible-xs sidebar-toggle">
+                <em class="fa fa-navicon"></em>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right mu-head-user">
+            <li>
+              <span><i class="fa fa-user"></i>admin</span><span>|</span>
+            </li>
+            <li>
+              <a href="#">
+                退出
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- build:sidebar -->
+    <!-- 左侧菜单 -->
+<aside class="aside">
+  <div class="aside-inner">
+    <nav data-sidebar-anyclick-close="" class="sidebar">
+      <ul class="nav">
+        <li class="nav-heading ">
+          <span>课程管理</span>
+        </li>
+        <li class=" ">
+          <a href="synchronize.html" title="同步课程">
+            <em class="icon-refresh"></em>
+            <span>同步课程</span>
+          </a>
+        </li>
+        <li class=" ">
+          <a href="grammar.html" title="搞定语法">
+            <em class="icon-book-open"></em>
+            <span>搞定语法</span>
+          </a>
+        </li>
+        <li class=" ">
+          <a href="#intelligent" title="智能培优" data-toggle="collapse">
+            <em class="icon-graph"></em>
+            <span>智能培优</span>
+          </a>
+          <ul id="intelligent" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">智能培优</li>
+            <li class=" ">
+              <a href="intelligent_test.html" title="同步智测">
+                <span>同步智测</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="intelligent_real.html" title="真题冲刺">
+                <span>真题冲刺</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-heading ">
+          <span>教务管理</span>
+        </li>
+        <li class=" ">
+          <a href="datastatistics.html" title="数据统计">
+            <em class="icon-speedometer"></em>
+            <span>数据统计</span>
+          </a>
+        </li>
+        <li class=" ">
+          <a href="groupcoursemanagement.html" title="学员组课程管理">
+            <em class="icon-layers"></em>
+            <span>学员组课程管理</span>
+          </a>
+        </li>
+        <li class=" ">
+          <a href="#schoolmanagement" title="学校管理" data-toggle="collapse">
+            <em class="icon-home"></em>
+            <span>学校管理</span>
+          </a>
+          <ul id="schoolmanagement" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">学校管理</li>
+            <li class=" ">
+              <a href="schoolmanagement_list.html" title="学校列表">
+                <span>学校列表</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="schoolmanagement_sales.html" title="销售数据">
+                <span>销售数据</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="schoolmanagement_setting.html" title="扣费设置">
+                <span>扣费设置</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class=" ">
+          <a href="#teachermanagement" title="教师管理" data-toggle="collapse">
+            <em class="icon-people"></em>
+            <span>教师管理</span>
+          </a>
+          <ul id="teachermanagement" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">教师管理</li>
+            <li class=" ">
+              <a href="teachermanagement_list.html" title="教师列表">
+                <span>教师列表</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="teachermanagement_sales.html" title="销售数据">
+                <span>销售数据</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class=" ">
+          <a href="#studentmanagement" title="学生管理" data-toggle="collapse">
+            <em class="icon-graduation"></em>
+            <span>学生管理</span>
+          </a>
+          <ul id="studentmanagement" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">学生管理</li>
+            <li class=" ">
+              <a href="studentmanagement_unallocated.html" title="未分配学生列表">
+                <span>未分配学生列表</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="studentmanagement_allocated.html" title="已分配学生列表">
+                <span>已分配学生列表</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class=" ">
+          <a href="#mallmanagement" title="商城管理" data-toggle="collapse">
+            <em class="icon-present"></em>
+            <span>商城管理</span>
+          </a>
+          <ul id="mallmanagement" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">商城管理</li>
+            <li class=" ">
+              <a href="mallmanagement_commodity.html" title="商品管理">
+                <span>商品管理</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="mallmanagement_order.html" title="订单管理">
+                <span>订单管理</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class=" ">
+          <a href="#admin" title="运营账号管理" data-toggle="collapse">
+            <em class="icon-present"></em>
+            <span>运营账号管理</span>
+          </a>
+          <ul id="admin" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">运营账号管理</li>
+            <li class=" ">
+              <a href="admin.html" title="运营账号管理">
+                <span>运营账号管理</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</aside>
+    <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 主要内容 -->
+    <section>
+      <div class="content-wrapper">
+        <div class="content-heading">
+          运营账号管理
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- START panel-->
+            <div class="panel-default">
+              <div class="panel-heading">
+                <div class="xc-tab jq-xc-tab">
+                  <ul class="xc-tab-head">
+                    <li class="active">运营列表</li>
+                    <li class="">权限列表</li>
+                    <span class="line" style="left: 0px;"></span>
+                  </ul>
+                  <ul class="xc-tab-body">
+                    <li class="active">
+                      <div>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#createAdmin">创建运营账号</button>
+                      </div>
+                      <div class="admin-radio jq-admin-radio">
+                        <div class="admin-radio-body">
+                          <span class="admin-radio-name">账号状态：</span>
+                          <ul>
+                            <li class="active">全部</li>
+                            <li>正常</li>
+                            <li>停用</li>
+                          </ul>
+                        </div>
+                        <p>根据条件找到<span>99</span>个运营账号</p>
+                      </div>
+                      <div class="table-responsive" style="margin-bottom: 10px">
+                        <table class="table table-words">
+                          <thead>
+                            <tr>
+                              <th class="col-xs-1" style="min-width: 100px;">运营账号编号</th>
+                              <th class="col-xs-1" style="min-width: 160px;">创建时间</th>
+                              <th class="col-xs-1" style="min-width: 80px;">状态</th>
+                              <th class="col-xs-1" style="min-width: 100px;">最近登陆</th>
+                              <th class="col-xs-2" style="min-width: 200px;">近30天平均每日登陆(次)</th>
+                              <th class="col-xs-1" style="min-width: 100px;">员工姓名</th>
+                              <th class="col-xs-1" style="min-width: 100px;">员工手机号</th>
+                              <th class="col-xs-1" style="min-width: 300px;">操作</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td class="blue">正常</td>
+                              <td>今天</td>
+                              <td>3.1</td>
+                              <td>姓名姓名</td>
+                              <td>18000000000</td>
+                              <td>
+                                <button class="btn btn-primary jq-admin-toogle stop">停用账号</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#createAdmin">修改资料</button>
+                                <button class="btn btn-primary jq-admin-reset">重置密码</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td class="blue">正常</td>
+                              <td>三天前</td>
+                              <td>4.1</td>
+                              <td>姓名姓名</td>
+                              <td>18000000000</td>
+                              <td>
+                                <button class="btn btn-primary jq-admin-toogle stop">停用账号</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#createAdmin">修改资料</button>
+                                <button class="btn btn-primary jq-admin-reset">重置密码</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td class="blue">正常</td>
+                              <td>三天前</td>
+                              <td>4.1</td>
+                              <td>姓名姓名</td>
+                              <td>18000000000</td>
+                              <td>
+                                <button class="btn btn-primary jq-admin-toogle stop">停用账号</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#createAdmin">修改资料</button>
+                                <button class="btn btn-primary jq-admin-reset">重置密码</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td class="blue">正常</td>
+                              <td>三天前</td>
+                              <td>4.1</td>
+                              <td>姓名姓名</td>
+                              <td>18000000000</td>
+                              <td>
+                                <button class="btn btn-primary jq-admin-toogle stop">停用账号</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#createAdmin">修改资料</button>
+                                <button class="btn btn-primary jq-admin-reset">重置密码</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td class="blue">正常</td>
+                              <td>三天前</td>
+                              <td>4.1</td>
+                              <td>姓名姓名</td>
+                              <td>18000000000</td>
+                              <td>
+                                <button class="btn btn-primary jq-admin-toogle stop">停用账号</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#createAdmin">修改资料</button>
+                                <button class="btn btn-primary jq-admin-reset">重置密码</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td class="blue">正常</td>
+                              <td>三天前</td>
+                              <td>4.1</td>
+                              <td>姓名姓名</td>
+                              <td>18000000000</td>
+                              <td>
+                                <button class="btn btn-primary jq-admin-toogle stop">停用账号</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#createAdmin">修改资料</button>
+                                <button class="btn btn-primary jq-admin-reset">重置密码</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td class="blue">正常</td>
+                              <td>三天前</td>
+                              <td>4.1</td>
+                              <td>姓名姓名</td>
+                              <td>18000000000</td>
+                              <td>
+                                <button class="btn btn-primary jq-admin-toogle stop">停用账号</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#createAdmin">修改资料</button>
+                                <button class="btn btn-primary jq-admin-reset">重置密码</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td class="blue">正常</td>
+                              <td class="xc-red">7天前</td>
+                              <td>4.1</td>
+                              <td>姓名姓名</td>
+                              <td>18000000000</td>
+                              <td>
+                                <button class="btn btn-primary jq-admin-toogle stop">停用账号</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#createAdmin">修改资料</button>
+                                <button class="btn btn-primary jq-admin-reset">重置密码</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td>停用</td>
+                              <td class="xc-red">25天前</td>
+                              <td>4.1</td>
+                              <td>姓名姓名</td>
+                              <td>18000000000</td>
+                              <td>
+                                <button class="btn btn-primary jq-admin-toogle up">启用账号</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#createAdmin">修改资料</button>
+                                <button class="btn btn-primary jq-admin-reset">重置密码</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td class="hui">停用</td>
+                              <td class="xc-red">2018-06-03</td>
+                              <td>4.1</td>
+                              <td>姓名姓名</td>
+                              <td>18000000000</td>
+                              <td>
+                                <button class="btn btn-primary jq-admin-toogle up">启用账号</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#createAdmin">修改资料</button>
+                                <button class="btn btn-primary jq-admin-reset">重置密码</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <!-- build:pages -->
+                      <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+                      <!-- endbuild -->
+
+
+                    </li>
+                    <li>
+                      <div class="admin-radio jq-admin-radio">
+                        <div class="admin-radio-body">
+                          <span class="admin-radio-name">账号状态：</span>
+                          <ul>
+                            <li class="active">全部</li>
+                            <li>正常</li>
+                            <li>停用</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="table-responsive table-admin jq-admin-edit" style="margin-bottom: 10px">
+                        <table class="table table-words">
+                          <thead>
+                            <tr>
+                              <th class="col-xs-1" style="min-width: 100px;">运营账号编号</th>
+                              <th class="col-xs-1" style="min-width: 100px;">员工姓名</th>
+                              <th class="col-xs-1" style="min-width: 160px;">创建时间</th>
+                              <th class="col-xs-1" style="min-width: 80px;">状态</th>
+                              <th class="col-xs-2" style="min-width: 200px;">
+                                <span>创建学校账号权限</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span>创建学校账号权限</label>
+                                </div>
+                              </th>
+                              <th class="col-xs-2" style="min-width: 200px;">
+                                <span>停用学校账号权限</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span>停用学校账号权限</label>
+                                </div>
+                              </th>
+                              <th class="col-xs-2" style="min-width: 200px;">
+                                <span>停用教师账号权限</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span>停用教师账号权限</label>
+                                </div>
+                              </th>
+                              <th class="col-xs-2" style="min-width: 220px;">
+                                <span>分配、调换学生学校权限</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span>分配、调换学生学校权限</label>
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>姓名姓名</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td class="blue">正常</td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>姓名姓名</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td class="blue">正常</td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>姓名姓名</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td class="blue">正常</td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>姓名姓名</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td class="blue">正常</td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>姓名姓名</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td class="blue">正常</td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span class="blue">有</span>
+                                <div class="checkbox c-checkbox">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>姓名姓名</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td>停用</td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>姓名姓名</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td>停用</td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>姓名姓名</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td>停用</td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>姓名姓名</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td>停用</td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>YY000001</td>
+                              <td>姓名姓名</td>
+                              <td>2018-01-01 22:22:22</td>
+                              <td>停用</td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                              <td>
+                                <span>无</span>
+                                <div class="checkbox c-checkbox needsclick">
+                                  <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick">
+                                    <span class="fa fa-check"></span></label>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <button class="btn btn-primary jq-power-toogle">编辑权限</button>
+                      </div>
+                      <!-- build:pages -->
+                      <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+                      <!-- endbuild -->
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 主要内容END -->
+
+    <!-- build:foot -->
+    <footer>
+      <span>&copy; 2018 - 智厢逢</span>
+    </footer>
+    <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <div id="createAdmin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade in">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 id="myModalLabel" class="modal-title">创建运营账号</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="col-lg-2 control-label xc-nowrap">员工姓名：</label>
+              <div class="col-lg-10">
+                <input type="text" placeholder="员工姓名" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-2 control-label xc-nowrap">员工手机：</label>
+              <div class="col-lg-10">
+                <input type="text" placeholder="员工手机" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-2 control-label xc-nowrap">账号状态：</label>
+              <div class="col-lg-10">
+                <label class="switch switch-lg">
+                  <input type="checkbox" checked="checked">
+                  <span></span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-2 control-label xc-nowrap">账号权限：</label>
+              <div class="col-lg-5">
+                <div class="checkbox c-checkbox">
+                  <label>
+                    <input type="checkbox" checked="">
+                    <span class="fa fa-check"></span>创建学校账号权限</label>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="checkbox c-checkbox">
+                  <label>
+                    <input type="checkbox" checked="">
+                    <span class="fa fa-check"></span>停用学校账号权限</label>
+                </div>
+              </div>
+            </div>
+
+            <p class="xc-red col-lg-offset-2">运营账号初始密码为zxf888888</p>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-default">取消</button>
+          <button type="button" class="btn btn-primary">创建</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- build:js -->
+  <!-- =============== JS ===============-->
+  <script src="../js/vendor/modernizr/modernizr.custom.js"></script>
+  <script src="../js/vendor/jquery/dist/jquery.js"></script>
+  <script src="../js/vendor/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../js/vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
+  <script src="../js/vendor/jquery.easing/js/jquery.easing.js"></script>
+  <script src="../js/vendor/animo.js/animo.js"></script>
+  <script src="../js/vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
+  <script src="../js/vendor/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../js/vendor/moment/min/moment-with-locales.min.js"></script>
+  <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="../js/app.js"></script>
+  <!-- endbuild -->
+
+  <script src="../js/admin.js"></script>
+
+
+
+
+</body>
+
+</html>
