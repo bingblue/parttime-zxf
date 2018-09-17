@@ -24,12 +24,13 @@ $(function () {
       this.endTime()
       this.banner()
       this.select()
+      this.audioPlay()
     },
     /**
      * 模拟下拉框
      */
     select: function () {
-      $('.xc-head-select').on('click', function(event) {
+      $('.xc-head-select').on('click', function (event) {
         event.stopPropagation()
         var $this = $(this)
         if ($this.hasClass('select')) {
@@ -44,10 +45,10 @@ $(function () {
           $this.addClass('active').siblings().removeClass('active')
           var $name = $this.parent().siblings('.name')
           $name.text($this.text())
-          $name.attr('value',$this.attr('value'))
+          $name.attr('value', $this.attr('value'))
         }
       })
-      $('body').on('click', function() {
+      $('body').on('click', function () {
         $('.xc-head-select').removeClass('select')
       })
     },
@@ -73,19 +74,19 @@ $(function () {
         next()
       })
       var $maxIndex = $items.length
-      function next () {
+      function next() {
         if ($index + 1 <= $maxIndex) {
           $index += 1
           changeIndex()
         }
       }
-      function prv () {
+      function prv() {
         if ($index - 1 > 0) {
           $index = $index - 1
           changeIndex()
         }
       }
-      function changeIndex () {
+      function changeIndex() {
         $items.eq($index - 1).addClass('active').siblings().removeClass('active')
         $active.text($index)
       }
@@ -96,7 +97,7 @@ $(function () {
     endTime: function () {
       var $time = $('#xc-time')
       var timer = ''
-      function start () {
+      function start() {
         var time = Number($time.attr('time'))
         if (time - 1) {
           $time.text(returnTime(time))
@@ -110,10 +111,10 @@ $(function () {
         start()
         $time.attr('time', Number($time.attr('time')) - 1)
       }, 1000)
-      function returnTime (time) {
+      function returnTime(time) {
         return addZero(parseInt(time / 60 / 60 % 24)) + ':' + addZero(parseInt(time / 60 % 60))
       }
-      function addZero (num) {
+      function addZero(num) {
         if (num < 9) {
           return '0' + num
         } else {
@@ -175,7 +176,7 @@ $(function () {
       var $navli = $('#intelText-classes .intelText-class.active')
       var $this = $navli
       if ($this.length) {
-        $this.siblings('.intelText-line').css({'left': $this.position().left, 'width': $this.innerWidth()}).show()
+        $this.siblings('.intelText-line').css({ 'left': $this.position().left, 'width': $this.innerWidth() }).show()
       }
     },
     /**
@@ -285,6 +286,65 @@ $(function () {
           $this.find('.tit').text('显示全部')
           $this.parents('.xc-table').find('tbody tr :nth-child(' + ($index + 1) + ') span').css('display', 'none')
         }
+      })
+    },
+    /**
+     * 音频播放
+     */
+    audioPlay: function () {
+      function forMatTime(t) {
+        return Math.floor(t/60)+":"+(t%60/100).toFixed(2).slice(-2)
+      }
+      function getTime(audio) {
+        audio.oncanplay = function () {
+          var duration = audio.duration
+          $(audio).parent().find('.duration').text(forMatTime(duration))
+        }
+      }
+      function getCurrentTime(audio) {
+        var currentTime = audio.currentTime
+        $(audio).parent().find('.currentTime').text(forMatTime(currentTime))
+        $(audio).parent().find('.xc-proplay-inner').width((audio.currentTime / audio.duration)*100 + '%')
+      }
+      $(".audioMp3").each(function (index, ele) {
+        getTime($(ele)[0])
+        $(ele).parent().find('.tooglePlay').on('click',function() {
+          var $this = $(this);
+          if ($this.hasClass('play')) {
+            $(ele)[0].play()
+            $this.timer && clearInterval($this.timer)
+            $this.timer = setInterval(function() {
+              getCurrentTime($(ele)[0])
+            }, 200)
+            $this.removeClass('play').addClass('pause').attr('src', '../img/readText-play-active.png')
+            $this.siblings('.tooglePause').attr("src", '../img/realText-zt.png')
+          } else {
+            $(ele)[0].pause()
+            $this.timer && clearInterval($this.timer)
+            $this.removeClass('pause').addClass('play').attr('src', '../img/readText-play.png')
+            $this.siblings('.tooglePause').attr("src", '../img/realText-zt-active.png')
+          }
+          
+        })
+        $(ele).parent().find('.toogleloop').on('click', function () {
+          var $this = $(this);
+          if ($(this).hasClass('true')) {
+            $this.removeClass('true').attr('src', '../img/readText-loop.png')
+          } else {
+            $this.addClass('true').attr('src', '../img/readText-loop-active.png')
+          }
+        })
+        $(ele)[0].addEventListener('ended', function () {
+          var $this = $(this).parent().find('.tooglePlay')
+          if ($(this).parent().find('.toogleloop').hasClass('true')) {
+            $(this)[0].currentTime = 0;
+            $(this)[0].play();
+            return;
+          }
+          $this.timer && clearInterval($this.timer)
+          $this.removeClass('pause').addClass('play').attr('src', '../img/readText-play.png')
+          $this.siblings('.tooglePause').attr("src", '../img/realText-zt-active.png')
+      }, false);
       })
     }
   }
