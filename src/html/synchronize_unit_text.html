@@ -25,6 +25,7 @@
 
 
   <link rel="stylesheet" href="../css/main_xc.css">
+  <link rel="stylesheet" href="../js/vendor/blueimp-file-upload/css/jquery.fileupload.css">
 
 
 </head>
@@ -296,14 +297,14 @@
                             <div class="form-group col-xs-12">
                               <label class="col-lg-1 control-label">发音：</label>
                               <div class="col-lg-11">
-                                <div>
-                                  <span class="btn btn-default jq-fileinput-button">
-                                    <i class="fa fa-fw fa-upload"></i>
-                                    <span>上传文件</span>
-                                  </span>
-                                  <button class="btn btn-default pull-right">播放录音</button>
-                                  <p>支持扩展名：.xxx .xxx .xxx</p>
-                                </div>
+                                  <div class="fileinput-box">
+                                      <span class="btn btn-default fileinput-button">
+                                        <i class="fa fa-fw fa-upload"></i>
+                                        <span>上传文件</span>
+                                        <input type="file" class="file-ipt" name="files[]">
+                                      </span>
+                                      <p class="audio-type">支持扩展名：mp3</p>
+                                    </div>
                               </div>
                             </div>
                           </div>

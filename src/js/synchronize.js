@@ -177,4 +177,26 @@ $(function () {
     inputArray = inputArray.join('')
     return inputArray
   }
+
+
+  // 上传mp3
+  $('body').on('change','.file-ipt',function(){
+    upload(this)
+  })
+  function upload (target) {
+    let file = target.files[0]
+    let reader = new FileReader()
+    reader.readAsDataURL(file)
+    reader.onload = function(e) {
+      var str = "<div class='xc-audio'><audio src="+ e.target.result +" controls=''></audio>" +
+      "<p><button type='reset' class='btn btn-warning cancel jq-auto-delete'><i class='fa fa-fw fa-times'></i><span>" + file.name + "</span></button></p></div>"
+      $(target).closest('div').append(str).find('.audio-type').hide()
+      $('.fileinput-button').hide()
+    }
+  }
+  $("body").on('click','.jq-auto-delete', function() {
+    var $this = $(this);
+    $this.closest('.fileinput-box').find('.audio-type,.fileinput-button').show()
+    $this.closest('.xc-audio').remove()
+  })
 })

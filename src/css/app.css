@@ -7839,3 +7839,17 @@ fieldset[disabled] .flatdoc-wrapper .button.active {
 .mu-head-user span i {
   margin-right: 5px;
 }
+.xc-audio {
+  vertical-align: top;
+  overflow: hidden;
+}
+.xc-audio audio {
+  display: inline-block;
+  float: left;
+}
+.xc-audio p{
+  display: inline-block;
+  line-height: 54px;
+  margin-left: 20px;
+  float: left;
+}
