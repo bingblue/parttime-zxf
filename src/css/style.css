@@ -185,6 +185,12 @@ body {
 .midd_header > .login ul li:hover a.task {
   background-image: url('../img/head-task-active.png');
 }
+.midd_header > .login ul a.logout {
+  background-image: url('../img/head-logout.png');
+}
+.midd_header > .login ul li:hover a.logout {
+  background-image: url('../img/head-logout-active.png');
+}
 .midd_header > .login ul li {
   line-height: 34px;
   height: 34px;
