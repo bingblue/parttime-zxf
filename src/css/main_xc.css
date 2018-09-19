@@ -77,7 +77,7 @@
   color: #656565;
 }
 .xc-table-body .active {
-  color: #999999;
+  color: red;
 }
 .xc-table-body .active > ul {
   display: block;
