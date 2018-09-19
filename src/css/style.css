@@ -125,3 +125,74 @@ audio {
 body {
   background: rgba(250, 250, 251, 1);
 }
+.midd_header > .login {
+  position: relative;
+}
+.midd_header > .login ul{
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  z-index: 99999;
+  width: 154px;
+  left: 0;
+  top: 70px;
+  background:rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.09);
+  border-radius: 4px;
+  font-size: 16px;
+}
+.midd_header > .login ul::before{
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid #fff;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+}
+.midd_header > .login ul a {
+  color: #666;
+  padding-left: 64px;
+  display: inline-block;
+  background: url('../img/head-info.png') no-repeat 20px center;
+  background-size: 34px auto;
+}
+.midd_header > .login ul li:hover a {
+  color: #0085E6;
+}
+.midd_header > .login ul a.info {
+  background-image: url('../img/head-info.png');
+}
+.midd_header > .login ul li:hover a.info {
+  background-image: url('../img/head-info-active.png');
+}
+.midd_header > .login ul a.honor {
+  background-image: url('../img/head-honor.png');
+}
+.midd_header > .login ul li:hover a.honor {
+  background-image: url('../img/head-honor-active.png');
+}
+.midd_header > .login ul a.test {
+  background-image: url('../img/head-test.png');
+}
+.midd_header > .login ul li:hover a.test {
+  background-image: url('../img/head-test-active.png');
+}
+.midd_header > .login ul a.task {
+  background-image: url('../img/head-task.png');
+}
+.midd_header > .login ul li:hover a.task {
+  background-image: url('../img/head-task-active.png');
+}
+.midd_header > .login ul li {
+  line-height: 34px;
+  height: 34px;
+  margin-top: 10px;
+}
+.midd_header > .login ul li:last-child {
+  margin-bottom: 10px;
+}
+.midd_header > .login:hover ul{
+  display: block;
+}
