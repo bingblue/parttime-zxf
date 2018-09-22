@@ -50,14 +50,14 @@
   border-left: 1px solid #eee;
 }
 .xc-table-body .one .two {
-  width: calc(100% / 3);
-  left: calc(100% / 6);
+  width: calc(100% / 4);
+  left: calc(100% / 4);
   top: 0;
 }
 .xc-table-body .one .four {
-  left:  100%;
+  left: 100%;
   top: 0;
-  width: calc(50% + 2px);
+  width: calc(100% + 2px);
 }
 .xc-table-body .one .four li {
   border-right: none;
@@ -83,7 +83,8 @@
   display: block;
 }
 .xc-table-body .one {
-  width: 16.6666667%;
+  width: 25%;
+  white-space: nowrap;
 }
 .xc-table-body li {
   border-bottom: 1px solid #eeeeee;
@@ -760,4 +761,50 @@
 .table-admin.edit th > span,
 .table-admin.edit td > span {
   display: none;
+}
+.xc-position .btn{
+  position: absolute;
+  right: 8px;
+}
+.xc-position .btn:nth-child(2) {
+  right: 5px;
+}
+.xc-position .btn:nth-child(3) {
+  right: 65px;
+}
+.xc-position .one > .btn {
+  right: calc(75% + 65px);
+}
+.xc-position .one > .btn:nth-child(2) {
+  right: calc(75% + 5px);
+}
+.xc-position .four .btn:nth-child(4) {
+  right: 130px;
+}
+.xc-position .one {
+  padding-right: 135px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.xc-position .one .two > li {
+  padding-right: 135px;
+  text-overflow: ellipsis;
+}
+.xc-position .three > li{
+  padding-right: 135px;
+  text-overflow: ellipsis;
+}
+.xc-position .four > li {
+  padding-right: 200px;
+  text-overflow: ellipsis;
+}
+.grammar .one {
+  width: 33.333%;
+}
+.grammar .one .two {
+  width: 33.333%;
+  left: 33.333%;
+}
+.xc-table-body .one .three.big {
+  width: calc(100% + 5px);
 }
