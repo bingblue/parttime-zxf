@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>同步智测-词汇与语法</title>
+  <title>智能培优-听力测试</title>
   <!-- build:css -->
   <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
@@ -24,8 +24,8 @@
 
 
 
-
   <link rel="stylesheet" href="../css/main_xc.css">
+  <link rel="stylesheet" href="../js/vendor/blueimp-file-upload/css/jquery.fileupload.css">
 
 
 
@@ -71,7 +71,6 @@
       </nav>
     </header>
     <!-- endbuild -->
-
 
 
 
@@ -247,12 +246,11 @@
 
 
 
-
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
-          基础知识
+          高考真题模拟卷一
           <ol class="breadcrumb">
             <li>
               <a href="./intelligent_real.html">高考冲刺</a>
@@ -263,174 +261,199 @@
             <li>
               <a href="./intelligent_real_unit_small.html">卷内试题目录</a>
             </li>
-            <li class="active">词汇与语法2</li>
+            <li class="active">听力测试D</li>
           </ol>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <div class="panel-default">
+            <div class="panel">
               <div class="panel-heading">
-                <div class="xc-tab xc-mb10">
-                  <ul class="xc-tab-head xc-bas">
-                    <li>
-                      <a href="./intelligent_real_words_01.html">Ⅰ</a>
-                    </li>
-                    <li class="active">
-                      <ahref="javascript:;">
-                        Ⅱ</a>
-                    </li>
-                    <li>
-                      <a href="./intelligent_real_words_03.html">Ⅲ</a>
-                    </li>
-                    <li>
-                      <a href="./intelligent_real_words_04.html">Ⅳ</a>
-                    </li>
-                    <li>
-                      <a href="./intelligent_real_words_05.html">
-                        Ⅴ</a>
-                    </li>
-                  </ul>
-                </div>
                 <form class="form-horizontal">
-                  <div class="xc-mb10">
+                  <div class="form-group">
+                    <label class="col-lg-1 control-label">录音</label>
+                    <div class="col-lg-11">
+                      <div class="fileinput-box">
+                        <span class="btn btn-default fileinput-button">
+                          <i class="fa fa-fw fa-upload"></i>
+                          <span>上传文件</span>
+                          <input type="file" class="file-ipt" name="files[]">
+                        </span>
+                        <p class="audio-type">支持扩展名：mp3</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="xc-tab xc-mb10">
+                    <ul class="xc-tab-head xc-bas">
+                      <li>
+                        <a href="./intelligent_real_hearing_small_01.html">A</a>
+                      </li>
+                      <li>
+                        <a href="./intelligent_real_hearing_small_02.html">B</a>
+                      </li>
+                      <li>
+                        <a href="./intelligent_real_hearing_small_03.html">C</a>
+                      </li>
+                      <li class="active">
+                        <a href="javascript:;">D</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
                     <a class="btn btn-primary">保存</a>
-                    <a class="btn btn-default">清空本页</a>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-lg-1 control-label xc-nowrap">题目文本：</label>
-                    <div class="col-lg-11">
-                      <input type="text" placeholder="将代表单词或词组的字母填入空格，每空一词，每个单词或词组只能用一次" class="form-control">
+                    <a class="btn btn-danger jq-clear-form">清空本页</a>
+                    <div class="form-group mt10">
+                      <label class="col-lg-1 control-label xc-nowrap">题目文本：</label>
+                      <div class="col-lg-11">
+                        <input type="text" placeholder="Listen to the passage and tell whether the following statements are ture or false（判断下列句子是否符合你听到的短文内容，符合的用“T”表示不符合的用“F”表示）（共6分）"
+                          class="form-control">
+                      </div>
+                    </div>
+                    <div>
+                      <h4>第 21 题 <a class="btn btn-default">清空</a></h4>
+                      <div class="form-group">
+                        <label class="col-lg-1 control-label">题干:</label>
+                        <div class="col-lg-11">
+                          <input type="text" placeholder="请输入题干" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-lg-1 control-label"></label>
+                        <div class="col-lg-11">
+                          <p class="xc-red">注意：设置填空的部分使用下方的文本格式</p>
+                          <p class="xc-red">sssss {$name} aaaaa</p>
+                          <p class="xc-red">例如：How are you，设置are为填空内容，则将正文写为：How sssss {$are} aaaaa you,并在下方的答案框内填写are</p>
+                        </div>
+                      </div>
+                      <div class="form-group mt10">
+                        <label class="col-lg-1 control-label xc-nowrap">正确答案:</label>
+                        <div class="col-lg-5">
+                          <input type="text" placeholder="请输入答案1" class="form-control">
+                        </div>
+                        <div class="col-lg-5">
+                          <input type="text" placeholder="请输入答案2" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h4>第 22 题 <a class="btn btn-default">清空</a></h4>
+                      <div class="form-group">
+                        <label class="col-lg-1 control-label">题干:</label>
+                        <div class="col-lg-11">
+                          <input type="text" placeholder="请输入题干" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-lg-1 control-label"></label>
+                        <div class="col-lg-11">
+                          <p class="xc-red">注意：设置填空的部分使用下方的文本格式</p>
+                          <p class="xc-red">sssss {$name} aaaaa</p>
+                          <p class="xc-red">例如：How are you，设置are为填空内容，则将正文写为：How sssss {$are} aaaaa you,并在下方的答案框内填写are</p>
+                        </div>
+                      </div>
+                      <div class="form-group mt10">
+                        <label class="col-lg-1 control-label xc-nowrap">正确答案:</label>
+                        <div class="col-lg-5">
+                          <input type="text" placeholder="请输入答案1" class="form-control">
+                        </div>
+                        <div class="col-lg-5">
+                          <input type="text" placeholder="请输入答案2" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h4>第 23 题 <a class="btn btn-default">清空</a></h4>
+                      <div class="form-group">
+                        <label class="col-lg-1 control-label">题干:</label>
+                        <div class="col-lg-11">
+                          <input type="text" placeholder="请输入题干" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-lg-1 control-label"></label>
+                        <div class="col-lg-11">
+                          <p class="xc-red">注意：设置填空的部分使用下方的文本格式</p>
+                          <p class="xc-red">sssss {$name} aaaaa</p>
+                          <p class="xc-red">例如：How are you，设置are为填空内容，则将正文写为：How sssss {$are} aaaaa you,并在下方的答案框内填写are</p>
+                        </div>
+                      </div>
+                      <div class="form-group mt10">
+                        <label class="col-lg-1 control-label xc-nowrap">正确答案:</label>
+                        <div class="col-lg-5">
+                          <input type="text" placeholder="请输入答案1" class="form-control">
+                        </div>
+                        <div class="col-lg-5">
+                          <input type="text" placeholder="请输入答案2" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h4>第 24 题 <a class="btn btn-default">清空</a></h4>
+                      <div class="form-group">
+                        <label class="col-lg-1 control-label">题干:</label>
+                        <div class="col-lg-11">
+                          <input type="text" placeholder="请输入题干" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-lg-1 control-label"></label>
+                        <div class="col-lg-11">
+                          <p class="xc-red">注意：设置填空的部分使用下方的文本格式</p>
+                          <p class="xc-red">sssss {$name} aaaaa</p>
+                          <p class="xc-red">例如：How are you，设置are为填空内容，则将正文写为：How sssss {$are} aaaaa you,并在下方的答案框内填写are</p>
+                        </div>
+                      </div>
+                      <div class="form-group mt10">
+                        <label class="col-lg-1 control-label xc-nowrap">正确答案:</label>
+                        <div class="col-lg-5">
+                          <input type="text" placeholder="请输入答案1" class="form-control">
+                        </div>
+                        <div class="col-lg-5">
+                          <input type="text" placeholder="请输入答案2" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h4>第 25 题 <a class="btn btn-default">清空</a></h4>
+                      <div class="form-group">
+                        <label class="col-lg-1 control-label">题干:</label>
+                        <div class="col-lg-11">
+                          <input type="text" placeholder="请输入题干" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-lg-1 control-label"></label>
+                        <div class="col-lg-11">
+                          <p class="xc-red">注意：设置填空的部分使用下方的文本格式</p>
+                          <p class="xc-red">sssss {$name} aaaaa</p>
+                          <p class="xc-red">例如：How are you，设置are为填空内容，则将正文写为：How sssss {$are} aaaaa you,并在下方的答案框内填写are</p>
+                        </div>
+                      </div>
+                      <div class="form-group mt10">
+                        <label class="col-lg-1 control-label xc-nowrap">正确答案:</label>
+                        <div class="col-lg-5">
+                          <input type="text" placeholder="请输入答案1" class="form-control">
+                        </div>
+                        <div class="col-lg-5">
+                          <input type="text" placeholder="请输入答案2" class="form-control">
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label class="col-lg-1 control-label">短文：</label>
-                    <div class="col-lg-11">
-                      <textarea class="form-control" placeholder="请输入文本" rows="5"></textarea>
-                      <p class="xc-error">注意：短文内的题目号应为 _____1_____ , _____2_____ , _____3_____ , _____4_____ , _____5_____</p>
-                    </div>
-                  </div>
-                  <h4>选项</h4>
-                  <div class="form-group">
-                    <label class="col-lg-1 control-label">A：</label>
-                    <div class="col-lg-5">
-                      <input type="text" placeholder="请输入A选项" class="form-control">
-                    </div>
-                    <label class="col-lg-1 control-label">B：</label>
-                    <div class="col-lg-5">
-                      <input type="text" placeholder="请输入B选项" class="form-control">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-lg-1 control-label">C：</label>
-                    <div class="col-lg-5">
-                      <input type="text" placeholder="请输入A选项" class="form-control">
-                    </div>
-                    <label class="col-lg-1 control-label">D：</label>
-                    <div class="col-lg-5">
-                      <input type="text" placeholder="请输入B选项" class="form-control">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-lg-1 control-label">E：</label>
-                    <div class="col-lg-5">
-                      <input type="text" placeholder="请输入E选项" class="form-control">
-                    </div>
-                    <label class="col-lg-1 control-label">F：</label>
-                    <div class="col-lg-5">
-                      <input type="text" placeholder="请输入F选项" class="form-control">
-                    </div>
-                  </div>
-                  <h4>答案与解析</h4>
-                  <div class="form-group">
-                    <label class="col-lg-1 control-label">1：</label>
-                    <div class="col-lg-2">
-                      <select name="account" class="form-control m-b">
-                        <option value="">请选择答案</option>
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                        <option>Option 4</option>
-                      </select>
-                    </div>
-                    <div class="col-lg-9">
-                      <input type="text" placeholder="请输入解析" class="form-control">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-lg-1 control-label">2：</label>
-                    <div class="col-lg-2">
-                      <select name="account" class="form-control m-b">
-                        <option value="">请选择答案</option>
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                        <option>Option 4</option>
-                      </select>
-                    </div>
-                    <div class="col-lg-9">
-                      <input type="text" placeholder="请输入解析" class="form-control">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-lg-1 control-label">3：</label>
-                    <div class="col-lg-2">
-                      <select name="account" class="form-control m-b">
-                        <option value="">请选择答案</option>
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                        <option>Option 4</option>
-                      </select>
-                    </div>
-                    <div class="col-lg-9">
-                      <input type="text" placeholder="请输入解析" class="form-control">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-lg-1 control-label">4：</label>
-                    <div class="col-lg-2">
-                      <select name="account" class="form-control m-b">
-                        <option value="">请选择答案</option>
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                        <option>Option 4</option>
-                      </select>
-                    </div>
-                    <div class="col-lg-9">
-                      <input type="text" placeholder="请输入解析" class="form-control">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-lg-1 control-label">5：</label>
-                    <div class="col-lg-2">
-                      <select name="account" class="form-control m-b">
-                        <option value="">请选择答案</option>
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                        <option>Option 4</option>
-                      </select>
-                    </div>
-                    <div class="col-lg-9">
-                      <input type="text" placeholder="请输入解析" class="form-control">
-                    </div>
-                  </div>
-                </form>
               </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- 主要内容END -->
+  </div>
+  </section>
+  <!-- 主要内容END -->
 
-    <!-- build:foot -->
-    <footer>
-      <span>&copy; 2018 - 智厢逢</span>
-    </footer>
-    <!-- endbuild -->
-
+  <!-- build:foot -->
+  <footer>
+    <span>&copy; 2018 - 智厢逢</span>
+  </footer>
+  <!-- endbuild -->
 
 
 
@@ -462,8 +485,7 @@
 
 
 
-
-
+  <script src="../js/intelligent.js"></script>
 
 
 

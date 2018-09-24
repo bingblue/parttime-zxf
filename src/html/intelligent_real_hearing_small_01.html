@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>智能培优-真题冲刺</title>
+  <title>智能培优-听力测试</title>
   <!-- build:css -->
   <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
@@ -24,11 +24,11 @@
 
 
 
-
-
-
-
   <link rel="stylesheet" href="../css/main_xc.css">
+  <link rel="stylesheet" href="../js/vendor/blueimp-file-upload/css/jquery.fileupload.css">
+
+
+
 </head>
 
 <body>
@@ -71,8 +71,6 @@
       </nav>
     </header>
     <!-- endbuild -->
-
-
 
 
 
@@ -248,62 +246,114 @@
 
 
 
-
-
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
-          中考冲刺-真题模拟题一
+          高考真题模拟卷一
           <ol class="breadcrumb">
             <li>
-              <a href="./intelligent_real.html">真题冲刺</a>
+              <a href="./intelligent_real.html">高考冲刺</a>
             </li>
             <li>
-              <a href="./intelligent_real_detail_small.html">试卷列表</a>
+              <a href="./intelligent_real_detail_small.html">试题</a>
             </li>
-            <li class="active">真题模拟题一</li>
+            <li>
+              <a href="./intelligent_real_unit_small.html">卷内试题目录</a>
+            </li>
+            <li class="active">听力测试A</li>
           </ol>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <div class="xc-text-group col-xs-6 center-block">
-              <div class="xc-text-item">
-                <a href="./intelligent_real_hearing_small_01.html">听力测试
-                  <br>（未录入）
-                </a>
+            <div class="panel">
+              <div class="panel-heading">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-lg-1 control-label">录音</label>
+                    <div class="col-lg-11">
+                      <div class="fileinput-box">
+                        <span class="btn btn-default fileinput-button">
+                          <i class="fa fa-fw fa-upload"></i>
+                          <span>上传文件</span>
+                          <input type="file" class="file-ipt" name="files[]">
+                        </span>
+                        <p class="audio-type">支持扩展名：mp3</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="xc-tab xc-mb10">
+                    <ul class="xc-tab-head xc-bas">
+                      <li class="active">
+                        <a href="javascript:;">A</a>
+                      </li>
+                      <li>
+                        <a href="./intelligent_real_hearing_small_02.html">
+                          B</a>
+                      </li>
+                      <li>
+                        <a href="./intelligent_real_hearing_small_03.html">C</a>
+                      </li>
+                      <li>
+                        <a href="./intelligent_real_hearing_small_04.html">D</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <a class="btn btn-primary">保存</a>
+                    <a class="btn btn-danger jq-clear-form">清空本页</a>
+                    <div class="form-group mt10">
+                      <label class="col-lg-1 control-label xc-nowrap">题目文本：</label>
+                      <div class="col-lg-11">
+                        <input type="text" placeholder="Listen and choose the right picture（根据你听到的内容，选出相应的图片）（共6分）" class="form-control">
+                      </div>
+                    </div>
+                    <h4>选择图片</h4>
+                    <h4>试题答案</h4>
+                    <div class="form-group">
+                      <label class="col-lg-1 control-label">1:</label>
+                      <div class="col-lg-2">
+                        <input type="text" placeholder="请输入正确选项" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">2:</label>
+                      <div class="col-lg-2">
+                        <input type="text" placeholder="请输入正确选项" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">3:</label>
+                      <div class="col-lg-2">
+                        <input type="text" placeholder="请输入正确选项" class="form-control">
+                      </div>
+                      <label class="col-lg-1 control-label">4:</label>
+                      <div class="col-lg-2">
+                        <input type="text" placeholder="请输入正确选项" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-1 control-label">5:</label>
+                        <div class="col-lg-2">
+                          <input type="text" placeholder="请输入正确选项" class="form-control">
+                        </div>
+                        <label class="col-lg-1 control-label">6:</label>
+                        <div class="col-lg-2">
+                          <input type="text" placeholder="请输入正确选项" class="form-control">
+                        </div>
+                      </div>
+                  </div>
               </div>
-              <div class="xc-text-item">
-                <a href="./intelligent_real_words_01.html">词汇与语法
-                  <br>
-                  <span class="error">(未完成)</span>
-                </a>
-              </div>
-              <div class="xc-text-item">
-                <a href="./intelligent_real_read_c01.html">阅读理解
-                  <br>（未录入）
-                </a>
-              </div>
-              <div class="xc-text-item">
-                <a href="./intelligent_real_write_small.html">写作
-                  <br>
-                  <span class="error">(未完成)</span>
-                </a>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- 主要内容END -->
+  </div>
+  </section>
+  <!-- 主要内容END -->
 
-    <!-- build:foot -->
-    <footer>
-      <span>&copy; 2018 - 智厢逢</span>
-    </footer>
-    <!-- endbuild -->
-
-
+  <!-- build:foot -->
+  <footer>
+    <span>&copy; 2018 - 智厢逢</span>
+  </footer>
+  <!-- endbuild -->
 
 
 
@@ -335,9 +385,7 @@
 
 
 
-
-
-
+  <script src="../js/intelligent.js"></script>
 
 
 

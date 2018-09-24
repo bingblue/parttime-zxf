@@ -81,6 +81,26 @@ $(function () {
       }
     })
   })
+  // 修改课程阶段、选择版本、课本、单元
+  $("[data-target='#xgjieduan']").click(function(event){
+    changeInputVal($(this))
+  })
+  $("[data-target='#xgjiaocai']").click(function(event){
+    changeInputVal($(this))
+  })
+  $("[data-target='#xgkeben']").click(function(event){
+    changeInputVal($(this))
+  })
+  $("[data-target='#xgdanyuan']").click(function(event){
+    changeInputVal($(this))
+  })
+  function changeInputVal($this) {
+    var name = $this.siblings('span').text()
+    var dataTarget = $this.attr('data-target')
+    console.log(name)
+    var id = dataTarget.slice(1);
+    $('#' + id).find('input').val(name)
+  }
   // 单词列表-删除单词
   $('.jq-del-word').click(function () {
     var $word = $(this).parent().siblings().eq(1).text()
@@ -178,6 +198,55 @@ $(function () {
     return inputArray
   }
 
+  // 课文编辑 删除句子
+  $("body").on('click', '.jq-delete-text-ju', function() {
+    $(this).closest('.form-group-box').remove()
+    sortTextJu()
+  })
+  $(".jq-add-text-ju").click(function() {
+    addTexTJu()
+  })
+  function sortTextJu() {
+    $(".form-group-box").each(function(index, ele) {
+      $(ele).find('label').eq(0).text(`第${index + 1}句`)
+    })
+  }
+  function addTexTJu () {
+  $(".jq-add-text-ju").before(`<div class="form-group-box">
+    <div class="form-group col-xs-12">
+      <label class="col-lg-1 control-label">第1句：</label>
+      <div class="col-lg-11">
+        <a class="btn btn-default jq-delete-text-ju">删除</a>
+      </div>
+    </div>
+    <div class="form-group col-xs-12">
+      <label class="col-lg-1 control-label xc-nowrap">请填写：</label>
+      <div class="col-lg-11">
+        <input type="text" class="form-control" placeholder="请输入英文句子" />
+      </div>
+    </div>
+    <div class="form-group col-xs-12">
+      <label class="col-lg-1 control-label">句意：</label>
+      <div class="col-lg-11">
+        <input type="text" class="form-control" placeholder="请输入句意" />
+      </div>
+    </div>
+    <div class="form-group col-xs-12">
+      <label class="col-lg-1 control-label">发音：</label>
+      <div class="col-lg-11">
+        <div class="fileinput-box">
+          <span class="btn btn-default fileinput-button">
+            <i class="fa fa-fw fa-upload"></i>
+            <span>上传文件</span>
+            <input type="file" class="file-ipt" name="files[]">
+          </span>
+          <p class="audio-type">支持扩展名：mp3</p>
+        </div>
+      </div>
+    </div>
+  </div>`)
+  sortTextJu()
+  }
 
   // 上传mp3
   $('body').on('change','.file-ipt',function(){

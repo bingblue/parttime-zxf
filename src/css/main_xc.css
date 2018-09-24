@@ -808,3 +808,9 @@
 .xc-table-body .one .three.big {
   width: calc(100% + 5px);
 }
+.xc-clearfix {
+  overflow: hidden;
+}
+.mt10 {
+  margin-top: 10px;
+}
