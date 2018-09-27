@@ -421,6 +421,7 @@
   overflow: hidden;
   -webkit-box-shadow: 0 3px 7px 1px rgb(235, 235, 235);
           box-shadow: 0 3px 7px 1px rgb(235, 235, 235);
+  cursor: pointer;
 }
 .xc-table thead {
     background-color: #0085e6;
@@ -943,6 +944,10 @@
   border-color: #0085e6;
 }
 
+.xc-body .course-main .course-head .course-head-bottom .course-head-courses .course-head-course a {
+              color: #999;
+}
+
 .xc-body .course-main .course-head .course-head-bottom .course-btn {
           float: right;
         }
@@ -1080,7 +1085,7 @@
 }
 
 .xc-body .course-main .course-body .course-body-center > div {
-          padding: 0 100px !important;
+          padding: 0 100px;
 }
 
 .xc-body .course-main .course-body .course-body-right {

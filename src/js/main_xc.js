@@ -25,6 +25,19 @@ $(function () {
       this.banner()
       this.select()
       this.audioPlay()
+      this.reloadInput()
+    },
+    // input 宽度自适应
+    reloadInput: function () {
+      $('.xc-reload-input').on('keyup', function() {
+        var $this = $(this);
+        var $length = $this.val().length
+        var maxLength = parseInt($this.attr('reloadLength') || 0, 10)
+        if ($length > maxLength) {
+          var $width = $length * 10 + 20
+          $this.width($width).parent().width($width)
+        }
+      })
     },
     /**
      * 模拟下拉框
@@ -276,7 +289,6 @@ $(function () {
       $('.xc-table .table-switch').on('click', function () {
         var $this = $(this)
         var $index = $this.parent().index()
-        console.log($index)
         if ($this.hasClass('active')) {
           $this.removeClass('active')
           $this.find('.tit').text('隐藏全部')
@@ -285,6 +297,14 @@ $(function () {
           $this.addClass('active')
           $this.find('.tit').text('显示全部')
           $this.parents('.xc-table').find('tbody tr :nth-child(' + ($index + 1) + ') span').css('display', 'none')
+        }
+      })
+      $(".xc-table td").on('click', function() {
+        var $span = $(this).find(">span");
+        if ($span.is(':hidden')) {
+          $span.show();
+        } else {
+          $span.hide();
         }
       })
     },
