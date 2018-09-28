@@ -621,6 +621,14 @@
       margin-bottom: 5px;
     }
 
+.xc-body .course-class-item .course-class-name a {
+        color: #333;
+      }
+
+.xc-body .course-class-item .course-class-name a:hover {
+        color: #0085E6;
+      }
+
 .xc-body .course-class-item .course-class-pro {
       display: table-cell;
       overflow: hidden;
@@ -910,6 +918,14 @@
 
 .xc-body .course-main .course-head .course-head-top .course-head-types .course-head-type.active {
   color: #0085e6;
+}
+
+.xc-body .course-main .course-head .course-head-top .course-head-types .course-head-type a {
+              color: #999999;
+}
+
+.xc-body .course-main .course-head .course-head-top .course-head-types .course-head-type a:hover {
+              color: #0085e6;
 }
 
 .xc-body .course-main .course-head .course-head-top .course-head-types .course-head-type + .course-head-type {

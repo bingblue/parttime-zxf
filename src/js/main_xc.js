@@ -160,7 +160,7 @@ $(function () {
      * 同步课程导航切换
      */
     addSyncClass: function () {
-      $('.course-head-courses .course-head-course').click(function () {
+      $('.course-head-courses .course-head-course').hover(function () {
         var $this = $(this)
         if (!$this.hasClass('active')) {
           $this.addClass('active').siblings().removeClass('active')
