@@ -955,7 +955,11 @@
             cursor: pointer
           }
 
-.xc-body .course-main .course-head .course-head-bottom .course-head-courses .course-head-course.active {
+.xc-body .course-main .course-head .course-head-bottom .course-head-courses .course-head-course:hover {
+  color: #0085e6;
+  border-color: #0085e6;
+}
+.xc-body .course-main .course-head .course-head-bottom .course-head-courses .course-head-course.active_always {
   color: #0085e6;
   border-color: #0085e6;
 }

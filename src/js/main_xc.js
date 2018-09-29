@@ -34,7 +34,7 @@ $(function () {
         var $length = $this.val().length
         var maxLength = parseInt($this.attr('reloadLength') || 0, 10)
         if ($length > maxLength) {
-          var $width = $length * 10 + 20
+          var $width = $length * 11 + 20
           $this.width($width).parent().width($width)
         }
       })
