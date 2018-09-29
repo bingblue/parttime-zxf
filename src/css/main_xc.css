@@ -625,10 +625,12 @@
         color: #333;
       }
 
-.xc-body .course-class-item .course-class-name a:hover {
+.xc-body a:hover .course-class-item .course-class-name  {
         color: #0085E6;
       }
-
+      .xc-body a:hover .xc-class-name{
+        color: #0085E6;
+      }
 .xc-body .course-class-item .course-class-pro {
       display: table-cell;
       overflow: hidden;
