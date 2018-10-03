@@ -38,4 +38,7 @@ $(function () {
   close.click(function (e) {
     modelBox.hide()
   })
+  $('.course-head-classes li:first,.main_title_renew').click(function(){
+    modelBox.show()
+  })
 })

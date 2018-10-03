@@ -1003,6 +1003,10 @@
 .xc-body .course-main .course-body .course-body-left .course-body-untiy:nth-child(2n + 2) {
   background-color: #fff;
 }
+.xc-body .course-main .course-body .course-body-left .course-body-untiy.active {
+  background-color: #EAF1F6;
+  color: #0085E6;
+}
 
 .xc-body .course-main .course-body .course-body-left .course-untiy-imgs {
           font-size: 0;
