@@ -2354,3 +2354,58 @@
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg);
 }
+/* 小牧update */
+.readText-write-item{
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+  top: -20px;
+  line-height: 20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid rgba(0, 133, 230, 1);
+}
+.en-word i {
+  font-size: 40px;
+  font-style: initial;
+  margin-left: 5px;
+  position: relative;
+  top: -7px;
+}
+.readText-write-item input{
+  width: 66px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 30px;
+  border: none;
+  background: none;
+  outline: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.readText-write-item input:focus {
+  background: #d9efff;
+}
+.readText-example a {
+  font-size: 16px;
+  line-height: 22px;
+  color: #666;
+  width: 66px;
+  text-align: center;
+  background-color: rgba(250, 250, 251, 1);
+  border-radius: 13px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.readText-listen{
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+}
+.readText-example span.txt {
+  font-size: 16px;
+}
+.readText-listen-img{
+  width: 46px;
+  margin-right: 20px;
+}
