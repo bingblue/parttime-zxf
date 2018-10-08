@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* 兼容小屏幕 */
+section {
+  overflow: auto;
+}
 /* 表格相关 */
 .nodecation:hover {
   text-decoration: none;
