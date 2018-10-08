@@ -4,18 +4,22 @@ $(function () {
   $(".jq-xc-table li").on('click', function () {
     var $this = $(this);
     if (!$this.hasClass('active')) {
-      $this.addClass('active').siblings().removeClass('active')
+      $('.jq-xc-table li.active').removeClass('active')
+      $this.addClass('active').parents('li').each(function(index, ele){
+        $(ele).addClass('active')
+      })
+      $this.addClass('active').find('ul').each(function(index, ele){
+        $(ele).find('li').eq(0).addClass('active')
+      })
     }
     calcTableHeight()
   })
   function calcTableHeight() {
     var $maxHeight = 0;
-    $('.jq-xc-table ul').each(function (index, ele) {
-      if ($(ele).parent().hasClass('active')) {
-        $maxHeight = Math.max($maxHeight, $(ele).height())
-      }
-    });
-    $(".jq-xc-table").height($maxHeight)
+    $('.jq-xc-table li.active').each(function (index, ele) {
+      $maxHeight = Math.max($maxHeight, $(ele).siblings().length+1)
+    })
+    $(".jq-xc-table").height($maxHeight*58+10)
   }
   $('.jq-del-j').click(function () {
     swal({
