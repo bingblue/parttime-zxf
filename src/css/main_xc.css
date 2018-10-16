@@ -2445,6 +2445,9 @@
     font-weight: 600;
     display: inline-block;
   }
+.pronunciation-item li a{
+  color: #333;
+}
 .pronunciation-item li img {
       display: block;
       height: auto;
