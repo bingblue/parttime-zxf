@@ -1,4 +1,3 @@
-'use strict'
 $(function () {
   /**
    * 功能介绍,每个方法请写注释，按下面模板来写.
@@ -8,7 +7,7 @@ $(function () {
    * @param {object} option 配置信息.
    * @return {Number} 返回值描述.
    */
-  var comment = {
+  comment = {
     init: function () {
       this.testNav()
       this.tableSwitch()
@@ -21,7 +20,6 @@ $(function () {
       this.addSyncClass()
       this.addSyncBody()
       this.wordsAct()
-      this.endTime()
       this.banner()
       this.select()
       this.audioPlay()
@@ -106,16 +104,22 @@ $(function () {
     },
     /**
      * 倒计时
+     * @param {Object} ele 添加倒计时元素
+     * @param {Number} second 设置倒计时秒数
+     * @param {Function} fun 倒计时结束回调
      */
-    endTime: function () {
-      var $time = $('#xc-time')
+    endTime: function (ele, second, fun) {
+      var $time = ele
+      $time.attr('time', second)
       var timer = ''
       function start() {
         var time = Number($time.attr('time'))
-        if (time - 1) {
+        if (time) {
           $time.text(returnTime(time))
         } else {
+          $time.text(returnTime(time))
           timer && clearInterval(timer)
+          fun && fun()
           $time.addClass('end')
         }
       }
@@ -123,12 +127,15 @@ $(function () {
       timer = setInterval(function () {
         start()
         $time.attr('time', Number($time.attr('time')) - 1)
+        if ($time.attr('time') <= 30) {
+          $time.addClass('xc-red')
+        }
       }, 1000)
       function returnTime(time) {
-        return addZero(parseInt(time / 60 / 60 % 24)) + ':' + addZero(parseInt(time / 60 % 60))
+        return addZero(parseInt(time / 60)) + ':' + addZero(parseInt(time % 60))
       }
       function addZero(num) {
-        if (num < 9) {
+        if (num < 10) {
           return '0' + num
         } else {
           return num
