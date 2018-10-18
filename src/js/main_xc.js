@@ -146,7 +146,8 @@ $(function () {
       $('.course-body .course-body-untiy').on('click', function () {
         var $this = $(this)
         if (!$this.hasClass('active')) {
-          $this.addClass('active').siblings().removeClass('active')
+          $(".course-body .active").removeClass('active')
+          $this.addClass('active')
           var $index = $this.index()
           $('.course-body .course-body-box-item').eq($index).addClass('active').siblings().removeClass('active')
         }

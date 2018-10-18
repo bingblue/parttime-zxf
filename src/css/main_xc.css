@@ -995,6 +995,8 @@
 
 .xc-body .course-main .course-body .course-body-left .course-untiy-name {
           float: left;
+          color: #666;
+          font-size: 1.6rem;
         }
 
 .xc-body .course-main .course-body .course-body-left .course-body-untiy {
@@ -1011,6 +1013,9 @@
 
 .xc-body .course-main .course-body .course-body-left .course-body-untiy.active {
   background: #EAF1F6;
+  color: #0085E6;
+}
+.xc-body .course-main .course-body .course-body-left .course-body-untiy.active .course-untiy-name{
   color: #0085E6;
 }
 
