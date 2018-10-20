@@ -996,6 +996,7 @@
 .xc-body .course-main .course-body .course-body-left .course-untiy-name {
           float: left;
           color: #666;
+          font-size: 25.6px;
           font-size: 1.6rem;
         }
 
@@ -1015,8 +1016,9 @@
   background: #EAF1F6;
   color: #0085E6;
 }
-.xc-body .course-main .course-body .course-body-left .course-body-untiy.active .course-untiy-name{
-  color: #0085E6;
+
+.xc-body .course-main .course-body .course-body-left .course-body-untiy.active .course-untiy-name {
+              color: #0085E6;
 }
 
 .xc-body .course-main .course-body .course-body-left .course-untiy-imgs {
@@ -2636,4 +2638,35 @@
 }
 .xc-practice-true {
   color: #666666;
+}
+.change_course_details-list {
+  display: none
+}
+.change_course_details-list.active {
+  display: block;
+}
+.change_course_details-list .xc-details_table {
+    padding: 28px 0;
+}
+.xc-table-list {
+  cursor: pointer
+}
+.xc-table-list.active td {
+      color: #0085e6;
+}
+.xc-33 {
+  width: 33%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+}
+.xc-66 {
+  width: 66%;
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box
+}
+.xc-66.active {
+  display: inline-block;
 }

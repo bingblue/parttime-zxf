@@ -24,6 +24,32 @@ $(function () {
       this.select()
       this.audioPlay()
       this.reloadInput()
+      this.resetClass()
+    },
+    // 更换课程
+    resetClass: function() {
+      $('.course-head-classes').click(function() {
+        $('.xc_center_wrap').show()
+      })
+      $('.xc_center_wrap .close').click(function(){
+        $('.xc_center_wrap').hide()
+      })
+      $(".change_course_nav_list").click(function() {
+        var $this = $(this)
+        if (!$this.hasClass('active')) {
+          var $index = $this.index()
+          $this.addClass('active').siblings().removeClass('active')
+          $('.change_course_details-list').eq($index).addClass('active').siblings().removeClass('active')
+        }
+      })
+      $(".xc-table-list").click(function() {
+        var $this = $(this)
+        if (!$this.hasClass('active')) {
+          var $index = $this.index() + 1
+          $this.addClass('active').siblings().removeClass('active')
+          $('.change_course_details_table').eq($index).addClass('active').siblings().removeClass('active')
+        }
+      })
     },
     // input 宽度自适应
     reloadInput: function () {

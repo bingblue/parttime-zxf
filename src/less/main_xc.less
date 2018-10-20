@@ -2610,3 +2610,34 @@
 .xc-practice-true {
   color: #666666;
 }
+.change_course_details-list {
+  display: none;
+  &.active {
+    display: block;
+  }
+  .xc-details_table {
+    padding: 28px 0;
+  }
+}
+.xc-table-list {
+  cursor: pointer;
+  &.active {
+    td {
+      color: #0085e6;
+    }
+  }
+}
+.xc-33 {
+  width: 33%;
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+}
+.xc-66 {
+  width: 66%;
+  display: none;
+  box-sizing: border-box;
+  &.active {
+    display: inline-block;
+  }
+}
