@@ -25,6 +25,7 @@
 
 
 
+
   <link rel="stylesheet" href="../css/main_xc.css">
 
 
@@ -82,161 +83,163 @@
 
 
 
+
     <!-- build:sidebar -->
     <!-- 左侧菜单 -->
-    <aside class="aside">
-      <div class="aside-inner">
-        <nav data-sidebar-anyclick-close="" class="sidebar">
-          <ul class="nav">
-            <li class="nav-heading ">
-              <span>课程管理</span>
-            </li>
+<aside class="aside">
+  <div class="aside-inner">
+    <nav data-sidebar-anyclick-close="" class="sidebar">
+      <ul class="nav">
+        <li class="nav-heading ">
+          <span>课程管理</span>
+        </li>
+        <li class=" ">
+          <a href="synchronize.html" title="同步课程">
+            <em class="icon-refresh"></em>
+            <span>同步课程</span>
+          </a>
+        </li>
+        <li class=" ">
+          <a href="grammar.html" title="搞定语法">
+            <em class="icon-book-open"></em>
+            <span>搞定语法</span>
+          </a>
+        </li>
+        <li class=" ">
+          <a href="#intelligent" title="智能培优" data-toggle="collapse">
+            <em class="icon-graph"></em>
+            <span>智能培优</span>
+          </a>
+          <ul id="intelligent" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">智能培优</li>
             <li class=" ">
-              <a href="synchronize.html" title="同步课程">
-                <em class="icon-refresh"></em>
-                <span>同步课程</span>
+              <a href="intelligent_test.html" title="同步智测">
+                <span>同步智测</span>
               </a>
             </li>
             <li class=" ">
-              <a href="grammar.html" title="搞定语法">
-                <em class="icon-book-open"></em>
-                <span>搞定语法</span>
+              <a href="intelligent_real.html" title="真题冲刺">
+                <span>真题冲刺</span>
               </a>
-            </li>
-            <li class=" ">
-              <a href="#intelligent" title="智能培优" data-toggle="collapse">
-                <em class="icon-graph"></em>
-                <span>智能培优</span>
-              </a>
-              <ul id="intelligent" class="nav sidebar-subnav collapse">
-                <li class="sidebar-subnav-header">智能培优</li>
-                <li class=" ">
-                  <a href="intelligent_test.html" title="同步智测">
-                    <span>同步智测</span>
-                  </a>
-                </li>
-                <li class=" ">
-                  <a href="intelligent_real.html" title="真题冲刺">
-                    <span>真题冲刺</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-heading ">
-              <span>教务管理</span>
-            </li>
-            <li class=" ">
-              <a href="datastatistics.html" title="数据统计">
-                <em class="icon-speedometer"></em>
-                <span>数据统计</span>
-              </a>
-            </li>
-            <li class=" ">
-              <a href="groupcoursemanagement.html" title="学员组课程管理">
-                <em class="icon-layers"></em>
-                <span>学员组课程管理</span>
-              </a>
-            </li>
-            <li class=" ">
-              <a href="#schoolmanagement" title="学校管理" data-toggle="collapse">
-                <em class="icon-home"></em>
-                <span>学校管理</span>
-              </a>
-              <ul id="schoolmanagement" class="nav sidebar-subnav collapse">
-                <li class="sidebar-subnav-header">学校管理</li>
-                <li class=" ">
-                  <a href="schoolmanagement_list.html" title="学校列表">
-                    <span>学校列表</span>
-                  </a>
-                </li>
-                <li class=" ">
-                  <a href="schoolmanagement_sales.html" title="销售数据">
-                    <span>销售数据</span>
-                  </a>
-                </li>
-                <li class=" ">
-                  <a href="schoolmanagement_setting.html" title="扣费设置">
-                    <span>扣费设置</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class=" ">
-              <a href="#teachermanagement" title="教师管理" data-toggle="collapse">
-                <em class="icon-people"></em>
-                <span>教师管理</span>
-              </a>
-              <ul id="teachermanagement" class="nav sidebar-subnav collapse">
-                <li class="sidebar-subnav-header">教师管理</li>
-                <li class=" ">
-                  <a href="teachermanagement_list.html" title="教师列表">
-                    <span>教师列表</span>
-                  </a>
-                </li>
-                <li class=" ">
-                  <a href="teachermanagement_sales.html" title="销售数据">
-                    <span>销售数据</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class=" ">
-              <a href="#studentmanagement" title="学生管理" data-toggle="collapse">
-                <em class="icon-graduation"></em>
-                <span>学生管理</span>
-              </a>
-              <ul id="studentmanagement" class="nav sidebar-subnav collapse">
-                <li class="sidebar-subnav-header">学生管理</li>
-                <li class=" ">
-                  <a href="studentmanagement_unallocated.html" title="未分配学生列表">
-                    <span>未分配学生列表</span>
-                  </a>
-                </li>
-                <li class=" ">
-                  <a href="studentmanagement_allocated.html" title="已分配学生列表">
-                    <span>已分配学生列表</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class=" ">
-              <a href="#mallmanagement" title="商城管理" data-toggle="collapse">
-                <em class="icon-present"></em>
-                <span>商城管理</span>
-              </a>
-              <ul id="mallmanagement" class="nav sidebar-subnav collapse">
-                <li class="sidebar-subnav-header">商城管理</li>
-                <li class=" ">
-                  <a href="mallmanagement_commodity.html" title="商品管理">
-                    <span>商品管理</span>
-                  </a>
-                </li>
-                <li class=" ">
-                  <a href="mallmanagement_order.html" title="订单管理">
-                    <span>订单管理</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class=" ">
-              <a href="#admin" title="运营账号管理" data-toggle="collapse">
-                <em class="icon-present"></em>
-                <span>运营账号管理</span>
-              </a>
-              <ul id="admin" class="nav sidebar-subnav collapse">
-                <li class="sidebar-subnav-header">运营账号管理</li>
-                <li class=" ">
-                  <a href="admin.html" title="运营账号管理">
-                    <span>运营账号管理</span>
-                  </a>
-                </li>
-              </ul>
             </li>
           </ul>
-        </nav>
-      </div>
-    </aside>
+        </li>
+        <li class="nav-heading ">
+          <span>教务管理</span>
+        </li>
+        <li class=" ">
+          <a href="datastatistics.html" title="数据统计">
+            <em class="icon-speedometer"></em>
+            <span>数据统计</span>
+          </a>
+        </li>
+        <li class=" ">
+          <a href="groupcoursemanagement.html" title="学员组课程管理">
+            <em class="icon-layers"></em>
+            <span>学员组课程管理</span>
+          </a>
+        </li>
+        <li class=" ">
+          <a href="#schoolmanagement" title="学校管理" data-toggle="collapse">
+            <em class="icon-home"></em>
+            <span>学校管理</span>
+          </a>
+          <ul id="schoolmanagement" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">学校管理</li>
+            <li class=" ">
+              <a href="schoolmanagement_list.html" title="学校列表">
+                <span>学校列表</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="schoolmanagement_sales.html" title="销售数据">
+                <span>销售数据</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="schoolmanagement_setting.html" title="扣费设置">
+                <span>扣费设置</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class=" ">
+          <a href="#teachermanagement" title="教师管理" data-toggle="collapse">
+            <em class="icon-people"></em>
+            <span>教师管理</span>
+          </a>
+          <ul id="teachermanagement" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">教师管理</li>
+            <li class=" ">
+              <a href="teachermanagement_list.html" title="教师列表">
+                <span>教师列表</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="teachermanagement_sales.html" title="销售数据">
+                <span>销售数据</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class=" ">
+          <a href="#studentmanagement" title="学生管理" data-toggle="collapse">
+            <em class="icon-graduation"></em>
+            <span>学生管理</span>
+          </a>
+          <ul id="studentmanagement" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">学生管理</li>
+            <li class=" ">
+              <a href="studentmanagement_unallocated.html" title="未分配学生列表">
+                <span>未分配学生列表</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="studentmanagement_allocated.html" title="已分配学生列表">
+                <span>已分配学生列表</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class=" ">
+          <a href="#mallmanagement" title="商城管理" data-toggle="collapse">
+            <em class="icon-present"></em>
+            <span>商城管理</span>
+          </a>
+          <ul id="mallmanagement" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">商城管理</li>
+            <li class=" ">
+              <a href="mallmanagement_commodity.html" title="商品管理">
+                <span>商品管理</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="mallmanagement_order.html" title="订单管理">
+                <span>订单管理</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class=" ">
+          <a href="#admin" title="运营账号管理" data-toggle="collapse">
+            <em class="icon-present"></em>
+            <span>运营账号管理</span>
+          </a>
+          <ul id="admin" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">运营账号管理</li>
+            <li class=" ">
+              <a href="admin.html" title="运营账号管理">
+                <span>运营账号管理</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</aside>
     <!-- endbuild -->
+
 
 
 
@@ -305,6 +308,7 @@
 
 
 
+
   </div>
 
   <!-- build:js -->
@@ -321,6 +325,7 @@
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+
 
 
 
