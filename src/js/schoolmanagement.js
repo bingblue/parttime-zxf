@@ -64,4 +64,29 @@ $(function () {
         }
     }
     reviewAll()
+
+    // 学校辖区
+    $('body').on('click', '.jq-delete-xiaqu', function(){
+        var $this = $(this)
+        swal({
+        title: "确认删除此辖区吗？",
+        showCancelButton: true,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "确认重置",
+        cancelButtonText: "取消",
+        closeOnConfirm: false,
+        closeOnCancel: true
+        }, function (isConfirm) {
+            if (isConfirm) {
+                swal("删除成功", "success")
+                $this.closest('.form-group').remove();
+            }
+        })
+    })
+    $('.jq-add-xiaqu').click(function() {
+        var className = 'province-itemi-' + new Date().getTime()
+        var $div = $('<div class="' + className +' form-group"></div>')
+        $(this).closest('.form-group').before($div)
+        $('.' + className).ProvinceCity('北京','朝阳区', '朝阳区');
+    })
 })
