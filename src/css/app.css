@@ -7853,3 +7853,9 @@ fieldset[disabled] .flatdoc-wrapper .button.active {
   margin-left: 20px;
   float: left;
 }
+.mt10 {
+  margin-top: 10px;
+}
+.xc-clearfix {
+  overflow: hidden;
+}
