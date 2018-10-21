@@ -66,6 +66,7 @@ $(function () {
     reviewAll()
 
     // 学校辖区
+    $(".province-item-1").ProvinceCity('北京','朝阳区', '朝阳区');
     $('body').on('click', '.jq-delete-xiaqu', function(){
         var $this = $(this)
         swal({
