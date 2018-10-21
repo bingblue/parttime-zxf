@@ -40,7 +40,7 @@ $(function(){
   $('.jq-cancel').click(function(){
     swal({
       title: '',
-      text: '确认取消该订单吗？',
+      text: '确认取消该订单吗?',
       showCancelButton: true,
       type: 'error',
       confirmButtonText: "确认",
@@ -53,15 +53,14 @@ $(function(){
       }
     })
   })
-  // 发货
+  // 兑换
   $('.jq-send').click(function(){
     swal({
-      title: "发货",
-      text: send(),
+      title: "",
+      text: '确认将该订单标记为完成兑换吗?',
       html: true,
-      type: "input",
+      type: "success",
       showCancelButton: true,
-      confirmButtonColor: "#4b91ea",
       confirmButtonText: "确认",
       cancelButtonText: "取消",
       closeOnConfirm: false,
@@ -76,8 +75,8 @@ $(function(){
   $('body').on('change','.file-ipt',function(){
     upload(this)
   })
-  
 })
+
 function upload (target) {
   let file = target.files[0]
   let reader = new FileReader()

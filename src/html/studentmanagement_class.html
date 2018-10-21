@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>学生管理-班级管理</title>
+  <!-- build:css -->
+  <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../js/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../js/vendor/whirl/dist/whirl.css">
+  <link rel="stylesheet" href="../css/bootstrap.css" id="bscss">
+  <link rel="stylesheet" href="../js/vendor/datatable-bootstrap/css/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="../js/vendor/sweetalert/dist/sweetalert.css">
+  <link rel="stylesheet" href="../js/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="../css/app.css" id="maincss">
+  <link rel="stylesheet" href="../css/theme-e.css">
+  <!-- endbuild -->
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="../css/wj_teacher.css">
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- build:head -->
+    <header class="topnavbar-wrapper">
+      <nav role="navigation" class="navbar topnavbar">
+        <div class="navbar-header">
+          <a href="#/" class="navbar-brand">
+            <div class="brand-logo">
+              <img src="../img/logo.png" alt="App Logo" class="img-responsive">
+            </div>
+            <div class="brand-logo-collapsed">
+              <img src="../img/logo-single.png" alt="App Logo" class="img-responsive">
+            </div>
+          </a>
+        </div>
+        <div class="nav-wrapper">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#" data-toggle-state="aside-collapsed" class="hidden-xs">
+                <em class="fa fa-navicon"></em>
+              </a>
+              <a href="#" data-toggle-state="aside-toggled" data-no-persist="true" class="visible-xs sidebar-toggle">
+                <em class="fa fa-navicon"></em>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right mu-head-user">
+            <li>
+              <span><i class="fa fa-user"></i>admin</span><span>|</span>
+            </li>
+            <li>
+              <a href="#">
+                退出
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- build:sidebar -->
+    <!-- 左侧菜单 -->
+<aside class="aside">
+  <div class="aside-inner">
+    <nav data-sidebar-anyclick-close="" class="sidebar">
+      <ul class="nav">
+        <li class="nav-heading ">
+          <span>课程管理</span>
+        </li>
+        <li class=" ">
+          <a href="synchronize.html" title="同步课程">
+            <em class="icon-refresh"></em>
+            <span>同步课程</span>
+          </a>
+        </li>
+        <li class=" ">
+          <a href="grammar.html" title="搞定语法">
+            <em class="icon-book-open"></em>
+            <span>搞定语法</span>
+          </a>
+        </li>
+        <li class=" ">
+          <a href="#intelligent" title="智能培优" data-toggle="collapse">
+            <em class="icon-graph"></em>
+            <span>智能培优</span>
+          </a>
+          <ul id="intelligent" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">智能培优</li>
+            <li class=" ">
+              <a href="intelligent_test.html" title="同步智测">
+                <span>同步智测</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="intelligent_real.html" title="真题冲刺">
+                <span>真题冲刺</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-heading ">
+          <span>教务管理</span>
+        </li>
+        <li class=" ">
+          <a href="#datastatistics" title="数据统计" data-toggle="collapse">
+            <em class="icon-bag"></em>
+            <span>数据统计</span>
+          </a>
+          <ul id="datastatistics" class="nav sidebar-subnav collapse">
+            <li class=" ">
+              <a href="datastatistics_admin.html" title="数据统计-总后台">
+                <span>数据统计-总后台</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="datastatistics.html" title="数据统计-学校">
+                <span>数据统计-学校</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class=" ">
+            <a href="#studyreport" title="学习报告" data-toggle="collapse">
+              <em class="icon-speedometer"></em>
+              <span>学习报告</span>
+            </a>
+            <ul id="studyreport" class="nav sidebar-subnav collapse">
+              <li class="sidebar-subnav-header">学习报告</li>
+              <li class=" ">
+                <a href="studyreport_overall.html" title="总体报告">
+                  <span>总体报告</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="studyreport_all.html" title="全部报告">
+                  <span>全部报告</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        <li class=" ">
+          <a href="groupcoursemanagement.html" title="学员组课程管理">
+            <em class="icon-layers"></em>
+            <span>学员组课程管理</span>
+          </a>
+        </li>
+        <li class=" ">
+          <a href="#schoolmanagement" title="学校管理" data-toggle="collapse">
+            <em class="icon-home"></em>
+            <span>学校管理</span>
+          </a>
+          <ul id="schoolmanagement" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">学校管理</li>
+            <li class=" ">
+              <a href="schoolmanagement_list.html" title="学校列表">
+                <span>学校列表</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="schoolmanagement_sales.html" title="销售数据-总后台">
+                <span>销售数据-总后台</span>
+              </a>
+            </li>
+            <li class=" ">
+                <a href="salesdata.html" title="销售数据-学校">
+                  <span>销售数据-学校</span>
+                </a>
+              </li>
+            <li class=" ">
+              <a href="schoolmanagement_setting.html" title="扣费设置">
+                <span>扣费设置</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class=" ">
+          <a href="#teachermanagement" title="教师管理" data-toggle="collapse">
+            <em class="icon-people"></em>
+            <span>教师管理</span>
+          </a>
+          <ul id="teachermanagement" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">教师管理</li>
+            <li class=" ">
+              <a href="teachermanagement_list_admin.html" title="教师列表-总后台">
+                <span>教师列表-总后台</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="teachermanagement_sales_admin.html" title="教师列表-总后台">
+                <span>教师列表-总后台</span>
+              </a>
+            </li>
+            <li class=" ">
+                <a href="teachermanagement_list.html" title="教师列表-学校">
+                  <span>教师列表-学校</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="teachermanagement_sales.html" title="教师列表-学校">
+                  <span>教师列表-学校</span>
+                </a>
+              </li>
+          </ul>
+        </li>
+        <li class=" ">
+            <a href="#coursemanagement" title="课程管理" data-toggle="collapse">
+              <em class="icon-graduation"></em>
+              <span>课程管理</span>
+            </a>
+            <ul id="coursemanagement" class="nav sidebar-subnav collapse">
+              <li class="sidebar-subnav-header">课程管理</li>
+              <li class=" ">
+                <a href="coursemanagement_class.html" title="班级课程">
+                  <span>班级课程</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="coursemanagement_task.html" title="学习任务">
+                  <span>学习任务</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="coursemanagement_mode.html" title="复习模式">
+                  <span>复习模式</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        <li class=" ">
+          <a href="#studentmanagement" title="学生管理" data-toggle="collapse">
+            <em class="icon-graduation"></em>
+            <span>学生管理</span>
+          </a>
+          <ul id="studentmanagement" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">学生管理</li>
+            <li class=" ">
+              <a href="studentmanagement_unallocated_admin.html" title="未分配学生列表-总后台">
+                <span>未分配学生列表</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="studentmanagement_allocated.html_admin" title="已分配学生列表-总后台">
+                <span>已分配学生列表</span>
+              </a>
+            </li>
+            <li class=" ">
+                <a href="studentmanagement_list.html" title="学生列表-教师">
+                  <span>学生列表-教师</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="studentmanagement_class.html" title="班级管理-教师">
+                  <span>班级管理-教师</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="studentmanagement_coin.html" title="学币管理-教师">
+                  <span>学币管理-教师</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="studentmanagement_recharge.html" title="学员充值-教师">
+                  <span>学员充值-教师</span>
+                </a>
+              </li>
+              <li class=" ">
+                  <a href="studentmanagement_allocated_president.html" title="未分配学生列表-学校">
+                    <span>未分配学生列表-学校</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="studentmanagement_allocated_president.html" title="已分配学生列表-学校">
+                    <span>已分配学生列表-学校</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="studentmanagement_recharge_president.html" title="学员充值-学校">
+                    <span>学员充值-学校</span>
+                  </a>
+                </li>
+          </ul>
+        </li>
+        <li class=" ">
+          <a href="#mallmanagement" title="商城管理" data-toggle="collapse">
+            <em class="icon-present"></em>
+            <span>商城管理</span>
+          </a>
+          <ul id="mallmanagement" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">商城管理</li>
+            <li class=" ">
+              <a href="mallmanagement_commodity_admin.html" title="商品管理-总后台">
+                <span>商品管理-总后台</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="mallmanagement_order_admin.html" title="订单管理-admin">
+                <span>商品管理-总后台</span>
+              </a>
+            </li>
+            <li class=" ">
+                <a href="mallmanagement_commodity.html" title="商品管理-学校">
+                  <span>商品管理-学校</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="mallmanagement_exchange.html" title="学生兑换管理">
+                  <span>商品管理-学校</span>
+                </a>
+              </li>
+          </ul>
+        </li>
+        <li class=" ">
+          <a href="#admin" title="运营账号管理" data-toggle="collapse">
+            <em class="icon-present"></em>
+            <span>运营账号管理</span>
+          </a>
+          <ul id="admin" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">运营账号管理</li>
+            <li class=" ">
+              <a href="admin.html" title="运营账号管理">
+                <span>运营账号管理</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</aside>
+    <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 主要内容 -->
+    <section>
+      <div class="content-wrapper">
+        <div class="content-heading">
+          班级管理
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- START panel-->
+            <div class="panel-default">
+              <div class="panel-heading">
+                <form class="text-right form-lineH">
+                  <div class="row">
+                    <div class="col-sm-1">
+                      <button type="button" class="btn btn-primary jq-createclass">创建班级</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- START table-responsive-->
+              <div class="panel-heading">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover dataTable">
+                    <thead>
+                      <tr>
+                        <th>创建时间</th>
+                        <th>班级名称</th>
+                        <th>学生人数</th>
+                        <th>操作</th>
+                      </tr>
+                    </thead>
+                    <tbody id="designerlist">
+                      <tr>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>未分班</td>
+                        <td>10</td>
+                        <td>
+                          <a class="btn btn-primary jq-createclass" href="javascript:;">编辑班级</a>
+                          <a class="btn btn-danger jq-deleteclass" href="javascript:;">删除班级</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>过期学员</td>
+                        <td>10</td>
+                        <td>
+                          <a class="btn btn-primary jq-createclass" href="javascript:;">编辑班级</a>
+                          <a class="btn btn-danger jq-deleteclass" href="javascript:;">删除班级</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018-01-01 22:22:22</td>
+                        <td>班级名称班级名称</td>
+                        <td>10</td>
+                        <td>
+                          <a class="btn btn-primary jq-createclass" href="javascript:;">编辑班级</a>
+                          <a class="btn btn-danger jq-deleteclass" href="javascript:;">删除班级</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- build:pages -->
+                <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+                <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 主要内容END -->
+    
+    <!-- build:foot -->
+    <footer>
+      <span>&copy; 2018 - 智厢逢</span>
+    </footer>
+    <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <!-- build:js -->
+  <!-- =============== JS ===============-->
+  <script src="../js/vendor/modernizr/modernizr.custom.js"></script>
+  <script src="../js/vendor/jquery/dist/jquery.js"></script>
+  <script src="../js/vendor/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../js/vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
+  <script src="../js/vendor/jquery.easing/js/jquery.easing.js"></script>
+  <script src="../js/vendor/animo.js/animo.js"></script>
+  <script src="../js/vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
+  <script src="../js/vendor/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../js/vendor/moment/min/moment-with-locales.min.js"></script>
+  <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="../js/app.js"></script>
+  <!-- endbuild -->
+
+
+
+
+
+
+
+
+  <script src="../js/studentmanagement.js"></script>
+
+
+
+</body>
+
+</html>

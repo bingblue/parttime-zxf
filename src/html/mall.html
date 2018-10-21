@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>奖励商城</title>
+  <!-- build:css -->
+  <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../js/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="../js/vendor/whirl/dist/whirl.css">
+  <link rel="stylesheet" href="../css/bootstrap.css" id="bscss">
+  <link rel="stylesheet" href="../vendor/datatable-bootstrap/css/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="../vendor/sweetalert/dist/sweetalert.css">
+  <link rel="stylesheet" href="../css/app.css" id="maincss">
+  <link rel="stylesheet" href="../css/theme-e.css">
+  <link rel="stylesheet" href="../js/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+  <!-- endbuild -->
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="../css/wj_teacher.css">
+
+
+
+
+</head>
+
+<body class="mall-body">
+  <div class="wrapper mall-wrap">
+    <!-- build:head -->
+    <header class="topnavbar-wrapper">
+      <nav role="navigation" class="navbar topnavbar">
+        <div class="navbar-header">
+          <a href="#/" class="navbar-brand">
+            <div class="brand-logo">
+              <img src="../img/logo.png" alt="App Logo" class="img-responsive">
+            </div>
+            <div class="brand-logo-collapsed">
+              <img src="../img/logo-single.png" alt="App Logo" class="img-responsive">
+            </div>
+          </a>
+        </div>
+        <div class="nav-wrapper">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#" data-toggle-state="aside-collapsed" class="hidden-xs">
+                <em class="fa fa-navicon"></em>
+              </a>
+              <a href="#" data-toggle-state="aside-toggled" data-no-persist="true" class="visible-xs sidebar-toggle">
+                <em class="fa fa-navicon"></em>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right mu-head-user">
+            <li>
+              <span><i class="fa fa-user"></i>admin</span><span>|</span>
+            </li>
+            <li>
+              <a href="#">
+                退出
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- build:sidebar -->
+    <!-- 左侧菜单 -->
+    <aside class="aside">
+      <div class="aside-inner">
+        <nav data-sidebar-anyclick-close="" class="sidebar">
+          <ul class="nav">
+            <li class="nav-heading ">
+              <span>欢迎来到智厢逢教师后台</span>
+            </li>
+            <li class=" ">
+              <a href="#studyreport" title="学习报告" data-toggle="collapse">
+                <em class="icon-speedometer"></em>
+                <span>学习报告</span>
+              </a>
+              <ul id="studyreport" class="nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">学习报告</li>
+                <li class=" ">
+                  <a href="studyreport_overall.html" title="总体报告">
+                    <span>总体报告</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="studyreport_all.html" title="全部报告">
+                    <span>全部报告</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=" ">
+              <a href="#coursemanagement" title="课程管理" data-toggle="collapse">
+                <em class="icon-graduation"></em>
+                <span>课程管理</span>
+              </a>
+              <ul id="coursemanagement" class="nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">课程管理</li>
+                <li class=" ">
+                  <a href="coursemanagement_class.html" title="班级课程">
+                    <span>班级课程</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="coursemanagement_task.html" title="学习任务">
+                    <span>学习任务</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="coursemanagement_mode.html" title="复习模式">
+                    <span>复习模式</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=" ">
+              <a href="#studentmanagement" title="学生管理" data-toggle="collapse">
+                <em class="icon-people"></em>
+                <span>学生管理</span>
+              </a>
+              <ul id="studentmanagement" class="nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">学生管理</li>
+                <li class=" ">
+                  <a href="studentmanagement_list.html" title="学生列表">
+                    <span>学生列表</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="studentmanagement_class.html" title="班级管理">
+                    <span>班级管理</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="studentmanagement_coin.html" title="学币管理">
+                    <span>学币管理</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="studentmanagement_recharge.html" title="学员充值">
+                    <span>学员充值</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=" ">
+              <a href="#exchangemanagement" title="学生兑换管理" data-toggle="collapse">
+                <em class="icon-present"></em>
+                <span>学生兑换管理</span>
+              </a>
+              <ul id="exchangemanagement" class="nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">学生兑换管理</li>
+                <li class=" ">
+                  <a href="exchangemanagement_not.html" title="未兑换">
+                    <span>未兑换</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="exchangemanagement_has.html" title="已兑换">
+                    <span>已兑换</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=" ">
+              <a href="mall.html" title="奖励商城">
+                <em class="icon-basket"></em>
+                <span>奖励商城</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 主要内容 -->
+    <section>
+      <div class="content-wrapper">
+        <div class="content-heading">
+          奖励商城 <span class="text-sm hidden-xs">您的每一分辛劳，智厢逢智能英语都心怀感激</span>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="panel">
+              <div class="panel-heading portlet-handler ui-sortable-handle row">
+                <span class="text-info col-xs-1">￥我的学币</span>
+                <span class="text-info col-xs-1">10000</span>
+                <span class="col-xs-9">您的学生每增加1枚学币，您也将增加1枚学币（体验学员的学币不计算在内，请努力发展体验学员成为正式学员，成为正式学员时将一次性计入已有的学币）</span>
+                <a class="col-xs-1 jq-record" href="javascript:;">消费记录</a>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="panel panel-info cansell">
+                <div class="panel-heading portlet-handler ui-sortable-handle">库存 699件</div>
+                <div class="panel-body">
+                  <img class="foot-img" src="../img/bg1.jpg" alt="商品图片">
+                </div>
+                <div class="panel-footer">
+                  <p>商品名称</p>
+                  <p>
+                    <span class="text-danger">￥ 1200学币</span>
+                    <button class="btn btn-primary pull-right btm15">兑换</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="panel panel-danger sellout">
+                <div class="panel-heading portlet-handler ui-sortable-handle">售罄</div>
+                <div class="panel-body">
+                  <img class="foot-img" src="../img/bg1.jpg" alt="商品图片">
+                </div>
+                <div class="panel-footer">
+                  <p>商品名称</p>
+                  <p>
+                    <span>￥ 1200学币</span>
+                    <button class="btn pull-right btm15">兑换</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="panel panel-info cansell">
+                <div class="panel-heading portlet-handler ui-sortable-handle">库存 699件</div>
+                <div class="panel-body">
+                  <img class="foot-img" src="../img/bg1.jpg" alt="商品图片">
+                </div>
+                <div class="panel-footer">
+                  <p>商品名称</p>
+                  <p>
+                    <span class="text-danger">￥ 1200学币</span>
+                    <button class="btn btn-primary pull-right btm15">兑换</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="panel panel-info cansell">
+                <div class="panel-heading portlet-handler ui-sortable-handle">库存 699件</div>
+                <div class="panel-body">
+                  <img class="foot-img" src="../img/bg1.jpg" alt="商品图片">
+                </div>
+                <div class="panel-footer">
+                  <p>商品名称</p>
+                  <p>
+                    <span class="text-danger">￥ 1200学币</span>
+                    <button class="btn btn-primary pull-right btm15">兑换</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="panel panel-info cansell">
+                <div class="panel-heading portlet-handler ui-sortable-handle">库存 699件</div>
+                <div class="panel-body">
+                  <img class="foot-img" src="../img/bg1.jpg" alt="商品图片">
+                </div>
+                <div class="panel-footer">
+                  <p>商品名称</p>
+                  <p>
+                    <span class="text-danger">￥ 1200学币</span>
+                    <button class="btn btn-primary pull-right btm15">兑换</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="panel panel-danger sellout">
+                <div class="panel-heading portlet-handler ui-sortable-handle">售罄</div>
+                <div class="panel-body">
+                  <img class="foot-img" src="../img/bg1.jpg" alt="商品图片">
+                </div>
+                <div class="panel-footer">
+                  <p>商品名称</p>
+                  <p>
+                    <span>￥ 1200学币</span>
+                    <button class="btn pull-right btm15">兑换</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="panel panel-info cansell">
+                <div class="panel-heading portlet-handler ui-sortable-handle">库存 699件</div>
+                <div class="panel-body">
+                  <img class="foot-img" src="../img/bg1.jpg" alt="商品图片">
+                </div>
+                <div class="panel-footer">
+                  <p>商品名称</p>
+                  <p>
+                    <span class="text-danger">￥ 1200学币</span>
+                    <button class="btn btn-primary pull-right btm15">兑换</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="panel panel-info cansell">
+                <div class="panel-heading portlet-handler ui-sortable-handle">库存 699件</div>
+                <div class="panel-body">
+                  <img class="foot-img" src="../img/bg1.jpg" alt="商品图片">
+                </div>
+                <div class="panel-footer">
+                  <p>商品名称</p>
+                  <p>
+                    <span class="text-danger">￥ 1200学币</span>
+                    <button class="btn btn-primary pull-right btm15">兑换</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- build:pages -->
+        <!-- 分页 -->
+                <div class="row">
+                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
+                    <ul class="pagination pagination-sm m0">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+        <!-- endbuild -->
+
+
+
+
+
+
+      </div>
+      
+    </section>
+    <!-- 主要内容END -->
+    
+    <!-- build:foot -->
+    <footer>
+      <span>&copy; 2018 - 智厢逢</span>
+    </footer>
+    <!-- endbuild -->
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <!-- build:js -->
+  <!-- =============== JS ===============-->
+  <script src="../js/vendor/modernizr/modernizr.custom.js"></script>
+  <script src="../js/vendor/jquery/dist/jquery.js"></script>
+  <script src="../js/vendor/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../js/vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
+  <script src="../js/vendor/jquery.easing/js/jquery.easing.js"></script>
+  <script src="../js/vendor/animo.js/animo.js"></script>
+  <script src="../js/vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
+  <script src="../vendor/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../js/vendor/moment/min/moment-with-locales.min.js"></script>
+  <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="../js/app.js"></script>
+  <!-- endbuild -->
+
+
+
+
+
+
+
+<script src="../js/mall.js"></script>
+
+
+
+
+</body>
+
+</html>

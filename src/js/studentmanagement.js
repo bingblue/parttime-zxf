@@ -92,29 +92,11 @@ $(function(){
       }
     })
   })
-  // 学生管理 分配学校
-  $('.jq-changeschool').click(function(){
+  // 学生列表 换班级
+  $('.jq-changeclass').click(function(){
     swal({
-      title: "分配学校",
-      text: changeschool(),
-      html: true,
-      showCancelButton: true,
-      confirmButtonColor: "#DD6B55",
-      confirmButtonText: "确认分配",
-      cancelButtonText: "取消",
-      closeOnConfirm: false,
-      closeOnCancel: true
-    }, function (isConfirm) {
-      if (isConfirm) {
-        swal("修改成功", "success")
-      }
-    })
-  })
-  // 学生管理 调换学校
-  $('.jq-exchangeschool').click(function(){
-    swal({
-      title: "调换学校",
-      text: changeschool(),
+      title: "确认调换调换班级",
+      text: changeclass(),
       html: true,
       showCancelButton: true,
       confirmButtonColor: "#DD6B55",
@@ -128,7 +110,106 @@ $(function(){
       }
     })
   })
-  
+  // 班级管理 创建班级
+  $('.jq-createclass').click(function(){
+    swal({
+      title: "创建/修改班级",
+      text: createclass(),
+      type: "input",
+      html: true,
+      showCancelButton: true,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "创建/保存",
+      cancelButtonText: "取消",
+      closeOnConfirm: false,
+      closeOnCancel: true
+    }, function (isConfirm) {
+      if (isConfirm) {
+        swal("成功", "success")
+      }
+    })
+  })
+  // 班级管理 删除班级
+  $('.jq-deleteclass').click(function(){
+    swal({ 
+      title: "确定删除吗？", 
+      text: "确认删除该班级吗？删除后班级下的学生将自动转到“未分班”班级", 
+      type: "warning",
+      showCancelButton: true, 
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "确定删除！",
+      cancelButtonText: "取消",
+      closeOnConfirm: false
+    },
+    function(){
+      swal("删除！", "success")
+    })
+  })
+  // 学币管理 增加
+  $(".jq-add, .jq-reduce").click(function(){
+    swal({
+      title: "增加/减少学币",
+      text: add(),
+      type: "input",
+      html: true,
+      showCancelButton: true,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "创建/保存",
+      cancelButtonText: "取消",
+      closeOnConfirm: false,
+      closeOnCancel: true
+    }, function (isConfirm) {
+      if (isConfirm) {
+        swal("成功", "success")
+      }
+    })
+  })
+  // 学币管理 记录
+  $('.jq-record').click(function(){
+    swal({
+      title: "增加/减少学币",
+      text: record(),
+      html: true,
+      confirmButtonColor: "#DD6B55",
+      closeOnConfirm: false,
+      closeOnCancel: false
+    })
+  })
+  // 学员充值 充值记录
+  $('.jq-rechargerecord').click(function(){
+    swal({
+      title: "充值记录",
+      text: rechargerecord(),
+      html: true,
+      confirmButtonColor: "#DD6B55",
+      closeOnConfirm: false,
+      closeOnCancel: true
+    })
+  })
+  $('.jq-recharge').click(function(){
+    swal({
+      title: "为学生充值",
+      text: recharge(),
+      html: true,
+      showCancelButton: true,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "确定",
+      cancelButtonText: "取消",
+      closeOnConfirm: false,
+      closeOnCancel: true
+    }, function (isConfirm) {
+      if (isConfirm) {
+        swal({
+          title: "确定为学生：【学生名】【电话】、【学生名】【电话】、【学生名】【电话】、【学生名】【电话】 进行充值吗？",
+          text: rechargeconfim(),
+          html: true,
+          confirmButtonColor: "#DD6B55",
+          closeOnConfirm: false,
+          closeOnCancel: false
+        })
+      }
+    })
+  })
 })
 
 function text () {
@@ -224,12 +305,12 @@ function phone () {
   </div>
 </form>`
 }
-function changeschool () {
+function changeclass () {
   return `<form method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
   <div class="panel panel-dark panel-flat">
      <div class="panel-body">
         <div class="form-group">
-           <label class="control-label col-sm-5">选择学校：</label>
+           <label class="control-label col-sm-5">选择班级：</label>
            <div class="col-sm-6">
             <select name="" id="label" class="form-control">
               <option value="1">1</option>
@@ -309,7 +390,7 @@ function record () {
   <table class="table table-bordered table-hover dataTable">
     <thead>
       <tr>
-        <th class="sorting">操作时间</th>
+        <th>操作时间</th>
         <th>操作类型</th>
         <th>数量</th>
         <th>原因</th>
@@ -358,7 +439,7 @@ function rechargerecord () {
   <table class="table table-bordered table-hover dataTable">
     <thead>
       <tr>
-        <th class="sorting">充值时间</th>
+        <th>充值时间</th>
         <th>充值学员组</th>
         <th>时长</th>
         <th>学生手机</th>

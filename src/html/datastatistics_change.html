@@ -30,10 +30,6 @@
 
 
 
-
-
-
-
 </head>
 
 <body>
@@ -76,10 +72,6 @@
       </nav>
     </header>
     <!-- endbuild -->
-
-
-
-
 
 
 
@@ -139,11 +131,42 @@
           <span>教务管理</span>
         </li>
         <li class=" ">
-          <a href="datastatistics.html" title="数据统计">
-            <em class="icon-speedometer"></em>
+          <a href="#datastatistics" title="数据统计" data-toggle="collapse">
+            <em class="icon-bag"></em>
             <span>数据统计</span>
           </a>
+          <ul id="datastatistics" class="nav sidebar-subnav collapse">
+            <li class=" ">
+              <a href="datastatistics_admin.html" title="数据统计-总后台">
+                <span>数据统计-总后台</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="datastatistics.html" title="数据统计-学校">
+                <span>数据统计-学校</span>
+              </a>
+            </li>
+          </ul>
         </li>
+        <li class=" ">
+            <a href="#studyreport" title="学习报告" data-toggle="collapse">
+              <em class="icon-speedometer"></em>
+              <span>学习报告</span>
+            </a>
+            <ul id="studyreport" class="nav sidebar-subnav collapse">
+              <li class="sidebar-subnav-header">学习报告</li>
+              <li class=" ">
+                <a href="studyreport_overall.html" title="总体报告">
+                  <span>总体报告</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="studyreport_all.html" title="全部报告">
+                  <span>全部报告</span>
+                </a>
+              </li>
+            </ul>
+          </li>
         <li class=" ">
           <a href="groupcoursemanagement.html" title="学员组课程管理">
             <em class="icon-layers"></em>
@@ -163,10 +186,15 @@
               </a>
             </li>
             <li class=" ">
-              <a href="schoolmanagement_sales.html" title="销售数据">
-                <span>销售数据</span>
+              <a href="schoolmanagement_sales.html" title="销售数据-总后台">
+                <span>销售数据-总后台</span>
               </a>
             </li>
+            <li class=" ">
+                <a href="salesdata.html" title="销售数据-学校">
+                  <span>销售数据-学校</span>
+                </a>
+              </li>
             <li class=" ">
               <a href="schoolmanagement_setting.html" title="扣费设置">
                 <span>扣费设置</span>
@@ -182,17 +210,51 @@
           <ul id="teachermanagement" class="nav sidebar-subnav collapse">
             <li class="sidebar-subnav-header">教师管理</li>
             <li class=" ">
-              <a href="teachermanagement_list.html" title="教师列表">
-                <span>教师列表</span>
+              <a href="teachermanagement_list_admin.html" title="教师列表-总后台">
+                <span>教师列表-总后台</span>
               </a>
             </li>
             <li class=" ">
-              <a href="teachermanagement_sales.html" title="销售数据">
-                <span>销售数据</span>
+              <a href="teachermanagement_sales_admin.html" title="教师列表-总后台">
+                <span>教师列表-总后台</span>
               </a>
             </li>
+            <li class=" ">
+                <a href="teachermanagement_list.html" title="教师列表-学校">
+                  <span>教师列表-学校</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="teachermanagement_sales.html" title="教师列表-学校">
+                  <span>教师列表-学校</span>
+                </a>
+              </li>
           </ul>
         </li>
+        <li class=" ">
+            <a href="#coursemanagement" title="课程管理" data-toggle="collapse">
+              <em class="icon-graduation"></em>
+              <span>课程管理</span>
+            </a>
+            <ul id="coursemanagement" class="nav sidebar-subnav collapse">
+              <li class="sidebar-subnav-header">课程管理</li>
+              <li class=" ">
+                <a href="coursemanagement_class.html" title="班级课程">
+                  <span>班级课程</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="coursemanagement_task.html" title="学习任务">
+                  <span>学习任务</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="coursemanagement_mode.html" title="复习模式">
+                  <span>复习模式</span>
+                </a>
+              </li>
+            </ul>
+          </li>
         <li class=" ">
           <a href="#studentmanagement" title="学生管理" data-toggle="collapse">
             <em class="icon-graduation"></em>
@@ -201,15 +263,50 @@
           <ul id="studentmanagement" class="nav sidebar-subnav collapse">
             <li class="sidebar-subnav-header">学生管理</li>
             <li class=" ">
-              <a href="studentmanagement_unallocated.html" title="未分配学生列表">
+              <a href="studentmanagement_unallocated_admin.html" title="未分配学生列表-总后台">
                 <span>未分配学生列表</span>
               </a>
             </li>
             <li class=" ">
-              <a href="studentmanagement_allocated.html" title="已分配学生列表">
+              <a href="studentmanagement_allocated.html_admin" title="已分配学生列表-总后台">
                 <span>已分配学生列表</span>
               </a>
             </li>
+            <li class=" ">
+                <a href="studentmanagement_list.html" title="学生列表-教师">
+                  <span>学生列表-教师</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="studentmanagement_class.html" title="班级管理-教师">
+                  <span>班级管理-教师</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="studentmanagement_coin.html" title="学币管理-教师">
+                  <span>学币管理-教师</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="studentmanagement_recharge.html" title="学员充值-教师">
+                  <span>学员充值-教师</span>
+                </a>
+              </li>
+              <li class=" ">
+                  <a href="studentmanagement_allocated_president.html" title="未分配学生列表-学校">
+                    <span>未分配学生列表-学校</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="studentmanagement_allocated_president.html" title="已分配学生列表-学校">
+                    <span>已分配学生列表-学校</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="studentmanagement_recharge_president.html" title="学员充值-学校">
+                    <span>学员充值-学校</span>
+                  </a>
+                </li>
           </ul>
         </li>
         <li class=" ">
@@ -220,15 +317,25 @@
           <ul id="mallmanagement" class="nav sidebar-subnav collapse">
             <li class="sidebar-subnav-header">商城管理</li>
             <li class=" ">
-              <a href="mallmanagement_commodity.html" title="商品管理">
-                <span>商品管理</span>
+              <a href="mallmanagement_commodity_admin.html" title="商品管理-总后台">
+                <span>商品管理-总后台</span>
               </a>
             </li>
             <li class=" ">
-              <a href="mallmanagement_order.html" title="订单管理">
-                <span>订单管理</span>
+              <a href="mallmanagement_order_admin.html" title="订单管理-admin">
+                <span>商品管理-总后台</span>
               </a>
             </li>
+            <li class=" ">
+                <a href="mallmanagement_commodity.html" title="商品管理-学校">
+                  <span>商品管理-学校</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="mallmanagement_exchange.html" title="学生兑换管理">
+                  <span>商品管理-学校</span>
+                </a>
+              </li>
           </ul>
         </li>
         <li class=" ">
@@ -265,10 +372,6 @@
 
 
 
-
-
-
-
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
@@ -283,7 +386,7 @@
                 <form class="text-right form-lineH">
                   <div class="row">
                     <div class="form-group col-sm-3">
-                      <label class="col-sm-4" style="white-space: nowrap;">学生手机：</label>
+                      <label class="col-sm-4">学生手机：</label>
                       <div class="col-sm-8">
                         <input type="tel" name="" class="form-control">
                       </div>
@@ -382,10 +485,6 @@
 
 
 
-
-
-
-
               </div>
             </div>
           </div>
@@ -399,10 +498,6 @@
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
-
-
-
-
 
 
 
@@ -434,10 +529,6 @@
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
-
-
-
-
 
 
 

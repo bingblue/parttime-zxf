@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>学生管理-未分配学生列表</title>
+  <title>学生管理-已分配学生列表</title>
   <!-- build:css -->
   <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
@@ -25,10 +25,13 @@
 
 
 
+  <link rel="stylesheet" href="../css/wj.css">
 
 
 
-  <link rel="stylesheet" href="../css/main_xc.css">
+
+
+
 </head>
 
 <body>
@@ -71,8 +74,6 @@
       </nav>
     </header>
     <!-- endbuild -->
-
-
 
 
 
@@ -129,11 +130,42 @@
           <span>教务管理</span>
         </li>
         <li class=" ">
-          <a href="datastatistics.html" title="数据统计">
-            <em class="icon-speedometer"></em>
+          <a href="#datastatistics" title="数据统计" data-toggle="collapse">
+            <em class="icon-bag"></em>
             <span>数据统计</span>
           </a>
+          <ul id="datastatistics" class="nav sidebar-subnav collapse">
+            <li class=" ">
+              <a href="datastatistics_admin.html" title="数据统计-总后台">
+                <span>数据统计-总后台</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="datastatistics.html" title="数据统计-学校">
+                <span>数据统计-学校</span>
+              </a>
+            </li>
+          </ul>
         </li>
+        <li class=" ">
+            <a href="#studyreport" title="学习报告" data-toggle="collapse">
+              <em class="icon-speedometer"></em>
+              <span>学习报告</span>
+            </a>
+            <ul id="studyreport" class="nav sidebar-subnav collapse">
+              <li class="sidebar-subnav-header">学习报告</li>
+              <li class=" ">
+                <a href="studyreport_overall.html" title="总体报告">
+                  <span>总体报告</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="studyreport_all.html" title="全部报告">
+                  <span>全部报告</span>
+                </a>
+              </li>
+            </ul>
+          </li>
         <li class=" ">
           <a href="groupcoursemanagement.html" title="学员组课程管理">
             <em class="icon-layers"></em>
@@ -153,10 +185,15 @@
               </a>
             </li>
             <li class=" ">
-              <a href="schoolmanagement_sales.html" title="销售数据">
-                <span>销售数据</span>
+              <a href="schoolmanagement_sales.html" title="销售数据-总后台">
+                <span>销售数据-总后台</span>
               </a>
             </li>
+            <li class=" ">
+                <a href="salesdata.html" title="销售数据-学校">
+                  <span>销售数据-学校</span>
+                </a>
+              </li>
             <li class=" ">
               <a href="schoolmanagement_setting.html" title="扣费设置">
                 <span>扣费设置</span>
@@ -172,17 +209,51 @@
           <ul id="teachermanagement" class="nav sidebar-subnav collapse">
             <li class="sidebar-subnav-header">教师管理</li>
             <li class=" ">
-              <a href="teachermanagement_list.html" title="教师列表">
-                <span>教师列表</span>
+              <a href="teachermanagement_list_admin.html" title="教师列表-总后台">
+                <span>教师列表-总后台</span>
               </a>
             </li>
             <li class=" ">
-              <a href="teachermanagement_sales.html" title="销售数据">
-                <span>销售数据</span>
+              <a href="teachermanagement_sales_admin.html" title="教师列表-总后台">
+                <span>教师列表-总后台</span>
               </a>
             </li>
+            <li class=" ">
+                <a href="teachermanagement_list.html" title="教师列表-学校">
+                  <span>教师列表-学校</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="teachermanagement_sales.html" title="教师列表-学校">
+                  <span>教师列表-学校</span>
+                </a>
+              </li>
           </ul>
         </li>
+        <li class=" ">
+            <a href="#coursemanagement" title="课程管理" data-toggle="collapse">
+              <em class="icon-graduation"></em>
+              <span>课程管理</span>
+            </a>
+            <ul id="coursemanagement" class="nav sidebar-subnav collapse">
+              <li class="sidebar-subnav-header">课程管理</li>
+              <li class=" ">
+                <a href="coursemanagement_class.html" title="班级课程">
+                  <span>班级课程</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="coursemanagement_task.html" title="学习任务">
+                  <span>学习任务</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="coursemanagement_mode.html" title="复习模式">
+                  <span>复习模式</span>
+                </a>
+              </li>
+            </ul>
+          </li>
         <li class=" ">
           <a href="#studentmanagement" title="学生管理" data-toggle="collapse">
             <em class="icon-graduation"></em>
@@ -191,15 +262,50 @@
           <ul id="studentmanagement" class="nav sidebar-subnav collapse">
             <li class="sidebar-subnav-header">学生管理</li>
             <li class=" ">
-              <a href="studentmanagement_unallocated.html" title="未分配学生列表">
+              <a href="studentmanagement_unallocated_admin.html" title="未分配学生列表-总后台">
                 <span>未分配学生列表</span>
               </a>
             </li>
             <li class=" ">
-              <a href="studentmanagement_allocated.html" title="已分配学生列表">
+              <a href="studentmanagement_allocated.html_admin" title="已分配学生列表-总后台">
                 <span>已分配学生列表</span>
               </a>
             </li>
+            <li class=" ">
+                <a href="studentmanagement_list.html" title="学生列表-教师">
+                  <span>学生列表-教师</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="studentmanagement_class.html" title="班级管理-教师">
+                  <span>班级管理-教师</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="studentmanagement_coin.html" title="学币管理-教师">
+                  <span>学币管理-教师</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="studentmanagement_recharge.html" title="学员充值-教师">
+                  <span>学员充值-教师</span>
+                </a>
+              </li>
+              <li class=" ">
+                  <a href="studentmanagement_allocated_president.html" title="未分配学生列表-学校">
+                    <span>未分配学生列表-学校</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="studentmanagement_allocated_president.html" title="已分配学生列表-学校">
+                    <span>已分配学生列表-学校</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="studentmanagement_recharge_president.html" title="学员充值-学校">
+                    <span>学员充值-学校</span>
+                  </a>
+                </li>
           </ul>
         </li>
         <li class=" ">
@@ -210,15 +316,25 @@
           <ul id="mallmanagement" class="nav sidebar-subnav collapse">
             <li class="sidebar-subnav-header">商城管理</li>
             <li class=" ">
-              <a href="mallmanagement_commodity.html" title="商品管理">
-                <span>商品管理</span>
+              <a href="mallmanagement_commodity_admin.html" title="商品管理-总后台">
+                <span>商品管理-总后台</span>
               </a>
             </li>
             <li class=" ">
-              <a href="mallmanagement_order.html" title="订单管理">
-                <span>订单管理</span>
+              <a href="mallmanagement_order_admin.html" title="订单管理-admin">
+                <span>商品管理-总后台</span>
               </a>
             </li>
+            <li class=" ">
+                <a href="mallmanagement_commodity.html" title="商品管理-学校">
+                  <span>商品管理-学校</span>
+                </a>
+              </li>
+              <li class=" ">
+                <a href="mallmanagement_exchange.html" title="学生兑换管理">
+                  <span>商品管理-学校</span>
+                </a>
+              </li>
           </ul>
         </li>
         <li class=" ">
@@ -252,13 +368,12 @@
 
 
 
-
-
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
-          未分配学生列表
+          已分配学生列表
+          <span class="text-sm hidden-xs">所在学校编号：A00001 学生注册时请指导学生在完善信息页填写学校编码，填写编码的学生将直接分配给校区，不填写将无法直接操作该学生</span>
         </div>
         <div class="row">
           <div class="col-xs-12">
@@ -267,10 +382,42 @@
               <div class="panel-heading">
                 <form class="text-right form-lineH">
                   <div class="row">
-                    <div class="form-group col-sm-3">
-                      <label class="col-sm-4 xc-nowrap">学生手机：</label>
+                    <div class="form-group col-sm-4">
+                      <label class="col-sm-4">学生手机：</label>
                       <div class="col-sm-8">
                         <input type="tel" name="" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-4">
+                      <label class="col-sm-4">所属老师：</label>
+                      <div class="col-sm-8">
+                        <select name="" id="" class="form-control">
+                          <option value="">全部</option>
+                          <option value="1">老师1</option>
+                          <option value="2">老师2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-4">
+                      <label class="col-sm-4">账号状态：</label>
+                      <div class="col-sm-8">
+                        <select name="" id="" class="form-control">
+                          <option value="">全部</option>
+                          <option value="1">正常</option>
+                          <option value="2">过期</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-sm-4">
+                      <label class="col-sm-4">处理速度：</label>
+                      <div class="col-sm-8">
+                        <select name="" id="" class="form-control">
+                          <option value="">全部</option>
+                          <option value="1">分配后3~7天未分班</option>
+                          <option value="2">分配后7天以上未分班</option>
+                        </select>
                       </div>
                     </div>
                     <div class="col-sm-1">
@@ -296,7 +443,6 @@
                         <th>学生手机</th>
                         <th>姓名</th>
                         <th>昵称</th>
-                        <th>所属学校</th>
                         <th>所属教师</th>
                         <th>所属班级</th>
                         <th>有效期</th>
@@ -320,7 +466,6 @@
                         <td class="text-warning">18000000000</td>
                         <td>名字名字</td>
                         <td>昵称昵称</td>
-                        <td>学校</td>
                         <td>教师</td>
                         <td>班级</td>
                         <td class="text-danger">5天</td>
@@ -329,7 +474,7 @@
                         <td>500</td>
                         <td>七年级</td>
                         <td>
-                          <a class="btn btn-primary jq-changeschool" href="javascript:;">分配学校</a>
+                          <a class="btn btn-primary jq-exchangeschool" href="javascript:;">调换老师</a>
                           <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
                           <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
                           <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
@@ -347,7 +492,6 @@
                         <td>18000000000</td>
                         <td>名字名字</td>
                         <td>昵称昵称</td>
-                        <td>学校</td>
                         <td>教师</td>
                         <td>班级</td>
                         <td>5天</td>
@@ -356,7 +500,7 @@
                         <td>500</td>
                         <td>七年级</td>
                         <td>
-                          <a class="btn btn-primary jq-changeschool" href="javascript:;">分配学校</a>
+                          <a class="btn btn-primary jq-exchangeschool" href="javascript:;">调换老师</a>
                           <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
                           <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
                           <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
@@ -374,7 +518,6 @@
                         <td>18000000000</td>
                         <td>名字名字</td>
                         <td>昵称昵称</td>
-                        <td>学校</td>
                         <td>教师</td>
                         <td>班级</td>
                         <td>5天</td>
@@ -383,7 +526,7 @@
                         <td>500</td>
                         <td>七年级</td>
                         <td>
-                          <a class="btn btn-primary jq-changeschool" href="javascript:;">分配学校</a>
+                          <a class="btn btn-primary jq-exchangeschool" href="javascript:;">调换老师</a>
                           <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
                           <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
                           <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
@@ -391,7 +534,7 @@
                       </tr>
                     </tbody>
                   </table>
-                  <a class="btn btn-primary jq-changeschool" href="javascript:;">分配学校</a>
+                  <a class="btn btn-primary jq-exchangeschool" href="javascript:;">调换老师</a>
                 </div>
 
                 <!-- build:pages -->
@@ -429,10 +572,6 @@
 
 
 
-
-
-
-
               </div>
             </div>
           </div>
@@ -446,8 +585,6 @@
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
-
-
 
 
 
@@ -481,13 +618,14 @@
 
 
 
+  <script src="../js/studentmanagement_president.js"></script>
 
 
 
 
 
 
-  <script src="../js/studentmanagement.js"></script>
+
 
 </body>
 
