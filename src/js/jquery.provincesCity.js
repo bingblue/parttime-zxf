@@ -81,11 +81,11 @@ $.fn.ProvinceCity = function(){
 	//1级城市联动 控制
 	var index2 = "" ;
 	$sel2.change(function(){
-		$sel3[0].options.length=0;
-		index2 = this.selectedIndex;
-		$.each( GC[index1-1][index2] , function(index,data){
-			$sel3.append("<option value='"+data+"'>"+data+"</option>");
-		})
+		// $sel3[0].options.length=0;
+		// index2 = this.selectedIndex;
+		// $.each( GC[index1-1][index2] , function(index,data){
+		// 	$sel3.append("<option value='"+data+"'>"+data+"</option>");
+		// })
 	});
 	return _self;
 };
