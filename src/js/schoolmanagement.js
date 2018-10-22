@@ -66,7 +66,7 @@ $(function () {
     reviewAll()
 
     // 学校辖区
-    $(".province-item-1").ProvinceCity('北京','朝阳区', '朝阳区');
+    $(".province-item-1").ProvinceCity('上海','青浦', '青浦');
     $('body').on('click', '.jq-delete-xiaqu', function(){
         var $this = $(this)
         swal({
@@ -88,6 +88,6 @@ $(function () {
         var className = 'province-itemi-' + new Date().getTime()
         var $div = $('<div class="' + className +' form-group"></div>')
         $(this).closest('.form-group').before($div)
-        $('.' + className).ProvinceCity('北京','朝阳区', '朝阳区');
+        $('.' + className).ProvinceCity('请选择','请选择', '请选择');
     })
 })

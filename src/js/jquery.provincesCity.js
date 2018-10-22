@@ -8,9 +8,9 @@
 $.fn.ProvinceCity = function(province, city1, city2){
 	var _self = this;
 	//定义3个默认值
-	_self.data("province",[province, province]);
-	_self.data("city1",[city1, city1]);
-	_self.data("city2",[city2, city2]);
+	_self.data("province",['请选择', province]);
+	_self.data("city1",['请选择', city1]);
+	_self.data("city2",['请选择', city2]);
 	//插入3个空的下拉框
 	_self.append('<label class="col-lg-1  control-label" style="min-width: 100px;">设置辖区</label>')
 	_self.append("<div class='col-lg-3'><select class='form-control'></select></div>");
@@ -26,10 +26,20 @@ $.fn.ProvinceCity = function(province, city1, city2){
 		$sel1.append("<option value='"+_self.data("province")[1]+"'>"+_self.data("province")[0]+"</option>");
 	}
 	$.each( GP , function(index,data){
-		$sel1.append("<option value='"+data+"'>"+data+"</option>");
+		if (data === province) {
+			$sel1.append("<option value='"+data+"' selected='selected'>"+data+"</option>");
+		} else {
+			$sel1.append("<option value='"+data+"'>"+data+"</option>");
+		}
+		
 	});
 	//默认的1级城市下拉
 	if(_self.data("city1")){
+		// if (data === province) {
+		// 	$sel1.append("<option value='"+data+"' selected='selected'>"+data+"</option>");
+		// } else {
+		// 	$sel1.append("<option value='"+data+"'>"+data+"</option>");
+		// }
 		$sel2.append("<option value='"+_self.data("city1")[1]+"'>"+_self.data("city1")[0]+"</option>");
 	}
 	//默认的2级城市下拉
@@ -43,6 +53,7 @@ $.fn.ProvinceCity = function(province, city1, city2){
 		$sel2[0].options.length=0;
 		$sel3[0].options.length=0;
 		index1 = this.selectedIndex;
+		index2 = 0;
 		if(index1==0){	//当选择的为 “请选择” 时
 			if(_self.data("city1")){
 				$sel2.append("<option value='"+_self.data("city1")[1]+"'>"+_self.data("city1")[0]+"</option>");
@@ -52,10 +63,19 @@ $.fn.ProvinceCity = function(province, city1, city2){
 			}
 		}else{
 			$.each( GT[index1-1] , function(index,data){
-				$sel2.append("<option value='"+data+"'>"+data+"</option>");
+				if (data === city1) {
+					index2 = index;
+					$sel2.append("<option value='"+data+"' selected='selected'>"+data+"</option>");
+				} else {
+					$sel2.append("<option value='"+data+"'>"+data+"</option>");
+				}
 			});
-			$.each( GC[index1-1][0] , function(index,data){
-				$sel3.append("<option value='"+data+"'>"+data+"</option>");
+			$.each( GC[index1-1][index2] , function(index,data){
+				if (data === city2) {
+					$sel3.append("<option value='"+data+"' selected='selected'>"+data+"</option>");
+				} else {
+					$sel3.append("<option value='"+data+"'>"+data+"</option>");
+				}
 			})
 		}
 	}).change();
