@@ -86,8 +86,8 @@ $(function () {
     })
     $('.jq-add-xiaqu').click(function() {
         var className = 'province-itemi-' + new Date().getTime()
-        var $div = $('<div class="' + className +' form-group"></div>')
+        var $div = $('<div class="' + className +' form-group" province="上海" city="青浦"></div>')
         $(this).closest('.form-group').before($div)
-        $('.' + className).ProvinceCity('请选择','请选择', '请选择');
+        $('.' + className).ProvinceCity();
     })
 })

@@ -5,17 +5,17 @@
  * @example  $("#test").ProvinceCity();
  * @params   暂无
  */
-$.fn.ProvinceCity = function(province, city1, city2){
+$.fn.ProvinceCity = function(){
+	var province = $(this).attr('province')
+	var city1 = $(this).attr('city')
 	var _self = this;
 	//定义3个默认值
 	_self.data("province",['请选择', province]);
 	_self.data("city1",['请选择', city1]);
-	_self.data("city2",['请选择', city2]);
 	//插入3个空的下拉框
 	_self.append('<label class="col-lg-1  control-label" style="min-width: 100px;">设置辖区</label>')
-	_self.append("<div class='col-lg-3'><select class='form-control'></select></div>");
-	_self.append("<div class='col-lg-3'><select class='form-control'></select></div>");
-	_self.append("<div class='col-lg-3'><select class='form-control'></select></div>");
+	_self.append("<div class='col-lg-4'><select class='form-control'></select></div>");
+	_self.append("<div class='col-lg-4'><select class='form-control'></select></div>");
 	_self.append('<div class="col-lg-1"><a href="javascript:void(0);" class="btn btn-warning jq-delete-xiaqu">删除</a></div>')
 	//分别获取3个下拉框
 	var $sel1 = _self.find("select").eq(0);
@@ -51,7 +51,6 @@ $.fn.ProvinceCity = function(province, city1, city2){
 	$sel1.change(function(){
 		//清空其它2个下拉框
 		$sel2[0].options.length=0;
-		$sel3[0].options.length=0;
 		index1 = this.selectedIndex;
 		index2 = 0;
 		if(index1==0){	//当选择的为 “请选择” 时
@@ -70,13 +69,13 @@ $.fn.ProvinceCity = function(province, city1, city2){
 					$sel2.append("<option value='"+data+"'>"+data+"</option>");
 				}
 			});
-			$.each( GC[index1-1][index2] , function(index,data){
-				if (data === city2) {
-					$sel3.append("<option value='"+data+"' selected='selected'>"+data+"</option>");
-				} else {
-					$sel3.append("<option value='"+data+"'>"+data+"</option>");
-				}
-			})
+			// $.each( GC[index1-1][index2] , function(index,data){
+			// 	if (data === city2) {
+			// 		$sel3.append("<option value='"+data+"' selected='selected'>"+data+"</option>");
+			// 	} else {
+			// 		$sel3.append("<option value='"+data+"'>"+data+"</option>");
+			// 	}
+			// })
 		}
 	}).change();
 	//1级城市联动 控制
