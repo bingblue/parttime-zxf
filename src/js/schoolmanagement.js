@@ -66,7 +66,10 @@ $(function () {
     reviewAll()
 
     // 学校辖区
-    $(".province-item-1").ProvinceCity('上海','青浦', '青浦');
+    $(".province-item-1").ProvinceCity();
+    $.each( citydatalist , function(index,data){
+	    $('#provinceSelect').append("<option value='"+data.id+"'>"+data.name+"</option>");
+	});
     $('body').on('click', '.jq-delete-xiaqu', function(){
         var $this = $(this)
         swal({
@@ -86,7 +89,7 @@ $(function () {
     })
     $('.jq-add-xiaqu').click(function() {
         var className = 'province-itemi-' + new Date().getTime()
-        var $div = $('<div class="' + className +' form-group" province="上海" city="青浦"></div>')
+        var $div = $('<div class="' + className +' form-group" province="310000" city="310100"></div>')
         $(this).closest('.form-group').before($div)
         $('.' + className).ProvinceCity();
     })
