@@ -146,15 +146,100 @@ $(function(){
     })
   })
   // 学币管理 增加
-  $(".jq-add, .jq-reduce").click(function(){
+  $(".jq-add").click(function(){
     swal({
-      title: "增加/减少学币",
+      title: "增加学币",
       text: add(),
       type: "input",
       html: true,
       showCancelButton: true,
       confirmButtonColor: "#DD6B55",
-      confirmButtonText: "创建/保存",
+      confirmButtonText: "保存",
+      cancelButtonText: "取消",
+      closeOnConfirm: false,
+      closeOnCancel: true
+    }, function (isConfirm) {
+      if (isConfirm) {
+        swal("成功", "success")
+      }
+    })
+  })
+  $(".jq-reduce").click(function(){
+    swal({
+      title: "减少学币",
+      text: add(),
+      type: "input",
+      html: true,
+      showCancelButton: true,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "保存",
+      cancelButtonText: "取消",
+      closeOnConfirm: false,
+      closeOnCancel: true
+    }, function (isConfirm) {
+      if (isConfirm) {
+        swal("成功", "success")
+      }
+    })
+  })
+  $(".jq-pladd").click(function(){
+    var isTrue = true;
+    $(".dataTable [type='checkbox']").each(function(index, ele){
+      if ($(ele).is(':checked')) {
+        isTrue = false
+        return false
+      }
+    })
+    if (isTrue) {
+      swal({
+        title: '',
+        text: '请先选择学生？',
+        type: 'error'
+      })
+      return false
+    }
+    swal({
+      title: "增加学币",
+      text: add(),
+      type: "input",
+      html: true,
+      showCancelButton: true,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "保存",
+      cancelButtonText: "取消",
+      closeOnConfirm: false,
+      closeOnCancel: true
+    }, function (isConfirm) {
+      if (isConfirm) {
+        swal("成功", "success")
+      }
+    })
+  })
+  $(".jq-plreduce").click(function(){
+    var isTrue = true;
+    $(".dataTable [type='checkbox']").each(function(index, ele){
+      console.log($(ele))
+      if ($(ele).is(':checked')) {
+        isTrue = false
+        return false
+      }
+    })
+    if (isTrue) {
+      swal({
+        title: '',
+        text: '请先选择学生？',
+        type: 'error'
+      })
+      return false
+    }
+    swal({
+      title: "减少学币",
+      text: reduce(),
+      type: "input",
+      html: true,
+      showCancelButton: true,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "保存",
       cancelButtonText: "取消",
       closeOnConfirm: false,
       closeOnCancel: true
@@ -345,7 +430,28 @@ function add () {
   <p>增加/减少 【学生名】【电话】、【学生名】【电话】、【学生名】【电话】、【学生名】【电话】 的学币</P>
      <div class="panel-body">
         <div class="form-group">
-          <label class="control-label col-sm-5">增加/减少学币：</label>
+          <label class="control-label col-sm-5">增加：</label>
+          <div class="col-sm-6">
+            <input type="text" name="name" placeholder="请输入" required class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-5">输入原因：</label>
+          <div class="col-sm-6">
+            <textarea type="text" name="name" placeholder="请输入原因，学生将能看见您输入的原因" required class="form-control"></textarea>
+          </div>
+        </div>
+     </div>
+  </div>
+</form>`
+}
+function reduce () {
+  return `<form method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
+  <div class="panel panel-dark panel-flat">
+  <p>减少 【学生名】【电话】、【学生名】【电话】、【学生名】【电话】、【学生名】【电话】 的学币</P>
+     <div class="panel-body">
+        <div class="form-group">
+          <label class="control-label col-sm-5">减少：</label>
           <div class="col-sm-6">
             <input type="text" name="name" placeholder="请输入" required class="form-control">
           </div>

@@ -1,9 +1,33 @@
 $(function(){
+  $(".jq-create").click(function(){
+    swal({
+      title: "创建商品",
+      text: text(),
+      html: true,
+      type: "input",
+      showCancelButton: true,
+      confirmButtonColor: "#4b91ea",
+      confirmButtonText: "确认",
+      cancelButtonText: "取消",
+      closeOnConfirm: false,
+      closeOnCancel: true
+    }, function (isConfirm) {
+      if (isConfirm) {
+        swal("修改成功", "success")
+      }
+    })
+  })
   // 修改
   $(".jq-edit").click(function(){
+    var $this = $(this);
+    var $tr = $this.closest('tr')
+    var productName = $tr.find('td').eq(1).text()
+    var price =  $tr.find('td').eq(4).text()
+    var num =  $tr.find('td').eq(5).text()
+    var imgSrc = $tr.find('td').eq(3).find('img').attr('src')
     swal({
-      title: "创建/修改商品",
-      text: text(),
+      title: "修改商品",
+      text: text(productName, price, num,imgSrc),
       html: true,
       type: "input",
       showCancelButton: true,
@@ -38,6 +62,21 @@ $(function(){
   })
   // 取消
   $('.jq-cancel').click(function(){
+    var isTrue = true;
+    $("#table-ext-1 [type='checkbox']").each(function(index, ele){
+      if ($(ele).is(':checked')) {
+        isTrue = false
+        return false
+      }
+    })
+    if (isTrue) {
+      swal({
+        title: '',
+        text: '请先勾选订单？',
+        type: 'error'
+      })
+      return false
+    }
     swal({
       title: '',
       text: '确认取消该订单吗？',
@@ -89,33 +128,33 @@ function upload (target) {
   }
 }
 
-function text () {
+function text (productName='', price ='', num ='', imgSrc = '') {
   return `<form method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
   <div class="panel panel-dark panel-flat">
      <div class="panel-body">
         <div class="form-group">
            <label class="control-label col-sm-5">商品名称：</label>
            <div class="col-sm-6">
-            <input type="text" name="name" placeholder="请输入商品名称" required class="form-control">
-          </div>
+            <input type="text" value="${productName}"  name="name" placeholder="请输入商品名称" required class="form-control">
+           </div>
         </div>
         <div class="form-group">
            <label class="control-label col-sm-5">价格：</label>
            <div class="col-sm-6">
-            <input type="number" name="price" placeholder="请输入价格" required class="form-control">
+            <input type="number" value="${price}" name="price" placeholder="请输入价格" required class="form-control">
           </div>
         </div>
         <div class="form-group">
            <label class="control-label col-sm-5">库存：</label>
            <div class="col-sm-6">
-            <input type="number" name="has" placeholder="请输入库存" required class="form-control">
+            <input type="number" value="${num}" name="has" placeholder="请输入库存" required class="form-control">
           </div>
         </div>
         <span class="btn btn-success fileinput-button"><i class="fa fa-fw fa-plus"></i>
-          <span>上传图片</span>
+          <span>${!imgSrc ? '上传图片' : '更换图片'}</span>
           <input type="file" name="files[]" multiple="" class="file-ipt">
         </span>
-        <img class="upload-img" src="">
+        <img class="upload-img" src="${imgSrc}">
      </div>
   </div>
 </form>`
