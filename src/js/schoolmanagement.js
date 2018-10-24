@@ -89,7 +89,7 @@ $(function () {
     })
     $('.jq-add-xiaqu').click(function() {
         var className = 'province-itemi-' + new Date().getTime()
-        var $div = $('<div class="' + className +' form-group" province="310000" city="310100"></div>')
+        var $div = $('<div class="' + className +' form-group" province="101020200" city="101020200" area="101020800"></div>')
         $(this).closest('.form-group').before($div)
         $('.' + className).ProvinceCity();
     })
