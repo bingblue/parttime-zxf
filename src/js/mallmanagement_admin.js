@@ -128,14 +128,15 @@ function upload (target) {
   }
 }
 
-function text (productName='', price ='', num ='', imgSrc = '') {
+function text (productName, price, num, imgSrc) {
   return `<form method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
+  <input type="text" style="display:none">
   <div class="panel panel-dark panel-flat">
      <div class="panel-body">
         <div class="form-group">
            <label class="control-label col-sm-5">商品名称：</label>
            <div class="col-sm-6">
-            <input type="text" value="${productName}"  name="name" placeholder="请输入商品名称" required class="form-control">
+            <input type="text" value="${productName}" name="name" placeholder="请输入商品名称" required class="form-control">
            </div>
         </div>
         <div class="form-group">
