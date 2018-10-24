@@ -25,6 +25,7 @@ $(function(){
         })
       }
     })
+    $('#cansellform').parsley()
   })
   // 奖励商城 兑换
   $('.mall-wrap .sellout').click(function(){
@@ -41,7 +42,7 @@ $(function(){
   })
 })
 function cansell () {
-  return ` <form method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
+  return ` <form id="cansellform" method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
   <div class="panel panel-dark panel-flat">
      <div class="panel-body">
        <div class="row">
