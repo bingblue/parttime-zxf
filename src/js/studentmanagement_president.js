@@ -13,9 +13,8 @@ $(function(){
       closeOnConfirm: false,
       closeOnCancel: true
     }, function (isConfirm) {
-      if (isConfirm) {
+      if(!$('#editStudent').parsley().validate()) return false
         swal("修改成功", "success")
-      }
     })
     setTimeout(function(){
       $('.datetimepicker').datetimepicker({
@@ -124,7 +123,6 @@ $(function(){
       closeOnCancel: true
     }, function (isConfirm) {
       if (isConfirm) {
-        swal("修改成功", "success")
       }
     })
   })
@@ -167,7 +165,7 @@ $(function(){
 })
 
 function text () {
-  return `<form method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
+  return `<form id="editStudent" method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
   <div class="panel panel-dark panel-flat">
      <div class="panel-body">
         <div class="form-group">

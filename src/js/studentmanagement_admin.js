@@ -13,9 +13,8 @@ $(function(){
       closeOnConfirm: false,
       closeOnCancel: true
     }, function (isConfirm) {
-      if (isConfirm) {
+      if(!$('#editStudent').parsley().validate()) return false
         swal("修改成功", "success")
-      }
     })
     setTimeout(function(){
       $('.datetimepicker').datetimepicker({
@@ -72,6 +71,7 @@ $(function(){
         }
       } else {
         swal("失败", "请填完表单内容")
+        return false
       }
     })
   })
@@ -132,7 +132,7 @@ $(function(){
 })
 
 function text () {
-  return `<form method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
+  return `<form id='editStudent'method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
   <div class="panel panel-dark panel-flat">
      <div class="panel-body">
         <div class="form-group">
@@ -150,7 +150,7 @@ function text () {
         <div class="form-group">
           <label class="control-label col-sm-5">出生日期：</label>
           <p class="input-group date col-sm-6 datetimepicker pdlr-15">
-            <input type="text" class="form-control" placeholder="请选择开始时间">
+            <input type="text" class="form-control" required placeholder="请选择开始时间">
             <span class="input-group-addon">
                 <span class="fa fa-calendar"></span>
             </span>
