@@ -11,6 +11,7 @@ $(function(){
       closeOnConfirm: false,
       allowOutsideClick: true
     }, function (isConfirm) {
+      if(!$('#cansellform').parsley().validate()) return false
       const testmb = /^1\d{10}$/
       const mobile1 = $('.jq-mobile1').val()
       if(!(testmb.test(mobile1))){
@@ -25,7 +26,6 @@ $(function(){
         })
       }
     })
-    $('#cansellform').parsley()
   })
   // 奖励商城 兑换
   $('.mall-wrap .sellout').click(function(){
@@ -63,7 +63,7 @@ function cansell () {
             <div class="form-group">
               <label class="control-label col-sm-5">选择数量：</label>
               <div class="col-sm-6">
-                <input class="control-label" type="number">
+                <input class="control-label" type="number" required>
               </div>
             </div>
             <span class="text-danger">库存： 999</span>
