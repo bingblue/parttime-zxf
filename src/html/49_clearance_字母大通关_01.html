@@ -170,6 +170,31 @@
                 </div>
               </div>
             </div>
+            <div class="xc-coustom-pent">
+                <div class="coustom-pent-head">
+                  <span class="num">1.</span>A
+                </div>
+                <div class="coustom-pent-body">
+                  <div class="coustom-label can radio">
+                    <div>
+                      <label class="label active">
+                        <input class="radio-input" type="radio" value="1" name="coustom3" checked />a</label>
+                    </div>
+                    <div>
+                      <label class="label">
+                        <input class="radio-input" type="radio" value="2" name="coustom3" />b</label>
+                    </div>
+                    <div>
+                      <label class="label">
+                        <input class="radio-input" type="radio" value="3" name="coustom3" />c</label>
+                    </div>
+                    <div>
+                      <label class="label">
+                        <input class="radio-input" type="radio" value="4" name="coustom3" />d</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
         <div class="xc-pent">
@@ -225,12 +250,22 @@
       </div>
       <div class="coustom-footer-time">
         <img class="timeImg" src="../img/intelText-footer-time.png" alt="时间">倒计时
-        <span class="time">01:28</span>
+        <span class="time" id="xc-time">01:28</span>
       </div>
     </div>
   </div>
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
   <script src="../js/main_xc.js"></script>
+    <script>
+    $(function() {
+      comment.endTime($('#xc-time'), 88, function() {
+        console.log('倒计时结束')
+      })
+      comment.endTime($('.instr-itme'), 88, function() {
+        console.log('倒计时结束了！')
+      })
+    })
+  </script>
 </body>
 
 </html>
