@@ -37,6 +37,7 @@ section {
 }
 .xc-table-body {
   background-color: #fff;
+  overflow-x: scroll;
 }
 .xc-table-body .col-xs-4,
 .xc-table-body .col-xs-2 {

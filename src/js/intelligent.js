@@ -8,13 +8,13 @@ $(function () {
     $this.parent().siblings('.xc-tab-body').find('>li').eq($index).addClass('active').siblings().removeClass('active')
   });
   // 同步课程table切换
-  calcTableHeight()
+  // calcTableHeight()
   $(".jq-xc-table li").on('click', function () {
     var $this = $(this);
     if (!$this.hasClass('active')) {
       $this.addClass('active').siblings().removeClass('active')
     }
-    calcTableHeight()
+    // calcTableHeight()
   })
   function calcTableHeight() {
     var $maxHeight = 0;

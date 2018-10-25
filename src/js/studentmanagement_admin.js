@@ -69,8 +69,8 @@ $(function(){
         } else {
           swal("修改成功", "success")
         }
-      } else {
-        swal("失败", "请填完表单内容")
+      } else{
+        swal.showInputError("修改失败")
         return false
       }
     })

@@ -1,6 +1,6 @@
 $(function () {
   // 同步课程table切换
-  calcTableHeight()
+  // calcTableHeight()
   $(".jq-xc-table li").on('click', function () {
     var $this = $(this);
     if (!$this.hasClass('active')) {
@@ -12,7 +12,7 @@ $(function () {
         $(ele).find('li').eq(0).addClass('active')
       })
     }
-    calcTableHeight()
+    // calcTableHeight()
   })
   function calcTableHeight() {
     var $maxHeight = 0;
