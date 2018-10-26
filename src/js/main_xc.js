@@ -23,6 +23,7 @@ $(function () {
       this.banner()
       this.select()
       this.audioPlay()
+      this.audioPlay1()
       this.reloadInput()
       this.resetClass()
     },
@@ -345,6 +346,29 @@ $(function () {
     /**
      * 音频播放
      */
+    audioPlay1: function () {
+      $(".audioType1").each(function (index, ele) {
+        $(ele).parent().find('.tooglePlay').on('click',function() {
+          var $this = $(this);
+          if ($this.hasClass('play')) {
+            $(".audioType1").each(function (index, el) {
+              $(el)[0].pause()
+              $(el).parent().find('.tooglePlay').removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text('点击播放语音')
+            })
+            $(ele)[0].play()
+            $this.removeClass('play').addClass('pause').attr('src', '../img/playsound_active.png').next('span').text('点击暂停播放')
+          } else {
+            $(ele)[0].pause()
+            $this.removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text('点击播放语音')
+          }
+          
+        })
+        $(ele)[0].addEventListener('ended', function () {
+          var $this = $(this).parent().find('.tooglePlay')
+          $this.removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text('点击播放语音')
+      }, false);
+      })
+    },
     audioPlay: function () {
       function forMatTime(t) {
         return Math.floor(t/60)+":"+(t%60/100).toFixed(2).slice(-2)
