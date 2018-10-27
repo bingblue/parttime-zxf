@@ -26,6 +26,15 @@ $(function () {
       this.audioPlay1()
       this.reloadInput()
       this.resetClass()
+      this.newTable()
+    },
+    newTable: function() {
+      $(".jq-xc-table li").on('click', function () {
+        var $this = $(this);
+        if (!$this.hasClass('active')) {
+            $this.addClass('active').siblings().removeClass('active')
+        }
+      })
     },
     // 更换课程
     resetClass: function() {
