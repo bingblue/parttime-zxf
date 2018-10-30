@@ -2680,7 +2680,7 @@
 .xc-new-table {
   border: 1px solid #eeeeee;
   overflow-x: scroll;
-  height: 75vh;
+  height: 500px;
 }
 .xc-new-table ul {
   padding: 0;
