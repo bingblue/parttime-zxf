@@ -40,7 +40,7 @@ $(function(){
       closeOnConfirm: false,
       closeOnCancel: true
     }, function (isConfirm) {
-      if (isConfirm) {
+      if (isConfirm==='') {
         swal("修改成功", "success")
       }
     })
