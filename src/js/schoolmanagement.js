@@ -1,9 +1,12 @@
 $(function () {
+    $('.jq-xc-tab .line').each(function(index, ele) {
+        $(ele).css({width: $(ele).siblings('.active').innerWidth()})
+    })
     $('.jq-xc-tab .xc-tab-head').on('click', 'li', function () {
         var $this = $(this),
             $left = $this.position().left,
             $index = $this.index()
-        $this.siblings('.line').css('left', $left)
+        $this.siblings('.line').css({'left': $left, width: $this.innerWidth() + 'px' })
         $this.addClass('active').siblings().removeClass('active')
         $this.parent().siblings('.xc-tab-body').find('>li').eq($index).addClass('active').siblings().removeClass('active')
     });

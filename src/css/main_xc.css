@@ -193,7 +193,7 @@ section {
   position: absolute;
   height: 2px;
   display: inline-block;
-  width: 105px;
+  width: 0px;
   background-color: #108EE9;
   bottom: 0;
   left: 0;
@@ -204,7 +204,7 @@ section {
 }
 .xc-tab .xc-tab-head > li {
   display: inline-block;
-  width: 105px;
+  padding: 0px 20px;
   text-align: center;
   cursor: pointer;
 }
