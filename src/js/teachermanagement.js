@@ -119,33 +119,3 @@ function checkclass () {
   </table>
 </div>  `
 }
-function change () {
-  return `<form method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
-  <div class="panel panel-dark panel-flat">
-     <div class="panel-body">
-        <div class="form-group">
-           <label class="control-label col-sm-5">教师姓名：</label>
-           <div class="col-sm-6">
-            <input type="text" name="name" placeholder="请输入" required class="form-control">
-          </div>
-        </div>
-        <div class="form-group">
-           <label class="control-label col-sm-5">教师手机：</label>
-           <div class="col-sm-6">
-            <input type="text" name="name" placeholder="请输入" required class="form-control">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label col-sm-5">账号状态：</label>
-          <div class="col-sm-6 text-lt">
-            <label class="switch switch-lg">
-              <input type="checkbox" checked="checked">
-              <span></span>
-            </label>
-          </div>
-          
-        </div>
-     </div>
-  </div>
-</form>`
-}
