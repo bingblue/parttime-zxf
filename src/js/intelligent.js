@@ -181,4 +181,21 @@ $('.jq-xc-tab .xc-tab-head').on('click', 'li', function () {
     $this.closest('.fileinput-box').find('.audio-type,.fileinput-button').show()
     $this.closest('.xc-audio').remove()
   })
+  // 图片上传
+  $(".jq-add-img,.img-group-item .btn").on('click', function () {
+    $(this).siblings('.fileImg').click()
+  })
+  $('body').on('change','.fileImg',function(){
+    uploadImg(this)
+  })
+  function uploadImg (target) {
+    let file = target.files[0]
+    let reader = new FileReader()
+    reader.readAsDataURL(file)
+    reader.onload = function(e) {
+      $(target).siblings('img').attr('src', e.target.result).show()
+      $(target).siblings('.btn').show();
+      $(target).parent().find('.img-group-up').hide();
+    }
+  }
 })

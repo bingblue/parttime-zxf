@@ -819,3 +819,49 @@ section {
 .mt10 {
   margin-top: 10px;
 }
+/* 图片批量上传 */
+.img-group-item {
+  display: flex;
+  min-width: 250px;
+  height: 250px;
+}
+.img-group-label {
+  width: 50px;
+}
+.img-group-img {
+  flex: 1;
+  width: 200px;
+  text-align: center;
+}
+.img-group-up {
+  height: 200px;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  border: 1px dashed #666666
+}
+.img-group-imgsrc {
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border: 8px solid #f2f2f2;
+  border-radius: 8px;
+  display: none;
+  margin-bottom: 10px;
+}
+.img-group-up .fa {
+  font-size: 50px;
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+.img-group-up .tip {
+  margin: 0;
+  margin-top: -10px;
+  font-size: 30px;
+}
+.img-group-img .btn {
+  margin-top: 10px;
+  display: none;
+}
+.img-group-item .fileImg {
+  display: none;
+}
