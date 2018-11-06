@@ -38,6 +38,7 @@
 
 
 
+
   <link rel="stylesheet" href="../css/main_xc.css">
 
 
@@ -84,6 +85,7 @@
       </nav>
     </header>
     <!-- endbuild -->
+
 
 
 
@@ -240,11 +242,6 @@
                 <span>销售数据</span>
               </a>
             </li>
-            <li class=" ">
-                <a href="teachermanagement_list.html" title="教师列表">
-                  <span>教师列表</span>
-                </a>
-              </li>
               <li class=" ">
                 <a href="teachermanagement_sales.html" title="销售数据">
                   <span>销售数据</span>
@@ -413,13 +410,14 @@
 
 
 
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
           教师列表-总后台
           <div class='mt10 xc-clearfix'>
-              <a href="javascript:history.go(-1)" class="btn btn-primary pull-left">返回</a>
+            <a href="javascript:history.go(-1)" class="btn btn-primary pull-left">返回</a>
           </div>
         </div>
         <div class="row">
@@ -456,6 +454,9 @@
                     </div>
                     <div class="col-sm-1">
                       <button type="button" class="btn btn-primary">搜索</button>
+                    </div>
+                    <div class="col-sm-1">
+                      <button type="button" data-toggle="modal" data-target="#createTeacher" class="btn btn-primary jq-change">创建教师</button>
                     </div>
                   </div>
                 </form>
@@ -497,8 +498,9 @@
                         <td>9999</td>
                         <td>9999</td>
                         <td>
-                          <a class="btn btn-primary jq-stop" href="javascript:;">停用账号</a>
-                          <a class="btn btn-primary jq-change" href="javascript:;">修改资料</a>
+                          <a class="btn btn-primary jq-stop" data-toggle="modal" data-target="#teacherStop" href="javascript:;">停用账号</a>
+                          <a class="btn btn-primary jq-check" data-toggle="modal" data-target="#seeClass" href="javascript:;">查看班级</a>
+                          <a class="btn btn-primary jq-change" data-toggle="modal" data-target="#createTeacher" href="javascript:;">修改资料</a>
                           <a class="btn btn-primary jq-pwd" href="javascript:;">重置密码</a>
                         </td>
                       </tr>
@@ -516,8 +518,9 @@
                         <td>9999</td>
                         <td>9999</td>
                         <td>
-                          <a class="btn btn-primary jq-stop" href="javascript:;">停用账号</a>
-                          <a class="btn btn-primary jq-change" href="javascript:;">修改资料</a>
+                          <a class="btn btn-primary jq-stop" data-toggle="modal" data-target="#teacherStop" href="javascript:;">停用账号</a>
+                          <a class="btn btn-primary jq-check" href="javascript:;" data-toggle="modal" data-target="#seeClass">查看班级</a>
+                          <a class="btn btn-primary jq-change" data-toggle="modal" data-target="#createTeacher" href="javascript:;">修改资料</a>
                           <a class="btn btn-primary jq-pwd" href="javascript:;">重置密码</a>
                         </td>
                       </tr>
@@ -535,8 +538,9 @@
                         <td>9999</td>
                         <td>9999</td>
                         <td>
-                          <a class="btn btn-primary jq-stop" href="javascript:;">停用账号</a>
-                          <a class="btn btn-primary jq-change" href="javascript:;">修改资料</a>
+                          <a class="btn btn-primary jq-stop" data-toggle="modal" data-target="#teacherStop" href="javascript:;">停用账号</a>
+                          <a class="btn btn-primary jq-check" href="javascript:;" data-toggle="modal" data-target="#seeClass">查看班级</a>
+                          <a class="btn btn-primary jq-change" data-toggle="modal" data-target="#createTeacher" href="javascript:;">修改资料</a>
                           <a class="btn btn-primary jq-pwd" href="javascript:;">重置密码</a>
                         </td>
                       </tr>
@@ -572,6 +576,7 @@
                   </div>
                 </div>  
                 <!-- endbuild -->
+
 
 
 
@@ -638,8 +643,131 @@
 
 
 
-  </div>
 
+  </div>
+  <div id="seeClass" tabindex="-1" role="dialog" aria-labelledby="myModalLabelLarge" aria-hidden="true" class="modal fade in">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 id="myModalLabelLarge" class="modal-title">查看班级</h4>
+        </div>
+        <div class="modal-body">
+          <div class="table-responsive record-table">
+            <table class="table table-bordered table-hover dataTable">
+              <thead>
+                <tr>
+                  <th>创建时间</th>
+                  <th>班级名称</th>
+                  <th>学生人数</th>
+                </tr>
+              </thead>
+              <tbody id="designerlist">
+                <tr>
+                  <td>2018-01-01 22:22:22</td>
+                  <td>未分班</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>2018-01-01 22:22:22</td>
+                  <td>过期学员</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>2018-01-01 22:22:22</td>
+                  <td>班级名称班级名称</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>2018-01-01 22:22:22</td>
+                  <td>班级名称班级名称</td>
+                  <td>10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-default">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="teacherStop" tabindex="-1" role="dialog" aria-labelledby="myModalLabelLarge" aria-hidden="true" class="modal fade in">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 id="myModalLabelLarge" class="modal-title">停用账号</h4>
+        </div>
+        <div class="modal-body">
+          <form method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
+            <div class="panel panel-dark panel-flat">
+              <p class="xc-red">停用该教师账号，您必须将账号下的学生和班级转移给其他老师</p>
+              <div class="panel-body">
+                <div class="form-group">
+                  <label class="control-label col-sm-1 xc-nowrap">转移给：</label>
+                  <div class="col-sm-6">
+                    <select name="" id="label" class="form-control">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-default">取消</button>
+          <button type="button" class="btn btn-primary">确定</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="createTeacher" tabindex="-1" role="dialog" aria-labelledby="myModalLabelLarge" aria-hidden="true" class="modal fade in">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 id="myModalLabelLarge" class="modal-title">创建教师</h4>
+        </div>
+        <div class="modal-body">
+          <form method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
+            <div class="panel panel-dark panel-flat">
+              <div class="panel-body">
+                <div class="form-group">
+                  <label class="control-label col-sm-1 xc-nowrap">教师姓名：</label>
+                  <div class="col-sm-6">
+                    <input type="text" name="name" placeholder="请输入" required class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-1 xc-nowrap">教师手机：</label>
+                  <div class="col-sm-6">
+                    <input type="text" name="name" placeholder="请输入" required class="form-control">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-default">取消</button>
+          <button type="button" class="btn btn-primary">保存</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- build:js -->
   <!-- =============== JS ===============-->
   <script src="../js/vendor/modernizr/modernizr.custom.js"></script>
@@ -654,6 +782,7 @@
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+
 
 
 
