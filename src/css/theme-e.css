@@ -156,3 +156,7 @@ body,
 .panel-primary > .panel-heading {
   background-color: #0085E6;
 }
+.content-wrapper {
+  min-width: 1500px !important;
+  overflow: auto !important;
+}
