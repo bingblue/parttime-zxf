@@ -536,7 +536,7 @@
                         <td>
                           <a class="btn btn-primary jq-exchangeschool" href="javascript:;">调换学校</a>
                           <a class="btn btn-primary jq-exchangeteacher" href="javascript:;">调换老师</a>
-                          <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
+                          <a class="btn btn-primary jq-edit" data-toggle="modal" data-target="#editStudentBox" href="javascript:;">修改资料</a>
                           <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
                           <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
                         </td>
@@ -565,7 +565,7 @@
                         <td>
                           <a class="btn btn-primary jq-exchangeschool" href="javascript:;">调换学校</a>
                           <a class="btn btn-primary jq-exchangeteacher" href="javascript:;">调换老师</a>
-                          <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
+                          <a class="btn btn-primary jq-edit" href="javascript:;" data-toggle="modal" data-target="#editStudentBox">修改资料</a>
                           <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
                           <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
                         </td>
@@ -594,7 +594,7 @@
                         <td>
                           <a class="btn btn-primary jq-exchangeschool" href="javascript:;">调换学校</a>
                           <a class="btn btn-primary jq-exchangeteacher" href="javascript:;">调换老师</a>
-                          <a class="btn btn-primary jq-edit" href="javascript:;">修改资料</a>
+                          <a class="btn btn-primary jq-edit" href="javascript:;" data-toggle="modal" data-target="#editStudentBox">修改资料</a>
                           <a class="btn btn-primary jq-phone" href="javascript:;">改绑手机</a>
                           <a class="btn btn-primary jq-pswd" href="javascript:;">重置密码</a>
                         </td>
@@ -671,7 +671,7 @@
     </footer>
     <!-- endbuild -->
 
-
+    
 
 
 
@@ -696,80 +696,88 @@
 
 
   </div>
+  <div id="editStudentBox" tabindex="-1" role="dialog" aria-labelledby="myModalLabelLarge" aria-hidden="true" class="modal fade in"
+      style="padding-right: 17px;">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 id="myModalLabelLarge" class="modal-title">修改资料</h4>
+          </div>
+          <div class="modal-body">
+            <form id='editStudent' method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
+              <div class="panel panel-dark panel-flat">
+                <div class="panel-body">
+                  <div class="form-group">
+                    <label class="control-label col-sm-2">真实姓名：</label>
+                    <div class="col-sm-6">
+                      <input type="text" name="name" placeholder="请输入真实姓名" required class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2">性别：</label>
+                    <div class="col-sm-6">
+                      <input id="id-password" placeholder="男" type="text" name="sex" required class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2">出生日期：</label>
+                    <p class="input-group date col-sm-6 datetimepicker pdlr-15">
+                      <input type="text" class="form-control" required placeholder="请选择开始时间">
+                      <span class="input-group-addon">
+                        <span class="fa fa-calendar"></span>
+                      </span>
+                    </p>
+                  </div>
+                  <!-- <div class="province-item-1 form-group" province='101300101' city='101301401' area='101301403'>
+                  </div> -->
+                  <div class="province-item-1 form-group">
+                    </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2">所在学校：</label>
+                    <div class="col-sm-6">
+                      <input id="id-password" placeholder="请输入就读的学校" type="text" name="sex" required class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2">年级：</label>
+                    <div class="col-sm-6">
+                      <select name="" id="label" class="form-control">
+                        <option value="">一年级</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2">班级：</label>
+                    <div class="col-sm-6">
+                      <input id="id-password" placeholder="请输入所在班级" type="text" name="sex" required class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group col-sm-offset-2">
+                    <label class="control-label col-sm-2">家长手机：</label>
+                    <div class="col-sm-6">
+                      <input id="id-password" placeholder="请输入家长联系电话" type="text" name="sex" required class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-default">取消</button>
+            <button type="button" class="btn btn-primary">确定</button>
+          </div>
+        </div>
+      </div>
+    </div>
   <script>
-    function text() {
-      return `<form id='editStudent'method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
-  <div class="panel panel-dark panel-flat">
-     <div class="panel-body">
-        <div class="form-group">
-           <label class="control-label col-sm-5">真实姓名：</label>
-           <div class="col-sm-6">
-            <input type="text" name="name" placeholder="请输入真实姓名" required class="form-control">
-          </div>
-        </div>
-        <div class="form-group">
-           <label class="control-label col-sm-5">性别：</label>
-           <div class="col-sm-6">
-            <input id="id-password" placeholder="男" type="text" name="sex" required class="form-control">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label col-sm-5">出生日期：</label>
-          <p class="input-group date col-sm-6 datetimepicker pdlr-15">
-            <input type="text" class="form-control" required placeholder="请选择开始时间">
-            <span class="input-group-addon">
-                <span class="fa fa-calendar"></span>
-            </span>
-          </p>
-        </div>
-        <div class="form-group">
-          <label class="control-label col-sm-5">所在地区：</label>
-          <div class="col-sm-6">
-            <select name="" id="label" class="form-control">
-              <option value="">浙江省 / 杭州市/ 西湖区</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label col-sm-5">所在学校：</label>
-          <div class="col-sm-6">
-            <input id="id-password" placeholder="请输入就读的学校" type="text" name="sex" required class="form-control">
-          </div>
-        </div>
-        <div class="form-group">
-        <label class="control-label col-sm-5">年级：</label>
-          <div class="col-sm-6">
-            <select name="" id="label" class="form-control">
-              <option value="">一年级</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-            </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label col-sm-5">班级：</label>
-          <div class="col-sm-6">
-            <input id="id-password" placeholder="请输入所在班级" type="text" name="sex" required class="form-control">
-          </div>
-        </div>
-        <div class="form-group col-sm-offset-2">
-          <label class="control-label col-sm-5">家长手机：</label>
-          <div class="col-sm-6">
-            <input id="id-password" placeholder="请输入家长联系电话" type="text" name="sex" required class="form-control">
-          </div>
-        </div>
-     </div>
-  </div>
-</form>`
-    }
     function phone() {
       return `<form method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
   <div class="panel panel-dark panel-flat">
@@ -1098,6 +1106,8 @@
 
   <script type="text/javascript" src="../js/vendor/parsley/parsley.min.js"></script>
   <script type="text/javascript" src="../js/vendor/parsley/zh_cn.js"></script>
+  <script type="text/javascript" src="../js/jquery.provincesCity.1.js"></script>
+  <script type="text/javascript" src="../js/provincesData.js"></script>
   <script src="../js/studentmanagement_admin.js"></script>
 
 

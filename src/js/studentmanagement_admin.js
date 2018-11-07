@@ -1,21 +1,7 @@
 $(function(){
   // 学生列表 修改资料
+  $(".province-item-1").ProvinceCity();
   $(".jq-edit").click(function(){
-    swal({
-      title: "",
-      text: text(),
-      html: true,
-      type: "input",
-      showCancelButton: true,
-      confirmButtonColor: "#DD6B55",
-      confirmButtonText: "确认修改",
-      cancelButtonText: "取消",
-      closeOnConfirm: false,
-      closeOnCancel: true
-    }, function (isConfirm) {
-      if(!$('#editStudent').parsley().validate()) return false
-        swal("修改成功", "success")
-    })
     setTimeout(function(){
       $('.datetimepicker').datetimepicker({
         icons: {
