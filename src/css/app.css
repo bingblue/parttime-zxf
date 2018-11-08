@@ -96,6 +96,7 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* font-family: 'Glyphicons Halflings'; */
 }
 .glyphicon.fa-pull-left {
   margin-right: 0.3em;

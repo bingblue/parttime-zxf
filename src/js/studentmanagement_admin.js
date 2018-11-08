@@ -2,23 +2,39 @@ $(function(){
   // 学生列表 修改资料
   $(".province-item-1").ProvinceCity();
   $(".jq-edit").click(function(){
-    setTimeout(function(){
-      $('.datetimepicker').datetimepicker({
-        icons: {
-          time: 'fa fa-clock-o',
-          date: 'fa fa-calendar',
-          up: 'fa fa-chevron-up',
-          down: 'fa fa-chevron-down',
-          previous: 'fa fa-chevron-left',
-          next: 'fa fa-chevron-right',
-          today: 'fa fa-crosshairs',
-          clear: 'fa fa-trash'
-        },
-        format: 'YYYY-MM-DD'
-      })
-    }, 50)
+    // setTimeout(function(){
+    //   $('.datetimepicker').datetimepicker({
+    //     language: "zh-CN",
+    //     weekStart: 1,
+    //     todayBtn:  1,
+    //     autoclose: 1,
+    //     todayHighlight: 1,
+    //     startView: 2,
+    //     minView: 2,
+    //     forceParse: 0,
+    //     icons: {
+    //       time: 'fa fa-clock-o',
+    //       date: 'fa fa-calendar',
+    //       up: 'fa fa-chevron-up',
+    //       down: 'fa fa-chevron-down',
+    //       previous: 'fa fa-chevron-left',
+    //       next: 'fa fa-chevron-right',
+    //       today: 'fa fa-crosshairs',
+    //       clear: 'fa fa-trash'
+    //     },
+    //     format: 'yyyy-mm-dd'
+    //   })
+    // }, 50)
   })
   $('.datetimepicker').datetimepicker({
+    language: "zh-CN",
+    weekStart: 1,
+    todayBtn:  1,
+    autoclose: 1,
+    todayHighlight: 1,
+    startView: 2,
+    minView: 2,
+    forceParse: 0,
     icons: {
       time: 'fa fa-clock-o',
       date: 'fa fa-calendar',
@@ -29,7 +45,7 @@ $(function(){
       today: 'fa fa-crosshairs',
       clear: 'fa fa-trash'
     },
-    format: 'YYYY-MM-DD'
+    format: 'yyyy-mm-dd'
   })
   // 学生管理 调换老师
   $('.jq-exchangeteacher').click(function(){
