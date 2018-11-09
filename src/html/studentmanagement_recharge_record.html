@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>销售数据-余额明细</title>
+  <title>学生管理-学员充值</title>
   <!-- build:css -->
   <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
@@ -37,10 +37,13 @@
 
 
 
+  <link rel="stylesheet" href="../css/wj_teacher.css">
+
+
 
 </head>
 
-<body>
+<body class="recharge-body">
   <div class="wrapper">
     <!-- build:head -->
     <header class="topnavbar-wrapper">
@@ -80,8 +83,6 @@
       </nav>
     </header>
     <!-- endbuild -->
-
-
 
 
 
@@ -399,91 +400,61 @@
 
 
 
-
-
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
-          【X月】的余额明细
+          充值记录
           <div class='mt10 xc-clearfix'>
               <a href="javascript:history.go(-1)" class="btn btn-primary pull-left">返回</a>
           </div>
-          <ol class="breadcrumb">
-            <li><a href="#">销售数据</a></li>
-            <li class="active">余额明细</li>
-          </ol>
         </div>
         <div class="row">
           <div class="col-xs-12">
             <!-- START panel-->
             <div class="panel-default">
-              <div class="panel-heading">
-                <form class="text-right form-lineH">
-                  <div class="row">
-                    <div class="form-group col-sm-3">
-                      <label class="col-sm-4">选择：</label>
-                      <div class="col-sm-8">
-                        <select name="" id="" class="form-control">
-                          <option value="">全部</option>
-                          <option value="1">学校余额</option>
-                          <option value="2">学生充值</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-sm-9">
-                      <button type="button" class="btn btn-primary">返回</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
               <!-- START table-responsive-->
               <div class="panel-heading">
-                <div class="table-responsive">
-                  <table id="" class="table table-bordered table-hover">
-                    <thead>
-                      <tr>
-                        <th>时间</th>
-                        <th>操作类型</th>
-                        <th>增减</th>
-                        <th>金额</th>
-                        <th>学生充值类型</th>
-                        <th>被充值学生</th>
-                        <th>操作人</th>
-                      </tr>
-                    </thead>
-                    <tbody id="designerlist">
-                      <tr>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>学校余额</td>
-                        <td class="text-success">增加</td>
-                        <td class="text-success">10000</td>
-                        <td>30天充值</td>
-                        <td>姓名（18000000000）</td>
-                        <td>老师-姓名（A000000）</td>
-                      </tr>
-                      <tr>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>学校余额</td>
-                        <td class="text-danger">减少</td>
-                        <td class="text-danger">10000</td>
-                        <td>30天充值</td>
-                        <td>姓名（18000000000）</td>
-                        <td>老师-姓名（A000000）</td>
-                      </tr>
-                      <tr>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>学校余额</td>
-                        <td class="text-danger">减少</td>
-                        <td class="text-danger">10000</td>
-                        <td>30天充值</td>
-                        <td>姓名（18000000000）</td>
-                        <td>老师-姓名（A000000）</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
+                  <div class="table-responsive">
+                      <table class="table table-bordered table-hover dataTable">
+                        <thead>
+                          <tr>
+                            <th>充值时间</th>
+                            <th>充值学员组</th>
+                            <th>时长</th>
+                            <th>学生手机</th>
+                            <th>学生姓名</th>
+                            <th>操作人</th>
+                          </tr>
+                        </thead>
+                        <tbody id="designerlist">
+                          <tr>
+                            <td>2018-01-01 22:22:22</td>
+                            <td>小学</td>
+                            <td>5天</td>
+                            <td>180000000000</td>
+                            <td>学生姓名</td>
+                            <td>校长姓名（校长）</td>
+                          </tr>
+                          <tr>
+                            <td>2018-01-01 22:22:22</td>
+                            <td>小学</td>
+                            <td>5天</td>
+                            <td>180000000000</td>
+                            <td>学生姓名</td>
+                            <td>校长姓名（校长）</td>
+                          </tr>
+                          <tr>
+                            <td>2018-01-01 22:22:22</td>
+                            <td>小学</td>
+                            <td>5天</td>
+                            <td>180000000000</td>
+                            <td>学生姓名</td>
+                            <td>校长姓名（校长）</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                 <!-- build:pages -->
                 <!-- 分页 -->
                 <div class="row">
@@ -534,6 +505,11 @@
 
 
 
+
+
+
+
+
               </div>
             </div>
           </div>
@@ -541,14 +517,12 @@
       </div>
     </section>
     <!-- 主要内容END -->
-
+    
     <!-- build:foot -->
     <footer>
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
-
-
 
 
 
@@ -607,9 +581,7 @@
 
 
 
-
-
-
+  <script src="../js/studentmanagement.js"></script>
 
 
 
