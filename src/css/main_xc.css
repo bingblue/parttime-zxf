@@ -867,3 +867,6 @@ section {
 .img-group-item .fileImg {
   display: none;
 }
+.form-text {
+  padding-top: 10px;
+}
