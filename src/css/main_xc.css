@@ -235,6 +235,9 @@ section {
 .xc-tab .xc-read li{
   width: 60px;
 }
+.xc-tab .xc-tab-head li{
+  width: auto;
+}
 .xc-tab .xc-bas .active {
   color: #108EE9;
 }
