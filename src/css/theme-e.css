@@ -167,3 +167,7 @@ body,
 .btn {
   margin-bottom: 5px !important;
 }
+.scseting {
+  min-width: auto !important;
+  overflow-x: hidden !important;
+}
