@@ -171,3 +171,12 @@ body,
   min-width: auto !important;
   overflow-x: hidden !important;
 }
+.sweet-alert h2{
+  font-size: 25px !important;
+}
+.sweet-alert .text-lt{
+  text-align: left !important;
+}
+.sweet-alert p .control-label{
+  color: #797979 !important;
+}
