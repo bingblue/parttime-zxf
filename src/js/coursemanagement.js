@@ -66,6 +66,22 @@ $(function(){
   calcTableHeight()
   $(".jq-xc-table li").on('click', function () {
       var $this = $(this);
+      var $name = $this.attr('name')
+      if ($name) {
+        if ($name === 'tbkc') {
+          $('.jq-selectb').text('选择版本')
+          $('.jq-selectk').text('课本')
+        }
+        if ($name === 'gdyf') {
+          console.log($name)
+          $('.jq-selectb').text('选择知识点')
+          $('.jq-selectk').text('')
+        }
+        if ($name === 'ztcc') {
+          $('.jq-selectb').text('选择考试')
+          $('.jq-selectk').text('')
+        }
+      }
       if (!$this.hasClass('active')) {
           $this.addClass('active').siblings().removeClass('active')
       }
