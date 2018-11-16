@@ -280,6 +280,7 @@ $(function(){
       closeOnCancel: true
     }, function (isConfirm) {
       if (isConfirm) {
+        $('.sweet-alert .confirm').attr('disabled', true)
         swal({
           title: "确定为学生：【学生名】【电话】、【学生名】【电话】、【学生名】【电话】、【学生名】【电话】 进行充值吗？",
           text: rechargeconfim(),
