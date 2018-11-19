@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>学习报告-详细记录</title>
+  <title>课程管理-班级课程</title>
   <!-- build:css -->
   <link rel="stylesheet" href="../js/vendor/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../js/vendor/simple-line-icons/css/simple-line-icons.css">
@@ -19,9 +19,6 @@
   <link rel="stylesheet" href="../css/app.css" id="maincss">
   <link rel="stylesheet" href="../css/theme-e.css">
   <!-- endbuild -->
-
-
-
 
 
 
@@ -88,12 +85,6 @@
       </nav>
     </header>
     <!-- endbuild -->
-
-
-
-
-
-
 
 
 
@@ -419,201 +410,249 @@
 
 
 
-
-
-
-
-
-
     <!-- 主要内容 -->
     <section>
-      <div class="content-wrapper">
+      <div class="content-wrapper coursemanagement-wp">
         <div class="content-heading">
-          <div class="clearfix">
-              <span class="pull-left">张三（18000000000）的学习报告</span>
-              <button class="pull-right btn btn-info" type="button">返回</button>
-          </div>
-          <ol class="breadcrumb">
-            <li><a href="#">学习报告</a></li>
-            <li><a href="#">全部报告</a></li>
-            <li class="active">详细记录</li>
-          </ol>
+          新增班级课程
           <div class='mt10 xc-clearfix'>
               <a href="javascript:history.go(-1)" class="btn btn-primary pull-left">返回</a>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <div class="mb-20">
-              <a class="wj-a" href="./studyreport_all_info.html">今日学况</a>
-              <a class="wj-a" href="./studyreport_all_info_2.html">学习日迹</a>
-              <a class="wj-a wj-a-active" href="./studyreport_all_info_3.html">学习记录</a>
-              <a class="wj-a" href="./studyreport_all_info_4.html">学习地图</a>
-            </div>
-            <div class="panel panel-default">
-              <!-- START table-responsive-->
-            <div class="panel-heading">
-              <form class="form-lineH">
-                  <div class="row">
-                    <label class="col-sm-1">时间段</label>
-                    <div class="form-group col-sm-2">
-                      <div class="radio c-radio">
-                        <label>
-                            <input type="radio" name="a" value="option1">
-                            <span class="fa fa-circle"></span>最近30天</label>
-                      </div>
-                    </div>
-                    <div class="form-group col-sm-8">
-                        <div class="radio c-radio col-sm-2">
-                          <label>
-                              <input type="radio" name="a" value="option1">
-                              <span class="fa fa-circle"></span>选取时间</label>
-                        </div>
-                        <div class="col-sm-4">
-                            <p class="input-group date datetimepicker2">
-                              <input type="text" class="form-control" placeholder="请选择开始时间">
-                              <span class="input-group-addon">
-                                  <span class="fa fa-calendar"></span>
-                              </span>
-                            </p>
-                          </div>
-                          <div class="col-sm-4">
-                              <p class="input-group date datetimepicker2">
-                                <input type="text" class="form-control" placeholder="请结束开始时间">
-                                <span class="input-group-addon">
-                                    <span class="fa fa-calendar"></span>
-                                </span>
-                              </p>
-                            </div>
-                      </div>
-                  </div>
-                </form>
-                <div class="table-responsive">
-                  <table class="table table-bordered table-hover dataTable">
-                    <thead>
-                      <tr>
-                        <th>开始时间</th>
-                        <th>有效时间</th>
-                        <th>学习板块</th>
-                        <th>次级板块</th>
-                        <th>单元信息</th>
-                        <th>学习结果</th>
-                        <th>得分</th>
-                      </tr>
-                    </thead>
-                    <tbody id="designerlist">
-                      <tr>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>22:22:22</td>
-                        <td>同步课程-智学单词</td>
-                        <td>智能预习</td>
-                        <td>牛津上海版  七年级上册  Unit2</td>
-                        <td>完成</td>
-                        <td>120</td>
-                      </tr>
-                      <tr>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>22:22:22</td>
-                        <td>同步课程-智学单词</td>
-                        <td>智能预习</td>
-                        <td>牛津上海版  七年级上册  Unit2</td>
-                        <td>完成</td>
-                        <td>120</td>
-                      </tr>
-                      <tr>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>22:22:22</td>
-                        <td>同步课程-智学单词</td>
-                        <td>智能预习</td>
-                        <td>牛津上海版  七年级上册  Unit2</td>
-                        <td class="text-danger">未通过</td>
-                        <td>120</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-  
-                <!-- build:pages -->
-                <!-- 分页 -->
-                <div class="row">
-                  <div class="pagination-fa col-lg-4 col-lg-offset-8 text-right">
-                    <ul class="pagination pagination-sm m0">
-                      <li>
-                        <a href="#" aria-label="Previous">
-                          <span aria-hidden="true">«</span>
-                        </a>
+            <div class="xc-table">
+              <div class="xc-table-head">
+                <ul>
+                  <li class="col-xs-4">课程阶段</li>
+                  <li class="col-xs-4">选择版本</li>
+                  <li class="col-xs-4">课本</li>
+                </ul>
+              </div>
+              <div class="xc-table-body wj-table sg">
+                <ul class="jq-xc-table" style="height: 232px;">
+                  <li class="one active"><span class="text">小学英语</span> 
+                    <ul class="two">
+                      <li class="active"><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active"><span>第一册（一年级上学期）</span>
+                          </li>
+                          <li><span>第二册（一年级下学期）</span>
+                          </li>
+                          <li><span>第二册（一年级下学期）</span>
+                          
+                          </li>
+                          <li><span>第二册（一年级下学期）</span>
+                            
+                           
+                          </li>
+                        </ul>
                       </li>
-                      <li>
-                        <a href="#">1</a>
+                      <li><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active">小学Unit 2-1 Part1
+                            
+                          </li>
+                          <li>小学Unit 2-2 Part1
+                            
+                          </li>
+                        </ul>
                       </li>
-                      <li>
-                        <a href="#">2</a>
+                      <li class=""><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active">小学Unit 3-1 Part1
+                            
+                          </li>
+                          <li>小学Unit 3-2 Part1
+                            
+                          </li>
+                        </ul>
                       </li>
-                      <li class="active">
-                        <a href="#">3</a>
-                      </li>
-                      <li>
-                        <a href="#" aria-label="Next">
-                          <span aria-hidden="true">»</span>
-                        </a>
+                      <li class=""><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active">小学Unit 4-1 Part1
+                            
+                          </li>
+                          <li>小学Unit 4-2 Part1
+                            
+                          </li>
+                        </ul>
                       </li>
                     </ul>
-                  </div>
-                </div>  
-                <!-- endbuild -->
+                  </li>
+                  <li class="one"><span class="text">初中英语</span> 
+                    <ul class="two">
+                      <li class="active"><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active"><span>第一册（一年级上学期）</span>
+                            
+                            
+                          </li>
+                          <li><span>第二册（一年级下学期）</span>
+                            
 
+                          </li>
+                          <li><span>第二册（一年级下学期）</span>
+                            
+                          </li>
+                          <li><span>第二册（一年级下学期）</span>
+                            
+                          </li>
+                        </ul>
+                      </li>
+                      <li><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active">小学Unit 2-1 Part1
+                            
+                          </li>
+                          <li>小学Unit 2-2 Part1
+                            
+                          </li>
+                        </ul>
+                      </li>
+                      <li class=""><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active">小学Unit 3-1 Part1
+                            
+                          </li>
+                          <li>小学Unit 3-2 Part1
+                            
+                          </li>
+                        </ul>
+                      </li>
+                      <li class=""><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active">小学Unit 4-1 Part1
+                            
+                          </li>
+                          <li>小学Unit 4-2 Part1
+                            
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="one"><span class="text">高中英语</span> 
+                    <ul class="two">
+                      <li class="active"><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active"><span>第一册（一年级上学期）</span>
+                            
+                            
+                          </li>
+                          <li><span>第二册（一年级下学期）</span>
+                            
 
+                          </li>
+                          <li><span>第二册（一年级下学期）</span>
+                            
+                          </li>
+                          <li><span>第二册（一年级下学期）</span>
+                            
+                          </li>
+                        </ul>
+                      </li>
+                      <li><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active">小学Unit 2-1 Part1
+                            
+                          </li>
+                          <li>小学Unit 2-2 Part1
+                            
+                          </li>
+                        </ul>
+                      </li>
+                      <li class=""><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active">小学Unit 3-1 Part1
+                            
+                          </li>
+                          <li>小学Unit 3-2 Part1
+                            
+                          </li>
+                        </ul>
+                      </li>
+                      <li class=""><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active">小学Unit 4-1 Part1
+                            
+                          </li>
+                          <li>小学Unit 4-2 Part1
+                            
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="one"><span class="text">大学英语</span> 
+                    <ul class="two">
+                      <li class="active"><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active"><span>第一册（一年级上学期）</span>
+                            
+                            
+                          </li>
+                          <li><span class="">第二册（一年级下学期）</span>
+                            
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+                          </li>
+                          <li><span class="">第二册（一年级下学期）</span>
+                            
+                          </li>
+                          <li><span class="">第二册（一年级下学期）</span>
+                            
+                          </li>
+                        </ul>
+                      </li>
+                      <li><span class="">教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active">小学Unit 2-1 Part1
+                            
+                          </li>
+                          <li>小学Unit 2-2 Part1
+                            
+                          </li>
+                        </ul>
+                      </li>
+                      <li class=""><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active">小学Unit 3-1 Part1
+                            
+                          </li>
+                          <li>小学Unit 3-2 Part1
+                            
+                          </li>
+                        </ul>
+                      </li>
+                      <li class=""><span>教材版本教材版本教材版本教材版本教材版本</span>
+                        <ul class="three ">
+                          <li class="active">小学Unit 4-1 Part1
+                            
+                          </li>
+                          <li>小学Unit 4-2 Part1
+                            
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
+      <div class="row text-center">
+        <button type="button" class="btn btn-primary jq-addclass">确认添加</button>
+      </div>
     </section>
     <!-- 主要内容END -->
-
+    
     <!-- build:foot -->
     <footer>
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
-
-
-
-
-
-
 
 
 
@@ -678,14 +717,8 @@
 
 
 
-
-
-  <script src="../js/studyreport.js"></script>
-
-
-
-
-
+  <script src="../vendor/nestable/jquery.nestable.js"></script>
+  <script src="../js/coursemanagement.js"></script>
 
 
 

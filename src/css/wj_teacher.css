@@ -296,3 +296,9 @@
   .xc-table-body.big .one .two {
     left: calc(100% / 3);
   }
+  .sg .one {
+    width: 33.33333%;
+  }
+  .sg .one .two {
+    left: calc(100% / 3);
+  }

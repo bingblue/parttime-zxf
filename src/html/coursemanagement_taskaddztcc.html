@@ -40,6 +40,7 @@
 
 
 
+
   <link rel="stylesheet" href="../css/wj_teacher.css">
 
 </head>
@@ -84,6 +85,7 @@
       </nav>
     </header>
     <!-- endbuild -->
+
 
 
 
@@ -411,6 +413,7 @@
 
 
 
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper coursemanagement-wp">
@@ -422,514 +425,76 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <form id='editStudent' method="post" class="form-horizontal" action="#" data-parsley-validate="" novalidate="">
-              <p class="xc-red">为 姓名（18000000000）添加任务/为班级 班级名班级名（12名学生） 添加任务</p>
-              <div class="form-group">
-                <label class="control-label col-sm-1">开始时间：</label>
-                <div class="col-sm-2">
-                  <div class="input-group date  datetimepicker pdlr-15">
-                    <input type="text" class="form-control" required placeholder="请选择开始时间">
-                    <span class="input-group-addon">
-                      <span class="fa fa-calendar"></span>
-                    </span>
-                  </div>
-                </div>
-
-                <label class="control-label col-sm-1">结束时间：</label>
-                <div class=" col-sm-2">
-                  <div class="input-group date datetimepicker pdlr-15">
-                    <input type="text" class="form-control" required placeholder="请选择结束时间">
-                    <span class="input-group-addon">
-                      <span class="fa fa-calendar"></span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </form>
             <div class="xc-table">
               <div class="xc-table-head">
                 <ul>
-                  <li class="col-xs-2">课程阶段</li>
-                  <li class="col-xs-4">课程类型</li>
-                  <li class="col-xs-4 jq-selectb">选择版本</li>
-                  <li class="col-xs-2 jq-selectk">课本</li>
+                  <li class="col-xs-4">课程阶段</li>
+                  <li class="col-xs-4">选择考试</li>
                 </ul>
               </div>
-              <div class="xc-table-body wj-table">
+              <div class="xc-table-body wj-table sg">
                 <ul class="jq-xc-table" style="height: 232px;">
-                  <li class="one"><span class="text">启蒙课程</span>
+                  <li class="one active"><span class="text">小学英语</span> 
                     <ul class="two">
-                      <li class="active" name='tbkc'><span>同步课程</span>
-                        <ul class="three ">
-                          <li class="active"><span>选择版本1</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）1-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）1-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本2</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）2-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）2-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本3</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）3-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）3-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本4</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）4-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）4-2
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+                      <li class="active"><span>小升初冲刺</span>
+                        
                       </li>
-                      <li name='gdyf'><span>搞定语法</span>
-                        <ul class="three ">
-                          <li class="active">定语从句</li>
-                          <li>代词</li>
-                          <li>数词</li>
-                          <li>代词</li>
-                          <li>数词</li>
-                          <li>代词</li>
-                          <li>数词</li>
-                        </ul>
+                      <li><span>小升初冲刺</span>
+                        
                       </li>
-                      <li name='tbkc'><span>同步智测</span>
-                        <ul class="three ">
-                          <li class="active"><span>选择版本1</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）1-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）1-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本2</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）2-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）2-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本3</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）3-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）3-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本4</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）4-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）4-2
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+                      <li class=""><span>小升初冲刺</span>
+                        
                       </li>
-                      <li name="ztcc"><span>真题冲刺</span>
-                        <ul class="three ">
-                          <li class="active">小升初冲刺</li>
-                          <li>中考冲刺</li>
-                          <li>高考冲刺</li>
-                          <li>中考冲刺</li>
-                        </ul>
+                      <li class=""><span>小升初冲刺</span>
+                        
                       </li>
                     </ul>
                   </li>
-                  <li class="one active"><span class="text">小学英语</span>
+                  <li class="one"><span class="text">初中英语</span> 
                     <ul class="two">
-                      <li class="active" name='tbkc'><span>同步课程</span>
-                        <ul class="three ">
-                          <li class="active"><span>选择版本1</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）1-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）1-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本2</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）2-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）2-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本3</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）3-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）3-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本4</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）4-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）4-2
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+                      <li class="active"><span>小升初冲刺</span>
+                        
                       </li>
-                      <li name='gdyf'><span>搞定语法</span>
-                        <ul class="three ">
-                          <li class="active">定语从句</li>
-                          <li>代词</li>
-                          <li>数词</li>
-                          <li>代词</li>
-                          <li>数词</li>
-                          <li>代词</li>
-                          <li>数词</li>
-                        </ul>
+                      <li><span>小升初冲刺</span>
+                        
                       </li>
-                      <li name='tbkc'><span>同步智测</span>
-                        <ul class="three ">
-                          <li class="active"><span>选择版本1</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）1-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）1-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本2</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）2-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）2-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本3</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）3-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）3-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本4</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）4-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）4-2
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+                      <li class=""><span>小升初冲刺</span>
+                       
                       </li>
-                      <li name="ztcc"><span>真题冲刺</span>
-                        <ul class="three ">
-                          <li class="active">小升初冲刺</li>
-                          <li>中考冲刺</li>
-                          <li>高考冲刺</li>
-                          <li>中考冲刺</li>
-                        </ul>
+                      <li class=""><span>小升初冲刺</span>
+                       
                       </li>
                     </ul>
                   </li>
-                  <li class="one"><span class="text">初中英语</span>
+                  <li class="one"><span class="text">高中英语</span> 
                     <ul class="two">
-                      <li class="active" name='tbkc'><span>同步课程</span>
-                        <ul class="three ">
-                          <li class="active"><span>选择版本1</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）1-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）1-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本2</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）2-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）2-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本3</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）3-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）3-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本4</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）4-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）4-2
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+                      <li class="active"><span>小升初冲刺</span>
+                        
                       </li>
-                      <li name='gdyf'><span>搞定语法</span>
-                        <ul class="three ">
-                          <li class="active">定语从句</li>
-                          <li>代词</li>
-                          <li>数词</li>
-                          <li>代词</li>
-                          <li>数词</li>
-                          <li>代词</li>
-                          <li>数词</li>
-                        </ul>
+                      <li><span>小升初冲刺</span>
+                       
                       </li>
-                      <li name='tbkc'><span>同步智测</span>
-                        <ul class="three ">
-                          <li class="active"><span>选择版本1</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）1-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）1-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本2</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）2-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）2-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本3</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）3-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）3-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本4</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）4-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）4-2
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+                      <li class=""><span>小升初冲刺</span>
+                       
                       </li>
-                      <li name="ztcc"><span>真题冲刺</span>
-                        <ul class="three ">
-                          <li class="active">小升初冲刺</li>
-                          <li>中考冲刺</li>
-                          <li>高考冲刺</li>
-                          <li>中考冲刺</li>
-                        </ul>
+                      <li class=""><span>小升初冲刺</span>
+                       
                       </li>
                     </ul>
                   </li>
-                  <li class="one"><span class="text">高中英语</span>
+                  <li class="one"><span class="text">大学英语</span> 
                     <ul class="two">
-                      <li class="active" name='tbkc'><span>同步课程</span>
-                        <ul class="three ">
-                          <li class="active"><span>选择版本1</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）1-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）1-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本2</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）2-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）2-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本3</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）3-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）3-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本4</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）4-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）4-2
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+                      <li class="active"><span>小升初冲刺</span>
+                       
                       </li>
-                      <li name='gdyf'><span>搞定语法</span>
-                        <ul class="three ">
-                          <li class="active">定语从句</li>
-                          <li>代词</li>
-                          <li>数词</li>
-                          <li>代词</li>
-                          <li>数词</li>
-                          <li>代词</li>
-                          <li>数词</li>
-                        </ul>
+                      <li><span class="">小升初冲刺</span>
+                       
                       </li>
-                      <li name='tbkc'><span>同步智测</span>
-                        <ul class="three ">
-                          <li class="active"><span>选择版本1</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）1-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）1-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本2</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）2-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）2-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本3</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）3-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）3-2
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span>选择版本4</span>
-
-                            <ul class="four">
-                              <li class="active">
-                                第一册（一年级上学期）4-1
-                              </li>
-                              <li>
-                                第一册（一年级上学期）4-2
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+                      <li class=""><span>小升初冲刺</span>
+                        
                       </li>
-                      <li name="ztcc"><span>真题冲刺</span>
-                        <ul class="three ">
-                          <li class="active">小升初冲刺</li>
-                          <li>中考冲刺</li>
-                          <li>高考冲刺</li>
-                          <li>中考冲刺</li>
-                        </ul>
+                      <li class=""><span>小升初冲刺</span>
+                        
                       </li>
                     </ul>
                   </li>
@@ -949,6 +514,7 @@
       <span>&copy; 2018 - 智厢逢</span>
     </footer>
     <!-- endbuild -->
+
 
 
 
@@ -1013,7 +579,6 @@
               <label class="col-lg-1 control-label" style="min-width: 100px;">已选内容</label>
               <div class="col-lg-10 form-text">
                 已选 同步课程-牛津上海版 七年级第二册
-                <button type="button" data-dismiss="modal" class="btn btn-primary">选择内容</button>
               </div>
             </div>
             <div class="form-group">
@@ -1477,6 +1042,7 @@
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+
 
 
 
