@@ -63,7 +63,7 @@ $(function(){
     })
   })
   // 同步课程table切换
-  calcTableHeight()
+  // calcTableHeight()
   $(".jq-xc-table li").on('click', function () {
       var $this = $(this);
       var $name = $this.attr('name')
@@ -85,7 +85,7 @@ $(function(){
       if (!$this.hasClass('active')) {
           $this.addClass('active').siblings().removeClass('active')
       }
-      calcTableHeight()
+      // calcTableHeight()
   })
   function calcTableHeight () {
    var $maxHeight = 0;

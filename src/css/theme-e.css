@@ -160,6 +160,9 @@ body,
 .content-wrapper {
   overflow: auto !important;
 }
+.content-wrapper.publicWidth {
+  min-width: 2000px !important;
+}
 .table-responsive {
   overflow-x: hidden !important;
 }
