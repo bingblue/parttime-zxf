@@ -298,7 +298,9 @@
   }
   .sg .one {
     width: 33.33333%;
+    box-sizing: border-box;
+    border-right: 1px solid #eeeeee;
   }
   .sg .one .two {
-    left: calc(100% / 3);
+    left: calc((100% / 3));
   }
