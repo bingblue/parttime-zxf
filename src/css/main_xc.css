@@ -37,7 +37,6 @@ section {
 }
 .xc-table-body {
   background-color: #fff;
-  overflow-x: scroll;
 }
 .xc-table-body .col-xs-4,
 .xc-table-body .col-xs-2 {
@@ -90,6 +89,7 @@ section {
 .xc-table-body .one {
   width: 25%;
   white-space: nowrap;
+  border-right: 1px solid #eeeeee;
 }
 .xc-table-body li {
   border-bottom: 1px solid #eeeeee;
