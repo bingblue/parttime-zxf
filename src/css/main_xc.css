@@ -137,9 +137,9 @@ section {
 .table-words tbody {
   background-color: #fff;
 }
-.table-words .btn + .btn {
+/* .table-words .btn + .btn {
   margin-right: 5px;
-}
+} */
 /* 单词列表 表格 end */
 /* 真题冲刺 start*/
 

@@ -417,6 +417,18 @@ function createclass () {
             <input type="text" name="name" placeholder="请输入" required class="form-control">
           </div>
         </div>
+        <div class="form-group">
+           <label class="control-label col-sm-5">所属学校</label>
+           <div class="col-sm-6">
+            <input type="text" name="p" placeholder="请输入" required class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+           <label class="control-label col-sm-5">所属教师</label>
+           <div class="col-sm-6">
+            <input type="text" name="t" placeholder="请输入" required class="form-control">
+          </div>
+        </div>
      </div>
   </div>
 </form>`
