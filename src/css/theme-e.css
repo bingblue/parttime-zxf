@@ -4,7 +4,7 @@
 body,
 .wrapper > section {
   background-color: #f5f7fa;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .wrapper > .aside {
   background-color: #3a3f51;
