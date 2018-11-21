@@ -434,11 +434,11 @@
               </div>
               <div class="xc-table-body wj-table sg">
                 <ul class="jq-xc-table" style="height: 232px;">
-                  <li class="one active"><span class="text">小学英语</span> 
+                  <li class="one active" data-id="3434"><span class="text">小学英语</span> 
                     <ul class="two">
                       <li class="active"><span>教材版本教材版本教材版本教材版本教材版本</span>
                         <ul class="three ">
-                          <li class="active"><span>第一册（一年级上学期）</span>
+                          <li class="active" data-id="1"><span>第一册（一年级上学期）</span>
                           </li>
                           <li><span>第二册（一年级下学期）</span>
                           </li>
@@ -483,9 +483,9 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="one"><span class="text">初中英语</span> 
+                  <li class="one"  data-id="555"><span class="text">初中英语</span> 
                     <ul class="two">
-                      <li class="active"><span>教材版本教材版本教材版本教材版本教材版本</span>
+                      <li class="active" data-id="5"><span>教材版本教材版本教材版本教材版本教材版本</span>
                         <ul class="three ">
                           <li class="active"><span>第一册（一年级上学期）</span>
                             
@@ -505,7 +505,7 @@
                       </li>
                       <li><span>教材版本教材版本教材版本教材版本教材版本</span>
                         <ul class="three ">
-                          <li class="active">小学Unit 2-1 Part1
+                          <li class="active" data-id="111">小学Unit 2-1 Part1
                             
                           </li>
                           <li>小学Unit 2-2 Part1
@@ -515,7 +515,7 @@
                       </li>
                       <li class=""><span>教材版本教材版本教材版本教材版本教材版本</span>
                         <ul class="three ">
-                          <li class="active">小学Unit 3-1 Part1
+                          <li class="active" data-id="1333">小学Unit 3-1 Part1
                             
                           </li>
                           <li>小学Unit 3-2 Part1
@@ -525,7 +525,7 @@
                       </li>
                       <li class=""><span>教材版本教材版本教材版本教材版本教材版本</span>
                         <ul class="three ">
-                          <li class="active">小学Unit 4-1 Part1
+                          <li class="active" data-id="3444">小学Unit 4-1 Part1
                             
                           </li>
                           <li>小学Unit 4-2 Part1
@@ -539,7 +539,7 @@
                     <ul class="two">
                       <li class="active"><span>教材版本教材版本教材版本教材版本教材版本</span>
                         <ul class="three ">
-                          <li class="active"><span>第一册（一年级上学期）</span>
+                          <li class="active" data-id="343243"><span>第一册（一年级上学期）</span>
                             
                             
                           </li>
@@ -557,7 +557,7 @@
                       </li>
                       <li><span>教材版本教材版本教材版本教材版本教材版本</span>
                         <ul class="three ">
-                          <li class="active">小学Unit 2-1 Part1
+                          <li class="active" data-id="1231231">小学Unit 2-1 Part1
                             
                           </li>
                           <li>小学Unit 2-2 Part1
@@ -577,7 +577,7 @@
                       </li>
                       <li class=""><span>教材版本教材版本教材版本教材版本教材版本</span>
                         <ul class="three ">
-                          <li class="active">小学Unit 4-1 Part1
+                          <li class="active" data-id="8967867">小学Unit 4-1 Part1
                             
                           </li>
                           <li>小学Unit 4-2 Part1
@@ -609,7 +609,7 @@
                       </li>
                       <li><span class="">教材版本教材版本教材版本教材版本教材版本</span>
                         <ul class="three ">
-                          <li class="active">小学Unit 2-1 Part1
+                          <li class="active" data-id="6786">小学Unit 2-1 Part1
                             
                           </li>
                           <li>小学Unit 2-2 Part1
@@ -629,7 +629,7 @@
                       </li>
                       <li class=""><span>教材版本教材版本教材版本教材版本教材版本</span>
                         <ul class="three ">
-                          <li class="active">小学Unit 4-1 Part1
+                          <li class="active" data-id="123">小学Unit 4-1 Part1
                             
                           </li>
                           <li>小学Unit 4-2 Part1
@@ -726,7 +726,18 @@
   <script src="../vendor/nestable/jquery.nestable.js"></script>
   <script src="../js/coursemanagement.js"></script>
 
-
+  <script>
+    $(function(){
+      $('.jq-addclass').click(function(){
+        var oneId = $('.one.active').data('id')
+        var twoId = $('.one.active .two>li.active').data('id')
+        var threeId = $('.one.active .two>li.active .three>li.active').data('id')
+        alert(oneId)
+        alert(twoId)
+        alert(threeId)
+      })
+    })
+  </script>
 
 
 
