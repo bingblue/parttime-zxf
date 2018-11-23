@@ -153,14 +153,64 @@ $('.jq-xc-tab .xc-tab-head').on('click', 'li', function () {
       $this = $(this),
       $index = $this.siblings('.form-group').length
     formGroup.push("<div class='form-group'>")
-    formGroup.push("<label class='col-lg-1 control-label'>" + ($index + 1) + "：</label>")
+    formGroup.push("<label class='col-lg-1 control-label'>" +  (($index + 1) > 9 ? ($index + 1) : '0' +  ($index + 1)) + "：</label>")
     formGroup.push("<div class='col-lg-11'>")
     formGroup.push("<input type='text' name='" + ('name' + ($index + 1)) + "' placeholder='请输入句子' class='form-control'>")
     formGroup.push("</div>")
     formGroup.push("</div>")
     $this.before(formGroup.join(''))
+    $(".jq-add-tm").click()
   })
-
+  $(".jq-add-tm").on("click", function (event) {
+    event.preventDefault()
+    var formGroup = [],
+      $this = $(this),
+      $index = $this.siblings('.form-group').length
+    formGroup.push("<div class='form-group'>")
+    formGroup.push("<label class='col-lg-1 control-label'>" + (($index + 1) > 9 ? ($index + 1) : '0' +  ($index + 1))  + "：</label>")
+    formGroup.push(`<div class="col-lg-2">
+    <select name="account" class="form-control m-b">
+      <option value="">请选择句子</option>
+      <option>01</option>
+      <option>02</option>
+      <option>03</option>
+      <option>04</option>
+    </select>
+  </div>`)
+  formGroup.push(`<div class="col-lg-2">
+  <select name="account" class="form-control m-b jq-tm-change">
+    <option>修改</option>
+    <option selected>增加</option>
+    <option>删除</option>
+  </select>
+</div>
+<label for="" class="control-label pull-left">在</label>
+<div class="col-lg-2">
+  <input type="text" placeholder="请输入" class="form-control">
+</div>
+<label for="" class="control-label pull-left">后增</label>
+<div class="col-lg-2">
+  <input type="text" placeholder="请输入" class="form-control">
+</div></div>`)
+    $this.before(formGroup.join(''))
+  })
+  $('body').on('change', '.jq-tm-change', function() {
+   var $val = $(this).val()
+   var $one = $(this).parent().siblings('.pull-left').eq(0)
+   var $two = $(this).parent().siblings('.pull-left').eq(1)
+   if ($val == '修改') {
+     console.log('1')
+    $one.html('&nbsp;&nbsp;&nbsp;')
+    $two.text('改为')
+   } else {
+    $one.html('在')
+    if ($val === '增加') {
+      $two.text('后增')
+    } else {
+      $two.text('后删')
+    }
+   }
+  })
   // 上传mp3
   $('body').on('change', '.file-ipt', function () {
     upload(this)
