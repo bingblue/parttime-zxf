@@ -160,6 +160,9 @@ $('.jq-xc-tab .xc-tab-head').on('click', 'li', function () {
     formGroup.push("</div>")
     $this.before(formGroup.join(''))
     $(".jq-add-tm").click()
+    setTimeout(function(){
+      $('.jzteam').append("<option>" + (($index + 1) > 9 ? ($index + 1) : '0' +  ($index + 1))+"</option>")
+    })
   })
   $(".jq-add-tm").on("click", function (event) {
     event.preventDefault()
@@ -169,12 +172,8 @@ $('.jq-xc-tab .xc-tab-head').on('click', 'li', function () {
     formGroup.push("<div class='form-group'>")
     formGroup.push("<label class='col-lg-1 control-label'>" + (($index + 1) > 9 ? ($index + 1) : '0' +  ($index + 1))  + "：</label>")
     formGroup.push(`<div class="col-lg-2">
-    <select name="account" class="form-control m-b">
-      <option value="">请选择句子</option>
-      <option>01</option>
-      <option>02</option>
-      <option>03</option>
-      <option>04</option>
+    <select name="account" class="form-control jzteam  m-b">
+      ${$('.jzteam').eq(0).html()}
     </select>
   </div>`)
   formGroup.push(`<div class="col-lg-2">
