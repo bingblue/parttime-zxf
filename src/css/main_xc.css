@@ -1590,6 +1590,9 @@
 .intelText-box .intelText-classNum .intelText-classNum-items.active {
   color: #0085e6;
 }
+.intelText-box .intelText-classNum .intelText-classNum-items a {
+        color: #666666;
+}
 .intelText-footer {
   line-height: 64px;
   font-size: 14px;
@@ -1873,6 +1876,9 @@
     font-size: 14px;
     color: #666666;
   }
+.xc-readCom-box .xc-readCom-answer-item .xc-head-select {
+      margin-top: 10px;
+    }
 .xc-readCom-box .xc-readCom-answer-item .answer-item-input {
       width: 88px;
       line-height: 23px;
@@ -2004,6 +2010,21 @@
     font-size: 0;
     line-height: 28px;
   }
+.readCom-answer-changs .readCom-answer-chang .xc-head-select {
+      padding: 0 5px;
+      margin-left: 0;
+      border: none;
+      line-height: 26px;
+    }
+.readCom-answer-changs .readCom-answer-chang .xc-head-selectImg {
+      top: 9px;
+    }
+.readCom-answer-changs .readCom-answer-chang .xc-head-select-ul {
+      top: 28px;
+    }
+.readCom-answer-changs .readCom-answer-chang .xc-head-select-ul li {
+        text-indent: 0px;
+      }
 .readCom-answer-changs .readCom-answer-chang .answer-chang-num {
       font-size: 14px;
       color: #333333;
@@ -2336,8 +2357,11 @@
   margin-left: 10px;
   position: relative;
   cursor: pointer;
-  z-index: 999999;
 }
+.xc-head-select .name {
+    position: relative;
+    z-index: 9999;
+  }
 .xc-head-select .xc-head-selectImg {
     position: absolute;
     right: 10px;
@@ -2359,6 +2383,8 @@
             box-shadow: 0 3px 7px 1px rgb(235, 235, 235);
   }
 .xc-head-select .xc-head-select-ul li {
+      position: relative;
+      z-index: 999999;
       text-indent: 15px
     }
 .xc-head-select .xc-head-select-ul li.active {
@@ -2366,6 +2392,7 @@
 }
 .xc-head-select.select .xc-head-select-ul {
       display: block;
+      z-index: 10000000;
 }
 .xc-head-select.select .xc-head-selectImg {
       -webkit-transform: rotate(180deg);

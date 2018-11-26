@@ -93,7 +93,30 @@ $(function () {
           var $name = $this.parent().siblings('.name')
           $name.text($this.text())
           $name.attr('value', $this.attr('value'))
+          if ($this.parent().hasClass('realType')) {
+            var $type = $this.text()
+            var $text = $this.closest('.answer-chang-div').siblings('.answer-chang-box')
+            if ($type === '增加') {
+              $text.html(`
+              在
+              <input type="text" class="answer-chang-input" value="" />
+              <span class="answer-chang-span">后增</span>
+              <input type="text" class="answer-chang-input" value="" />
+            `)
+            } else if ($type === '删除') {
+              $text.html(`在
+              <input type="text" class="answer-chang-input" value="" />
+              <span class="answer-chang-span">后减</span>
+              <input type="text" class="answer-chang-input" value="" />`)
+            } else if ($type === '修改') {
+              $text.html(`
+              <input type="text" class="answer-chang-input" value="" />
+              <span class="answer-chang-span">改为</span>
+              <input type="text" class="answer-chang-input" value="" />`)
+            }
+          }
         }
+        
       })
       $('body').on('click', function () {
         $('.xc-head-select').removeClass('select')

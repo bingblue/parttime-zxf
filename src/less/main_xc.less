@@ -1568,6 +1568,9 @@
       &.active {
         color: #0085e6;
       }
+      a {
+        color: #666666;
+      }
     }
   }
 }
@@ -1836,6 +1839,9 @@
   .xc-readCom-answer-item {
     font-size: 14px;
     color: #666666;
+    .xc-head-select {
+      margin-top: 10px;
+    }
     .answer-item-input {
       width: 88px;
       line-height: 23px;
@@ -1969,6 +1975,21 @@
 }
 .readCom-answer-changs {
   .readCom-answer-chang {
+    .xc-head-select {
+      padding: 0 5px;
+      margin-left: 0;
+      border: none;
+      line-height: 26px;
+    }
+    .xc-head-selectImg {
+      top: 9px;
+    }
+    .xc-head-select-ul {
+      top: 28px;
+      li {
+        text-indent: 0px;
+      }
+    }
     font-size: 0;
     line-height: 28px;
     .answer-chang-num {
@@ -2307,8 +2328,10 @@
   margin-left: 10px;
   position: relative;
   cursor: pointer;
-  z-index: 999999;
-
+  .name {
+    position: relative;
+    z-index: 9999;
+  }
   .xc-head-selectImg {
     position: absolute;
     right: 10px;
@@ -2325,6 +2348,8 @@
     left: 0;
     background-color: #fff;
     li {
+      position: relative;
+      z-index: 999999;
       text-indent: 15px;
       &.active {
         color: #0085e6;
@@ -2336,6 +2361,7 @@
   &.select {
     .xc-head-select-ul {
       display: block;
+      z-index: 10000000;
     }
     .xc-head-selectImg {
       transform: rotate(180deg)
