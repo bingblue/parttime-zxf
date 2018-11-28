@@ -1521,6 +1521,12 @@
     font-size: 20px;
     color: #0085e6;
   }
+.intelText-box .intelText-head-name .score {
+      color: #000;
+    }
+.intelText-box .intelText-head-name .score .score-num {
+        color: red;
+      }
 .intelText-box .intelText-close {
     position: absolute;
     width: 35px;
@@ -2657,6 +2663,9 @@
   }
 .xc-red {
   color: red;
+}
+.xc-blue {
+  color: #0085e6;
 }
 .perview-left-width {
   width: 500px;
