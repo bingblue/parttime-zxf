@@ -266,6 +266,13 @@
   <!-- 底部 -->
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
   <script src="../js/main_xc.js"></script>
+  <script>
+    $(function() {
+      comment.endTime($('.xc-time'), 88, function() {
+        console.log('倒计时结束')
+      })
+    })
+  </script>
 </body>
 
 </html>
