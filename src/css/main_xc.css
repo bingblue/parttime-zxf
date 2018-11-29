@@ -2809,3 +2809,20 @@
   white-space: nowrap;
   overflow: hidden;
 }
+.xc-new-table.samll .xc-table-head li {
+    width: 25%;
+  }
+.xc-new-table.samll .xc-table-body .one {
+      width: 25%;
+      border-right: 1px solid #eee;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+    }
+.xc-new-table.samll .xc-table-body .two {
+      width: 25%;
+      left: 25%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+    }
+.xc-new-table.samll .xc-table-body .three {
+    }
