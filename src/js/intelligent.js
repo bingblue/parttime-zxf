@@ -147,6 +147,26 @@ $('.jq-xc-tab .xc-tab-head').on('click', 'li', function () {
       }
     })
   })
+  $('body').on('click', '.jq-del-jz', function() {
+    var $parent = $(this).closest('.form-group')
+    $parent.remove()
+    $(".jq-tm .jzteam").each(function(index, ele) {
+      $(ele).empty();
+      var $select = []
+      $select.push('<option>请选择句子</option>')
+      $(".jq-jz .form-group").each(function(index, ele) {
+        $select.push(`<option>${((index + 1) > 9 ? (index + 1) : '0' +  (index + 1))}</option>`)
+        $(ele).find('label.col-lg-1').html(`${((index + 1) > 9 ? (index + 1) : '0' +  (index + 1))}：`)
+      })
+      $(this).append($select.join(''))
+    })
+  })
+  $('body').on('click', '.jq-del-tm', function() {
+    $(this).closest('.form-group').remove()
+    $(".jq-tm .form-group").each(function(index, ele) {
+      $(ele).find('label.col-lg-1').html(`${((index + 1) > 9 ? (index + 1) : '0' +  (index + 1))}：`)
+    })
+  })
   $(".jq-add-jz").on("click", function (event) {
     event.preventDefault()
     var formGroup = [],
@@ -154,12 +174,15 @@ $('.jq-xc-tab .xc-tab-head').on('click', 'li', function () {
       $index = $this.siblings('.form-group').length
     formGroup.push("<div class='form-group'>")
     formGroup.push("<label class='col-lg-1 control-label'>" +  (($index + 1) > 9 ? ($index + 1) : '0' +  ($index + 1)) + "：</label>")
-    formGroup.push("<div class='col-lg-11'>")
+    formGroup.push("<div class='col-lg-9'>")
     formGroup.push("<input type='text' name='" + ('name' + ($index + 1)) + "' placeholder='请输入句子' class='form-control'>")
     formGroup.push("</div>")
+    formGroup.push(`<div class="col-lg-1">
+    <a href="javascript:void(0)" class="btn btn-danger jq-del-jz">删除句子</a>
+  </div>`)
     formGroup.push("</div>")
     $this.before(formGroup.join(''))
-    $(".jq-add-tm").click()
+    // $(".jq-add-tm").click()
     setTimeout(function(){
       $('.jzteam').append("<option>" + (($index + 1) > 9 ? ($index + 1) : '0' +  ($index + 1))+"</option>")
     })
@@ -173,7 +196,6 @@ $('.jq-xc-tab .xc-tab-head').on('click', 'li', function () {
     formGroup.push("<label class='col-lg-1 control-label'>" + (($index + 1) > 9 ? ($index + 1) : '0' +  ($index + 1))  + "：</label>")
     formGroup.push(`<div class="col-lg-2">
     <select name="account" class="form-control jzteam  m-b">
-      ${$('.jzteam').eq(0).html()}
     </select>
   </div>`)
   formGroup.push(`<div class="col-lg-2">
@@ -190,8 +212,16 @@ $('.jq-xc-tab .xc-tab-head').on('click', 'li', function () {
 <label for="" class="control-label pull-left">后增</label>
 <div class="col-lg-2">
   <input type="text" placeholder="请输入" class="form-control">
+</div><div class="col-lg-1">
+<a href="javascript:void(0)" class="btn btn-danger jq-del-tm">删除题目</a>
 </div></div>`)
     $this.before(formGroup.join(''))
+    var $select = []
+    $select.push('<option>请选择句子</option>')
+    $(".jq-jz .form-group").each(function(index, ele) {
+      $select.push(`<option>${((index + 1) > 9 ? (index + 1) : '0' +  (index + 1))}</option>`)
+    })
+    $('.jzteam:last').append($select.join(''))
   })
   $('body').on('change', '.jq-tm-change', function() {
    var $val = $(this).val()

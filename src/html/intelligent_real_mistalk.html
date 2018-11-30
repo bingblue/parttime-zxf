@@ -41,6 +41,7 @@
 
 
 
+
   <link rel="stylesheet" href="../css/main_xc.css">
 
 
@@ -87,6 +88,7 @@
       </nav>
     </header>
     <!-- endbuild -->
+
 
 
 
@@ -412,6 +414,7 @@
 
 
 
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
@@ -442,18 +445,21 @@
                     <a class="btn btn-primary">保存</a>
                     <a class="btn btn-default">清空本页</a>
                   </div>
-                  <div class="xc-mb10">
+                  <div class="xc-mb10 jq-jz">
                     <h4>录入句子</h4>
                     <div class="form-group">
                       <label class="col-lg-1 control-label">01：</label>
-                      <div class="col-lg-11">
+                      <div class="col-lg-9">
                         <input type="text" placeholder="请输入句子" class="form-control">
+                      </div>
+                      <div class="col-lg-1">
+                        <a href="javascript:void(0)" class="btn btn-danger jq-del-jz">删除句子</a>
                       </div>
                     </div>
                     <button class="btn jq-add-jz"> + 添加句子</button>
                   </div>
 
-                  <div class="xc-bas-item">
+                  <div class="xc-bas-item jq-tm">
                     <h4>录入题目</h4>
                     <div class="form-group">
                       <label class="col-lg-1 control-label">01：</label>
@@ -477,6 +483,9 @@
                       <label for="" class="control-label pull-left">改为</label>
                       <div class="col-lg-2">
                         <input type="text" placeholder="请输入" class="form-control">
+                      </div>
+                      <div class="col-lg-1">
+                       <a href="javascript:void(0)" class="btn btn-danger jq-del-tm">删除题目</a>
                       </div>
                     </div>
                     <button class="btn jq-add-tm"> + 添加题目</button>
@@ -522,6 +531,7 @@
 
 
 
+
   </div>
 
   <!-- build:js -->
@@ -539,6 +549,7 @@
   <script src="../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
   <script src="../js/app.js"></script>
   <!-- endbuild -->
+
 
 
 
