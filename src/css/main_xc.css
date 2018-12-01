@@ -282,6 +282,9 @@
 .xc-coustom-pent .coustom-pent-body {
     padding: 30px;
   }
+.xc-coustom-pent .coustom-pent-body .jx {
+      margin-top: 5px;
+    }
 .xc-coustom-pent .coustom-pent-body .coustom-label .label {
         cursor: pointer;
         padding-left: 25px;
@@ -1459,7 +1462,10 @@
   height: 26px;
   vertical-align: top;
   margin-top: 9px;
-  margin-right: 5px;
+  margin-right: 5px
+}
+.xc-review-img.nomargintop {
+  margin-top: 0;
 }
 .xc-coustom-footer {
   line-height: 64px;
@@ -1673,8 +1679,14 @@
       color: #333333;
       width: 124px;
       outline: none;
-      line-height: 22px;
+      line-height: 22px
     }
+.xc-body .intelText-blan-item .intelText-blan-div .intelText-blan-input.ture {
+  color: #0085E6;
+}
+.xc-body .intelText-blan-item .intelText-blan-div .intelText-blan-input.error {
+  color: red;
+}
 .xc-readCom-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1880,11 +1892,24 @@
   }
 .xc-readCom-box .xc-readCom-answer-item {
     font-size: 14px;
-    color: #666666;
+    color: #666666
   }
+.xc-readCom-box .xc-readCom-answer-item.error .xc-head-select {
+        margin-left: 28px;
+}
+.xc-readCom-box .xc-readCom-answer-item.error .ture {
+        color: #0085E6;
+}
+.xc-readCom-box .xc-readCom-answer-item.error .false {
+        color: red;
+}
+.xc-readCom-box .xc-readCom-answer-item.error .jx {
+        padding-left: 28px;
+        margin-top: 5px;
+}
 .xc-readCom-box .xc-readCom-answer-item .xc-head-select {
       margin-top: 10px;
-    }
+}
 .xc-readCom-box .xc-readCom-answer-item .answer-item-input {
       width: 88px;
       line-height: 23px;
@@ -1895,10 +1920,10 @@
       text-align: center;
       margin: 10px 0;
       color: #0085e6;
-    }
+}
 .xc-readCom-box .xc-readCom-answer-item label {
-      display: block
-    }
+      display: block;
+}
 .xc-readCom-box .xc-readCom-answer-item label + label {
   margin-top: 15px;
 }
@@ -1925,6 +1950,12 @@
       line-height: 22px;
       text-indent: 5px;
       font-weight: 600;
+}
+.xc-readCom-lists .xc-readCom-list .xc-readCom-list-input.true {
+  color: #0085E6;
+}
+.xc-readCom-lists .xc-readCom-list .xc-readCom-list-input.error {
+  color: red;
 }
 .xc-readCom-lists .xc-readCom-list .xc-readCom-list-num {
       display: inline-block;
@@ -2826,3 +2857,65 @@
     }
 .xc-new-table.samll .xc-table-body .three {
     }
+.coustom-pent-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.coustom-pent-flex .coustom-pent-flex-div {
+    display: inline-block;
+    border-bottom: 2px solid #0085e6;
+    text-indent: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-left: 5px;
+  }
+.coustom-pent-flex .coustom-pent-flex-input {
+    background: none;
+    border: none;
+    color: #333333;
+    width: 140px;
+    outline: none;
+    line-height: 22px;
+    text-indent: 5px;
+    font-weight: 600;
+  }
+.daan .coustom-pent-flex {
+    margin-left: 36px;
+  }
+.daan .coustom-pent-flex-input.ture {
+  color: #0085E6;
+}
+.daan .coustom-pent-flex-input.error {
+  color: red;
+}
+.daan .jx {
+    padding-left: 36px;
+    margin-top: 5px;
+  }
+.coustom-input-box {
+  overflow: hidden;
+}
+.coustom-input-box-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.coustom-input-box-item span {
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-right: 10px
+  }
+.coustom-input-box-item span.big {
+  line-height: 100px;
+}
+.coustom-input-box-item img {
+    width: 100px;
+    height: 100px;
+  }

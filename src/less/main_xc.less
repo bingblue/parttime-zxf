@@ -292,6 +292,9 @@
   }
   .coustom-pent-body {
     padding: 30px;
+    .jx {
+      margin-top: 5px;
+    }
     .coustom-label {
       .label {
         cursor: pointer;
@@ -1443,6 +1446,9 @@
   vertical-align: top;
   margin-top: 9px;
   margin-right: 5px;
+  &.nomargintop {
+    margin-top: 0;
+  }
 }
 .xc-coustom-footer {
   line-height: 64px;
@@ -1652,6 +1658,12 @@
       width: 124px;
       outline: none;
       line-height: 22px;
+      &.ture {
+        color: #0085E6;
+      }
+      &.error {
+        color: red;
+      }
     }
   }
 }
@@ -1845,6 +1857,21 @@
   .xc-readCom-answer-item {
     font-size: 14px;
     color: #666666;
+    &.error {
+      .xc-head-select {
+        margin-left: 28px;
+      }
+      .ture {
+        color: #0085E6
+      }
+      .false {
+        color: red;
+      }
+      .jx {
+        padding-left: 28px;
+        margin-top: 5px;
+      }
+    }
     .xc-head-select {
       margin-top: 10px;
     }
@@ -1890,6 +1917,12 @@
       line-height: 22px;
       text-indent: 5px;
       font-weight: 600;
+      &.true {
+        color: #0085E6
+      }
+      &.error {
+        color: red;
+      }
     }
     .xc-readCom-list-num {
       display: inline-block;
@@ -2793,5 +2826,65 @@
     }
     .three {
     }
+  }
+}
+.coustom-pent-flex {
+  display: flex;
+  .coustom-pent-flex-div {
+    display: inline-block;
+    border-bottom: 2px solid #0085e6;
+    text-indent: 0;
+    flex: 1;
+    margin-left: 5px;
+  }
+  .coustom-pent-flex-input {
+    background: none;
+    border: none;
+    color: #333333;
+    width: 140px;
+    outline: none;
+    line-height: 22px;
+    text-indent: 5px;
+    font-weight: 600;
+  }
+}
+.daan {
+  .coustom-pent-flex {
+    margin-left: 36px;
+  }
+  .coustom-pent-flex-input {
+    &.ture {
+      color: #0085E6;
+    }
+    &.error {
+      color: red;
+    }
+  }
+  .jx {
+    padding-left: 36px;
+    margin-top: 5px;
+  }
+}
+.coustom-input-box {
+  overflow: hidden;
+}
+.coustom-input-box-item {
+  display: flex;
+  width: 200px;
+  float: left;
+  margin: 0 10px 10px 0;
+  span {
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-right: 10px;
+    &.big {
+      line-height: 100px;
+    }
+  }
+  img {
+    width: 100px;
+    height: 100px;
   }
 }
