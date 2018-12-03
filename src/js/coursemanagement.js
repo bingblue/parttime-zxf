@@ -128,3 +128,26 @@ $(function(){
     })
   })
 })
+
+function setActive(id1, id2, id3){
+  $.each($('.one'),function(i,el) {
+    var $el = $(el).removeClass('active')
+    if($el.data('id')==id1){
+      $el.addClass('active')
+    }
+  })
+  $.each($('.two li'),function(i,el) {
+    var $el = $(el).removeClass('active')
+    if($el.data('id')==id2){
+      $el.addClass('active')
+    }
+  })
+  $.each($('.three li'),function(i,el) {
+    var $el = $(el).removeClass('active')
+    if($el.data('id')==id3){
+      $el.addClass('active')
+    }
+  })
+}
+
+setActive(1,13,131)
