@@ -104,4 +104,7 @@ $(function () {
   $('.reset-btn').click(function () {
     $(this).siblings('.ipt').val('')
   })
+  $('.jq-changecourse').click(function () {
+    $('.jq-bomb-wp').show()
+  })
 })
