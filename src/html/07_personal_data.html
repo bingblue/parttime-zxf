@@ -64,13 +64,17 @@
           <img class="user-face" src="../img/05/50.png" alt="">
           <div class="edit-list">
             <div class="edit-item"></div>
-            昵称未设置
+            <span class="jq-nickname">昵称未设置</span>
+            <div class="setNickname">
+              <input type="text" class="ipt-nickname" placeholder="请输入昵称">
+              <input type="submit" class="btn-nickname" value="确定">
+            </div>
             <!-- 未设置昵称图标 -->
-            <img class="edit-icon" src="../img/07/rectangle2x.png" alt="">
+            <img class="edit-icon2" src="../img/07/rectangle2x.png" alt="">
           </div>
           <div class="expire immediately-expire">高中组 账号还有10天到期</div>
           <div class="expire">初中组 2018-09-01到期</div>
-          <div class="change-possword"><a  href="08_change_password.html">修改密码</a></div>
+          <div class="change-possword"><a href="08_change_password.html">修改密码</a></div>
         </div>
         <div class="data-detail">
           <p class="title title2">基础信息
@@ -233,6 +237,8 @@
       $('#form').parsley()//调用parsley表单验证插件
       $('.detail-select2').ProvinceCity('1')
       $('.detail-select3').ProvinceCity('2')
+
+      
     });
   </script>
 </body>

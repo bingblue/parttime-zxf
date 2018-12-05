@@ -944,11 +944,35 @@ a {
   vertical-align: middle;
 }
 
-.linye-personal-data .edit-icon {
+.linye-personal-data .edit-icon, .edit-icon2 {
   width: 16px;
   height: 16px;
   vertical-align: middle;
   margin-left: 10px;
+}
+.setNickname {
+  display: inline-block;
+  display: none;
+}
+.btn-nickname {
+  width: 88px;
+  height: 30px;
+  background: rgba(0, 133, 230, 1);
+  border: 0;
+  border-radius: 18px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 22px;
+}
+.ipt-nickname {
+  width: 120px;
+  height: 30px;
+  border-radius: 18px;
+  border: 1px solid rgba(215, 215, 215, 1);
+  padding: 4px 10px;
+  margin-top: 10px;
 }
 
 .linye-personal-data .change-possword {

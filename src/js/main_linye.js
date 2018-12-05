@@ -23,6 +23,20 @@ $(function () {
     $('.section').css('display', 'none');
     $('.' + className).css('display', 'block');
   })
+
+  /**
+   * 设置昵称
+   */
+  $('.edit-icon2').on('click', function () {
+    $('.setNickname').show()
+    $('.edit-icon2').hide()
+    $('.jq-nickname').hide()
+  })
+  $('.btn-nickname').on('click', function () {
+    $('.setNickname').hide()
+    $('.edit-icon2').show()
+    $('.jq-nickname').show().html($('.ipt-nickname').val())
+  })
   /**
    * 05选项卡
    */
