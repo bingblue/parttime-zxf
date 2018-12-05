@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>学习报告-详细记录</title>
+  <title>奖品管理-奖品列表</title>
   <!-- build:css -->
   <link rel="stylesheet" href="../../js/vendor/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../js/vendor/animate.css/animate.min.css">
@@ -138,86 +138,90 @@
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
-          <div class="clearfix">
-              <span class="pull-left">张三（18000000000）的学习报告</span>
-              <button class="pull-right btn btn-info" type="button">返回</button>
-          </div>
-          <ol class="breadcrumb">
-            <li><a href="#">学习报告</a></li>
-            <li><a href="#">全部报告</a></li>
-            <li class="active">详细记录</li>
-          </ol>
-          <div class='mt10 xc-clearfix'>
-              <a href="javascript:history.go(-1)" class="btn btn-primary pull-left">返回</a>
-          </div>
+          奖品列表
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <div class="mb-20">
-              <a class="wj-a wj-a-active" href="./studyreport_all_info.html">今日学况</a>
-              <a class="wj-a" href="./studyreport_all_info_2.html">学习日迹</a>
-              <a class="wj-a" href="./studyreport_all_info_3.html">学习记录</a>
-              <a class="wj-a" href="./studyreport_all_info_4.html">学习地图</a>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">学习时长</div>
-              <div class="panel-body">
-                <p><span class="width-100">在线时长</span><span>02:20:31</span></p>
-                <p><span class="width-100">有效时长</span><span>02:20:31</span></p>
-                <p><span class="width-100">有效时长占比</span><span>100%</span></p>
+            <!-- START panel-->
+            <div class="panel-default">
+              <div class="panel-heading">
+                <form class="text-right pt-15">
+                  <div class="row">
+                    <!-- <div class="form-group col-sm-3">
+                      <label class="col-sm-4">选择班级：</label>
+                      <div class="col-sm-8">
+                        <select name="" id="" class="form-control">
+                          <option value="">全部</option>
+                          <option value="1">班级1</option>
+                          <option value="2">班级2</option>
+                        </select>
+                      </div>
+                    </div> -->
+                    <div class="form-group col-sm-3">
+                      <label class="col-sm-4">奖品名称：</label>
+                      <div class="col-sm-8">
+                        <input type="tel" name="" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-1">
+                      <button type="submit" class="btn btn-primary">搜索</button>
+                    </div>
+                  </div>
+                </form>
               </div>
               <!-- START table-responsive-->
-            <div class="panel-heading">
+              <div class="panel-heading">
+                <div class="row mb-10">
+                  <div class="col-sm-1">
+                    <a class="btn btn-primary" href="../general/prizeEdit.html">+新建商品</a>
+                  </div>
+                </div>
                 <div class="table-responsive">
-                  <table class="table table-bordered table-hover dataTable">
+                  <table id="" class="table table-bordered table-hover">
                     <thead>
                       <tr>
-                        <th>开始时间</th>
-                        <th>有效时间</th>
-                        <th>学习板块</th>
-                        <th>次级板块</th>
-                        <th>单元信息</th>
-                        <th>学习结果</th>
-                        <th>得分</th>
+                        <th>编号</th>
+                        <th>名称</th>
+                        <th>数量</th>
+                        <th>中奖率</th>
+                        <th>图片</th>
+                        <th>操作</th>
                       </tr>
                     </thead>
-                    <tbody id="designerlist">
+                    <tbody>
                       <tr>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>22:22:22</td>
-                        <td>同步课程-智学单词</td>
-                        <td>智能预习</td>
-                        <td>牛津上海版  七年级上册  Unit2</td>
-                        <td>完成</td>
-                        <td>120</td>
+                        <td>1</td>
+                        <td>奖品1</td>
+                        <td>15</td>
+                        <td>52%</td>
+                        <td><img src="../../img/dummy.png"></td>
+                        <td>
+                          <a class="btn btn-primary" href="studyreport_all_info.html">编辑</a>
+                          <a class="btn btn-danger" href="javascript:;">删除</a>
+                        </td>
                       </tr>
                       <tr>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>22:22:22</td>
-                        <td>同步课程-智学单词</td>
-                        <td>智能预习</td>
-                        <td>牛津上海版  七年级上册  Unit2</td>
-                        <td>完成</td>
-                        <td>120</td>
+                        <td>1</td>
+                        <td>奖品1</td>
+                        <td>15</td>
+                        <td>52%</td>
+                        <td><img src="../../img/dummy.png"></td>
+                        <td>
+                          <a class="btn btn-primary" href="studyreport_all_info.html">编辑</a>
+                          <a class="btn btn-danger" href="javascript:;">删除</a>
+                        </td>
                       </tr>
                       <tr>
-                        <td>2018-01-01 22:22:22</td>
-                        <td>22:22:22</td>
-                        <td>同步课程-智学单词</td>
-                        <td>智能预习</td>
-                        <td>牛津上海版  七年级上册  Unit2</td>
-                        <td>完成</td>
-                        <td>120</td>
+                        <td>1</td>
+                        <td>奖品1</td>
+                        <td>15</td>
+                        <td>52%</td>
+                        <td><img src="../../img/dummy.png"></td>
+                        <td>
+                          <a class="btn btn-primary" href="studyreport_all_info.html">编辑</a>
+                          <a class="btn btn-danger" href="javascript:;">删除</a>
+                        </td>
                       </tr>
-                      <tr>
-                          <td>2018-01-01 22:22:22</td>
-                          <td>22:22:22</td>
-                          <td>同步课程-智学单词</td>
-                          <td>智能预习</td>
-                          <td>牛津上海版  七年级上册  Unit2</td>
-                          <td class="text-danger">未通过</td>
-                          <td class="text-danger">40</td>
-                        </tr>
                     </tbody>
                   </table>
                 </div>
@@ -258,7 +262,7 @@
     <!-- 主要内容END -->
     <!-- build:foot -->
     <footer>
-      <span>&copy; 2019 - 滨清科技-bingblue.com</span>
+      <span>&copy; 2019 - 滨清科技 www.bingblue.com</span>
     </footer>
     <!-- endbuild -->
   </div>
