@@ -82,7 +82,7 @@
           <img src="../img/class_hd.png" alt="班级" class="hd-icon">
           <span class="myclass">我的班级</span>
           <span class="schoolname">智厢逢&nbsp;</span>
-          <span class="ads">上海嘉定</span>
+          <span class="ads" id="region" province='101010200' city='101010200' area='101010200'></span>
           <span class="grade">七年级 11班</span>
         </div>   
         <div class="hd-right clearfix">
@@ -223,7 +223,14 @@
 
 
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../js/provincesData.js"></script>
+  <script src="../js/jquery.provincesCity.js"></script>
   <script src="../js/main_wj.js"></script>
+  <script>
+     $(function () {
+      $("#region").setCity();
+    });
+  </script>
 </body>
 
 </html>

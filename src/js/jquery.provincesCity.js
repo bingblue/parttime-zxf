@@ -16,6 +16,29 @@ var getProvinceById = function (id) {
 	});
 	return name;
 }
+$.fn.setCity = function() {
+	var province = $(this).attr('province')
+	var city1 = $(this).attr('city')
+	var area = $(this).attr('area')
+	var _self = this;
+	var src = ''
+	$.each( citydatalist , function(index,data){
+		if (data.code == province) {
+			src = data.name + '/'
+			$.each( data.cities, function(n, t) {
+				if (t.code == city1) {
+					src = src + t.name + '/'
+					$.each( t.cities, function(i, a) {
+						if (a.code == area) {
+							src = src + a.name
+						}
+					})
+				}
+			})
+		}
+	});
+	_self.html(src)
+}
 $.fn.ProvinceCity = function(name){
 	var province = $(this).attr('province')
 	var city1 = $(this).attr('city')

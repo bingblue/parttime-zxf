@@ -112,4 +112,15 @@ $(function () {
   $('.linye-shopping .alert-close').on('click',function(){
     $('.linye-shopping .alert-layer').css('display', 'none');
   })
+  $("#user-face").click(function() {
+    $(this).siblings('input').click()
+  })
+  $("#user-face-file").change(function() {
+    var file = this.files[0]
+    let reader = new FileReader()
+    reader.readAsDataURL(file)
+    reader.onload = function(e) {
+      $('#user-face').attr('src', e.target.result)
+    }
+  })
 })

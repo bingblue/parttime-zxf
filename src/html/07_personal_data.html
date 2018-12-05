@@ -61,7 +61,8 @@
         </p>
         <div class="middle-body">
         <div class="person-head">
-          <img class="user-face" src="../img/05/50.png" alt="">
+          <img class="user-face" id="user-face" src="../img/05/50.png" alt="">
+          <input type="file" id="user-face-file" style="display:none" accept="image/png, image/jpeg, image/gif, image/jpg">
           <div class="edit-list">
             <div class="edit-item"></div>
             <span class="jq-nickname">昵称未设置</span>
@@ -95,7 +96,7 @@
             </div>
             <div class="detail-item detail-middle">
               <div class="detail-name">所在地区</div>
-              <p class="detail-content">xx省xx市xx区</p>
+              <p class="detail-content" id="region" province='101010200' city='101010200' area='101010200'></p>
             </div>
             <div class="detail-item">
               <div class="detail-name">所在学校</div>
@@ -147,11 +148,7 @@
               </div>
               <div class="change-detail-item">
                 <div class="change-detail-name">所在地区：</div>
-                <div class="detail-select2" province='101010200' city='101010200' area='101010200'>
-                  
-                </div>
-                <div class="detail-select3" province='101010200' city='101010200' area='101010200'>
-                  
+                <div class="detail-select2" province='101010200' city='101010200' area='101010200'>  
                 </div>
               </div>
               <div class="change-detail-item">
@@ -236,9 +233,8 @@
     $(function () {
       $('#form').parsley()//调用parsley表单验证插件
       $('.detail-select2').ProvinceCity('1')
-      $('.detail-select3').ProvinceCity('2')
-
-      
+      // $('.detail-select3').ProvinceCity('2')
+      $("#region").setCity();
     });
   </script>
 </body>
