@@ -16,7 +16,7 @@ var getProvinceById = function (id) {
 	});
 	return name;
 }
-$.fn.ProvinceCity = function(){
+$.fn.ProvinceCity = function(name){
 	var province = $(this).attr('province')
 	var city1 = $(this).attr('city')
 	var area = $(this).attr('area')
@@ -27,9 +27,9 @@ $.fn.ProvinceCity = function(){
 	_self.data("city1",['请选择', '请选择']);
 	_self.data("city2",["请选择", '请选择']);
 	//插入3个空的下拉框
-	_self.append("<select class='form-control' name='province_id'></select>/&nbsp;&nbsp;");
-	_self.append("<select class='form-control' name='city_id'></select>/&nbsp;&nbsp;");
-	_self.append("<select class='form-control' name='area_id'></select>");
+	_self.append("<select class='form-control' name='province_id_"+name+"'></select>/&nbsp;&nbsp;");
+	_self.append("<select class='form-control' name='city_id_"+name+"'></select>/&nbsp;&nbsp;");
+	_self.append("<select class='form-control' name='area_id_"+name+"'></select>");
 	//分别获取3个下拉框
 	var $sel1 = _self.find("select").eq(0);
 	var $sel2 = _self.find("select").eq(1);

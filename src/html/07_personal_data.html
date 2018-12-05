@@ -146,6 +146,9 @@
                 <div class="detail-select2" province='101010200' city='101010200' area='101010200'>
                   
                 </div>
+                <div class="detail-select3" province='101010200' city='101010200' area='101010200'>
+                  
+                </div>
               </div>
               <div class="change-detail-item">
                 <div class="change-detail-name ">所在学校：</div>
@@ -227,8 +230,9 @@
   <script src="../js/main_linye.js"></script>
   <script type="text/javascript">
     $(function () {
-      $('#form').parsley();//调用parsley表单验证插件
-      $('.detail-select2').ProvinceCity();
+      $('#form').parsley()//调用parsley表单验证插件
+      $('.detail-select2').ProvinceCity('1')
+      $('.detail-select3').ProvinceCity('2')
     });
   </script>
 </body>
