@@ -13,7 +13,7 @@ body,
    Component: top-navbar
  ========================================================================== */
 .topnavbar {
-  background-color: #fff;
+  background-color: #3a3f51;
 }
 .topnavbar .navbar-header {
   background-color: transparent;
@@ -30,13 +30,13 @@ body,
 }
 .topnavbar .navbar-nav > li > a,
 .topnavbar .navbar-nav > .open > a {
-  color: #2B3845;
+  color: #fff;
 }
 .topnavbar .navbar-nav > li > a:hover,
 .topnavbar .navbar-nav > .open > a:hover,
 .topnavbar .navbar-nav > li > a:focus,
 .topnavbar .navbar-nav > .open > a:focus {
-  color: #0c4f63;
+  color: #0085E6;
 }
 .topnavbar .navbar-nav > .active > a,
 .topnavbar .navbar-nav > .open > a,
@@ -80,6 +80,11 @@ body,
   .topnavbar .navbar-nav > li > a:focus,
   .topnavbar .navbar-nav > .open > a:focus {
     color: #0085E6;
+  }
+  .mu-head-user span,
+  .mu-head-user > li > a {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 }
 /* ========================================================================
@@ -160,20 +165,21 @@ body,
 .mu-head-user {
   margin-right: 30px;
 }
-.mu-head-user span {
-  padding-top: 17px;
-  padding-bottom: 17px;
+.mu-head-user span,
+.mu-head-user > li > a {
+  padding-top: 0px;
+  padding-bottom: 0px;
   color: #fff;
   position: relative;
   display: inline-block;
   padding-left: 15px;
+  line-height: 35px;
 }
 .mu-head-user span i {
   margin-right: 5px;
 }
 .pt-15 {
   padding-top: 15px;
-  line-height: 35px;
 }
 .mt-10 {
   margin-top: 10px;
@@ -184,4 +190,44 @@ body,
 .table-responsive td img {
   width: 40px;
   height: 40px;
+}
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer;
+}
+.thumbnail {
+  max-width: 200px;
+  max-height: 200px;
+}
+label {
+  font-weight: 400;
+}
+footer .support {
+  color: #656565;
+  display: block;
+  float: right;
+  text-decoration: none;
+  margin-right: 20px;
+}
+footer .support img {
+  width: 24px;
+  height: 32px;
+  position: relative;
+  top: -8px;
+  margin-right: 3px; 
+}
+.mu-top {
+  margin-top: 150px;
 }
