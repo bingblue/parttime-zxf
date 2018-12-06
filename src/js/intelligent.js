@@ -251,8 +251,8 @@ $('.jq-xc-tab .xc-tab-head').on('click', 'li', function () {
     reader.onload = function (e) {
       var str = "<div class='xc-audio'><audio src=" + e.target.result + " controls=''></audio>" +
         "<p><button type='reset' class='btn btn-warning cancel jq-auto-delete'><i class='fa fa-fw fa-times'></i><span>" + file.name + "</span></button></p></div>"
-      $(target).closest('div').append(str).find('.audio-type').hide()
-      $('.fileinput-button').hide()
+      $(target).closest('div').append(str).find('.audio-type, .fileinput-button').hide()
+      // $('.fileinput-button').hide()
     }
   }
   $("body").on('click', '.jq-auto-delete', function () {
