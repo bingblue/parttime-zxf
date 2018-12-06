@@ -2919,3 +2919,31 @@
     width: 100px;
     height: 100px;
   }
+.user_info_details .welcome {
+  height: auto;
+  text-align: center;
+  padding-top: 15px;
+}
+.user_info_details .welcome img{
+  width: 230px;
+  height: auto;
+}
+.user_info_details .expect {
+  text-align: center;
+  height: auto;
+  font-size: 22px;
+  color: #D1D1D1;
+  font-weight: 200;
+}
+.user_info_details .expect img {
+  width: 88px;
+  height: auto;
+  margin-right: 18px;
+}
+.xc-coustom-tip {
+  margin: 10px 0;
+}
+.xc-coustom-tip-small {
+  margin: 10px 0;
+  font-size: 12px;
+}
