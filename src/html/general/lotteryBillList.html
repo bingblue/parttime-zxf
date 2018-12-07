@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../css/app.css">
   <link rel="stylesheet" href="../../css/theme-e.css">
   <!-- endbuild -->
+
 </head>
 <body>
   <div class="wrapper">
@@ -56,6 +57,7 @@
       </nav>
     </header>
     <!-- endbuild -->
+
     <!-- build:sidebar -->
     <!-- 左侧菜单 -->
     <aside class="aside">
@@ -85,6 +87,25 @@
               </ul>
             </li>
             <li class=" ">
+              <a href="#award" title="奖项管理" data-toggle="collapse">
+                <em class="fa fa-gift"></em>
+                <span>奖项管理</span>
+              </a>
+              <ul id="award" class="nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">奖项管理</li>
+                <li class=" ">
+                  <a href="../general/awardList.html" title="奖项列表">
+                    <span>奖项列表</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="../general/awardEdit.html" title="奖项录入">
+                    <span>奖项录入</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=" ">
               <a href="../general/activity.html" title="抽奖配置">
                 <em class="fa fa-cog"></em>
                 <span>抽奖配置</span>
@@ -107,6 +128,7 @@
       </div>
     </aside>
     <!-- endbuild -->
+
     <!-- 主要内容 -->
     <section>
       <div class="content-wrapper">
@@ -253,6 +275,7 @@
                   </div>
                 </div>  
                 <!-- endbuild -->
+
               </div>
             </div>
           </div>
@@ -266,6 +289,7 @@
       <a class="support" href="https://www.bingblue.com">技术支持：<img src="../../img/logo-single.png">滨清科技</a>
     </footer>
     <!-- endbuild -->
+
   </div>
   <!-- build:js -->
   <!-- =============== JS ===============-->
@@ -277,6 +301,7 @@
   <script src="../../js/vendor/eonasdan-bootstrap-datetimepicker/build/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
   <script src="../../js/app.js"></script>
   <!-- endbuild -->
+
   <script>
     $(function(){
       $('#createtDate').datetimepicker({

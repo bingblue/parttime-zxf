@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>指定中奖-指定中奖录入</title>
+  <title>奖项管理-奖项详情</title>
   <!-- build:css -->
   <link rel="stylesheet" href="../../js/vendor/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../js/vendor/animate.css/animate.min.css">
@@ -58,7 +58,7 @@
     </header>
     <!-- endbuild -->
 
-    <!-- build:sidebar2 -->
+    <!-- build:sidebar -->
     <!-- 左侧菜单 -->
     <aside class="aside">
       <div class="aside-inner">
@@ -68,25 +68,57 @@
               <span>欢迎登陆后台管理系统</span>
             </li>
             <li class=" ">
-              <a href="#lotteryClearBillList" title="指定中奖" data-toggle="collapse">
-                <em class="fa fa-trophy"></em>
-                <span>指定中奖</span>
+              <a href="#prize" title="奖品管理" data-toggle="collapse">
+                <em class="fa fa-gift"></em>
+                <span>奖品管理</span>
               </a>
-              <ul id="lotteryClearBillList" class="nav sidebar-subnav collapse">
+              <ul id="prize" class="nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">奖品管理</li>
                 <li class=" ">
-                  <a href="../admin/lotteryClearBillList.html" title="指定中奖列表">
-                    <span>指定中奖列表</span>
+                  <a href="../general/prizeList.html" title="奖品列表">
+                    <span>奖品列表</span>
                   </a>
                 </li>
                 <li class=" ">
-                  <a href="../admin/lotteryClearBillEdit.html" title="指定中奖录入">
-                    <span>指定中奖录入</span>
+                  <a href="../general/prizeEdit.html" title="奖品录入">
+                    <span>奖品录入</span>
                   </a>
                 </li>
               </ul>
             </li>
             <li class=" ">
-              <a href="../admin/changePassword.html" title="密码修改">
+              <a href="#award" title="奖项管理" data-toggle="collapse">
+                <em class="fa fa-gift"></em>
+                <span>奖项管理</span>
+              </a>
+              <ul id="award" class="nav sidebar-subnav collapse">
+                <li class="sidebar-subnav-header">奖项管理</li>
+                <li class=" ">
+                  <a href="../general/awardList.html" title="奖项列表">
+                    <span>奖项列表</span>
+                  </a>
+                </li>
+                <li class=" ">
+                  <a href="../general/awardEdit.html" title="奖项录入">
+                    <span>奖项录入</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=" ">
+              <a href="../general/activity.html" title="抽奖配置">
+                <em class="fa fa-cog"></em>
+                <span>抽奖配置</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="../general/lotteryBillList.html" title="抽奖订单">
+                <em class="fa fa-th-list"></em>
+                <span>抽奖订单</span>
+              </a>
+            </li>
+            <li class=" ">
+              <a href="../general/changePassword.html" title="密码修改">
                 <em class="fa fa-lock"></em>
                 <span>密码修改</span>
               </a>
@@ -101,7 +133,7 @@
     <section>
       <div class="content-wrapper">
         <div class="content-heading">
-          指定中奖录入
+          奖项详情
         </div>
         <div class="row">
           <div class="col-xs-12">
@@ -116,13 +148,13 @@
                   </div>
                   <fieldset>
                     <div class="form-group col-sm-6">
-                      <label class="col-sm-2 control-label">小票码：</label>
+                      <label class="col-sm-2 control-label">编号：</label>
                       <div class="col-sm-6">
                         <input type="text" name="" required class="form-control">
                       </div>
                     </div>
                     <div class="form-group col-sm-6">
-                      <label class="col-sm-2 control-label">手机号：</label>
+                      <label class="col-sm-2 control-label">名称：</label>
                       <div class="col-sm-6">
                         <input type="text" name="" required class="form-control">
                       </div>
@@ -130,7 +162,21 @@
                   </fieldset>
                   <fieldset>
                     <div class="form-group col-sm-6">
-                      <label class="col-sm-2 control-label">姓名：</label>
+                      <label class="col-sm-2 control-label">数量：</label>
+                      <div class="col-sm-6">
+                        <input type="text" name="" required class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label class="col-sm-2 control-label">库存：</label>
+                      <div class="col-sm-6">
+                        <input type="text" name="" required class="form-control">
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <div class="form-group col-sm-6">
+                      <label class="col-sm-2 control-label">中奖率：</label>
                       <div class="col-sm-6">
                         <input type="text" name="" required class="form-control">
                       </div>
@@ -138,11 +184,35 @@
                     <div class="form-group col-sm-6">
                       <label class="col-sm-2 control-label">奖品：</label>
                       <div class="col-sm-6">
-                        <select name="" id="" class="form-control">
-                          <option value="">全部</option>
-                          <option value="1">奖品1</option>
+                        <select id="select2-3" multiple="multiple" class="form-control">
+                          <option value="1" selected="selected">奖品1</option>
                           <option value="2">奖品2</option>
+                          <option value="3">奖品3</option>
+                          <option value="4">奖品4</option>
+                          <option value="5">奖品5</option>
+                          <option value="6">奖品6</option>
+                          <option value="7">奖品7</option>
                         </select>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <div class="form-group col-sm-6">
+                      <label class="col-sm-2 control-label">图片URL：</label>
+                      <div class="col-sm-6">
+                        <input type="text" name="" required class="form-control">
+                      </div>
+                      <div class="col-sm-4">
+                        <span class="btn btn-success fileinput-button"><i class="fa fa-fw fa-plus"></i>
+                          <span>上传图片</span>
+                          <input type="file" name="files[]" multiple="">
+                        </span>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label class="col-sm-2 control-label">图片缩略图：</label>
+                      <div class="col-sm-6">
+                        <img src="../../img/dummy.png" class="thumbnail">
                       </div>
                     </div>
                   </fieldset>
@@ -178,5 +248,15 @@
   <script src="../../js/app.js"></script>
   <!-- endbuild -->
 
+  <link rel="stylesheet" href="../../js/vendor/select2/dist/css/select2.css">
+  <link rel="stylesheet" href="../../js/vendor/select2-bootstrap-theme/dist/select2-bootstrap.css">
+  <script src="../../js/vendor/select2/dist/js/select2.js"></script>
+  <script>
+  $(function(){
+    $('#select2-3').select2({
+        theme: 'bootstrap'
+    })
+  })
+  </script>
 </body>
 </html>
