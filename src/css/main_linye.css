@@ -951,6 +951,7 @@ a {
   margin-left: 10px;
 }
 .setNickname {
+  max-width: 215px;
   display: inline-block;
   display: none;
 }
@@ -960,7 +961,7 @@ a {
   background: rgba(0, 133, 230, 1);
   border: 0;
   border-radius: 18px;
-  margin-left: 10px;
+  margin-left: 0;
   text-align: center;
   font-size: 14px;
   color: rgba(255, 255, 255, 1);
