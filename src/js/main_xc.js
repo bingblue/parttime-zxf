@@ -420,6 +420,7 @@ $(function () {
         getTime($(ele)[0])
         $(ele).parent().find('.tooglePlay').on('click',function() {
           var $this = $(this);
+          $(".xc-proplay .pause").not(this).click()
           if ($this.hasClass('play')) {
             $(ele)[0].play()
             $this.timer && clearInterval($this.timer)

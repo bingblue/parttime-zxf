@@ -2947,3 +2947,26 @@
   margin: 10px 0;
   font-size: 12px;
 }
+.xc-proplay {
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, .05);
+  border-radius: 4px;
+}
+.xc-proplay.small {
+  margin-bottom: 10px;
+}
+.xc-proplay.small .xc-proplay-outher{
+  width: 890px;
+}
+.flex-select {
+  display: flex;
+  margin: 5px;
+}
+.flex-select .xc-head-select {
+  margin: 0 5px 0 0;
+}
+.xc-select-p {
+  line-height: 36px;
+}
+.no-overflow {
+  overflow: inherit !important;
+}
