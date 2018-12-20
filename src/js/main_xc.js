@@ -27,6 +27,7 @@ $(function () {
       this.reloadInput()
       this.resetClass()
       this.newTable()
+      this.createTimeFormat()
     },
     newTable: function() {
       $(".jq-xc-table li").on('click', function () {
@@ -35,6 +36,37 @@ $(function () {
             $this.addClass('active').siblings().removeClass('active')
         }
       })
+    },
+    createTimeFormat: function() {
+      var $timeToFormat = $("#timeToFormat")
+      if ($timeToFormat) {
+        var time = 0;
+        setInterval(function() {
+          time += 1
+          $timeToFormat.text(comment.timeToFormat(time))
+        }, 1000)
+      }
+    },
+    timeToFormat: function(times) {
+      var result = '00:00:00';
+      var hour,minute,second
+      if (times > 0) {
+        hour = Math.floor(times / 3600);
+        if (hour < 10) {
+          hour = "0"+hour;
+        }
+        minute = Math.floor((times - 3600 * hour) / 60);
+        if (minute < 10) {
+          minute = "0"+minute;
+        }
+  
+        second = Math.floor((times - 3600 * hour - 60 * minute) % 60);
+        if (second < 10) {
+          second = "0"+second;
+        }
+        result = hour+':'+minute+':'+second;
+      }
+      return result;  
     },
     // 更换课程
     resetClass: function() {
@@ -400,6 +432,7 @@ $(function () {
           $this.removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text('点击播放语音')
       }, false);
       })
+      $(".musicAuto").click();
     },
     audioPlay: function () {
       function forMatTime(t) {
