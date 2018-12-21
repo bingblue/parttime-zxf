@@ -7,6 +7,7 @@ $(function () {
    * @param {object} option 配置信息.
    * @return {Number} 返回值描述.
    */
+  var totalTimeT = null
   comment = {
     init: function () {
       this.testNav()
@@ -40,12 +41,17 @@ $(function () {
     createTimeFormat: function() {
       var $timeToFormat = $("#timeToFormat")
       if ($timeToFormat) {
-        var time = 0;
-        setInterval(function() {
-          time += 1
+        var time = totTime
+        totalTimeT = setInterval(function() {
+          time += 10
+          totTime = time
           $timeToFormat.text(comment.timeToFormat(time))
         }, 1000)
       }
+    },
+    getTotTime: function(){
+      clearInterval(totalTimeT)
+      return totTime
     },
     timeToFormat: function(times) {
       var result = '00:00:00';
