@@ -8,6 +8,9 @@ $(function () {
    * @return {Number} 返回值描述.
    */
   var totalTimeT = null
+  if(typeof(totTime)=="undefined"){
+    totTime = 0
+  }
   comment = {
     init: function () {
       this.testNav()
@@ -51,7 +54,7 @@ $(function () {
     },
     getTotTime: function(){
       clearInterval(totalTimeT)
-      return totTime
+      return !totTime ? 0 : totTime
     },
     timeToFormat: function(times) {
       var result = '00:00:00';
