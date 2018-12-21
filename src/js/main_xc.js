@@ -28,6 +28,18 @@ $(function () {
       this.resetClass()
       this.newTable()
       this.createTimeFormat()
+      this.reviewWord()
+    },
+    reviewWord: function() {
+      $('#writeword').on('keyup', function (e) { 
+        var word = $(this).val()
+        var $showresult = $("#showresult")
+        if (word == $('#refword').text()) {
+          $showresult.attr('class','word_right_icon')
+        } else {
+          $showresult.attr('class','word_wrong_icon')
+        }
+      });
     },
     newTable: function() {
       $(".jq-xc-table li").on('click', function () {
@@ -412,6 +424,9 @@ $(function () {
      */
     audioPlay1: function () {
       $(".audioType1").each(function (index, ele) {
+        $(ele)[0].addEventListener('error', function () {
+          console.log("1")
+        })
         $(ele).parent().find('.tooglePlay').on('click',function() {
           var $this = $(this);
           if ($this.hasClass('play')) {
@@ -425,14 +440,13 @@ $(function () {
             $(ele)[0].pause()
             $this.removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text('点击播放语音')
           }
-          
         })
         $(ele)[0].addEventListener('ended', function () {
           var $this = $(this).parent().find('.tooglePlay')
           $this.removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text('点击播放语音')
       }, false);
       })
-      $(".musicAuto").click();
+      $(".musicAuto").trigger("click");
     },
     audioPlay: function () {
       function forMatTime(t) {

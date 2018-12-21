@@ -613,7 +613,7 @@ button:focus {
       background-size: cover;
     }
 
-.body-preview .perview-left .horn-a-active {
+.body-preview .perview-left .pause {
       background: url('../img/horn_active.png') no-repeat;
       background-size: cover;
     }

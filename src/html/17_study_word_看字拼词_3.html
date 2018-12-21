@@ -105,10 +105,10 @@
                 <p class="word-mean"><span>vt.</span>措辞，用词；用言语表达；</p>
                 <p class="word-mean"><span>vi.</span>讲话；</p>
                 <div class="clearfix input-word">
-                    <input type="text" class="write-word" placeholder="请拼写单词" value="word">
-                    <i class="word_right_icon"></i>
+                    <input type="text" class="write-word" id="writeword" placeholder="请拼写单词" value="">
+                    <i class="word_wrong_icon" id="showresult"></i>
                 </div>
-                <p class="the-word">word</p>
+                <p class="the-word" id="refword">word</p>
               </div>
               <div class="preview-right">
                 <div class="next-wp">
@@ -126,7 +126,7 @@
               <li>本次学习</li>
               <li>
                 <img src="../img/duration_icon.png" alt="" class="duration-img">有效时长
-                <span class="txt">00:05:00</span>
+                <span class="txt" id="timeToFormat">00:00:00</span>
               </li>
               <li>
                 <img src="../img/newword.png" alt="" class="newword-img">生词：
