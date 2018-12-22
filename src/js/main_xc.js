@@ -36,14 +36,29 @@ $(function () {
     },
     reviewWord: function() {
       $('#writeword').on('keyup', function (e) { 
-        var word = $(this).val()
+        var word = $(this).val().trim()
         var $showresult = $("#showresult")
         if (word == $('#refword').text()) {
-          $showresult.attr('class','word_right_icon')
+          $showresult.addClass('word_right_icon').removeClass('word_wrong_icon')
         } else {
-          $showresult.attr('class','word_wrong_icon')
+          $showresult.addClass('word_wrong_icon').removeClass('word_right_icon')
         }
       });
+      $("body").on('keyup', '.iptReviewWord', function(e) {
+        var val = $(this).val()
+        var tip = $(this).attr('tip')
+        if (val != tip) {
+          $(this).addClass('err-ipt').removeClass('true-ipt')
+        } else {
+          $(this).removeClass('err-ipt').addClass('true-ipt')
+        }
+        var $showresult = $("#iptReviewShowresult")
+        if ($('.iptReviewWord').length == $('.true-ipt').length) {
+          $showresult.attr('class','default-icon')
+        } else {
+          $showresult.attr('class','default-icon')
+        }
+      })
     },
     newTable: function() {
       $(".jq-xc-table li").on('click', function () {

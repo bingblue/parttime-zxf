@@ -109,13 +109,13 @@
             <div class="clearfix content-minheight">
               <div class="perview-left">
                 <p class="en-text">你好吗？</p>
-                <input class="en-ipt" type="text">
+                <input class="en-ipt" type="text" id="writeword">
                 <!-- 如果填写正确 给重置按钮加none类名 给result-icon加success类名 给correct-txt加success-txt类名-->
                 <!-- 如果填写错误 给重置按钮加none类名 给result-icon加fail类名-->
                 <a href="javascript:;" class="reset-btn none">
-                  <i class="reset-icon"></i>重置</a>
-                <i class="result-icon fail"></i>
-                <p class="correct-txt success-txt">How are you?</p>
+                  <i class="reset-icon fail"></i>重置</a>
+                <i class="result-icon word_wrong_icon" id="showresult" style="float:none"></i>
+                <p class="correct-txt success-txt xc-hidden" id="refword">How are you?</p>
               </div>
               <div class="preview-right">
                 <div class="next-wp">

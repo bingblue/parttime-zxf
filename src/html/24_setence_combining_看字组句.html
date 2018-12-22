@@ -101,23 +101,26 @@
             <div class="clearfix content-minheight">
               <div class="perview-left">
                 <p class="horn-wp">
-                  <a href="javascript:;" class="horn-a"></a>
-                  <span class="horn-cue">点击或按ctrl重听</span>
+                  <audio class="audioType1">
+                    <source src="../music/3.mp3" type="audio/mp3">
+                  </audio>
+                  <a href="javascript:;" class="horn-a tooglePlay play musicAuto"></a>
+                  <span class="horn-cue">点击播放语音</span>
                 </p>
                 <div class="setencecomb-wp">
                   <div class="input-wp">
                     <!-- 如果答案错误 给对应的input加err-ipt类名 -->
-                    <input type="text" class="ipt err-ipt" value="aaa">
-                    <input type="text" class="ipt" value="are">
-                    <input type="text" class="ipt" value="you">
+                    <input type="text" class="ipt iptReviewWord" value="" tip='How'>
+                    <input type="text" class="ipt iptReviewWord" value="" tip='are'>
+                    <input type="text" class="ipt iptReviewWord" value="" tip='you'>
                     <span class="quertion-txt">?</span>
                     <!-- 答案正确 -->
-                    <!-- <i class="right-icon"></i> -->
+                    <!-- <i class="default-icon"></i> -->
                     <!-- 答案错误 -->
-                    <i class="default-icon"></i>
+                    <i class="default-icon" id="iptReviewShowresult"></i>
                   </div>
-                  <p class="right-result-txt">正确答案：how are you?</p>
-                  <p class="setence-text-cn">你好吗？</p>
+                  <!-- <p class="right-result-txt">正确答案：how are you?</p>
+                  <p class="setence-text-cn">你好吗？</p> -->
                 </div>
               </div>
             </div>

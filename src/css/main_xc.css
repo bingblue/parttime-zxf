@@ -2970,3 +2970,6 @@
 .no-overflow {
   overflow: inherit !important;
 }
+.xc-hidden {
+  display: none;
+}
