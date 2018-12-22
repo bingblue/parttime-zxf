@@ -33,11 +33,29 @@ $(function () {
       this.newTable()
       this.createTimeFormat()
       this.reviewWord()
+      this.isCanNext()
+    },
+    isCanNext: function() {
+      var isNext = false
+      var $iptReviewWord = $('.iptReviewWord');
+      if ($iptReviewWord.length) {
+        if ($('.err-ipt').length) {
+          isNext = false
+        } else {
+          isNext = true
+        }
+      } else {
+        if ($('#writeword').val().trim() == $('#refword').text()) {
+          isNext = true
+        }
+      }
+      return isNext
     },
     reviewWord: function() {
-      $('#writeword').on('keyup', function (e) { 
+      $('body').on('keyup', '#writeword', function (e) { 
         var word = $(this).val().trim()
         var $showresult = $("#showresult")
+        $showresult.show()
         if (word == $('#refword').text()) {
           $showresult.addClass('word_right_icon').removeClass('word_wrong_icon')
         } else {
@@ -53,6 +71,7 @@ $(function () {
           $(this).removeClass('err-ipt').addClass('true-ipt')
         }
         var $showresult = $("#iptReviewShowresult")
+        $showresult.show()
         if ($('.iptReviewWord').length == $('.true-ipt').length) {
           $showresult.attr('class','default-icon')
         } else {
