@@ -58,7 +58,7 @@ $(function () {
       if ($timeToFormat) {
         var time = totTime
         totalTimeT = setInterval(function() {
-          time += 10
+          time += 1
           totTime = time
           $timeToFormat.text(comment.timeToFormat(time))
         }, 1000)
