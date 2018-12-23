@@ -3001,3 +3001,7 @@
 .right-result-txt {
   padding-top: 22px;
 }
+.play,
+.pause {
+  cursor: pointer;
+}
