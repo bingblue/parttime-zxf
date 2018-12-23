@@ -45,7 +45,7 @@ $(function () {
           isNext = true
         }
       } else {
-        if ($('#writeword').length && ($('#writeword').val().trim() == $('#refword').text())) {
+        if ($('#writeword').length && ($('#writeword').val().trim().replace(/\s+/g,"") == $('#refword').text().replace(/\s+/g,""))) {
           isNext = true
         }
       }
@@ -62,7 +62,8 @@ $(function () {
         var word = $(this).val().trim()
         var $showresult = $("#showresult")
         $showresult.css('display','inline-block')
-        if (word == $('#refword').text()) {
+        console.log(word, $('#refword').text())
+        if (word.replace(/\s+/g,"") == $('#refword').text().replace(/\s+/g,"")) {
           $showresult.addClass('word_right_icon').removeClass('word_wrong_icon')
         } else {
           $showresult.addClass('word_wrong_icon').removeClass('word_right_icon')
