@@ -2976,3 +2976,16 @@
 #showresult, #iptReviewShowresult {
   display: none;
 }
+.w24 {
+  width: 34px;
+}
+.right-result-txt,
+.setence-text-cn {
+  display: none;
+  color: #0085E6 !important;
+  line-height: 24px;
+  font-size: 16px;
+}
+.right-result-txt {
+  padding-top: 22px;
+}

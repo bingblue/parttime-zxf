@@ -45,38 +45,51 @@ $(function () {
           isNext = true
         }
       } else {
-        if ($('#writeword').val().trim() == $('#refword').text()) {
+        if ($('#writeword').length && ($('#writeword').val().trim() == $('#refword').text())) {
           isNext = true
         }
       }
       return isNext
     },
     reviewWord: function() {
-      $('body').on('keyup', '#writeword', function (e) { 
+      $('body').on('keyup', '#writeword', function (event) {
+        if ($(this).hasClass('enter')) {
+          var keycode = (event.keyCode ? event.keyCode : event.which);
+          if(keycode != '13'){
+              return false
+          }
+        }
         var word = $(this).val().trim()
         var $showresult = $("#showresult")
-        $showresult.show()
+        $showresult.css('display','inline-block')
         if (word == $('#refword').text()) {
           $showresult.addClass('word_right_icon').removeClass('word_wrong_icon')
         } else {
           $showresult.addClass('word_wrong_icon').removeClass('word_right_icon')
         }
+        $(this).parent().parent().find('.right-result-txt,.setence-text-cn').show()
       });
-      $("body").on('keyup', '.iptReviewWord', function(e) {
-        var val = $(this).val()
-        var tip = $(this).attr('tip')
-        if (val != tip) {
-          $(this).addClass('err-ipt').removeClass('true-ipt')
-        } else {
-          $(this).removeClass('err-ipt').addClass('true-ipt')
+      $("body").on('keyup', '.iptReviewWord', function(event) {
+        $('.iptReviewWord').each(function(index, ele){
+          var val = $(ele).val()
+          var tip = $(ele).attr('tip')
+          if (val != tip) {
+            $(ele).addClass('err-ipt').removeClass('true-ipt')
+          } else {
+            $(ele).removeClass('err-ipt').addClass('true-ipt')
+          }
+        })
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if(keycode != '13'){
+            return false
         }
         var $showresult = $("#iptReviewShowresult")
-        $showresult.show()
         if ($('.iptReviewWord').length == $('.true-ipt').length) {
-          $showresult.attr('class','default-icon')
+          $showresult.attr('class','right-icon').css('display','inline-block')
         } else {
-          $showresult.attr('class','default-icon')
+          $showresult.attr('class','default-icon').css('display','inline-block')
         }
+        $(this).parent().siblings('.right-result-txt,.setence-text-cn').show()
       })
     },
     newTable: function() {
