@@ -371,9 +371,14 @@
 
 .course_list_details_list {
   width: 252px;
+  max-height: 264px;
+  overflow-y:scroll;
+  box-sizing: border-box;
 }
-
-.course_list_details_list > .active {
+.course_list_details_list_pointer a{
+  color: #999999;
+}
+.course_list_details_list > .active a{
   background: rgba(255, 255, 255, 1);
   font-size: 16px;
   color: rgba(0, 133, 230, 1);
