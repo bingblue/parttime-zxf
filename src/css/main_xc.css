@@ -2977,7 +2977,19 @@
   display: none;
 }
 .w24 {
-  width: 34px;
+  width: 28px;
+  display: inline-block;
+  height: 24px;
+  margin-top: 8px;
+  vertical-align: top;
+}
+.w24.play {
+  background: url('../img/horn_gery.png') no-repeat;
+  background-size:cover;
+}
+.w24.pause {
+  background: url('../img/horn_active.png') no-repeat;
+  background-size:cover;
 }
 .right-result-txt,
 .setence-text-cn {
