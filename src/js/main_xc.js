@@ -39,7 +39,7 @@ $(function () {
       var isNext = false
       var $iptReviewWord = $('.iptReviewWord');
       if ($iptReviewWord.length) {
-        if ($('.err-ipt').length) {
+        if ($('.true-ipt').length != $iptReviewWord.length) {
           isNext = false
         } else {
           isNext = true
