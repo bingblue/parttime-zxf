@@ -378,7 +378,7 @@
 .course_list_details_list_pointer a{
   color: #999999;
 }
-.course_list_details_list > .active a{
+.course_list_details_list > .active{
   background: rgba(255, 255, 255, 1);
   font-size: 16px;
   color: rgba(0, 133, 230, 1);
@@ -986,3 +986,6 @@
   font-weight: bold;
 }
 /* stylelint-enable */
+.course_list_details_show  li {
+  cursor: pointer;
+}

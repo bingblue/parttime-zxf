@@ -29,9 +29,12 @@ $(function () {
       changeTagName.eq($(this).index()).addClass(activeClassName)
     })
   }
-  tab($('.course_list_details_list_pointer'), $('.course_list_details_show'), 'active')
+  // tab($('.course_list_details_list_pointer'), $('.course_list_details_show'), 'active')
   tab($('.change_course_nav_list'), $('.change_course_details_table'), 'active')
-
+  $('body').on('click', '.course_list_details_list_pointer', function() {
+    var $this = $(this)
+    $this.addClass('active').siblings().removeClass('active')
+  })
   // close model box
   var close = $('.close')
   var modelBox = $('.course_center_wrap')
