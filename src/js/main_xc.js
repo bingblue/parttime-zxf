@@ -52,6 +52,13 @@ $(function () {
       return isNext
     },
     reviewWord: function() {
+      // input 聚焦播放音乐
+      $('body').on('focus', '#writeword', function () {
+        var $play = $(this).closest('.perview-left').find('.tooglePlay')
+        if ($play.hasClass('play')) {
+          $play.click()
+        }
+      })
       $('body').on('keyup', '#writeword', function (event) {
         if ($(this).hasClass('enter')) {
           var keycode = (event.keyCode ? event.keyCode : event.which);
@@ -62,14 +69,52 @@ $(function () {
         var word = $(this).val().trim()
         var $showresult = $("#showresult")
         $showresult.css('display','inline-block')
-        console.log(word, $('#refword').text())
         if (word.replace(/\s+/g,"") == $('#refword').text().replace(/\s+|•/g,"")) {
+          if ($showresult.hasClass('word_right_icon')) { // 再次enter 下一题
+            console.log('next')
+            $('.sub_url').click()
+          }
           $showresult.addClass('word_right_icon').removeClass('word_wrong_icon')
         } else {
           $showresult.addClass('word_wrong_icon').removeClass('word_right_icon')
         }
         $(this).parent().parent().find('.right-result-txt,.setence-text-cn').show()
       });
+      $('body').on('click', '.reset-btn', function() {
+        $(this).hide()
+        $('.iptword-item').show();
+        $(this).siblings('.ipt').val('')
+        $(this).parent().parent().find('.right-result-txt,.setence-text-cn').hide()
+        $('#iptReviewShowresult').hide()
+      })
+      $('body').on('click', '.iptword-item', function(){
+        var text = $(this).text()
+        $(this).hide()
+        $('.iptReviewWord').each(function(index, ele) {
+          var $this = $(ele)
+          if (!$this.val()) {
+            $this.val(text)
+            var val = $(ele).val()
+            var tip = $(ele).attr('tip')
+            if (val != tip) {
+              $(ele).addClass('err-ipt').removeClass('true-ipt')
+              $('.reset-btn').css('display', 'inline-block')
+            } else {
+              $(ele).removeClass('err-ipt').addClass('true-ipt')
+            }
+            if (index == $('.iptReviewWord').length - 1) {
+              var $showresult = $("#iptReviewShowresult")
+              if ($('.iptReviewWord').length == $('.true-ipt').length) {
+                $showresult.attr('class','right-icon').css('display','inline-block')
+              } else {
+                $showresult.attr('class','default-icon').css('display','inline-block')
+              }
+              $(this).parent().siblings('.right-result-txt,.setence-text-cn').show()
+            }
+            return false
+          }
+        });
+      })
       $("body").on('keyup', '.iptReviewWord', function(event) {
         $('.iptReviewWord').each(function(index, ele){
           var val = $(ele).val()

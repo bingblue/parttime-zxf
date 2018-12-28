@@ -3005,3 +3005,16 @@
 .pause {
   cursor: pointer;
 }
+.w600 {
+  width: 600px;
+}
+.m100 {
+  margin-top: 85px;
+}
+.iptword-item {
+  color: #0085E6;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 30px;
+  margin-right: 5px;
+}

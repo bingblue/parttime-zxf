@@ -99,30 +99,32 @@
           </p>
           <div class="practice-ct">
             <div class="clearfix content-minheight">
-              <div class="perview-left">
-                <p class="horn-wp">
-                  <audio class="audioType1">
-                    <source src="../music/3.mp3" type="audio/mp3">
-                  </audio>
-                  <a href="javascript:;" class="horn-a tooglePlay play musicAuto"></a>
-                  <span class="horn-cue">点击播放语音</span>
-                </p>
-                <div class="setencecomb-wp">
+              <div class="perview-left w600">
+                <div class="setencecomb-wp m100">
+                  <div class="iptword-box">
+                    <span class="iptword-item">you</span>
+                    <span class="iptword-item">are</span>
+                    <span class="iptword-item">How</span>
+                  </div>
                   <div class="input-wp">
                     <!-- 如果答案错误 给对应的input加err-ipt类名 -->
-                    <input type="text" class="ipt iptReviewWord enter" value="" tip='How'>
-                    <input type="text" class="ipt iptReviewWord enter" value="" tip='are'>
-                    <input type="text" class="ipt iptReviewWord enter" value="" tip='you'>
+                    <input type="text" class="ipt iptReviewWord" value="" tip='How' disabled>
+                    <input type="text" class="ipt iptReviewWord" value="" tip='are' disabled>
+                    <input type="text" class="ipt iptReviewWord" value="" tip='you' disabled>
                     <span class="quertion-txt">?</span>
-                    <!-- 答案正确 -->
-                    <!-- <i class="right-icon"></i> -->
-                    <!-- 答案错误 -->
                     <i class="default-icon" id="iptReviewShowresult"></i>
+                    <a href="javascript:;" class="reset-btn"><i class="reset-icon"></i>重置</a>
                   </div>
                   <p class="right-result-txt">正确答案：how are you?</p>
                   <p class="setence-text-cn">你好吗？</p>
                 </div>
               </div>
+              <div class="preview-right">
+                  <div class="next-wp">
+                    <img src="../img/next_icon.png" alt="" class="next-img">
+                    <p class="next-txt">Next</p>
+                  </div>
+                </div>
             </div>
             <div class="progress-wp">
               <div class="progress-ct">

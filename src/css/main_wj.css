@@ -1184,6 +1184,7 @@ button:focus {
     font-size: 16px;
     background: #0085e6;
     border-radius: 15px;
+    display: none;
   }
 
 .setencecomb-wp .right-icon {
@@ -1194,7 +1195,8 @@ button:focus {
     background: url('../img/right_icon.png') no-repeat;
     background-size: cover;
     position: relative;
-    top: 20px;
+    top: 14px;
+    margin-right: 5px;
   }
 
 .setencecomb-wp .default-icon {
@@ -1205,7 +1207,8 @@ button:focus {
     background: url('../img/word_fault.png') no-repeat;
     background-size: cover;
     position: relative;
-    top: 20px;
+    top: 14px;
+    margin-right: 5px;
   }
 
 .setencecomb-wp .sentence-txt {
