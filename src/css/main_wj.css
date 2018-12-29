@@ -1149,7 +1149,8 @@ button:focus {
     margin-right: 10px;
     height: 42px;
     text-align: center;
-    font-size: 17px
+    font-size: 17px;
+    margin-bottom: 10px;
   }
 
 .setencecomb-wp .ipt:focus {

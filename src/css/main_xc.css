@@ -2693,7 +2693,7 @@
     margin-right: 20px;
   }
 .xc-red {
-  color: red;
+  color: red !important;
 }
 .xc-blue {
   color: #0085e6;
@@ -3009,7 +3009,7 @@
   width: 600px;
 }
 .m100 {
-  margin-top: 85px;
+  margin-top: 40px;
 }
 .iptword-item {
   color: #0085E6;
@@ -3017,4 +3017,11 @@
   cursor: pointer;
   line-height: 30px;
   margin-right: 5px;
+  display: inline-block;
+}
+.pt40 {
+  padding-top: 50px !important;
+}
+.iptword-box {
+  margin-bottom: 10px;
 }
