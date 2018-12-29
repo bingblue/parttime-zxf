@@ -3024,4 +3024,17 @@
 }
 .iptword-box {
   margin-bottom: 10px;
+  min-height: 30px;
+}
+xc-table-body li a {
+  color: #656565;
+  font-size: 62.5%;
+}
+.part-answer {
+  text-indent: 40px;
+  font-size: 16px;
+  line-height: 40px;
+}
+.body-wordfail .part-ul .title-wp {
+  margin-bottom: 14px;
 }

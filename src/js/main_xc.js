@@ -51,7 +51,17 @@ $(function () {
       }
       return isNext
     },
+    addTipMusic: function(tip) {
+      var src = tip ? '../music/ture.mp3' : '../music/false.mp3'
+      var $Music = $("<audio id='tipMusic'><source src='" + src + "' type='audio/mp3'></audio>")
+      $('body').append($Music)
+      $Music.get(0).play()
+      $Music.get(0).addEventListener('ended', function () {
+        $Music.remove()
+      }, false);
+    },
     reviewWord: function() {
+      var that = this
       // input 聚焦播放音乐
       $('body').on('focus', '#writeword', function () {
         var $play = $(this).closest('.perview-left').find('.tooglePlay')
@@ -71,12 +81,14 @@ $(function () {
         $showresult.css('display','inline-block')
         if (word.replace(/\s+/g,"") == $('#refword').text().replace(/\s+|•/g,"")) {
           if ($showresult.hasClass('word_right_icon')) { // 再次enter 下一题
-            console.log('next')
             $('.sub_url').click()
+            return false
           }
+          that.addTipMusic(true)
           $showresult.addClass('word_right_icon').removeClass('word_wrong_icon')
         } else {
           $showresult.addClass('word_wrong_icon').removeClass('word_right_icon')
+          that.addTipMusic(false)
         }
         $(this).parent().parent().find('.right-result-txt,.setence-text-cn').show()
       });
@@ -105,8 +117,10 @@ $(function () {
             if (index == $('.iptReviewWord').length - 1) {
               var $showresult = $("#iptReviewShowresult")
               if ($('.iptReviewWord').length == $('.true-ipt').length) {
+                that.addTipMusic(true)
                 $showresult.attr('class','right-icon').css('display','inline-block')
               } else {
+                that.addTipMusic(false)
                 $showresult.attr('class','default-icon').css('display','inline-block')
               }
               $(this).parent().siblings('.right-result-txt,.setence-text-cn').show()
