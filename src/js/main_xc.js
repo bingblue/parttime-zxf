@@ -34,6 +34,19 @@ $(function () {
       this.createTimeFormat()
       this.reviewWord()
       this.isCanNext()
+      this.documentEenter()
+    },
+    documentEenter: function() {
+      if ($('.documentEnter').length) {
+        $(document).ready(function(e) {
+          $(this).keydown(function (e){
+            if(e.which == "13") {
+              console.log('enter')
+              $('.sub_url').click()
+            } 
+          })
+        })
+      }
     },
     isCanNext: function() {
       var isNext = false
@@ -52,7 +65,7 @@ $(function () {
       return isNext
     },
     addTipMusic: function(tip) {
-      var src = tip ? '../music/ture.mp3' : '../music/false.mp3'
+      var src = tip ? '/static/home/music/true.mp3' : '/static/home/music/false.mp3'
       var $Music = $("<audio id='tipMusic'><source src='" + src + "' type='audio/mp3'></audio>")
       $('body').append($Music)
       $Music.get(0).play()

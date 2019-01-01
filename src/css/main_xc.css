@@ -3007,9 +3007,14 @@
 }
 .w600 {
   width: 600px;
+  word-wrap: break-word
+}
+.w524 {
+  width: 524px;
+  word-wrap: break-word
 }
 .m100 {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 .iptword-item {
   color: #0085E6;
