@@ -11,7 +11,12 @@ $(function () {
   if(typeof(totTime)=="undefined"){
     totTime = 0
   }
+  var recorder;
   comment = {
+    reword: {
+      word: '',
+      baseUrl: ''
+    },
     init: function () {
       this.testNav()
       this.tableSwitch()
@@ -35,6 +40,35 @@ $(function () {
       this.reviewWord()
       this.isCanNext()
       this.documentEenter()
+      this.recording()
+    },
+    blobToDataURL(blob, callback) {
+      let a = new FileReader();
+      a.onload = function (e) { callback(e.target.result); }
+      a.readAsDataURL(blob);
+    },
+    recording: function() {
+      var that = this
+      var audio = document.querySelector('.audio');
+      $('body').on('mousedown', '#recording', function(){
+        $(this).addClass('active')
+        HZRecorder.get(function (rec) {
+          recorder = rec;
+          recorder.start();
+        });
+      })
+      $('body').on('mouseup', '#recording', function(){
+        $(this).removeClass('active')
+        recorder.stop();
+        //console.log(recorder.getBlob())
+        that.blobToDataURL(recorder.getBlob(), function(r){
+          that.reword = {
+            word: $('#reword').text(),
+            baseUrl: r
+          }
+        })
+        // recorder.play(audio);
+      })
     },
     documentEenter: function() {
       if ($('.documentEnter').length) {
@@ -561,18 +595,46 @@ $(function () {
           if ($this.hasClass('play')) {
             $(".audioType1").each(function (index, el) {
               $(el)[0].pause()
-              $(el).parent().find('.tooglePlay').removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text('点击播放语音')
+              var span = '点击播放语音'
+              if ($(el).hasClass('yuanyin')) {
+                  span = '播放原音'
+              }
+              if ($(el).hasClass('luyin')) {
+                span = '播放'
+              }
+              $(el).parent().find('.tooglePlay').removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text(span)
             })
             $(ele)[0].play()
-            $this.removeClass('play').addClass('pause').attr('src', '../img/playsound_active.png').next('span').text('点击暂停播放')
+            var span = '点击暂停播放'
+            if ($(ele).hasClass('yuanyin')) {
+              span = '暂停播放'
+            }
+            if ($(ele).hasClass('luyin')) {
+              span = '暂停'
+            }
+            $this.removeClass('play').addClass('pause').attr('src', '../img/playsound_active.png').next('span').text(span)
           } else {
             $(ele)[0].pause()
-            $this.removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text('点击播放语音')
+            var span = '点击播放语音'
+            if ($(ele).hasClass('yuanyin')) {
+              span = '播放原音'
+            }
+            if ($(ele).hasClass('luyin')) {
+              span = '播放'
+            }
+            $this.removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text(span)
           }
         })
         $(ele)[0].addEventListener('ended', function () {
+          var span = '点击播放语音'
+          if ($(ele).hasClass('yuanyin')) {
+            span = '播放原音'
+          }
+          if ($(ele).hasClass('luyin')) {
+            span = '播放'
+          }
           var $this = $(this).parent().find('.tooglePlay')
-          $this.removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text('点击播放语音')
+          $this.removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text(span)
       }, false);
       })
       $(".musicAuto").trigger("click");
