@@ -2840,6 +2840,9 @@
   white-space: nowrap;
   overflow: hidden;
 }
+.xc-table-body li a {
+  color: #656565;
+}
 .xc-new-table.samll .xc-table-head li {
     width: 25%;
   }
