@@ -52,6 +52,7 @@ $(function () {
       var audio = document.querySelector('.audio');
       $('body').on('mousedown', '#recording', function(){
         $(this).addClass('active')
+        $('.sound-recod').removeClass('none')
         HZRecorder.get(function (rec) {
           recorder = rec;
           recorder.start();
