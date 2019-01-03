@@ -68,6 +68,7 @@ $(function () {
             baseUrl: r
           }
         })
+        sendRecording && sendRecording()
         // recorder.play(audio);
       })
     },
