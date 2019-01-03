@@ -51,6 +51,7 @@ $(function () {
       var that = this
       var audio = document.querySelector('.audio');
       $('body').on('mousedown', '#recording', function(){
+        recorder = ''
         $(this).addClass('active')
         $('.sound-recod').removeClass('none')
         HZRecorder.get(function (rec) {
@@ -60,15 +61,21 @@ $(function () {
       })
       $('body').on('mouseup', '#recording', function(){
         $(this).removeClass('active')
-        recorder.stop();
         //console.log(recorder.getBlob())
-        that.blobToDataURL(recorder.getBlob(), function(r){
-          that.reword = {
-            word: $('#reword').text(),
-            baseUrl: r
-          }
-        })
-        sendRecording && sendRecording()
+        if (recorder) {
+          recorder.stop();
+          that.blobToDataURL(recorder.getBlob(), function(r){
+            that.reword = {
+              word: $('#reword').text(),
+              baseUrl: r
+            }
+            sendRecording && sendRecording($('#reword').text(),r)
+          })
+        } else {
+          $('.sound-recod').addClass('none')
+          alert('录音时间太短！')
+        }
+        
         // recorder.play(audio);
       })
     },

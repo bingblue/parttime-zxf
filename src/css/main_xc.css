@@ -2745,10 +2745,27 @@
 .xc-66 tbody {
     width: 100%;
 }
+.xc-new-table::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 5px;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+.xc-new-table::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  border-radius: 5px;
+   -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: rgba(19, 147, 240, 1);
+}
+.xc-new-table::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  background: #EDEDED;
+}
 .xc-new-table {
-  border: 1px solid #eeeeee;
-  overflow-x: scroll;
+  border: 1px solid rgba(19, 147, 240, 1);
+  border-radius: 4px;
+  overflow-y: scroll;
   height: 500px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .xc-new-table ul {
   padding: 0;
@@ -2762,16 +2779,20 @@
   padding: 12px 10px 12px 25px;
   line-height: 33px;
 }
+.xc-new-table li a:hover {
+  color: #0085E6;
+}
 .xc-new-table .xc-table-head {
   overflow: hidden;
-  background-color: rgba(250, 250, 251, 1);
+  background-color: rgba(19, 147, 240, 1);
 }
 .xc-new-table .xc-table-head li {
-  border-right: 1px solid #eeeeee;
+  border-right: 1px solid rgba(19, 147, 240, 1);
   width: 33.33%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   float: left;
+  color: #fff;
 }
 .xc-table-body {
   background-color: #fff;
@@ -2792,18 +2813,20 @@
 }
 .xc-table-body .one ul {
   position: absolute;
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
+  border-right: 1px solid rgba(19, 147, 240, 1);
+  border-left: 1px solid rgba(19, 147, 240, 1);
 }
 .xc-table-body .one .two {
   width: 33.33333%;
   left: 33.33333%;
   top: 0;
+  transform: translateX(-1px);
 }
 .xc-table-body .one .four {
   left: 100%;
   top: 0;
   width: 100%;
+  transform: translateX(-1px);
 }
 .xc-table-body .one .four li {
   border-right: none;
@@ -2812,6 +2835,8 @@
   width: 100%;
   left:  100%;
   top: 0;
+  box-sizing: border-box;
+  transform: translateX(-1px);
 }
 .xc-table-body .one .three.big {
   width: 100%
@@ -2831,9 +2856,10 @@
 .xc-table-body .one {
   width: 33.33%;
   white-space: nowrap;
+  border-right: 1px solid rgba(19, 147, 240, 1);;
 }
 .xc-table-body li {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid rgba(19, 147, 240, 1);;
   background-color: #fff;
   z-index: 100;
   cursor: pointer;
