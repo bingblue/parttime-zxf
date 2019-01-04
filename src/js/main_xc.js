@@ -54,6 +54,7 @@ $(function () {
         recorder = ''
         $(this).addClass('active')
         $('.sound-recod').removeClass('none')
+        $('.sound-result').addClass('none')
         HZRecorder.get(function (rec) {
           recorder = rec;
           recorder.start();
@@ -84,8 +85,8 @@ $(function () {
         $(document).ready(function(e) {
           $(this).keydown(function (e){
             if(e.which == "13") {
-              console.log('enter')
               $('.sub_url').click()
+              getNextContent && getNextContent()
             } 
           })
         })
