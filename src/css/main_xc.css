@@ -278,6 +278,7 @@
       font-weight: 400;
       border: 1px solid #7f7676;
       margin-left: 15px;
+      cursor: pointer;
     }
 .xc-coustom-pent .coustom-pent-body {
     padding: 30px;
@@ -3071,4 +3072,30 @@ xc-table-body li a {
 }
 .body-wordfail .part-ul .title-wp {
   margin-bottom: 14px;
+}
+.pent-reset-btn {
+  width: 95px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  background: #0085e6;
+  border-radius: 15px;
+  display: none;
+  margin-left: 10px;
+}
+.pent-reset-btn i{
+  display: inline-block;
+  width: 21px;
+  height: 17px;
+  background: url(../img/combined_icon.png) no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.tabpent .input-item {
+  height: 36px;
+  line-height: 36px;
+  margin-bottom: 10px;
 }

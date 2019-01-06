@@ -710,6 +710,7 @@ button:focus {
     float: left;
     width: 434px;
     padding-bottom: 40px;
+    word-wrap: break-word
   }
 
 .body-oralpractice .word-left .word {

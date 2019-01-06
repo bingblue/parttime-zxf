@@ -41,6 +41,67 @@ $(function () {
       this.isCanNext()
       this.documentEenter()
       this.recording()
+      this.tabpent()
+    },
+    tabpent: function() {
+      $('.tabpent').on('click', '.pent-btn', function() {
+        var $this = $(this);
+        var $val = $this.text();
+        var $parent = $this.closest('.xc-coustom-pent')
+        var $inputs = $parent.find('.input-items input');
+        $inputs.each(function(index, ele) {
+          if (!$(ele).val()) {
+            $($(ele).val($val))
+            $parent.find('.pent-reset-btn').css('display','inline-block')
+            return false
+          }
+        })
+        $this.hide();
+      })
+      $('.tabpent').on('click', '.pent-reset-btn',function() {
+        var $this = $(this)
+        var $parent = $this.closest('.xc-coustom-pent')
+        $parent.find('.pent-btn').show()
+        $parent.find('.input-items input').val('')
+        $this.hide()
+      })
+    },
+    replaceLuUrl: function(LUurl) {
+      var url = $('.yuanyin').attr('src')
+      $(".btn-ul").html('').append(`<li>
+      <audio class="audioType1 yuanyin" src="${url}">
+      </audio>
+      <a href="javascript:;" class="tooglePlay play" src="../img/playsound.png"></a>
+      <span class="btn-txt">播放原音</span>
+  </li>
+  <li>
+      <a href="javascript:;" id="recording" class=""></a>
+      <p class="btn-txt">录音</p>
+  </li>
+  <li>
+      <audio class="audioType1 luyin" src="${LUurl}">
+      </audio>
+      <a href="javascript:;" class="tooglePlay play" src="../img/playsound.png"></a>
+      <span class="btn-txt">播放</span>
+  </li>`)
+    },
+    replace: function(url) {
+      $(".btn-ul").html('').append(`<li>
+      <audio class="audioType1 yuanyin" src="${url}">
+      </audio>
+      <a href="javascript:;" class="tooglePlay musicAuto play" src="../img/playsound.png"></a>
+      <span class="btn-txt">播放原音</span>
+  </li>
+  <li>
+      <a href="javascript:;" id="recording" class=""></a>
+      <p class="btn-txt">录音</p>
+  </li>
+  <li>
+      <audio class="audioType1 luyin">
+      </audio>
+      <a href="javascript:;" class="play" src="../img/playsound.png"></a>
+      <span class="btn-txt">播放</span>
+  </li>`)
     },
     blobToDataURL(blob, callback) {
       let a = new FileReader();
@@ -303,6 +364,8 @@ $(function () {
           $this.addClass('select')
         }
       })
+      $('.musicAuto').removeClass('.musicAuto')
+      comment.audioPlay1()
       $('.xc-head-select .xc-head-select-ul li').on('click', function () {
         var $this = $(this)
         if (!$this.hasClass('active')) {
