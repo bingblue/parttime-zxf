@@ -659,6 +659,7 @@ $(function () {
      * 音频播放
      */
     audioPlay1: function () {
+      var that = this
       $(".audioType1").each(function (index, ele) {
         $(ele)[0].addEventListener('error', function () {
           console.log("1")
@@ -667,7 +668,7 @@ $(function () {
           var $this = $(this);
           if ($this.hasClass('play')) {
             $(".audioType1").each(function (index, el) {
-              $(el)[0].pause()
+                $(el)[0].pause()
               var span = '点击播放语音'
               if ($(el).hasClass('yuanyin')) {
                   span = '播放原音'
@@ -677,7 +678,15 @@ $(function () {
               }
               $(el).parent().find('.tooglePlay').removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text(span)
             })
-            $(ele)[0].play()
+            setTimeout(function() {
+              $(ele)[0].play()
+              if ($('.audio-items').length) {
+                $('.enwords span').removeClass('active')
+                $('.audio-items .audioType1').each(function(index, c) {
+                  $(c)[0].currentTime = 0;
+                })
+              }
+            },150)
             var span = '点击暂停播放'
             if ($(ele).hasClass('yuanyin')) {
               span = '暂停播放'
@@ -708,9 +717,24 @@ $(function () {
           }
           var $this = $(this).parent().find('.tooglePlay')
           $this.removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text(span)
+          if ($('.audio-items').length && !$(ele).hasClass('orderAudio')) {
+            that.orderAudio(0)
+          }
+          if ($(ele).hasClass('orderAudio')) {
+            var index = $(ele).parent().next().index()
+            if (index < 0) {
+              $('.enwords span').removeClass('active')
+              return false
+            }
+            that.orderAudio(index)
+          }
       }, false);
       })
       $(".musicAuto").trigger("click");
+    },
+    orderAudio: function(index) {
+      $('.audio-items').find('.audioType1').eq(index).get(0).play()
+      $('.enwords span').eq(index).addClass('active').siblings().removeClass('active')
     },
     audioPlay: function () {
       function forMatTime(t) {
