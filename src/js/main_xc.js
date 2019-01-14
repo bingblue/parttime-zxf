@@ -13,6 +13,7 @@ $(function () {
   }
   var recorder;
   comment = {
+    audioTimes: 0,
     reword: {
       word: '',
       baseUrl: ''
@@ -718,12 +719,25 @@ $(function () {
           var $this = $(this).parent().find('.tooglePlay')
           $this.removeClass('pause').addClass('play').attr('src', '../img/playsound.png').next('span').text(span)
           if ($('.audio-items').length && !$(ele).hasClass('orderAudio')) {
-            that.orderAudio(0)
+            if (that.audioTimes == 0) {
+              that.orderAudio(0)
+            } else {
+              setTimeout(() => {
+                that.audioTimes = 0
+              }, 200);
+              return false
+            }
           }
           if ($(ele).hasClass('orderAudio')) {
-            var index = $(ele).parent().next().index()
+            var $dom = $(ele).parent().next();
+            if ($dom.hasClass('not')) {
+              $dom = $dom.next()
+            }
+            var index = $dom.index()
             if (index < 0) {
               $('.enwords span').removeClass('active')
+              that.audioTimes = 1
+              $('#orderAudioBtn').click()
               return false
             }
             that.orderAudio(index)
