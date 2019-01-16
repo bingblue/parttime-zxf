@@ -1100,7 +1100,7 @@
 }
 
 .xc-body .course-main .course-body .course-body-center {
-        height: 600px;
+        min-height: 600px;
         float: left;
         width: 612px;
         background-color: #fff;
