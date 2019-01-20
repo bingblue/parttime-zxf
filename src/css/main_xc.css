@@ -2761,6 +2761,7 @@
   background: #EDEDED;
 }
 .xc-new-table {
+  font-size: 14px;
   border: 1px solid rgba(19, 147, 240, 1);
   border-radius: 4px;
   overflow-y: scroll;

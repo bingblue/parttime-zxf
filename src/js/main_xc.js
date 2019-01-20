@@ -43,6 +43,12 @@ $(function () {
       this.documentEenter()
       this.recording()
       this.tabpent()
+      this.iptfocus()
+    },
+    iptfocus: function() {
+      $('body').on('focus', '.ipt-foucs',function(){
+        $(this).siblings('.title-wp').find('.tooglePlay').click();
+      })
     },
     tabpent: function() {
       $('.tabpent').on('click', '.pent-btn', function() {
