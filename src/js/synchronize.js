@@ -1,4 +1,52 @@
 $(function () {
+  var comment = {
+    audioPlay1: function () {
+      var that = this
+      $(".audioType1").each(function (index, ele) {
+        $(ele)[0].addEventListener('error', function () {
+          console.log("1")
+        })
+        $(ele).parent().find('.tooglePlay').on('click',function() {
+          var $this = $(this);
+          if ($this.hasClass('play')) {
+            $(".audioType1").each(function (index, el) {
+                $(el)[0].pause()
+              var span = '播放'
+              $(el).parent().find('.tooglePlay').removeClass('pause').addClass('play').attr('src', '../img/playsound.png').text(span)
+            })
+            setTimeout(function() {
+              $(ele)[0].play()
+              if ($('.audio-items').length) {
+                $('.enwords span').removeClass('active')
+                $('.audio-items .audioType1').each(function(index, c) {
+                  $(c)[0].currentTime = 0;
+                })
+              }
+            },150)
+            var span = '暂停'
+            $this.removeClass('play').addClass('pause').text(span)
+          } else {
+            $(ele)[0].pause()
+            var span = '播放'
+            $this.removeClass('pause').addClass('play').text(span)
+          }
+        })
+        $(ele)[0].addEventListener('ended', function () {
+          var span = '播放'
+          if ($(ele).hasClass('yuanyin')) {
+            span = '播放原音'
+          }
+          if ($(ele).hasClass('luyin')) {
+            span = '播放'
+          }
+          var $this = $(this).parent().find('.tooglePlay')
+          $this.removeClass('pause').addClass('play').attr('src', '../img/playsound.png').text(span)
+      }, false);
+      })
+      $(".musicAuto").trigger("click");
+    }
+  }
+  comment.audioPlay1()
   // 同步课程table切换
   // calcTableHeight()
   $(".jq-xc-table li").on('click', function () {
