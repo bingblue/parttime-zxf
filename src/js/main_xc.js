@@ -44,6 +44,50 @@ $(function () {
       this.recording()
       this.tabpent()
       this.iptfocus()
+      this.textAudio()
+    },
+    textAudio: function() {
+      var list = $(".audioMp3list")
+      var len = list.length
+      var now = 0
+      var loop = false
+      $(".tooglePlayBtn").click(function(){
+        if($(this).hasClass('play')){
+          nextplay()
+          $(this).removeClass('play').addClass('pause')
+        }else {
+          list[now].pause()
+          $(this).removeClass('pause').addClass('play')
+        }
+      })
+      $(".toogleloop").click(function(){
+        var $this = $(this)
+        if ($this.hasClass('true')) {
+          loop = false
+          $this.removeClass('true')
+        } else {
+          loop = true
+          $this.addClass('true')
+        }
+      })
+
+      function nextplay() {
+        list[now].play()
+        $('.readText-box p').removeClass('active').eq(now).addClass('active')
+      }
+      for (let index = 0; index < len; index++) {
+        list[index].addEventListener('ended', function () {
+          ++now
+          if(now >= len) {
+            now = 0
+            $('.tooglePlayBtn').removeClass('pause').addClass('play')
+            $('.readText-box p').removeClass('active')
+            if(!loop) return false
+            $('.tooglePlayBtn').removeClass('play').addClass('pause')
+          }
+          nextplay()
+        })
+      }
     },
     iptfocus: function() {
       $('body').on('focus', '.ipt-foucs',function(){

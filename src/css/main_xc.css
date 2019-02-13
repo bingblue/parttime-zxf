@@ -1990,15 +1990,30 @@
 }
 .xc-proplay {
   overflow: hidden;
-  line-height: 50px;
 }
 .xc-proplay .xc-proplay-btns {
     float: left;
   }
 .xc-proplay .xc-proplay-btns .xc-proplay-img {
-      width: 50px;
-      height: 50px;
-    }
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.xc-proplay .xc-proplay-btns .xc-proplay-img.play {
+  background: url('../img/readText-play.png') no-repeat;
+  background-size: cover;
+}
+.xc-proplay .xc-proplay-btns .xc-proplay-img.toogleloop {
+  background: url('../img/readText-loop.png') no-repeat;
+  background-size: cover;
+}
+.xc-proplay .xc-proplay-btns .xc-proplay-img.toogleloop.true {
+  background-image: url('../img/readText-loop-active.png')
+}
+.xc-proplay .xc-proplay-btns .xc-proplay-img.pause {
+  background-image: url('../img/readText-play-active.png');
+  background-size: cover;
+}
 .xc-proplay .xc-proplay-box {
     float: right;
     margin: 5px 0;
