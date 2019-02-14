@@ -45,6 +45,37 @@ $(function () {
       this.tabpent()
       this.iptfocus()
       this.textAudio()
+      this.updateTime()
+      this.textAudio2()
+    },
+    textAudio2: function() {
+      $('.readText-box-item .playBtn').click(function() {
+        var $this = $(this)
+        if ($this.hasClass('play') && !$('.pause').length) {
+          $this.removeClass('play').addClass('pause').siblings('.english').show().siblings('.readText-audio')[0].play()
+        }
+      })
+      var list = $(".readText-audio")
+      var len = list.length
+      for (let index = 0; index < len; index++) {
+        list[index].addEventListener('ended', function () {
+          $(this).siblings('.playBtn').removeClass('pause').addClass('play').siblings('.english').hide()
+        })
+      }
+    },
+    updateTime: function() {
+      $('.updateTime').each(function(index, ele) {
+        var $ele = $(ele)
+        $ele.text(comment.timeToFormat(Number($ele.attr('time'))))
+      })
+      setInterval(function() {
+        $('.updateTime').each(function(index, ele) {
+          var $ele = $(ele)
+          var time = Number($ele.attr('time')) + 1
+          $(ele).attr('time', time)
+          $ele.text(comment.timeToFormat(Number($ele.attr('time'))))
+        })
+      }, 1000)
     },
     textAudio: function() {
       var list = $(".audioMp3list")

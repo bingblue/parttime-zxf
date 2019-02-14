@@ -3138,3 +3138,10 @@ xc-table-body li a {
 .audio-items {
   display: none;
 }
+.readText-box-item .english {
+  display: none;
+  color: #0085E6;
+}
+.readText-box-item .playBtn {
+  display: inline-block;
+}
