@@ -1184,8 +1184,15 @@
 .xc-body .readText-sentence .readText-listen .readText-listen-img {
         width: 46px;
         margin-right: 20px;
+        display: inline-block;
+        background: url('../img/playsound.png');
+        background-size: cover;
+        height: 46px;
+        vertical-align: middle;
       }
-
+      .xc-body .readText-sentence .readText-listen .readText-listen-img.pause {
+        background-image: url('../img/playsound_active.png')
+      }
 .xc-body .readText-sentence .readText-write {
       color: #333;
       font-size: 30px;
@@ -1231,7 +1238,9 @@
         margin: 0;
         padding: 0
       }
-
+      .xc-body .readText-sentence .readText-write input.err-ipt {
+        color: red;
+      }
 .xc-body .readText-sentence .readText-write input.active {
   background-color: #d9efff;
 }

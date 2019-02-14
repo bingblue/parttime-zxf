@@ -457,7 +457,6 @@ $(function () {
         }
       })
       $('.musicAuto').removeClass('.musicAuto')
-      comment.audioPlay1()
       $('.xc-head-select .xc-head-select-ul li').on('click', function () {
         var $this = $(this)
         if (!$this.hasClass('active')) {
@@ -700,7 +699,7 @@ $(function () {
       $input.eq(0).focus()
       var $btn = $('#readText-write .readText-write-btn')
       $btn.on('click', function () {
-        $input.val('').eq(0).focus()
+        $input.val('').removeClass('true-ipt').eq(0).focus()
       })
     },
     /**
@@ -758,6 +757,7 @@ $(function () {
         })
         $(ele).parent().find('.tooglePlay').on('click',function() {
           var $this = $(this);
+          console.log($this.hasClass('play'))
           if ($this.hasClass('play')) {
             $(".audioType1").each(function (index, el) {
                 $(el)[0].pause()

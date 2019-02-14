@@ -20,52 +20,52 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="xc-body">
+<body class="xc-body documentEnter">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
   <!-- build:head -->
   <header class="comm-header">
-  <div class="midd_header clearfix">
-    <div class="index_icon">
-      <a href="index.html"></a>
-    </div>
-    <ul class="nav clearfix">
-      <li class="active">
-        <a href="#">课程中心</a>
-      </li>
-      <li>
-        <a href="#">我的班级</a>
-      </li>
-      <li>
-        <a href="#">排行榜</a>
-      </li>
-      <li>
-        <a href="#">学币商城</a>
-      </li>
-    </ul>
-    <div class="login">
-      <a href="#">个人中心</a>
-      <ul class="head-list">
-        <li>
-          <a class="info" href='javascript:;'>个人资料</a>
+    <div class="midd_header clearfix">
+      <div class="index_icon">
+        <a href="index.html"></a>
+      </div>
+      <ul class="nav clearfix">
+        <li class="active">
+          <a href="#">课程中心</a>
         </li>
         <li>
-          <a class="honor" href='javascript:;'>荣誉中心</a>
+          <a href="#">我的班级</a>
         </li>
         <li>
-          <a class='test'href='javascript:;'>测试记录</a>
+          <a href="#">排行榜</a>
         </li>
         <li>
-          <a class="task" href='javascript:;'>我的任务</a>
-        </li>
-        <li>
-          <a class="logout" href='javascript:;'>退出登录</a>
+          <a href="#">学币商城</a>
         </li>
       </ul>
+      <div class="login">
+        <a href="#">个人中心</a>
+        <ul class="head-list">
+          <li>
+            <a class="info" href='javascript:;'>个人资料</a>
+          </li>
+          <li>
+            <a class="honor" href='javascript:;'>荣誉中心</a>
+          </li>
+          <li>
+            <a class='test' href='javascript:;'>测试记录</a>
+          </li>
+          <li>
+            <a class="task" href='javascript:;'>我的任务</a>
+          </li>
+          <li>
+            <a class="logout" href='javascript:;'>退出登录</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
   <!-- endbuild -->
 
 
@@ -102,9 +102,21 @@
                   </audio>
                   <!-- 再点击时候更换img地址 -->
                   <!-- <img class="readText-listen-img" src="../img/sentence-radio-active.png" alt="听"> -->
-                  <img class="readText-listen-img tooglePlay play" src="../img/sentence-radio.png" alt="听"><span>点击播放语音</span>
+                  <span class="readText-listen-img tooglePlay play" src="../img/sentence-radio.png"></span><span>点击播放语音</span>
                 </div>
-                <div class="readText-write" id="readText-write"><div class="readText-write-item"><input type="text"/></div><div class="readText-write-item"><input type="text" /></div><div class="readText-write-item"><input type="text" /></div><span class="h1">？</span><span class="readText-write-btn">重置</span></div>
+                <div class="readText-write" id="readText-write">
+                  <div class="readText-write-item">
+                    <input type="text" class="ipt iptReviewWord" tip='How'/>
+                  </div>
+                  <div class="readText-write-item">
+                    <input type="text" class="ipt iptReviewWord" tip='are'/>
+                  </div>
+                  <div class="readText-write-item">
+                    <input type="text" class="ipt iptReviewWord" tip='you'/>
+                  </div>
+                  <span class="h1">？</span>
+                  <span class="readText-write-btn">重置</span>
+                </div>
                 <div class="readText-example">
                   <span class="readText-example-item">you</span>
                   <span class="readText-example-item">are</span>
