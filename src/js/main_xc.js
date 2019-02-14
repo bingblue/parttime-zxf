@@ -91,6 +91,17 @@ $(function () {
           $(this).removeClass('pause').addClass('play')
         }
       })
+      if (len) {
+        $('.readText-box .readText-item').click(function() {
+          var index = $(this).index()
+          list[now].pause()
+          list[now].currentTime = 0;
+          now = index
+          list[index].play()
+        $('.readText-box p').removeClass('active').eq(index).addClass('active')
+        $('.tooglePlayBtn').removeClass('play').addClass('pause')
+        })
+      }
       $(".toogleloop").click(function(){
         var $this = $(this)
         if ($this.hasClass('true')) {
@@ -101,7 +112,6 @@ $(function () {
           $this.addClass('true')
         }
       })
-
       function nextplay() {
         list[now].play()
         $('.readText-box p').removeClass('active').eq(now).addClass('active')

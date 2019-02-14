@@ -3145,3 +3145,6 @@ xc-table-body li a {
 .readText-box-item .playBtn {
   display: inline-block;
 }
+.readText-item {
+  cursor: pointer;
+}
