@@ -1172,8 +1172,10 @@
 
 .xc-body .readText-sentence {
     font-weight: 200;
-    width: 380px;
     margin: 170px auto 120px;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 
 .xc-body .readText-sentence .readText-listen {
@@ -1196,9 +1198,12 @@
 .xc-body .readText-sentence .readText-write {
       color: #333;
       font-size: 30px;
-      margin-top: 40px;
+      margin-top: 20px;
     }
-
+.xc-body .readText-sentence .readText-write .readText-write-item{
+  top: 0;
+  margin-left: 0;
+    }
 .xc-body .readText-sentence .readText-write .readText-write-item {
         display: inline-block;
         margin-right: 10px;
@@ -1248,6 +1253,7 @@
 .xc-body .readText-sentence .readText-example {
       font-size: 0;
       margin-top: 25px;
+      min-height: 32px;
     }
 
 .xc-body .readText-sentence .readText-example .readText-example-item {
@@ -1260,6 +1266,7 @@
         border-radius: 13px;
         display: inline-block;
         margin-right: 10px;
+        cursor: pointer;
       }
 
 .xc-body .readText-blank {

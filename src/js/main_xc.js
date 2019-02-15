@@ -700,6 +700,21 @@ $(function () {
       var $btn = $('#readText-write .readText-write-btn')
       $btn.on('click', function () {
         $input.val('').removeClass('true-ipt').eq(0).focus()
+        $(this).closest('.readText-sentence').find('.readText-example-item').show()
+        // $(this).hide()
+      })
+      $('body').on('click', '.readText-example-item', function() {
+        var text = $(this).text()
+        var parent = $(this).hide().closest('.readText-sentence')
+        var iptReviewWord = parent.find('.iptReviewWord')
+        var btn = parent.find('.readText-write-btn')
+        iptReviewWord.each(function(index, ele) {
+          if (!$(ele).val()) {
+            $(ele).val(text).keyup()
+            // btn.css('display', 'inline-block')
+            return false
+          }
+        })
       })
     },
     /**
