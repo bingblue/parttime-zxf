@@ -697,8 +697,7 @@ $(function () {
         $this.removeClass('active')
       })
       $input.eq(0).focus()
-      var $btn = $('#readText-write .readText-write-btn')
-      $btn.on('click', function () {
+      $('body').on('click', '.readText-write-btn', function() {
         $input.val('').removeClass('true-ipt').eq(0).focus()
         $(this).closest('.readText-sentence').find('.readText-example-item').show()
         // $(this).hide()

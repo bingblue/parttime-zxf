@@ -1169,13 +1169,14 @@
 .xc-body .readText-main .readText-box .active {
         color: #0085e6;
       }
-
+      .xc-body .readText-main .readText-box.text-center {
+        text-align: center;
+      }
 .xc-body .readText-sentence {
     font-weight: 200;
     margin: 170px auto 120px;
     display: inline-block;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    text-align: left;
   }
 
 .xc-body .readText-sentence .readText-listen {
